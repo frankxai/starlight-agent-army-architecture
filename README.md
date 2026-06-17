@@ -1,11 +1,27 @@
-# Starlight Agent Army Architecture
+<p align="center">
+  <img src="assets/hero.svg" alt="Starlight Agent Army Architecture" width="100%">
+</p>
+
+<h1 align="center">Starlight Agent Army Architecture</h1>
+
+<p align="center">
+  <strong>Control-plane workflows, swarm roles, SIS provenance, gateway policy, and deployment recipes for Starlight agent fleets.</strong>
+</p>
+
+<p align="center">
+  <a href="#quickstart">Quickstart</a> ·
+  <a href="docs/swarm-roles.md">Swarm Roles</a> ·
+  <a href="docs/health-checks.md">Health</a> ·
+  <a href="docs/deployment-recipes.md">Deploy</a> ·
+  <a href="configs/hermes-profiles.example.json">Configs</a>
+</p>
 
 [![Validate](https://github.com/frankxai/starlight-agent-army-architecture/actions/workflows/validate.yml/badge.svg)](https://github.com/frankxai/starlight-agent-army-architecture/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Starlight](https://img.shields.io/badge/Starlight-Agent%20Army-0b7285)](docs/swarm-roles.md)
 [![Templates](https://img.shields.io/badge/Templates-Ready-2f9e44)](configs/hermes-profiles.example.json)
 
-The Starlight implementation playbook for running local and cloud agent armies with Codex as the repo control plane, Hermes profiles as durable workers, OpenClaw as the chat/mobile gateway, DeepAgents as long-running harnesses, Claude Code as a maintainer lane, and SIS as memory/provenance.
+> The Starlight implementation playbook for running local and cloud agent armies with Codex as the repo control plane, Hermes profiles as durable workers, OpenClaw as the chat/mobile gateway, DeepAgents as long-running harnesses, Claude Code as a maintainer lane, and SIS as memory/provenance.
 
 For the neutral architecture layer, see [agentic-architecture-field-guide](https://github.com/frankxai/agentic-architecture-field-guide). For the ecosystem index, see [awesome-agent-operating-systems](https://github.com/frankxai/awesome-agent-operating-systems).
 
@@ -20,6 +36,14 @@ For the neutral architecture layer, see [agentic-architecture-field-guide](https
 | Deployment recipes | Production hosting for your fleet |
 
 ## Quickstart
+
+| Need | Start |
+| --- | --- |
+| Define swarm roles | [Swarm roles](docs/swarm-roles.md) |
+| Run a repo-control workflow | [Control-plane workflow](docs/control-plane-workflow.md) |
+| Configure gateway policy | [OpenClaw gateway example](configs/openclaw-gateway.example.json) |
+| Configure research harness | [DeepAgents harness example](configs/deepagents-harness.example.yaml) |
+| Verify machine readiness | [Health checks](docs/health-checks.md) |
 
 ```powershell
 git clone https://github.com/frankxai/starlight-agent-army-architecture.git
@@ -72,6 +96,13 @@ flowchart LR
 | Long research | DeepAgents may write reports; implementation happens in a repo-control lane |
 | Memory | Store decisions, sources, summaries, and audit state; never raw secrets |
 | Deployment | Human-approved target, environment, and rollback condition |
+
+<details>
+<summary><strong>Default Starlight rule</strong></summary>
+
+Agents can draft, inspect, summarize, and propose. Repo writes, gateway privileges, memory persistence, and deployments require a named lane, scope, and verification command.
+
+</details>
 
 ## Starter Assets
 

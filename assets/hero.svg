@@ -1,0 +1,54 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Starlight Agent Army Architecture</title>
+  <desc id="desc">A command-center style hero banner for Starlight agent swarm architecture.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="500">
+      <stop stop-color="#070F14"/>
+      <stop offset="0.5" stop-color="#0C1E25"/>
+      <stop offset="1" stop-color="#14251B"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1140 250) rotate(90) scale(180)">
+      <stop stop-color="#D7FF8A"/>
+      <stop offset="0.35" stop-color="#40C4AA"/>
+      <stop offset="1" stop-color="#40C4AA" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="500" rx="28" fill="url(#bg)"/>
+  <circle cx="1140" cy="250" r="220" fill="url(#core)" opacity="0.52"/>
+  <g stroke="#66D9EF" stroke-width="2" opacity="0.5">
+    <path d="M1140 250L940 132M1140 250L1364 126M1140 250L1430 294M1140 250L1312 402M1140 250L936 382M1140 250L860 252"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="1140" cy="250" r="28" fill="#D7FF8A"/>
+    <circle cx="940" cy="132" r="13" fill="#66D9EF"/>
+    <circle cx="1364" cy="126" r="13" fill="#40C4AA"/>
+    <circle cx="1430" cy="294" r="13" fill="#66D9EF"/>
+    <circle cx="1312" cy="402" r="13" fill="#40C4AA"/>
+    <circle cx="936" cy="382" r="13" fill="#D7FF8A"/>
+    <circle cx="860" cy="252" r="13" fill="#66D9EF"/>
+  </g>
+  <g fill="#102A2F" stroke="#B8F7E0" stroke-width="1.5">
+    <rect x="872" y="98" width="136" height="52" rx="12"/>
+    <rect x="1296" y="92" width="136" height="52" rx="12"/>
+    <rect x="1362" y="268" width="136" height="52" rx="12"/>
+    <rect x="1244" y="376" width="136" height="52" rx="12"/>
+    <rect x="868" y="356" width="136" height="52" rx="12"/>
+    <rect x="792" y="226" width="136" height="52" rx="12"/>
+  </g>
+  <text x="110" y="246" fill="#F4FFF9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="61" font-weight="800" letter-spacing="0">Starlight Agent Army</text>
+  <text x="112" y="310" fill="#B8F7E0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="0">Architecture</text>
+  <text x="114" y="366" fill="#D8E8E3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" letter-spacing="0">Control-plane workflows, swarm roles, memory provenance, and deployment patterns</text>
+  <text x="910" y="131" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">HERMES</text>
+  <text x="1324" y="125" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">CODEX</text>
+  <text x="1388" y="301" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">DEPLOY</text>
+  <text x="1269" y="409" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">SIS</text>
+  <text x="895" y="389" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">DEEP</text>
+  <text x="816" y="259" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">CLAW</text>
+</svg>
