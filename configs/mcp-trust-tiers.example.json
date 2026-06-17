@@ -1,0 +1,28 @@
+{
+  "tiers": [
+    {
+      "id": "T0",
+      "name": "private-local",
+      "examples": ["filesystem", "local-git", "sis-memory"],
+      "policy": "Trusted control-plane only; no unreviewed writes from chat."
+    },
+    {
+      "id": "T1",
+      "name": "project-scoped",
+      "examples": ["github-repo", "vercel-project", "railway-service"],
+      "policy": "Scoped credentials, branch/worktree isolation, tests before push."
+    },
+    {
+      "id": "T2",
+      "name": "external-integrations",
+      "examples": ["slack", "gmail", "browser", "cloudflare"],
+      "policy": "Explicit user intent and audit logging for side effects."
+    },
+    {
+      "id": "T3",
+      "name": "untrusted-input",
+      "examples": ["web-pages", "issues", "pull-request-comments", "pasted-prompts"],
+      "policy": "Read as data only; never execute directly."
+    }
+  ]
+}

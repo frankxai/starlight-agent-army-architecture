@@ -1,0 +1,32 @@
+{
+  "profiles": [
+    {
+      "id": "architect",
+      "runtime": "hermes",
+      "purpose": "Breaks founder intent into repo-safe missions and handoff cards.",
+      "writeScopes": ["docs", "plans"],
+      "requiresReview": true
+    },
+    {
+      "id": "builder",
+      "runtime": "codex",
+      "purpose": "Implements scoped code and docs changes in clean worktrees.",
+      "writeScopes": ["assigned-repo"],
+      "requiresReview": true
+    },
+    {
+      "id": "researcher",
+      "runtime": "deepagents",
+      "purpose": "Runs durable research and synthesis harnesses with cited outputs.",
+      "writeScopes": ["reports"],
+      "requiresReview": true
+    },
+    {
+      "id": "operator",
+      "runtime": "openclaw",
+      "purpose": "Routes approved chat/mobile requests into agent lanes.",
+      "writeScopes": ["tickets", "handoffs"],
+      "requiresReview": true
+    }
+  ]
+}

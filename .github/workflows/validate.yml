@@ -1,0 +1,15 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  architecture:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate architecture
+        shell: pwsh
+        run: ./scripts/validate-architecture.ps1
