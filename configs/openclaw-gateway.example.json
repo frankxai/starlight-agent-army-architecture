@@ -1,0 +1,26 @@
+{
+  "gateway": {
+    "mode": "local",
+    "bind": "loopback",
+    "auth": "token",
+    "ownerPolicy": "single-human-operator",
+    "writePolicy": "route-to-control-plane"
+  },
+  "channels": {
+    "enabled": [],
+    "allowlistRequired": true
+  },
+  "routing": [
+    {
+      "from": "chat",
+      "to": "hermes.operator",
+      "allowedActions": ["summarize", "create-handoff", "status"]
+    },
+    {
+      "from": "chat",
+      "to": "codex.control-plane",
+      "allowedActions": ["draft-plan"],
+      "requiresHumanApproval": true
+    }
+  ]
+}

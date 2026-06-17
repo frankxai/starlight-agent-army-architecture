@@ -3,9 +3,15 @@ $root = Split-Path $PSScriptRoot -Parent
 $required = @(
   "README.md",
   "configs/hermes-profiles.example.json",
+  "configs/openclaw-gateway.example.json",
+  "configs/deepagents-harness.example.yaml",
   "configs/mcp-trust-tiers.example.json",
   "docs/swarm-roles.md",
   "docs/control-plane-workflow.md",
+  "docs/sis-memory-provenance.md",
+  "docs/health-checks.md",
+  "docs/deployment-recipes.md",
+  "templates/codex-maintainer.md",
   "templates/AGENTS.md"
 )
 
@@ -17,6 +23,7 @@ foreach ($file in $required) {
 }
 
 Get-Content -Raw (Join-Path $root "configs/hermes-profiles.example.json") | ConvertFrom-Json | Out-Null
+Get-Content -Raw (Join-Path $root "configs/openclaw-gateway.example.json") | ConvertFrom-Json | Out-Null
 Get-Content -Raw (Join-Path $root "configs/mcp-trust-tiers.example.json") | ConvertFrom-Json | Out-Null
 
 $readme = Get-Content -Raw (Join-Path $root "README.md")

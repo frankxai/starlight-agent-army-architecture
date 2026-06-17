@@ -1,0 +1,20 @@
+name: starlight-research-harness
+runtime: deepagents
+purpose: durable research and synthesis before implementation
+inputs:
+  - mission_brief
+  - source_urls
+  - acceptance_criteria
+outputs:
+  - cited_report
+  - implementation_plan
+  - risks
+guardrails:
+  writes_code: false
+  deploys: false
+  requires_sources: true
+  hands_off_to: codex.control-plane
+verification:
+  - report_has_sources
+  - alternatives_considered
+  - risks_listed
