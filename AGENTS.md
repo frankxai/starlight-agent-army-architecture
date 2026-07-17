@@ -4,10 +4,20 @@ This repo is part of the FrankX / Starlight / Arcanea agent estate.
 
 ## Classification
 
-- Repo: $title
-- Class: $Classification
-- Default health command: $HealthCommand
-- Remote: $Remote
+- Repo: starlight-agent-army-architecture
+- Class: agent-substrate
+- Default health command: `git status` (structural validation: `powershell -ExecutionPolicy Bypass -File scripts/validate-architecture.ps1`)
+- Remote: https://github.com/frankxai/starlight-agent-army-architecture.git
+
+## What This Repo Is
+
+The Starlight implementation playbook for running local/cloud agent armies: Codex as repo control
+plane, Hermes profiles as durable workers, OpenClaw as chat/mobile gateway, DeepAgents as
+long-running harnesses, Claude Code as maintainer lane, SIS as memory/provenance. Docs live in
+`docs/` (swarm-roles, control-plane-workflow, sis-memory-provenance, health-checks,
+deployment-recipes), example configs in `configs/`, the validation script in
+`scripts/validate-architecture.ps1`. For the neutral architecture layer, see
+`agentic-architecture-field-guide`; for the ecosystem index, see `awesome-agent-operating-systems`.
 
 ## Agent Rules
 
