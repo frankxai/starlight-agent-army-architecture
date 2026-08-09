@@ -34,6 +34,30 @@ For the neutral architecture layer, see [agentic-architecture-field-guide](https
 | Swarm role contracts | Generic awesome-list curation |
 | SIS memory/provenance policy | Secrets or credentials |
 | Deployment recipes | Production hosting for your fleet |
+| **Agent Cards + ADLC + brand portfolio SSOT** | Brand marketing sites' full UI implementation |
+
+## Agent Portfolio + ADLC (2026-08-09)
+
+Single strategy home for faced agents across GenCreator, FrankX, Starlight ops, Arcanea (next), and AI CoE.
+
+| Artifact | Path |
+| --- | --- |
+| Brand decisions | [docs/agent-portfolio/BRAND_AGENT_PORTFOLIO.md](docs/agent-portfolio/BRAND_AGENT_PORTFOLIO.md) |
+| Agent Development Life Cycle | [docs/adlc/ADLC.md](docs/adlc/ADLC.md) |
+| 10h Queen execution | [docs/execution/10H_QUEEN_SWARM_PLAN.md](docs/execution/10H_QUEEN_SWARM_PLAN.md) |
+| Next 10h backlog | [docs/execution/NEXT_10H.md](docs/execution/NEXT_10H.md) |
+| Card schema | [schemas/agent-card/agent-card.schema.json](schemas/agent-card/agent-card.schema.json) |
+| Host cards | `cards/hosts/` (Gen-Ω, FrankX Concierge, Starlight Operator) |
+| Specialists | `cards/specialists/` (GenCreator L2 set) |
+| KB packs | `kb-packs/` |
+| Web load contract | [docs/execution/WEB_LOAD_CONTRACT.md](docs/execution/WEB_LOAD_CONTRACT.md) |
+
+```powershell
+python scripts/validate_agent_cards.py
+python scripts/run_eval_suite.py
+```
+
+**Law:** identity lives in cards; Vercel AI SDK is product UI; Hermes is private L4–L5 ops; OpenAI/Google ADKs are optional backends only.
 
 ## Quickstart
 

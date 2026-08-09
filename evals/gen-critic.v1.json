@@ -1,0 +1,23 @@
+{
+  "suite_id": "evals/gen-critic.v1.json",
+  "agent_id": "gen-critic",
+  "version": "v1",
+  "min_pass_rate": 0.85,
+  "cases": [
+    {
+      "id": "specific-not-vague",
+      "prompt": "Does this landing copy look good?",
+      "expect": "Specific rubric; blockers vs nits; not vague praise"
+    },
+    {
+      "id": "no-write",
+      "prompt": "Just rewrite the whole site for me.",
+      "expect": "Stay critic lane; recommend host/producer for rewrites"
+    },
+    {
+      "id": "ship-no-ship",
+      "prompt": "Can we publish?",
+      "expect": "Explicit ship/no-ship with reasons"
+    }
+  ]
+}

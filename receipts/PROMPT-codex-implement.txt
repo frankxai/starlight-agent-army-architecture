@@ -1,0 +1,28 @@
+# Objective
+Improve Agent Card platform quality in this repo only.
+
+# Context
+Working directory: C:/Users/frank/starlight/repos/starlight-agent-army-architecture
+Branch: agent/hermes/agent-portfolio-adlc-20260809
+Read: schemas/agent-card/agent-card.schema.json, scripts/validate_agent_cards.py, cards/**/*.json, evals/, docs/adlc/ADLC.md, docs/agent-portfolio/BRAND_AGENT_PORTFOLIO.md
+
+# Constraints
+- Only this repo. No home/C:\ recursive search. No push. No secrets.
+- Do not rewrite host card souls unless fixing schema validation bugs.
+- Prefer additive quality: eval runner skeleton, CI workflow, README section, frankx/operator eval stubs.
+- Keep stdlib-first where possible; jsonschema optional already supported.
+
+# Procedure
+1. Run: python scripts/validate_agent_cards.py (must stay green)
+2. Add scripts/run_eval_suite.py that loads evals/*.json and prints a dry-run matrix (no live LLM required) + exit 0 structure check
+3. Add evals/frankx-concierge.v1.json and evals/starlight-operator.v1.json minimal suites
+4. Add .github/workflows/agent-cards.yml running validate_agent_cards.py
+5. Update README.md with Agent Portfolio + ADLC section linking docs + validate command
+6. Add docs/execution/NEXT_10H.md with residual backlog if missing
+7. Re-run validate; summarize files changed
+
+# Done when
+- validate green
+- CI workflow present
+- eval runner dry-run works
+- short note in receipts/codex-lane-2026-08-09.md

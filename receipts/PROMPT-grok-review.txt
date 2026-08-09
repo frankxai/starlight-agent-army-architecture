@@ -1,0 +1,27 @@
+# Objective
+Cultural + voice + product-design adversarial review of the three host agents and GenCreator specialist set. Write receipts/grok-voice-design-review-2026-08-09.md
+
+# Read
+- docs/agent-portfolio/BRAND_AGENT_PORTFOLIO.md
+- cards/hosts/gen-omega.json + gen-omega.SOUL.md
+- cards/hosts/frankx-concierge.json + SOUL
+- cards/hosts/starlight-operator.json + SOUL
+- cards/specialists/* (names/taglines)
+- kb-packs/gencreator/*
+- docs/execution/WEB_LOAD_CONTRACT.md
+
+# Constraints
+- Work only in C:/Users/frank/starlight/repos/starlight-agent-army-architecture
+- Write only the receipt markdown (and optional tiny patch notes inside it)
+- No push, no secrets, no recursive home search
+
+# Review axes
+1. Distinctiveness of voices (would users feel three different beings?)
+2. Gen-Ω face/style lock credibility for a premium creator product
+3. FrankX Concierge risk of "fake Frank" / authority damage
+4. Specialist chip UX: too many / too few / naming
+5. What would make this feel world-class in 2026 product terms
+6. Experiment ideas beyond exp-001/002
+
+# Output
+receipts/grok-voice-design-review-2026-08-09.md with scores 1-10 per host and top 7 concrete edits.

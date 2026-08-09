@@ -1,0 +1,30 @@
+name: agent-cards
+
+on:
+  push:
+    paths:
+      - "cards/**"
+      - "schemas/agent-card/**"
+      - "scripts/validate_agent_cards.py"
+      - "kb-packs/**"
+      - "evals/**"
+  pull_request:
+    paths:
+      - "cards/**"
+      - "schemas/agent-card/**"
+      - "scripts/validate_agent_cards.py"
+      - "kb-packs/**"
+      - "evals/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install jsonschema
+        run: pip install jsonschema
+      - name: Validate agent cards
+        run: python scripts/validate_agent_cards.py

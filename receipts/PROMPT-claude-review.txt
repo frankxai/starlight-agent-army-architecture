@@ -1,0 +1,33 @@
+# Objective
+Adversarial strategy review of the Brand Agent Portfolio + ADLC just landed in this repo. Write findings to receipts/claude-strategy-review-2026-08-09.md
+
+# Context — read first (exact paths)
+1. docs/agent-portfolio/BRAND_AGENT_PORTFOLIO.md
+2. docs/adlc/ADLC.md
+3. docs/execution/10H_QUEEN_SWARM_PLAN.md
+4. docs/execution/WEB_LOAD_CONTRACT.md
+5. docs/execution/HERMES_ADAPTER.md
+6. schemas/agent-card/agent-card.schema.json
+7. cards/hosts/gen-omega.json + frankx-concierge.json + starlight-operator.json
+8. cards/specialists/*.json (sample 2+)
+9. scripts/validate_agent_cards.py
+10. AGENTS.md + README.md
+
+# Constraints
+- Repo: C:/Users/frank/starlight/repos/starlight-agent-army-architecture
+- Branch: agent/hermes/agent-portfolio-adlc-20260809
+- Workspace law: only this child repo; never C:\ or home recursive search; never universe/
+- READ + WRITE only the findings receipt path below (and nothing destructive)
+- Do not push, do not change production configs outside this repo
+- You are Claude Code judgment lane (treat as senior adversarial architect)
+
+# Procedure
+1. Read all listed files.
+2. Pressure-test: identity vs SDK split, public/private memory, brand sequencing, ADLC gates, schema gaps, eval sufficiency, 10h plan realism, multi-runtime parity risks.
+3. Output ranked findings: P0 blockers, P1 improvements, P2 nice-to-haves.
+4. Explicit verdict: PROCEED | PROCEED-WITH-REVISE | HOLD
+5. Write full review markdown to: receipts/claude-strategy-review-2026-08-09.md
+6. Include: what is strong, what will fail in production, cheapest next 48h actions.
+
+# Required artifact
+receipts/claude-strategy-review-2026-08-09.md must exist with VERDICT on first heading line after title.
