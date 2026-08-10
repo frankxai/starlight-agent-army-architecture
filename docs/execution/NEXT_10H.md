@@ -33,3 +33,6 @@ python scripts/validate_agent_cards.py
 ## Machines
 - Yogabook: frontend + card SSOT + reviews
 - C940: enqueue only for CI/GitOps if Book saturated
+
+| 11 | Business Ops Supervisor stack: activate CoS+Content+QA+Runway after card PR | army-architecture | 2 |
+| 12 | Optional Paperclip/Agent HQ evaluation only — no identity move | research | doc |

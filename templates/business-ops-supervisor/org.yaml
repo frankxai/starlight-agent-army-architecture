@@ -1,0 +1,112 @@
+schema_version: business-ops-org.v1
+name: starlight-business-ops
+parent_host_id: starlight-operator
+supervisor_id: biz-ops-supervisor
+updated: 2026-08-10
+
+leverage:
+  keep:
+    - starlight-queen
+    - hermes
+    - swarm_bus
+    - agent_cards_adlc
+    - agentic_business_os_template
+    - gstack_coding_roles
+  evaluate:
+    - github_agent_hq_coding_mission_control
+    - paperclip_org_ui_budgets
+  do_not_replace_identity_with:
+    - paperclip
+    - gstack
+    - agent_hq
+
+roles:
+  - id: biz-ops-supervisor
+    title: Business Ops Supervisor
+    human_owner: founder
+    maturity: strong
+    status: draft
+  - id: biz-founder-capture
+    title: Founder Capture
+    human_owner: founder
+    maturity: partial
+    status: draft
+  - id: biz-chief-of-staff
+    title: Chief of Staff
+    human_owner: va
+    maturity: strong
+    status: draft
+  - id: biz-delegation
+    title: Delegation
+    human_owner: va
+    maturity: strong
+    status: draft
+  - id: biz-recruiting
+    title: Recruiting
+    human_owner: va_plus_founder
+    maturity: partial
+    status: draft
+  - id: biz-bounty
+    title: Bounty
+    human_owner: va
+    maturity: gap
+    status: draft
+  - id: biz-contributor-onboarding
+    title: Contributor Onboarding
+    human_owner: va
+    maturity: partial
+    status: draft
+  - id: biz-qa-red-team
+    title: QA / Red Team
+    human_owner: va_plus_founder
+    maturity: strong
+    status: draft
+  - id: biz-content-hydra
+    title: Content Hydra
+    human_owner: content_human
+    maturity: strong
+    status: draft
+  - id: biz-partnership
+    title: Partnership
+    human_owner: va_or_sales
+    maturity: partial
+    status: draft
+  - id: biz-runway
+    title: Runway
+    human_owner: founder_plus_accountant
+    maturity: strong
+    status: draft
+  - id: biz-sales-pipeline
+    title: Sales Pipeline
+    human_owner: founder_or_sales
+    maturity: partial
+    status: draft
+  - id: biz-community-ritual
+    title: Community Ritual
+    human_owner: va_or_community_lead
+    maturity: partial
+    status: draft
+
+activation_order:
+  - biz-ops-supervisor
+  - biz-chief-of-staff
+  - biz-content-hydra
+  - biz-qa-red-team
+  - biz-runway
+  - biz-founder-capture
+  - biz-delegation
+  - biz-sales-pipeline
+  - biz-partnership
+  - biz-recruiting
+  - biz-contributor-onboarding
+  - biz-community-ritual
+  - biz-bounty
+
+human_gates_default:
+  - publish
+  - external_send
+  - spend
+  - credentials
+  - legal_ip
+  - brand_identity
+  - destructive

@@ -85,7 +85,8 @@
     ],
     "handoffs": [
       { "to": "c940-backend", "when": "GitOps/CI/overnight capacity when peer live" },
-      { "to": "gen-omega", "when": "public product studio work should run under GenCreator card" }
+      { "to": "gen-omega", "when": "public product studio work should run under GenCreator card" },
+      { "to": "biz-ops-supervisor", "when": "private business-ops stack: CoS, capture, content hydra, runway, recruiting, sales, community" }
     ]
   },
   "body": {

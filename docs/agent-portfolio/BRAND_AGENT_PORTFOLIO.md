@@ -4,7 +4,7 @@
 > Owner: Starlight Queen (Yogabook)  
 > Repo SSOT: `frankxai/starlight-agent-army-architecture`  
 > Consumers: GenCreator-Studio, frankx.ai, arcanea-ai-app, Hermes, ai-coe  
-> Companion: `docs/adlc/ADLC.md`, `docs/execution/10H_QUEEN_SWARM_PLAN.md`, `schemas/agent-card/`
+> Companion: `docs/adlc/ADLC.md`, `docs/operations/AGENT_ECONOMICS_AND_CAPABILITY.md`, `observability/`, `schemas/agent-card/`
 
 ## Relationship to existing repo systems
 
@@ -53,7 +53,9 @@ Agent Card (soul + face + KB + tools + memory scope + permissions)
 | Stewards (L4) | Private / enterprise — face optional |
 | Swarm (L5) | Behind host; chip when summoned; human gates on spend/publish |
 
-## Intelligence ladder
+## Operating/autonomy tier
+
+L0–L5 describes system shape, permissions, memory, and orchestration complexity. It is not an intrinsic intelligence or quality score. Observed capability is measured per deployment with role-specific weights, hard safety gates, and a minimum live sample; see `docs/operations/AGENT_ECONOMICS_AND_CAPABILITY.md`.
 
 | Tier | Name | Public default? |
 |------|------|-----------------|
@@ -127,6 +129,8 @@ Income/RA thin L1 · Anime Legends companion · public Starlight concierge · Mi
 
 ## Success metrics (portfolio)
 
+Construction counts below show portfolio coverage; they do not prove customer value or intelligence. Every runtime also needs a deployment profile and receipt-backed scorecard.
+
 | Metric | Target (90d) |
 |--------|----------------|
 | Hosts live with card + face pack | ≥3 (Gen-Ω, FrankX Concierge, Hermes Operator card) |
@@ -135,6 +139,9 @@ Income/RA thin L1 · Anime Legends companion · public Starlight concierge · Mi
 | Tenant memory leak tests | 0 critical |
 | Design anti-slop on agent shells | pass verify script on touched UIs |
 | Artifact score on Queen lanes | ≥2 (draft PR + gates) for implementation lanes |
+| Valid receipt coverage after instrumentation | ≥95% within 14 days |
+| Critical tenant/safety failures | 0 |
+| Capability and ROI decision | only after role-specific minimum live sample |
 
 ## Decision log
 
@@ -143,11 +150,22 @@ Income/RA thin L1 · Anime Legends companion · public Starlight concierge · Mi
 | 2026-08-09 | Single strategy repo: `starlight-agent-army-architecture` (not sprawl across all repos) |
 | 2026-08-09 | GenCreator = first full faced product; Hermes = private excellence; FrankX = demand router |
 | 2026-08-09 | Vercel AI SDK = UI; cards = SSOT; ADKs optional backends only |
+| 2026-08-10 | L0–L5 renamed operating/autonomy tier; capability, cost, and ROI move to deployment receipts + scorecards |
 
 ## Related
 
 - `docs/adlc/ADLC.md` — Agent Development Life Cycle
 - `docs/execution/10H_QUEEN_SWARM_PLAN.md` — active 10h swarm
 - `schemas/agent-card/agent-card.schema.json`
+- `docs/operations/AGENT_ECONOMICS_AND_CAPABILITY.md`
+- `observability/` — deployment goals, metric catalog, adoption snapshot, synthetic receipt examples
 - `cards/hosts/*`
 - Estate: `starlight/ECOSYSTEM.md`
+
+## Private business ops cell (2026-08-10)
+
+Internal supervisor stack under Starlight Operator (not a public brand host):
+
+- [BUSINESS_OPS_ORG.md](BUSINESS_OPS_ORG.md)
+- [../operations/BUSINESS_AGENT_SUPERVISOR_STACK.md](../operations/BUSINESS_AGENT_SUPERVISOR_STACK.md)
+- Cards: `biz-ops-supervisor` + `biz-*` specialists (draft)
