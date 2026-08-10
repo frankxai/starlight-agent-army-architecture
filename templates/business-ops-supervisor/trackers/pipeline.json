@@ -1,0 +1,24 @@
+{
+  "schema_version": "biz-sales-pipeline.v1",
+  "leads": [
+    {
+      "id": "lead-example",
+      "name": "Example Co",
+      "stage": "discover",
+      "owner": "founder",
+      "value_estimate": null,
+      "next_action": "draft proposal",
+      "next_action_due": "2026-08-10",
+      "notes": "replace with real leads"
+    }
+  ],
+  "stages": [
+    "discover",
+    "qualify",
+    "propose",
+    "negotiate",
+    "won",
+    "lost",
+    "nurture"
+  ]
+}

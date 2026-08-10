@@ -34,6 +34,38 @@ For the neutral architecture layer, see [agentic-architecture-field-guide](https
 | Swarm role contracts | Generic awesome-list curation |
 | SIS memory/provenance policy | Secrets or credentials |
 | Deployment recipes | Production hosting for your fleet |
+| **Agent Cards + ADLC + brand portfolio SSOT** | Brand marketing sites' full UI implementation |
+
+## Agent Portfolio + ADLC (2026-08-10)
+
+Single strategy home for faced agents across GenCreator, FrankX, Starlight ops, Arcanea (next), and AI CoE.
+
+| Artifact | Path |
+| --- | --- |
+| Brand decisions | [docs/agent-portfolio/BRAND_AGENT_PORTFOLIO.md](docs/agent-portfolio/BRAND_AGENT_PORTFOLIO.md) |
+| Agent Development Life Cycle | [docs/adlc/ADLC.md](docs/adlc/ADLC.md) |
+| Economics, capability, and SMART goals | [docs/operations/AGENT_ECONOMICS_AND_CAPABILITY.md](docs/operations/AGENT_ECONOMICS_AND_CAPABILITY.md) |
+| Adoption + deployment profiles | [observability/README.md](observability/README.md) |
+| 10h Queen execution | [docs/execution/10H_QUEEN_SWARM_PLAN.md](docs/execution/10H_QUEEN_SWARM_PLAN.md) |
+| Next 10h backlog | [docs/execution/NEXT_10H.md](docs/execution/NEXT_10H.md) |
+| **USE full business ops stack** | [docs/operations/BUSINESS_OPS_USE.md](docs/operations/BUSINESS_OPS_USE.md) |
+| **Business Ops Supervisor Stack** | [docs/operations/BUSINESS_AGENT_SUPERVISOR_STACK.md](docs/operations/BUSINESS_AGENT_SUPERVISOR_STACK.md) |
+| Business ops org | [docs/agent-portfolio/BUSINESS_OPS_ORG.md](docs/agent-portfolio/BUSINESS_OPS_ORG.md) |
+| Business ops template | [templates/business-ops-supervisor/](templates/business-ops-supervisor/) |
+| Card schema | [schemas/agent-card/agent-card.schema.json](schemas/agent-card/agent-card.schema.json) |
+| Host cards | `cards/hosts/` (Gen-Ω, FrankX Concierge, Starlight Operator, Lumina draft) |
+| Specialists | `cards/specialists/` (GenCreator L2 set) |
+| KB packs | `kb-packs/` |
+| Web load contract | [docs/execution/WEB_LOAD_CONTRACT.md](docs/execution/WEB_LOAD_CONTRACT.md) |
+
+```powershell
+python scripts/validate_agent_cards.py
+python scripts/run_eval_suite.py
+python scripts/validate_agent_observability.py
+python scripts/calculate_agent_scorecard.py --profile observability/deployments/gencreator-studio-gen-omega.json --receipts observability/examples/gencreator-pilot.sample.json --expected-runs 3
+```
+
+**Law:** identity lives in cards; Vercel AI SDK is product UI; Hermes is private L4–L5 ops; OpenAI/Google ADKs are optional backends only. L0–L5 is an operating/autonomy tier, while capability and ROI require live deployment receipts.
 
 ## Quickstart
 
@@ -43,6 +75,7 @@ For the neutral architecture layer, see [agentic-architecture-field-guide](https
 | Run a repo-control workflow | [Control-plane workflow](docs/control-plane-workflow.md) |
 | Configure gateway policy | [OpenClaw gateway example](configs/openclaw-gateway.example.json) |
 | Configure research harness | [DeepAgents harness example](configs/deepagents-harness.example.yaml) |
+| Measure cost, capability, and ROI | [Agent economics and capability](docs/operations/AGENT_ECONOMICS_AND_CAPABILITY.md) |
 | Verify machine readiness | [Health checks](docs/health-checks.md) |
 
 ```powershell

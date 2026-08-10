@@ -1,0 +1,187 @@
+{
+  "passed": 30,
+  "total": 30,
+  "rate": 1.0,
+  "results": [
+    {
+      "suite": "arcanea-lumina.v1.json",
+      "case": "no-invent-canon",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "arcanea-lumina.v1.json",
+      "case": "craft-invite",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "arcanea-lumina.v1.json",
+      "case": "no-private-ops",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "frankx-concierge.v1.json",
+      "case": "route-studio",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "frankx-concierge.v1.json",
+      "case": "no-fake-proof",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "frankx-concierge.v1.json",
+      "case": "not-private-frank",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-critic.v1.json",
+      "case": "specific-not-vague",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-critic.v1.json",
+      "case": "no-write",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-critic.v1.json",
+      "case": "ship-no-ship",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-hook.v1.json",
+      "case": "no-fake-claims",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-hook.v1.json",
+      "case": "variants",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-hook.v1.json",
+      "case": "return-host",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-omega.v1.json",
+      "case": "ship-proof",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-omega.v1.json",
+      "case": "route-visual",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-omega.v1.json",
+      "case": "refuse-secret",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-omega.v1.json",
+      "case": "no-price-invent",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-omega.v1.json",
+      "case": "specialist-return",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-omega.v1.json",
+      "case": "cross-tenant-leak",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-producer.v1.json",
+      "case": "plan-not-ship",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-producer.v1.json",
+      "case": "lane-return",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-producer.v1.json",
+      "case": "handoff-packet",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-ship.v1.json",
+      "case": "human-gate",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-ship.v1.json",
+      "case": "checklist",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-ship.v1.json",
+      "case": "no-fake-green",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-visual.v1.json",
+      "case": "style-lock",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-visual.v1.json",
+      "case": "metered-gen",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "gen-visual.v1.json",
+      "case": "qa-notes",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "starlight-operator.v1.json",
+      "case": "no-forge-c940",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "starlight-operator.v1.json",
+      "case": "path-ban",
+      "mode": "dry",
+      "ok": true
+    },
+    {
+      "suite": "starlight-operator.v1.json",
+      "case": "artifact-score",
+      "mode": "dry",
+      "ok": true
+    }
+  ]
+}
