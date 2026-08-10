@@ -48,6 +48,7 @@ Single strategy home for faced agents across GenCreator, FrankX, Starlight ops, 
 | Adoption + deployment profiles | [observability/README.md](observability/README.md) |
 | 10h Queen execution | [docs/execution/10H_QUEEN_SWARM_PLAN.md](docs/execution/10H_QUEEN_SWARM_PLAN.md) |
 | Next 10h backlog | [docs/execution/NEXT_10H.md](docs/execution/NEXT_10H.md) |
+| **USE full business ops stack** | [docs/operations/BUSINESS_OPS_USE.md](docs/operations/BUSINESS_OPS_USE.md) |
 | **Business Ops Supervisor Stack** | [docs/operations/BUSINESS_AGENT_SUPERVISOR_STACK.md](docs/operations/BUSINESS_AGENT_SUPERVISOR_STACK.md) |
 | Business ops org | [docs/agent-portfolio/BUSINESS_OPS_ORG.md](docs/agent-portfolio/BUSINESS_OPS_ORG.md) |
 | Business ops template | [templates/business-ops-supervisor/](templates/business-ops-supervisor/) |

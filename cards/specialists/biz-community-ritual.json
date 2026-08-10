@@ -6,7 +6,7 @@
   "brand": "starlight",
   "host": false,
   "parent_host_id": "starlight-operator",
-  "status": "draft",
+  "status": "active",
   "identity": {
     "display_name": "Community Ritual",
     "tagline": "Leaderboard, shoutouts, demo day reminders.",
@@ -113,6 +113,8 @@
     ],
     "human_owner": "va_or_community_lead",
     "maturity": "partial",
-    "maps_to_existing": "gencreator-community, build-in-public; ritual automation incomplete"
+    "maps_to_existing": "gencreator-community, build-in-public; ritual automation incomplete",
+    "activation": "usable_full_stack_2026-08-10",
+    "use_guide": "docs/operations/BUSINESS_OPS_USE.md"
   }
 }

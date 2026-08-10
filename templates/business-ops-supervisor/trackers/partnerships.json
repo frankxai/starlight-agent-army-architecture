@@ -1,0 +1,14 @@
+{
+  "schema_version": "biz-partnerships.v1",
+  "targets": [
+    {
+      "id": "partner-example",
+      "name": "Example Partner",
+      "fit_score": 0,
+      "status": "research",
+      "owner": "va_or_sales",
+      "next_follow_up": "2026-08-10",
+      "notes": ""
+    }
+  ]
+}

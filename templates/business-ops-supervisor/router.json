@@ -1,0 +1,190 @@
+{
+  "schema_version": "biz-ops-router.v1",
+  "supervisor_id": "biz-ops-supervisor",
+  "default_on_ambiguous": "biz-ops-supervisor",
+  "routes": [
+    {
+      "id": "biz-ops-supervisor",
+      "title": "Business Ops Supervisor",
+      "intents": [
+        "route",
+        "prioritize",
+        "mission board",
+        "what should we do",
+        "supervisor",
+        "/biz"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-ops-supervisor.md",
+      "artifact": "mission-board.md"
+    },
+    {
+      "id": "biz-founder-capture",
+      "title": "Founder Capture",
+      "intents": [
+        "voice note",
+        "capture",
+        "brain dump",
+        "telegram dump",
+        "messy idea"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-founder-capture.md",
+      "artifact": "capture-packet.md"
+    },
+    {
+      "id": "biz-chief-of-staff",
+      "title": "Chief of Staff",
+      "intents": [
+        "weekly brief",
+        "priorities",
+        "deadlines",
+        "cos",
+        "chief of staff",
+        "this week"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-chief-of-staff.md",
+      "artifact": "weekly-brief.md"
+    },
+    {
+      "id": "biz-delegation",
+      "title": "Delegation",
+      "intents": [
+        "delegate",
+        "task packet",
+        "clean task",
+        "assign VA",
+        "definition of done"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-delegation.md",
+      "artifact": "task-packet.md"
+    },
+    {
+      "id": "biz-recruiting",
+      "title": "Recruiting",
+      "intents": [
+        "hire",
+        "role post",
+        "JD",
+        "screen candidate",
+        "recruiting",
+        "shortlist"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-recruiting.md",
+      "artifact": "recruiting-packet.md"
+    },
+    {
+      "id": "biz-bounty",
+      "title": "Bounty",
+      "intents": [
+        "bounty",
+        "quest",
+        "reward",
+        "contributor challenge",
+        "rubric reward"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-bounty.md",
+      "artifact": "quest-spec.md"
+    },
+    {
+      "id": "biz-contributor-onboarding",
+      "title": "Contributor Onboarding",
+      "intents": [
+        "onboard",
+        "welcome pack",
+        "first tasks",
+        "contributor start"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-contributor-onboarding.md",
+      "artifact": "onboarding-pack.md"
+    },
+    {
+      "id": "biz-qa-red-team",
+      "title": "QA / Red Team",
+      "intents": [
+        "qa",
+        "red team",
+        "review",
+        "hallucination",
+        "brand fit",
+        "compliance",
+        "claims"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-qa-red-team.md",
+      "artifact": "qa-report.md"
+    },
+    {
+      "id": "biz-content-hydra",
+      "title": "Content Hydra",
+      "intents": [
+        "content",
+        "newsletter",
+        "thread",
+        "script",
+        "repurpose",
+        "hydra",
+        "post draft"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-content-hydra.md",
+      "artifact": "content-hydra-set.md"
+    },
+    {
+      "id": "biz-partnership",
+      "title": "Partnership",
+      "intents": [
+        "partner",
+        "outreach",
+        "collab",
+        "alliance",
+        "follow up partner"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-partnership.md",
+      "artifact": "partnership-pack.md"
+    },
+    {
+      "id": "biz-runway",
+      "title": "Runway",
+      "intents": [
+        "runway",
+        "burn",
+        "ROI",
+        "budget",
+        "spend decision",
+        "cash"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-runway.md",
+      "artifact": "runway-decision.md"
+    },
+    {
+      "id": "biz-sales-pipeline",
+      "title": "Sales Pipeline",
+      "intents": [
+        "sales",
+        "CRM",
+        "proposal",
+        "lead",
+        "pipeline",
+        "nudge lead"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-sales-pipeline.md",
+      "artifact": "sales-update.md"
+    },
+    {
+      "id": "biz-community-ritual",
+      "title": "Community Ritual",
+      "intents": [
+        "community",
+        "leaderboard",
+        "shoutout",
+        "demo day",
+        "ritual"
+      ],
+      "playbook": "docs/operations/business-ops-playbooks/biz-community-ritual.md",
+      "artifact": "ritual-pack.md"
+    }
+  ],
+  "rules": [
+    "Route to exactly one specialist unless supervisor explicitly parallelizes with leases",
+    "QA Red Team after Content Hydra / public drafts / legal-adjacent",
+    "gstack only for code artifacts",
+    "Never auto publish/pay/send/hire"
+  ]
+}

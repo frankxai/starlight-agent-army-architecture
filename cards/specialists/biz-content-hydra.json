@@ -6,7 +6,7 @@
   "brand": "starlight",
   "host": false,
   "parent_host_id": "starlight-operator",
-  "status": "draft",
+  "status": "active",
   "identity": {
     "display_name": "Content Hydra",
     "tagline": "Turns ideas into posts, clips, newsletters, and scripts.",
@@ -116,6 +116,8 @@
     ],
     "human_owner": "content_human",
     "maturity": "strong",
-    "maps_to_existing": "content-lifecycle-os, frankx content skills, Gen-\u03a9 specialists, multi-brand repurposing"
+    "maps_to_existing": "content-lifecycle-os, frankx content skills, Gen-\u03a9 specialists, multi-brand repurposing",
+    "activation": "usable_full_stack_2026-08-10",
+    "use_guide": "docs/operations/BUSINESS_OPS_USE.md"
   }
 }

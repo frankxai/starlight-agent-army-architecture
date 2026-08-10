@@ -6,7 +6,7 @@
   "brand": "starlight",
   "host": false,
   "parent_host_id": "starlight-operator",
-  "status": "draft",
+  "status": "active",
   "identity": {
     "display_name": "Founder Capture",
     "tagline": "Turns voice notes and chats into tasks, offers, posts, and SOPs.",
@@ -117,6 +117,8 @@
     ],
     "human_owner": "founder",
     "maturity": "partial",
-    "maps_to_existing": "audio-producer, content-lifecycle-os, voice memo pipelines, Telegram capture"
+    "maps_to_existing": "audio-producer, content-lifecycle-os, voice memo pipelines, Telegram capture",
+    "activation": "usable_full_stack_2026-08-10",
+    "use_guide": "docs/operations/BUSINESS_OPS_USE.md"
   }
 }

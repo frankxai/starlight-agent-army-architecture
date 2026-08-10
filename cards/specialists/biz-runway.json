@@ -6,7 +6,7 @@
   "brand": "starlight",
   "host": false,
   "parent_host_id": "starlight-operator",
-  "status": "draft",
+  "status": "active",
   "identity": {
     "display_name": "Runway",
     "tagline": "Tracks burn, revenue, ROI, payback, and next spend decision.",
@@ -115,6 +115,8 @@
     ],
     "human_owner": "founder_plus_accountant",
     "maturity": "strong",
-    "maps_to_existing": "cfo skill, agentic-money-os, token tracker, business/cfo"
+    "maps_to_existing": "cfo skill, agentic-money-os, token tracker, business/cfo",
+    "activation": "usable_full_stack_2026-08-10",
+    "use_guide": "docs/operations/BUSINESS_OPS_USE.md"
   }
 }

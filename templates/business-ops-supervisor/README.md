@@ -34,3 +34,14 @@ Portable starting point for a **supervisor architecture** of private business ag
 - Maker ≠ checker  
 - No second task bus if swarm-bus / work-ledger already owns durability  
 - Public product agents never load `private_vault` cards  
+
+
+## Full-stack use (all roles)
+
+See `docs/operations/BUSINESS_OPS_USE.md` and playbooks in `docs/operations/business-ops-playbooks/`.
+
+```bash
+python scripts/biz_ops_init_run.py
+python scripts/biz_ops_route.py "weekly priorities"
+python scripts/biz_ops_status.py
+```

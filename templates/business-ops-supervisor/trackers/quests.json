@@ -1,0 +1,21 @@
+{
+  "schema_version": "biz-bounty-quests.v1",
+  "quests": [
+    {
+      "id": "quest-example",
+      "title": "Example quest",
+      "status": "draft",
+      "reward_terms": "Human-approved fixed reward; no auto-pay",
+      "rubric": {
+        "ship_bar": 70,
+        "criteria": [
+          "scope complete",
+          "tests/docs",
+          "quality"
+        ]
+      },
+      "submissions": [],
+      "payment_state": "not_authorized"
+    }
+  ]
+}

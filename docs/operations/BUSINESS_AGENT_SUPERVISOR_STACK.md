@@ -104,30 +104,32 @@ Founder (human owner + gates)
 
 ## Massive action plan (phased)
 
-### Phase 0 — Lock doctrine (done / this PR lane)
+### Phase 0 — Lock doctrine — DONE
 - [x] Gap map + external research synthesis  
-- [x] Draft cards under Starlight Operator  
+- [x] Cards under Starlight Operator (all 12 + supervisor)  
 - [x] Template pack + org doc  
-- [ ] Validate cards (`python scripts/validate_agent_cards.py`)  
-- [ ] Draft PR on army-architecture branch  
+- [x] Validate cards (22/22)  
+- [x] Draft PR #1 updated  
 
-### Phase 1 — Wire live routing (next, 1–2 sessions)
-1. Add supervisor router skill note or Hermes command `/biz` → routes to `biz-*` cards.  
-2. Map Chief of Staff weekly brief onto existing outcome cockpit + work ledger.  
-3. Bind Content Hydra → Gen-Ω / frankx content skills (no second content stack).  
-4. Bind QA Red Team → claims-guard + gstack `/review` `/qa` `/cso`.  
-5. Bind Runway → CFO / money-os read-only dashboards.  
+### Phase 1 — Full stack usable — DONE (2026-08-10)
+- [x] Playbooks for **all** roles — `docs/operations/business-ops-playbooks/`  
+- [x] USE manual — `docs/operations/BUSINESS_OPS_USE.md`  
+- [x] Router + init + status scripts — `scripts/biz_ops_*.py`  
+- [x] Private runtime — `~/.starlight/business-ops/` (all roles seeded)  
+- [x] Trackers: sales pipeline, quests, partnerships, rituals  
+- [x] Hermes skill v2 **operate** full roster  
+- [x] First live artifacts: mission board, CoS brief, content hydra, QA, runway, bounty  
 
-### Phase 2 — Close real gaps (bounded product work)
-1. **Bounty** runtime: quest schema + rubric + human-gated reward ledger (private ops, not crypto theater).  
-2. **Sales CRM** thin adapter: stages + proposal draft + follow-up queue (Notion/Airtable/HubSpot pick one).  
-3. **Founder Capture** pipeline: voice → structured packet → CoS inbox (Himalaya/Telegram already partial).  
-4. **Onboarding** pack generator from role + first tasks templates.  
+### Phase 2 — Deepen with real data (ongoing use)
+1. Fill trackers with real leads/partners/quests (not examples).  
+2. Voice/Telegram capture → Founder Capture on every brain dump.  
+3. VA owns CoS/Delegation cadence.  
+4. Accountant-linked runway numbers when available.  
 
 ### Phase 3 — Optional leverage (evaluate, don’t merge identity)
-1. **Agent HQ**: enable for coding missions when Copilot tier includes Claude/Codex; keep Queen as estate supervisor.  
-2. **Paperclip pilot**: read-only org chart over our cards if admission gate passes; no second task bus.  
-3. **agentic-business-os**: for client/foundry installs, export sanitized subset of this stack as a pack.  
+1. **Agent HQ**: coding missions when Copilot tier includes Claude/Codex.  
+2. **Paperclip pilot**: org/budget UI only after admission gate; no second task bus.  
+3. **agentic-business-os**: sanitized export for foundry clients.  
 
 ### Explicit non-goals
 - Building “Paperclip but Starlight” as a greenfield product this week  

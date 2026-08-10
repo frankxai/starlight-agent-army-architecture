@@ -6,7 +6,7 @@
   "brand": "starlight",
   "host": false,
   "parent_host_id": "starlight-operator",
-  "status": "draft",
+  "status": "active",
   "identity": {
     "display_name": "Bounty",
     "tagline": "Creates quests, scoring rubrics, and reward terms.",
@@ -112,6 +112,8 @@
     ],
     "human_owner": "va",
     "maturity": "gap",
-    "maps_to_existing": "Queen job contracts + work ledger patterns; no dedicated bounty runtime yet"
+    "maps_to_existing": "Queen job contracts + work ledger patterns; no dedicated bounty runtime yet",
+    "activation": "usable_full_stack_2026-08-10",
+    "use_guide": "docs/operations/BUSINESS_OPS_USE.md"
   }
 }

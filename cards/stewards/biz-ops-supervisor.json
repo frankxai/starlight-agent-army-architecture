@@ -6,7 +6,7 @@
   "brand": "starlight",
   "host": false,
   "parent_host_id": "starlight-operator",
-  "status": "draft",
+  "status": "active",
   "identity": {
     "display_name": "Business Ops Supervisor",
     "tagline": "Mission control for private business-ops agent stack \u2014 routes work, budgets attention, enforces human gates.",
@@ -172,6 +172,8 @@
     ],
     "human_owner": "founder",
     "maturity": "strong",
-    "maps_to_existing": "Starlight Queen + Hermes + swarm bus + outcome cockpit"
+    "maps_to_existing": "Starlight Queen + Hermes + swarm bus + outcome cockpit",
+    "activation": "usable_full_stack_2026-08-10",
+    "use_guide": "docs/operations/BUSINESS_OPS_USE.md"
   }
 }

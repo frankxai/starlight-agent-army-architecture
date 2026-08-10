@@ -6,7 +6,7 @@
   "brand": "starlight",
   "host": false,
   "parent_host_id": "starlight-operator",
-  "status": "draft",
+  "status": "active",
   "identity": {
     "display_name": "Partnership",
     "tagline": "Finds targets, drafts outreach, tracks follow-ups.",
@@ -113,6 +113,8 @@
     ],
     "human_owner": "va_or_sales",
     "maturity": "partial",
-    "maps_to_existing": "partner hubs, roundtable messaging, Dream100 patterns"
+    "maps_to_existing": "partner hubs, roundtable messaging, Dream100 patterns",
+    "activation": "usable_full_stack_2026-08-10",
+    "use_guide": "docs/operations/BUSINESS_OPS_USE.md"
   }
 }

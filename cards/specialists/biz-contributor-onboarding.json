@@ -6,7 +6,7 @@
   "brand": "starlight",
   "host": false,
   "parent_host_id": "starlight-operator",
-  "status": "draft",
+  "status": "active",
   "identity": {
     "display_name": "Contributor Onboarding",
     "tagline": "Sends welcome docs, learning paths, and first tasks.",
@@ -113,6 +113,8 @@
     ],
     "human_owner": "va",
     "maturity": "partial",
-    "maps_to_existing": "docs/onboarding patterns; not a single agent card yet"
+    "maps_to_existing": "docs/onboarding patterns; not a single agent card yet",
+    "activation": "usable_full_stack_2026-08-10",
+    "use_guide": "docs/operations/BUSINESS_OPS_USE.md"
   }
 }

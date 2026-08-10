@@ -6,7 +6,7 @@
   "brand": "starlight",
   "host": false,
   "parent_host_id": "starlight-operator",
-  "status": "draft",
+  "status": "active",
   "identity": {
     "display_name": "QA / Red Team",
     "tagline": "Checks hallucinations, brand fit, and legal/compliance flags.",
@@ -114,6 +114,8 @@
     ],
     "human_owner": "va_plus_founder",
     "maturity": "strong",
-    "maps_to_existing": "claims-guard packs, design review, gstack /cso /review patterns, security-auditor"
+    "maps_to_existing": "claims-guard packs, design review, gstack /cso /review patterns, security-auditor",
+    "activation": "usable_full_stack_2026-08-10",
+    "use_guide": "docs/operations/BUSINESS_OPS_USE.md"
   }
 }

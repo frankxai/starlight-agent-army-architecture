@@ -6,7 +6,7 @@
   "brand": "starlight",
   "host": false,
   "parent_host_id": "starlight-operator",
-  "status": "draft",
+  "status": "active",
   "identity": {
     "display_name": "Recruiting",
     "tagline": "Writes role posts, screens applications, summarizes candidates.",
@@ -114,6 +114,8 @@
     ],
     "human_owner": "va_plus_founder",
     "maturity": "partial",
-    "maps_to_existing": "dream100-talent-magnet, hr-agency-agentic-os (partial)"
+    "maps_to_existing": "dream100-talent-magnet, hr-agency-agentic-os (partial)",
+    "activation": "usable_full_stack_2026-08-10",
+    "use_guide": "docs/operations/BUSINESS_OPS_USE.md"
   }
 }
