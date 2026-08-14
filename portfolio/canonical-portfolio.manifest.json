@@ -1,0 +1,943 @@
+{
+  "schema_version": "compiled-canonical-portfolio-manifest.v1",
+  "portfolio_id": "starlight-intelligence-canonical-portfolio",
+  "portfolio_version": "1.0.0",
+  "status": "draft",
+  "source": "portfolio/canonical-portfolio.v1.json",
+  "source_digest": "sha256:da969f005eb4d7a4dfe427aa94d1226af61f9e62a7be9bef974ad55b646735f4",
+  "compiler": {
+    "id": "starlight-canonical-portfolio-compiler",
+    "version": "1.0.0",
+    "source": "scripts/generate_canonical_portfolio.py",
+    "source_digest": "sha256:a1411aae2f0a10fc87682e780f82ba846c352b55c1e9c9bcf6dcdb5447ba37f4"
+  },
+  "counts": {
+    "swarms": 10,
+    "agents": 50,
+    "cards": 50,
+    "prompt_contracts": 50,
+    "eval_suites": 50,
+    "graph_edges": 212,
+    "capability_packs": 1
+  },
+  "capability_pack": {
+    "pack_id": "starlight-intelligence-canonical-portfolio-capabilities@sha256:51212fcdbe85433a30949bfb3352761515e6fd4b632939c3634349334b01d31c",
+    "content_digest": "sha256:51212fcdbe85433a30949bfb3352761515e6fd4b632939c3634349334b01d31c",
+    "path": "capability-packs/canonical-portfolio/sha256-51212fcdbe85433a30949bfb3352761515e6fd4b632939c3634349334b01d31c/manifest.json",
+    "immutable": true,
+    "grants_authority": false
+  },
+  "image_asset_contract": {
+    "expected_count": 50,
+    "path_template": "assets/starlight-constellation/v1/agents/<swarm-id>/<agent-id>.webp",
+    "avatar_id_template": "<agent-id>-v1",
+    "compiler_writes_assets": false
+  },
+  "evaluation_evidence": {
+    "structural_only": true,
+    "live_eval_status": "not_run",
+    "claim": "Structural validation and fixture linkage only; no live model-quality or deployment claim"
+  },
+  "projections": [
+    {
+      "kind": "agent_card",
+      "agent_id": "aegis-trust-conductor",
+      "path": "cards/portfolio/aegis-trust-conductor.json",
+      "sha256": "9e3a802825d919c91272952346a976a7859cf8d5c7d9b91a341f4afd8abd9e0a"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "aegis-trust-conductor",
+      "path": "evals/portfolio/aegis-trust-conductor.v1.json",
+      "sha256": "afa8481af2191eee8d75291c4d6e037355ad01526d0d89397476988791a3a562"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "aegis-trust-conductor",
+      "path": "cards/portfolio/prompts/aegis-trust-conductor.SYSTEM.md",
+      "sha256": "d45d7ca6842d3bcda6226133742312a5725934b9d72734937491e9f001dfa2e5"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "aria-story-architect",
+      "path": "cards/portfolio/aria-story-architect.json",
+      "sha256": "e20626e9993202eed6109f3eaf7a819e3eeaa5391a30ddc958c1e2056893e1d5"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "aria-story-architect",
+      "path": "evals/portfolio/aria-story-architect.v1.json",
+      "sha256": "a5545de22606cfe9ef31f00b25cda2294b0df6374c463c5b2663d63709e55fcc"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "aria-story-architect",
+      "path": "cards/portfolio/prompts/aria-story-architect.SYSTEM.md",
+      "sha256": "4be721a610eecea6f8c46b7b5813a202de87e651d2fed4d92a5cf72a9c2d0c4e"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "astra-sovereign",
+      "path": "cards/portfolio/astra-sovereign.json",
+      "sha256": "808c47b653ac5fed0518dacb11217be8868dd9b79a62ddb6374266839d1cdc2e"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "astra-sovereign",
+      "path": "evals/portfolio/astra-sovereign.v1.json",
+      "sha256": "4ba3b1dc44699465d05d84b56567ccf2e20a9af7277f6f8c145de50e1e4623ad"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "astra-sovereign",
+      "path": "cards/portfolio/prompts/astra-sovereign.SYSTEM.md",
+      "sha256": "04c674da0d275c1003d58258e827498a698ac83f2b149ce110e479b249c721df"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "atlas-signal-scout",
+      "path": "cards/portfolio/atlas-signal-scout.json",
+      "sha256": "829bdda7b3196ecb7c83609aaa11e0dfa77ce55e523303102e579dfbb78c85f0"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "atlas-signal-scout",
+      "path": "evals/portfolio/atlas-signal-scout.v1.json",
+      "sha256": "48ae065063cb0ccebeddbe2a98486cb25c284619f748164605af7bb878c8bb95"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "atlas-signal-scout",
+      "path": "cards/portfolio/prompts/atlas-signal-scout.SYSTEM.md",
+      "sha256": "ba88db1464790787002ab0803bf39670d8d5d06f3e1cd8a69710d30df2623640"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "beacon-incident-coordinator",
+      "path": "cards/portfolio/beacon-incident-coordinator.json",
+      "sha256": "c6703e79e7cfe3c566326e79daaec073c799097c939fcff742ac3c37b7b7c417"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "beacon-incident-coordinator",
+      "path": "evals/portfolio/beacon-incident-coordinator.v1.json",
+      "sha256": "364ed266e52c86eaebbdb6bf90593513f846d4d046e77f98322dc33dcc606871"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "beacon-incident-coordinator",
+      "path": "cards/portfolio/prompts/beacon-incident-coordinator.SYSTEM.md",
+      "sha256": "5148c193bc24c8b4b4fa66f6b19dca9abc99e16ee1bcdc5e3b7d01b7823f4d8c"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "bridge-partnership-architect",
+      "path": "cards/portfolio/bridge-partnership-architect.json",
+      "sha256": "31e6780fc5fdaf3bab9ba111aed67673e99515625ed0caa69aad5da77d0153eb"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "bridge-partnership-architect",
+      "path": "evals/portfolio/bridge-partnership-architect.v1.json",
+      "sha256": "0c7d825113183a3245463bd8b94739b9d0f128cfe5371ce43b580debb8ccd9c6"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "bridge-partnership-architect",
+      "path": "cards/portfolio/prompts/bridge-partnership-architect.SYSTEM.md",
+      "sha256": "b5af3c1507dc165942de570e17790b0e8825e2ba9d72aa619962011ff0b65994"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "cadence-release-producer",
+      "path": "cards/portfolio/cadence-release-producer.json",
+      "sha256": "e7ab5e26dd565fe39a66f4938cf8abcc5e75856d075d31bccd848461f91650db"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "cadence-release-producer",
+      "path": "evals/portfolio/cadence-release-producer.v1.json",
+      "sha256": "d17d0e017da2372698bd418de4d74eb134daf5cbe5c9c5d2813eeb2eb12986e5"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "cadence-release-producer",
+      "path": "cards/portfolio/prompts/cadence-release-producer.SYSTEM.md",
+      "sha256": "54f78a090e2300c668b945ea2afe8eabeb297cd964ae1e87f90c0d2064d9d308"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "cassian-resource-steward",
+      "path": "cards/portfolio/cassian-resource-steward.json",
+      "sha256": "7b5b28389a9f874eeea8aaa505ddada04640fd9f37997d056f5cf5841eac6356"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "cassian-resource-steward",
+      "path": "evals/portfolio/cassian-resource-steward.v1.json",
+      "sha256": "6f970e575483f637a0ed631b95e459fc41bc9fffe3b728c971f9320f32395987"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "cassian-resource-steward",
+      "path": "cards/portfolio/prompts/cassian-resource-steward.SYSTEM.md",
+      "sha256": "269f5edda77827da2e733df6d2bee9e0c1640618eef9806c065cdd38ba2c2bf2"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "cipher-privacy-steward",
+      "path": "cards/portfolio/cipher-privacy-steward.json",
+      "sha256": "e80ff28ce0f1f50d339be0dac2963d94c77e991bcd020b826c354408294a09f6"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "cipher-privacy-steward",
+      "path": "evals/portfolio/cipher-privacy-steward.v1.json",
+      "sha256": "2a0494cdf35cfed33ef67c2b4a0987254d8b90f5e3e15caf83f224c701b6ca97"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "cipher-privacy-steward",
+      "path": "cards/portfolio/prompts/cipher-privacy-steward.SYSTEM.md",
+      "sha256": "5d9351070c0a57522965754b52de372aa6a0d47dbca7607e0045dd2a3be15c5e"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "clara-deal-critic",
+      "path": "cards/portfolio/clara-deal-critic.json",
+      "sha256": "b2d911d6bdf246cc8f3dd2b72078dcf4d22c9f472b114172a23d76a2f6fc1955"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "clara-deal-critic",
+      "path": "evals/portfolio/clara-deal-critic.v1.json",
+      "sha256": "cea29300b12d8793783f3ab112c628615f4a3ac222d644e69799b51903709010"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "clara-deal-critic",
+      "path": "cards/portfolio/prompts/clara-deal-critic.SYSTEM.md",
+      "sha256": "7d0c7e0596c387d573e96ad3444ea170bf3a9506ce8bcff58e8391ef97575d84"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "delta-forecast-challenger",
+      "path": "cards/portfolio/delta-forecast-challenger.json",
+      "sha256": "9f6e8a716fc24115c0140ecbc1b275ee3e81605f6f28090583e936c420152025"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "delta-forecast-challenger",
+      "path": "evals/portfolio/delta-forecast-challenger.v1.json",
+      "sha256": "52afb74316bfd20f923814feeda14d006909bd5058c0c895484cbb350731ce48"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "delta-forecast-challenger",
+      "path": "cards/portfolio/prompts/delta-forecast-challenger.SYSTEM.md",
+      "sha256": "759861a55cace101224c510bd1ac0bd85b9fa6106256cff55611072d4cb264fd"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "echo-audience-resonance",
+      "path": "cards/portfolio/echo-audience-resonance.json",
+      "sha256": "5755e1079594b833bf6577f30bb69bfda203d7f2648080ca6968691354bdabfd"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "echo-audience-resonance",
+      "path": "evals/portfolio/echo-audience-resonance.v1.json",
+      "sha256": "90a446ee5b65ef91066a879386b491d796bd881b06e7a9e6119e67d48378c196"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "echo-audience-resonance",
+      "path": "cards/portfolio/prompts/echo-audience-resonance.SYSTEM.md",
+      "sha256": "188c7229e68245b4f4501b1876cb7feb63526303618273b167ddb34cc7bbdad6"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "ember-creator-conductor",
+      "path": "cards/portfolio/ember-creator-conductor.json",
+      "sha256": "7f27524d1fc07c0c2e17b5e4be67dc07c4be2e09a537e7f8b3a5faf1da15857a"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "ember-creator-conductor",
+      "path": "evals/portfolio/ember-creator-conductor.v1.json",
+      "sha256": "d36abbe1e2e2f757aad644037905e91b77498e64e1930f0273630542ae918ba2"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "ember-creator-conductor",
+      "path": "cards/portfolio/prompts/ember-creator-conductor.SYSTEM.md",
+      "sha256": "48255f357d5312ec55c6bce079644b12bb157d7f87623f45605218b6a30ce26b"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "equa-policy-auditor",
+      "path": "cards/portfolio/equa-policy-auditor.json",
+      "sha256": "b15f0742876a8bb68d34cebcfdd3a377a3ff451d653040c5e4854c81886af5f4"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "equa-policy-auditor",
+      "path": "evals/portfolio/equa-policy-auditor.v1.json",
+      "sha256": "53fa633f90188c1ad49b5cefed85d96faac083078de8e73eb1b2996722d1a389"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "equa-policy-auditor",
+      "path": "cards/portfolio/prompts/equa-policy-auditor.SYSTEM.md",
+      "sha256": "e23a5df51d2c55c7376edad5105c1802b899ddceb78810b9f73cb4f9b73cb519"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "harbor-care-navigator",
+      "path": "cards/portfolio/harbor-care-navigator.json",
+      "sha256": "b59c6930d9de0e64df4fed716276136dfcf0fa4f0f75d83f67c9660775a746fc"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "harbor-care-navigator",
+      "path": "evals/portfolio/harbor-care-navigator.v1.json",
+      "sha256": "47b20fcec491d4348f580319cfcd83fad27837e57a98389121fd183503556d99"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "harbor-care-navigator",
+      "path": "cards/portfolio/prompts/harbor-care-navigator.SYSTEM.md",
+      "sha256": "d5b2c9bd1aec8b4b70e0844b92e16f5200726516debd21aff14e325b4e2cbcad"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "horizon-futures-scout",
+      "path": "cards/portfolio/horizon-futures-scout.json",
+      "sha256": "0049ab9072d6a6df46e5e392280d2ee31e61718155a8d656190f00251eec462c"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "horizon-futures-scout",
+      "path": "evals/portfolio/horizon-futures-scout.v1.json",
+      "sha256": "51901404b3299f6fda465ed476967036868a37c369703ad3b83c74dec911e230"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "horizon-futures-scout",
+      "path": "cards/portfolio/prompts/horizon-futures-scout.SYSTEM.md",
+      "sha256": "eab8adfb9111434ebc8d6794b260b3d8c230a0a11866b4dea1b2ec5d6fd6a98b"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "ignis-product-conductor",
+      "path": "cards/portfolio/ignis-product-conductor.json",
+      "sha256": "014b30e3ab300aa5161a3d3a67391aea9bff5cfcb4da2a08da602144a54bb6a9"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "ignis-product-conductor",
+      "path": "evals/portfolio/ignis-product-conductor.v1.json",
+      "sha256": "5b9454dcf28908d45f3411feec15d1122b1994b760feec89ccdb2eb141d8b68b"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "ignis-product-conductor",
+      "path": "cards/portfolio/prompts/ignis-product-conductor.SYSTEM.md",
+      "sha256": "6b8c8d107e82cf3fdf71e1587025d5f59383610a55e2dd1e47fa462361e5e726"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "kai-curriculum-architect",
+      "path": "cards/portfolio/kai-curriculum-architect.json",
+      "sha256": "cb2220c0ecbe14bcbf5ad5c81bb195e28e74a036d6b01662a52ded8051ae94a5"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "kai-curriculum-architect",
+      "path": "evals/portfolio/kai-curriculum-architect.v1.json",
+      "sha256": "7e0249459a60d79c491a823be4a68be3c8589bd6b2e11a1a0934cda2e55d8909"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "kai-curriculum-architect",
+      "path": "cards/portfolio/prompts/kai-curriculum-architect.SYSTEM.md",
+      "sha256": "46aaa528d7ede51eaa31d9cfb922646a91132f0e48f380997838ad0a7a9702b0"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "kinetica-movement-coach",
+      "path": "cards/portfolio/kinetica-movement-coach.json",
+      "sha256": "26f8151fc956c799550b3343c517eadfc8946e646339d76966299b9becfb74b7"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "kinetica-movement-coach",
+      "path": "evals/portfolio/kinetica-movement-coach.v1.json",
+      "sha256": "a0a950b70fcdf62f1efc106cb3249f9bcbea80613d0b400c0fefabeaddaaf61f"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "kinetica-movement-coach",
+      "path": "cards/portfolio/prompts/kinetica-movement-coach.SYSTEM.md",
+      "sha256": "dc14bec17ef281542192fe9da1dccfbbb1f8adc2df158d9ba5fc2a1ab4a92298"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "lattice-interoperability-architect",
+      "path": "cards/portfolio/lattice-interoperability-architect.json",
+      "sha256": "896e9b87e667747e273df0d0fbe70139674c38133edb072c71e9a35d91ddb7bf"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "lattice-interoperability-architect",
+      "path": "evals/portfolio/lattice-interoperability-architect.v1.json",
+      "sha256": "0238039ec2313be15d2305618e966b019ffb258d1a6cbbced306b8a1a22834fe"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "lattice-interoperability-architect",
+      "path": "cards/portfolio/prompts/lattice-interoperability-architect.SYSTEM.md",
+      "sha256": "492c85994119323770cfae74e3e519af310d29aef62e5449f17a9047aa78d099"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "ledger-unit-economist",
+      "path": "cards/portfolio/ledger-unit-economist.json",
+      "sha256": "1c25c6e09ef0c23861f194b7f0014a820ea22393cb46dd68cbc72070f7c07024"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "ledger-unit-economist",
+      "path": "evals/portfolio/ledger-unit-economist.v1.json",
+      "sha256": "dba677d4e8b8a892828260a1c4642f50b4ee20ef0cc38678fdf77a60986597d2"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "ledger-unit-economist",
+      "path": "cards/portfolio/prompts/ledger-unit-economist.SYSTEM.md",
+      "sha256": "e68ce8c99631d522bb92af5a1b5f9c077719cd5a6b3b6ec541324db07fc9de67"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "lyra-research-conductor",
+      "path": "cards/portfolio/lyra-research-conductor.json",
+      "sha256": "8a672577723daec0603a65ae5a0a632ca4e2e72e8aa735fe2c6d6f96bd002f37"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "lyra-research-conductor",
+      "path": "evals/portfolio/lyra-research-conductor.v1.json",
+      "sha256": "9637b19cefd23859c0f62f9b01362ffffe0f2fb1533d8e745c2dd27a466928f3"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "lyra-research-conductor",
+      "path": "cards/portfolio/prompts/lyra-research-conductor.SYSTEM.md",
+      "sha256": "2e5b75cceb3ee10b5fa92f23b9d6b6ab3904fea70b8387752597f0a0a241d8ad"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "maya-operating-model-architect",
+      "path": "cards/portfolio/maya-operating-model-architect.json",
+      "sha256": "c5c8044febd8f2db9263be121ae30645da013f72bcaf28d20da814e11506fa34"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "maya-operating-model-architect",
+      "path": "evals/portfolio/maya-operating-model-architect.v1.json",
+      "sha256": "1cfa21c288bb7740a8d0aa2cdbe5ba2c93143d5e200f49db4274186ae2695671"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "maya-operating-model-architect",
+      "path": "cards/portfolio/prompts/maya-operating-model-architect.SYSTEM.md",
+      "sha256": "49b824ffded95d13210bf65ed54100e48b0ec546eb680ebbe074c07ff307eee6"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "meridian-venture-conductor",
+      "path": "cards/portfolio/meridian-venture-conductor.json",
+      "sha256": "f1e95a8a75f17b4e41bcffc8ebbc475ec7b2f49cc8a70f76a79b9f9ddffa7302"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "meridian-venture-conductor",
+      "path": "evals/portfolio/meridian-venture-conductor.v1.json",
+      "sha256": "04d708ba3d570afd9aa5432f990918d7f4adde138bd6ee8ba06acf5c953f6167"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "meridian-venture-conductor",
+      "path": "cards/portfolio/prompts/meridian-venture-conductor.SYSTEM.md",
+      "sha256": "98b72ae026779fcd2f7a5a62a112918d77586fd55a255d996d4cbe32b77195c2"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "metric-value-realization",
+      "path": "cards/portfolio/metric-value-realization.json",
+      "sha256": "9644b1be8d8fdd18b1fa693682ea79a20efce7693a5192070962e7c792d24f0b"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "metric-value-realization",
+      "path": "evals/portfolio/metric-value-realization.v1.json",
+      "sha256": "fb2499f5ddeb37c160a8ceeaee1787f94db4be9aa5faa034db45a6c85f84ad0f"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "metric-value-realization",
+      "path": "cards/portfolio/prompts/metric-value-realization.SYSTEM.md",
+      "sha256": "7c6a1fdc4c430c9b71aa97db6925bb7a1bc67fc026d5e3c7c811b1118b0b8e67"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "mina-community-steward",
+      "path": "cards/portfolio/mina-community-steward.json",
+      "sha256": "2b5780474b2b815ff453ad062260be0444fee1453d46268a5b271fa150eb4346"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "mina-community-steward",
+      "path": "evals/portfolio/mina-community-steward.v1.json",
+      "sha256": "c67407b761bdf4fb2d5cbdc44d0f9032786b7876342d6623714e26395b083e85"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "mina-community-steward",
+      "path": "cards/portfolio/prompts/mina-community-steward.SYSTEM.md",
+      "sha256": "3b102fbc8b732721312816ac58c1c4c8e8df397a0e23026554686f71098aafe9"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "mira-continuity-keeper",
+      "path": "cards/portfolio/mira-continuity-keeper.json",
+      "sha256": "5188e775c85d1f7907f86563bda499eaae002802d95e467c177b911c3b3b5c99"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "mira-continuity-keeper",
+      "path": "evals/portfolio/mira-continuity-keeper.v1.json",
+      "sha256": "67b3f5a72ae3bc74bd26c1e3280c1ec165ea160a506c57a0c237caca825ca524"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "mira-continuity-keeper",
+      "path": "cards/portfolio/prompts/mira-continuity-keeper.SYSTEM.md",
+      "sha256": "01d2898174e1500df260c10cba1757272fb554b856e386ada60f1db0c6684299"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "nexus-futures-conductor",
+      "path": "cards/portfolio/nexus-futures-conductor.json",
+      "sha256": "20922254e3f8dedb013517e0b4e3159e43378281fab07014bc4f9e000a117f64"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "nexus-futures-conductor",
+      "path": "evals/portfolio/nexus-futures-conductor.v1.json",
+      "sha256": "2226c44898742555369d29a92de1131521b959d0b2d69498b929d8e77d302fd7"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "nexus-futures-conductor",
+      "path": "cards/portfolio/prompts/nexus-futures-conductor.SYSTEM.md",
+      "sha256": "e65e1d4a03253294bae7b6ac889eda30bbbbd84a05252ce14e949bc38a22b3ed"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "nova-customer-discovery",
+      "path": "cards/portfolio/nova-customer-discovery.json",
+      "sha256": "bfaf7495573e5a1b95da3850bdcce1225ebcfd276365b417ac0ed619a5e1974e"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "nova-customer-discovery",
+      "path": "evals/portfolio/nova-customer-discovery.v1.json",
+      "sha256": "bc894333fc14e241c9e6c660052addec896586870a48b47e8c025c2c72d76d82"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "nova-customer-discovery",
+      "path": "cards/portfolio/prompts/nova-customer-discovery.SYSTEM.md",
+      "sha256": "d30b7efafdff9f0db2e954c3fcf780fbbe2ea752305d7d6d1b3bdf07c65506c4"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "orbit-spatial-interface-designer",
+      "path": "cards/portfolio/orbit-spatial-interface-designer.json",
+      "sha256": "70ff27323fa55799b6eb64748aad8fe289dc1db3ce32855ec954aebab957bb4f"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "orbit-spatial-interface-designer",
+      "path": "evals/portfolio/orbit-spatial-interface-designer.v1.json",
+      "sha256": "e67ee8db7f6c0b97d3fd456f9a90f30449dd6783e151fd228f4d97eca6d60942"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "orbit-spatial-interface-designer",
+      "path": "cards/portfolio/prompts/orbit-spatial-interface-designer.SYSTEM.md",
+      "sha256": "9b5f7584b2e329492c5a8779518dde8e2d4dd7f538ebd6e252c698cc7e6a8b56"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "orion-mission-architect",
+      "path": "cards/portfolio/orion-mission-architect.json",
+      "sha256": "bd02e5e34fdd6331cf7d3429ea636308db4e9e0bf9278e15b00dc4697ca51f1d"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "orion-mission-architect",
+      "path": "evals/portfolio/orion-mission-architect.v1.json",
+      "sha256": "ebe6430277df15f4249e945492b33e352735f038ec21cd14c0ca97461031c303"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "orion-mission-architect",
+      "path": "cards/portfolio/prompts/orion-mission-architect.SYSTEM.md",
+      "sha256": "bf0181589450b0581758e37e1f548503ba40513d8b0ef239addcc7726ddd9baa"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "piper-demand-strategist",
+      "path": "cards/portfolio/piper-demand-strategist.json",
+      "sha256": "dacf671ed4ca586bedf8104e885ec698f7fc02366694572fe371d0e63d7b0807"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "piper-demand-strategist",
+      "path": "evals/portfolio/piper-demand-strategist.v1.json",
+      "sha256": "616c0e61aa86bbe50ec830254b0165ba55e1f9f85be79269aad771216f4bc67e"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "piper-demand-strategist",
+      "path": "cards/portfolio/prompts/piper-demand-strategist.SYSTEM.md",
+      "sha256": "c53c5f49ae0d5dc2d9def5f069c6ea3bcaacec37c24e38d407658e9212563fbb"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "pixel-web-experience-architect",
+      "path": "cards/portfolio/pixel-web-experience-architect.json",
+      "sha256": "543b18cf7a24595ca408d90f007f0774c35057fa8b5b40e260c1a79aff8c3f9e"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "pixel-web-experience-architect",
+      "path": "evals/portfolio/pixel-web-experience-architect.v1.json",
+      "sha256": "adc93eabdeb5af9d829ab1b2b271362a750fb2a1b6adb78c7d0ba932296d6bcc"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "pixel-web-experience-architect",
+      "path": "cards/portfolio/prompts/pixel-web-experience-architect.SYSTEM.md",
+      "sha256": "1bfb57a371c2734bcd8e9854866d73c68f466d06185e82090210a60bd75e6054"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "prism-quality-critic",
+      "path": "cards/portfolio/prism-quality-critic.json",
+      "sha256": "0b01d9cef73572db93faa35d68f014fe91b6a0edac7c3d9e0f842c9aab586cd7"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "prism-quality-critic",
+      "path": "evals/portfolio/prism-quality-critic.v1.json",
+      "sha256": "83bf78bf74b23ddc7907a34905f54e04693c01653cbd8b0753f564dda209739b"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "prism-quality-critic",
+      "path": "cards/portfolio/prompts/prism-quality-critic.SYSTEM.md",
+      "sha256": "2b0c9828e2f52b5c26c64932caf4898d86a48261920e8bb80c327e2d0b2407f8"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "pulse-cohort-facilitator",
+      "path": "cards/portfolio/pulse-cohort-facilitator.json",
+      "sha256": "375c67946817f02f009bd24e5c153e29519e7b24319cc1e977df00b73987d4f0"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "pulse-cohort-facilitator",
+      "path": "evals/portfolio/pulse-cohort-facilitator.v1.json",
+      "sha256": "712109b731f4cdf2bda3133cc582ac8a6a329cb2f53a89d71189a1f27f76de60"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "pulse-cohort-facilitator",
+      "path": "cards/portfolio/prompts/pulse-cohort-facilitator.SYSTEM.md",
+      "sha256": "ba730f6db19eaa53126f9ae8ffea6a22389759dd7cfc41d9468cd765f9b06df4"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "quorum-governance-designer",
+      "path": "cards/portfolio/quorum-governance-designer.json",
+      "sha256": "50702e488cc7da5a779e17566a37df6b4949da27f6535a285934a1ebe6ab5c7d"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "quorum-governance-designer",
+      "path": "evals/portfolio/quorum-governance-designer.v1.json",
+      "sha256": "73a821ee7d545f8552e06bd81624ea07cbed3628d48d25fbc961fa8f5f2bfe8e"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "quorum-governance-designer",
+      "path": "cards/portfolio/prompts/quorum-governance-designer.SYSTEM.md",
+      "sha256": "2ff586ecd578bdcf369a5aae07d7c188276a694a33f6032c84771a8ec6c6a564"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "relay-change-enablement",
+      "path": "cards/portfolio/relay-change-enablement.json",
+      "sha256": "9624fc45e83da276c1e535c06c8a3809d1785983da7472dd087ab9ca2bc0df3e"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "relay-change-enablement",
+      "path": "evals/portfolio/relay-change-enablement.v1.json",
+      "sha256": "2ea8fa5b21b77285b3bf6a86d2da93e4ec8d12c9be95ddeff5140bb712575ee2"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "relay-change-enablement",
+      "path": "cards/portfolio/prompts/relay-change-enablement.SYSTEM.md",
+      "sha256": "3ea9a0a9745e03d17749ddea3ab764895a34b529ad5a9e7672d6d0bf43badddc"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "rivet-build-engineer",
+      "path": "cards/portfolio/rivet-build-engineer.json",
+      "sha256": "a8d6f3eb3047de4357a5d8a802b5ce4791022b5e11cb4af94f54656dca224175"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "rivet-build-engineer",
+      "path": "evals/portfolio/rivet-build-engineer.v1.json",
+      "sha256": "6c3e4210803517e1936cf090f93e06404b0228979e0aff63c24c732ccfd904a8"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "rivet-build-engineer",
+      "path": "cards/portfolio/prompts/rivet-build-engineer.SYSTEM.md",
+      "sha256": "579cf21ecad6058103ccf6e89552fe3645b7bb2f10c097eb334541b3e8f98d59"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "rune-learning-evaluator",
+      "path": "cards/portfolio/rune-learning-evaluator.json",
+      "sha256": "b4ebed2a5c2fdac4f862aaaa482e23a46c6afb78bd0895504171be0d1cb9610d"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "rune-learning-evaluator",
+      "path": "evals/portfolio/rune-learning-evaluator.v1.json",
+      "sha256": "84f62e483e2459173da17b2c9b64fe73da6c388a720aa6336f02932efa13431d"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "rune-learning-evaluator",
+      "path": "cards/portfolio/prompts/rune-learning-evaluator.SYSTEM.md",
+      "sha256": "a16ee1b1834617f27ccc77c737fd8defb8870c1506080cf4be4dd53403fbcfbb"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "sentinel-risk-analyst",
+      "path": "cards/portfolio/sentinel-risk-analyst.json",
+      "sha256": "5872bae4ca31a1c8173191075f33dd15168c9832f818ecfb1faebe7166b51c56"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "sentinel-risk-analyst",
+      "path": "evals/portfolio/sentinel-risk-analyst.v1.json",
+      "sha256": "e6fd5e890a0a9e07c5e58876c501c3d51394bf28ebbeed9c84b8890b6f74dd37"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "sentinel-risk-analyst",
+      "path": "cards/portfolio/prompts/sentinel-risk-analyst.SYSTEM.md",
+      "sha256": "6f1ae6048b7c90b8d8ad31d25ab8f730174c0d1384bc168273e18c5abbeb896e"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "serene-reflection-guide",
+      "path": "cards/portfolio/serene-reflection-guide.json",
+      "sha256": "b3ca99cc2e08b954bed677d08469cdde0100a9d4032f0770c6a9c8f6c136979f"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "serene-reflection-guide",
+      "path": "evals/portfolio/serene-reflection-guide.v1.json",
+      "sha256": "227f83a19be2f1eeeaf805c51b24d9a1ed64c9da8b280f3f43ba9ec5d68f5123"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "serene-reflection-guide",
+      "path": "cards/portfolio/prompts/serene-reflection-guide.SYSTEM.md",
+      "sha256": "1c1be4e896eddc78be8f1271d04d5048dedb22821b3f0bad7eee12825d89655b"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "sol-visual-world-director",
+      "path": "cards/portfolio/sol-visual-world-director.json",
+      "sha256": "617c2e86fe04a072a88292f2d1f7157fd8839332eb34aa57938d4ad9dcf24b82"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "sol-visual-world-director",
+      "path": "evals/portfolio/sol-visual-world-director.v1.json",
+      "sha256": "0f6a54475e805517d0a8520315ee018ba06e09b735f67d1b48fe2da8ce40c986"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "sol-visual-world-director",
+      "path": "cards/portfolio/prompts/sol-visual-world-director.SYSTEM.md",
+      "sha256": "f4f7e6e4cb739486b93e7ced309a3f101fc51461305d90c6c2b9434d38572a68"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "solace-flourishing-conductor",
+      "path": "cards/portfolio/solace-flourishing-conductor.json",
+      "sha256": "febda1f4e0e8bd1cccf24e5be4931986a0f10c090614fd42b77a783826ae70e2"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "solace-flourishing-conductor",
+      "path": "evals/portfolio/solace-flourishing-conductor.v1.json",
+      "sha256": "57e211bc258210559048c57f258dd722317cbacf03b586f5782248a8e74e055b"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "solace-flourishing-conductor",
+      "path": "cards/portfolio/prompts/solace-flourishing-conductor.SYSTEM.md",
+      "sha256": "ee97f65e52a168ec7d1fa8293ea61a79c416ebe780de261a955cdd40052b02c0"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "sophia-academy-conductor",
+      "path": "cards/portfolio/sophia-academy-conductor.json",
+      "sha256": "c08301d0db9db005f66d3408dfa6adb8bef6b7e9f7d8e2389bcbdad1e401c312"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "sophia-academy-conductor",
+      "path": "evals/portfolio/sophia-academy-conductor.v1.json",
+      "sha256": "2bcf03ff29f3a54fd719702d24c9777ab8a02f5e870a8e7374aa0befe28d9431"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "sophia-academy-conductor",
+      "path": "cards/portfolio/prompts/sophia-academy-conductor.SYSTEM.md",
+      "sha256": "fe1c87aa6bbcfd88f3cdaaeeb44949b4c1d980c54fb42fbf891dac281e1b5a01"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "soren-synthesis-analyst",
+      "path": "cards/portfolio/soren-synthesis-analyst.json",
+      "sha256": "8298f50c93f2289b0a09c950865350d7c8053c5fc6c538892dc72278149e49cd"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "soren-synthesis-analyst",
+      "path": "evals/portfolio/soren-synthesis-analyst.v1.json",
+      "sha256": "dfc8e41faf653a27ab8599d04899703ae424db7b717d84bba31bb8d78c12a7d0"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "soren-synthesis-analyst",
+      "path": "cards/portfolio/prompts/soren-synthesis-analyst.SYSTEM.md",
+      "sha256": "c425322163c64b51ceb3aef03225e6599fd3c1620ae1ae65628ca3cfed480309"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "terra-nutrition-educator",
+      "path": "cards/portfolio/terra-nutrition-educator.json",
+      "sha256": "88f543b921b0348de7ae1eadc6d029ba7b759f9edc41431526da071d926a517c"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "terra-nutrition-educator",
+      "path": "evals/portfolio/terra-nutrition-educator.v1.json",
+      "sha256": "e77d94719279d7e3e90a4df8bc2cea8221eb1b4477ae89f0f777f383341435bf"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "terra-nutrition-educator",
+      "path": "cards/portfolio/prompts/terra-nutrition-educator.SYSTEM.md",
+      "sha256": "542630648e0eb653ddc2a6b9dbd36b7f37caea200be0539ef0d09a2c0bad26b7"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "tess-system-designer",
+      "path": "cards/portfolio/tess-system-designer.json",
+      "sha256": "42b28757eea751da1c2fc2e954824b88096b525d526c53de40a8a6c8c69659fc"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "tess-system-designer",
+      "path": "evals/portfolio/tess-system-designer.v1.json",
+      "sha256": "ee117424990b126c55ecbc0a235d4258388e6f43899d411af88c57089578b3a8"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "tess-system-designer",
+      "path": "cards/portfolio/prompts/tess-system-designer.SYSTEM.md",
+      "sha256": "57496695807f38bc9a29dd9b96f88ce87bcf329111aada9d728de61647e66b15"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "vector-transformation-conductor",
+      "path": "cards/portfolio/vector-transformation-conductor.json",
+      "sha256": "002e7386f46af61f952ae80274a68d52adbb16c95c47057b6b43bae3a5fa32a3"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "vector-transformation-conductor",
+      "path": "evals/portfolio/vector-transformation-conductor.v1.json",
+      "sha256": "f5dbd226e586d9162f54c2a2d246a48e4f0a86b2be047b479434dd03f764bf23"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "vector-transformation-conductor",
+      "path": "cards/portfolio/prompts/vector-transformation-conductor.SYSTEM.md",
+      "sha256": "d696b09031ebd32dab648a986c9c78a16315fa31fef3ce930b95881d68c96a06"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "vera-decision-verifier",
+      "path": "cards/portfolio/vera-decision-verifier.json",
+      "sha256": "6d207e954cd663536e628b3425bde81b2561590bce46c57d1e81346dbec0712b"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "vera-decision-verifier",
+      "path": "evals/portfolio/vera-decision-verifier.v1.json",
+      "sha256": "2539dc05fe0b3db8f3164024e966e2bb74e493a1390804fe5a49096aaa0f5ec4"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "vera-decision-verifier",
+      "path": "cards/portfolio/prompts/vera-decision-verifier.SYSTEM.md",
+      "sha256": "5d6a3f529fae12b6975cb2cb8247268ab318155581c6884bbd67450b2872872c"
+    },
+    {
+      "kind": "agent_card",
+      "agent_id": "verity-source-auditor",
+      "path": "cards/portfolio/verity-source-auditor.json",
+      "sha256": "dd6bf85bc83df561ad37442162273d81dfa3a49333d0103babf1a42dee0c7dff"
+    },
+    {
+      "kind": "structural_eval_suite",
+      "agent_id": "verity-source-auditor",
+      "path": "evals/portfolio/verity-source-auditor.v1.json",
+      "sha256": "b5dd64655886e24574e2f3b1c7cdf9d3b2a420c39f0f0ce9000a48806173c285"
+    },
+    {
+      "kind": "system_prompt_contract",
+      "agent_id": "verity-source-auditor",
+      "path": "cards/portfolio/prompts/verity-source-auditor.SYSTEM.md",
+      "sha256": "b1af9d9d1cdba5ba345888d4d6910755f92bbb1cab98e5d63d39c772effd5fbd"
+    }
+  ]
+}

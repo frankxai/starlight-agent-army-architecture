@@ -1,0 +1,283 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/canonical-portfolio.schema.json",
+  "title": "Starlight Intelligence Canonical Agent Portfolio",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "portfolio_id",
+    "portfolio_version",
+    "status",
+    "compiler",
+    "authority_model",
+    "runtime_defaults",
+    "skill_registry",
+    "swarms"
+  ],
+  "properties": {
+    "schema_version": { "const": "canonical-agent-portfolio.v1" },
+    "portfolio_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "portfolio_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "status": { "enum": ["draft", "active", "deprecated", "retired"] },
+    "compiler": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "source"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "minLength": 1 }
+      }
+    },
+    "authority_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement", "profile_is_authority", "capability_pack_is_authority", "runtime_authority"],
+      "properties": {
+        "statement": { "type": "string", "minLength": 20 },
+        "profile_is_authority": { "const": false },
+        "capability_pack_is_authority": { "const": false },
+        "runtime_authority": { "type": "string", "minLength": 20 }
+      }
+    },
+    "runtime_defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "brand",
+        "memory_scope",
+        "surfaces",
+        "tools_allow",
+        "tools_deny",
+        "human_gates",
+        "permissions",
+        "common_boundaries",
+        "eval_contract"
+      ],
+      "properties": {
+        "brand": { "const": "starlight" },
+        "memory_scope": { "enum": ["none", "session", "user", "org"] },
+        "surfaces": {
+          "type": "array",
+          "items": { "enum": ["web", "phone_pwa", "coe_demo"] },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "tools_allow": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "tools_deny": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "human_gates": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "publish",
+              "external_send",
+              "spend",
+              "dns",
+              "credentials",
+              "destructive",
+              "legal_ip",
+              "brand_identity"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "permissions": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "common_boundaries": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "eval_contract": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["structural_only", "live_eval_status", "common_cases"],
+          "properties": {
+            "structural_only": { "const": true },
+            "live_eval_status": { "const": "not_run" },
+            "common_cases": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/evalCase" },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          }
+        }
+      }
+    },
+    "skill_registry": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/skillReference" },
+      "minItems": 1
+    },
+    "swarms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/swarm" },
+      "minItems": 10,
+      "maxItems": 10
+    }
+  },
+  "$defs": {
+    "nonEmptyUniqueStrings": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "skillReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "source", "mode"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "minLength": 1 },
+        "mode": { "const": "reference-only" }
+      }
+    },
+    "evalCase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "prompt", "expect"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "prompt": { "type": "string", "minLength": 5 },
+        "expect": { "type": "string", "minLength": 10 }
+      }
+    },
+    "visualWorld": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["palette", "materials", "lighting", "setting", "negative_cues"],
+      "properties": {
+        "palette": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+          "minItems": 3,
+          "uniqueItems": true
+        },
+        "materials": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "lighting": { "type": "string", "minLength": 5 },
+        "setting": { "type": "string", "minLength": 5 },
+        "negative_cues": { "$ref": "#/$defs/nonEmptyUniqueStrings" }
+      }
+    },
+    "visualAssignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["archetype", "signature", "silhouette", "accent", "portrait_brief"],
+      "properties": {
+        "archetype": { "type": "string", "minLength": 3 },
+        "signature": { "type": "string", "minLength": 5 },
+        "silhouette": { "type": "string", "minLength": 5 },
+        "accent": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "portrait_brief": { "type": "string", "minLength": 20 }
+      }
+    },
+    "agent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "display_name",
+        "role_title",
+        "role_kind",
+        "version",
+        "status",
+        "purpose",
+        "outcomes",
+        "public_profile",
+        "voice",
+        "method",
+        "skill_refs",
+        "capabilities",
+        "non_capabilities",
+        "stop_conditions",
+        "escalation_conditions",
+        "depends_on",
+        "routes_to",
+        "visual_dna",
+        "eval_cases"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "display_name": { "type": "string", "minLength": 3 },
+        "role_title": { "type": "string", "minLength": 3 },
+        "role_kind": { "enum": ["conductor", "specialist"] },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "status": { "enum": ["draft", "active", "deprecated", "retired"] },
+        "purpose": { "type": "string", "minLength": 20 },
+        "outcomes": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "public_profile": { "type": "string", "minLength": 20 },
+        "voice": { "type": "string", "minLength": 10 },
+        "method": { "type": "string", "minLength": 20 },
+        "skill_refs": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "capabilities": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "non_capabilities": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "stop_conditions": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "escalation_conditions": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "depends_on": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "routes_to": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "visual_dna": { "$ref": "#/$defs/visualAssignment" },
+        "eval_cases": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/evalCase" },
+          "minItems": 2
+        }
+      }
+    },
+    "swarm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "domain",
+        "purpose",
+        "outcomes",
+        "lead_agent_id",
+        "shared_stop_conditions",
+        "shared_escalation_conditions",
+        "additional_tools_deny",
+        "visual_world",
+        "agents"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": { "type": "string", "minLength": 3 },
+        "domain": { "type": "string", "minLength": 3 },
+        "purpose": { "type": "string", "minLength": 20 },
+        "outcomes": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "lead_agent_id": { "type": "string", "minLength": 1 },
+        "shared_stop_conditions": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "shared_escalation_conditions": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "additional_tools_deny": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+        "visual_world": { "$ref": "#/$defs/visualWorld" },
+        "agents": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/agent" },
+          "minItems": 5,
+          "maxItems": 5
+        }
+      }
+    }
+  }
+}
