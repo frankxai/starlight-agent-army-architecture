@@ -2,7 +2,7 @@
 
 This is a controlled visual research study, not a production identity release.
 
-The existing twin-cyan-lens face is the continuity control. It is recognizable and clearly mechanical, but it is not assumed to be optimal. The study tests ten broader face architectures, selects the most promising structural base, and then tests ten eye systems while holding that base constant.
+The existing twin-cyan-lens face is the continuity control. It is recognizable and clearly mechanical, but it is not assumed to be optimal. The study tests ten broader face architectures, selects the most promising structural base, tests ten eye systems while holding that base constant, and then compares ten illustration and material languages while holding the selected character geometry constant.
 
 ## Audience
 
@@ -33,6 +33,8 @@ Across Phase A:
 
 Across Phase B, the selected Phase A face, pose, crop, light, materials, mouth treatment, and collar are locked. Only the optical system changes.
 
+Across Phase C, the Civic Instrument shell with soft-square optics is the identity reference. Head silhouette, panel structure, optics, adult proportions, role, and calm posture remain fixed; medium, mark-making, palette, light, and presentation language change. This phase deliberately tests civic editorial, technical, printmaking, academy, narrative, and tactile approaches rather than ten color-swapped science-fiction renders.
+
 ## Evaluation model
 
 ### Predicted human appeal — 30 points
@@ -54,7 +56,10 @@ Maker-authored scores are hypotheses, not audience evidence and never constitute
 - `study-plan.v1.json` — hypotheses, controlled prompt, and output plan.
 - `phase-a-face-architecture/` — ten face architecture exports.
 - `phase-b-eye-systems/` — ten eye-system exports.
+- `style-study.v1.json` — Phase C outcome contract, hypotheses, controlled prompt, and exact style deltas.
+- `phase-c-style-languages/` — ten style-language exports and comparison crops.
+- `design-loop-evidence.json` — premium-asset provenance, inspection, scoring, and decision trace.
 - `evaluation.v1.json` — export facts, heuristic scoring, ranking, and decision once generation finishes.
-- `contact-sheet-*.jpg` — normalized visual comparison boards once exports exist.
+- `phase-*-contact-sheet.png` and `phase-*-avatar-96-sheet.png` — normalized visual comparison boards and small-crop checks.
 
 No candidate replaces the existing Starlight character identity until independent critique, Frank's decision, a true production crop, and site-context QA pass.

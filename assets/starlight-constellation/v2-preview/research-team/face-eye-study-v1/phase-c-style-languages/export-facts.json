@@ -1,0 +1,72 @@
+[
+  {
+    "Name": "c01-civic-editorial-gouache.png",
+    "Width": 1122,
+    "Height": 1402,
+    "Bytes": 2788161,
+    "Sha256": "286c68dbe6d244ecf6ff4e610805e1cd3c723552fe34d1bde3f4e011f6e4c581"
+  },
+  {
+    "Name": "c02-precision-pen-wash.png",
+    "Width": 1122,
+    "Height": 1402,
+    "Bytes": 2887682,
+    "Sha256": "da316230560a53194c447d5f0d0c4d1b848732a68cd94e4bb590880f72fed073"
+  },
+  {
+    "Name": "c03-modernist-screenprint.png",
+    "Width": 1122,
+    "Height": 1402,
+    "Bytes": 2789964,
+    "Sha256": "dc10343da6896483e5dae9a5210e5a93cc97e808beec5d5fc3be3d803b5c0456"
+  },
+  {
+    "Name": "c04-risograph-research-portrait.png",
+    "Width": 1122,
+    "Height": 1402,
+    "Bytes": 2890677,
+    "Sha256": "6961cb229b50e8bcb906a0fbcee36a67fc7765d931988260b51194035f04e060"
+  },
+  {
+    "Name": "c05-scientific-naturalist-plate.png",
+    "Width": 1122,
+    "Height": 1402,
+    "Bytes": 2703928,
+    "Sha256": "05ee5208eac43cac0de26afd67ea749820fd030d58d481800dcd359c0b457877"
+  },
+  {
+    "Name": "c06-architectural-cutaway-drawing.png",
+    "Width": 1122,
+    "Height": 1402,
+    "Bytes": 2654750,
+    "Sha256": "7701db8c9b6fd9d5bc7b83e1c24948ee0a702b5dcca916146813c06f0a5c503b"
+  },
+  {
+    "Name": "c07-linocut-civic-poster.png",
+    "Width": 1122,
+    "Height": 1402,
+    "Bytes": 3649229,
+    "Sha256": "a1a5efed8b3db3028ac379bcea7b3dc039329196c0d1176974a78c655840361a"
+  },
+  {
+    "Name": "c08-animation-keyframe.png",
+    "Width": 1123,
+    "Height": 1401,
+    "Bytes": 2633606,
+    "Sha256": "87f08b66c053e719695a0909a368e7749ee2ef0afc9691d6575b6ba4d680b3fb"
+  },
+  {
+    "Name": "c09-paper-relief-collage.png",
+    "Width": 1122,
+    "Height": 1402,
+    "Bytes": 2976232,
+    "Sha256": "1b4cffdab9c2bd8bc827451e038a0f4535a99a2cf6afbcdfb9e8e33cda7b4409"
+  },
+  {
+    "Name": "c10-stop-motion-maquette.png",
+    "Width": 1122,
+    "Height": 1402,
+    "Bytes": 2231672,
+    "Sha256": "1d4d1c1ff9f747dd192757a1c865064cbb29f4453a79e914ee0ff3d9d4e573f7"
+  }
+]
