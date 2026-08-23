@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../../../schemas/character-studio/image-job.schema.json",
+  "schema_version": "starlight.character_image_job.v1",
+  "job_id": "2026-08-23-lyra-precision-instrument-v2",
+  "agent_id": "lyra-research-conductor",
+  "contract_ref": "templates/starlight-character-studio/character-visual-contract.template.json",
+  "direction": {
+    "territory_id": "precision-instrument-refined",
+    "label": "Precision Instrument — authority correction",
+    "hypothesis": "Externalizing the amber approval gate while preserving the relay silhouette makes the strongest direction truthful enough for human identity review",
+    "controlled_variables": [
+      "same agent identity",
+      "same four-to-five crop",
+      "same dark neutral background",
+      "same porcelain obsidian material family",
+      "same calm neutral pose baseline"
+    ],
+    "changed_variables": [
+      "unlit obsidian sternum socket",
+      "external physical amber approval control",
+      "less ceremonial collar geometry"
+    ]
+  },
+  "use_case": "identity-preserve",
+  "asset": {
+    "type": "direction-preview",
+    "surface": "Starlight Research Team character direction review",
+    "aspect_ratio": "4:5",
+    "target_width": 1600,
+    "target_height": 2000,
+    "tier": "B",
+    "publication_state": "working"
+  },
+  "references": [
+    {
+      "id": "lyra-precision-instrument-v1-owned",
+      "path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-precision-instrument-v1.png",
+      "role": "edit-target",
+      "rights_status": "owned",
+      "lock_level": "preserve-identity"
+    }
+  ],
+  "prompt": {
+    "primary_request": "Correct the Precision Instrument candidate's authority signaling without replacing its successful Lyra identity or relay morphology",
+    "scene": "The same restrained black calibration chamber with one physical human approval control mounted on the wall beyond Lyra",
+    "subject": "Lyra as the same full-body porcelain-and-obsidian research relay holding the same tangible multi-input routing instrument",
+    "style_medium": "high-fidelity cinematic industrial character design render with editorial restraint",
+    "composition": "preserve the full-body eye-level portrait and clear silhouette, with the router visible at working height and no pedestal",
+    "lighting_mood": "precise soft key light, calm competence, crisp material separation, restrained machine activity",
+    "color_palette": "aged ivory porcelain, obsidian black, restrained ink blue, narrow cyan channels, one external warm amber control",
+    "materials_textures": "matte porcelain grain, exposed black mechanisms, brushed titanium, precise seams, minimal functional textile",
+    "constraints": [
+      "preserve the faceplate cranium body proportions and full-body composition",
+      "preserve the multi-input router and blue activity channels",
+      "make the chest center completely unlit matte obsidian with no warm glow",
+      "show amber only on one physical wall-mounted human approval control separate from the robot",
+      "simplify the radial collar into functional relay vanes rather than ceremonial decoration",
+      "no generated text or logos"
+    ],
+    "avoid": [
+      "amber light anywhere on or inside the robot",
+      "glowing chest core or heart trope",
+      "human pictogram or fake interface panel",
+      "crown halo ruff or royal collar",
+      "weapons or combat armor",
+      "superhero stance or generic sci-fi armor"
+    ],
+    "final_prompt": "Use case: identity-preserve edit. Asset type: 4:5 Starlight character direction refinement. Image 1 is the owned Lyra Precision Instrument v1 edit target. Preserve the same Lyra faceplate, segmented ivory cranium, full-body eye-level composition, porcelain-and-obsidian anatomy, calm stance, narrow cyan arm channels, articulated hands, and physical multi-input router. Make only these corrections: remove every amber or warm light from Lyra's body; replace the glowing chest center with a completely unlit matte-obsidian relay socket; simplify the shoulder collar into thinner functional routing vanes rather than a ceremonial ruff; replace the wall human pictogram with one clearly physical wall-mounted amber approval lever or witness lamp, separate from and behind the robot. Cyan remains machine activity. Amber appears only on the external human-owned control. Keep the restrained black calibration chamber, crisp material separation, generous edge safety, no pedestal. Matte porcelain grain, exposed black mechanics, brushed titanium, precise seams. No text, no logos, no fake UI, no human icon, no glowing chest, no halo, no crown, no royal symbolism, no weapons, no combat armor, no superhero stance, no global glow."
+  },
+  "output": {
+    "status": "generated",
+    "path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-precision-instrument-v2.png",
+    "sha256": "94ffd34896660f95a31623f44277f36a1e7802d507c74860528a6fd740d74937",
+    "dimensions": {
+      "width": 971,
+      "height": 1619
+    },
+    "provider": "OpenAI",
+    "model_or_lane": "runtime-best-available",
+    "generation_receipt": "imagegen:019ffda3-8717-7e30-8957-4d6a7bd71085/exec-c65d6705-7fda-421d-9bab-806499f06369.png; copied without transformation"
+  },
+  "qa": {
+    "inspected": true,
+    "score30": 26,
+    "decision": "eligible-for-human-review",
+    "strongest_element": "The role stays immediately legible while cyan machine activity and the physical external amber approval control now express the authority boundary truthfully",
+    "weakest_element": "The exposed collar rods feel appended rather than engineered into the anatomy, and the generated portrait is taller than the requested four-to-five master crop",
+    "next_change": "Use this as the governance-correct base, integrate lower-profile relay vanes into the shoulder anatomy, and regenerate or art-direct a true four-to-five master",
+    "human_decision": "pending"
+  },
+  "created_at": "2026-08-23"
+}

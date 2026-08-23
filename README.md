@@ -53,6 +53,8 @@ Single strategy home for faced agents across GenCreator, FrankX, Starlight ops, 
 | Business ops org | [docs/agent-portfolio/BUSINESS_OPS_ORG.md](docs/agent-portfolio/BUSINESS_OPS_ORG.md) |
 | Business ops template | [templates/business-ops-supervisor/](templates/business-ops-supervisor/) |
 | Card schema | [schemas/agent-card/agent-card.schema.json](schemas/agent-card/agent-card.schema.json) |
+| Character Studio system | [docs/visuals/STARLIGHT_CHARACTER_STUDIO.md](docs/visuals/STARLIGHT_CHARACTER_STUDIO.md) |
+| Character Studio templates | [templates/starlight-character-studio/](templates/starlight-character-studio/) |
 | Host cards | `cards/hosts/` (Gen-Ω, FrankX Concierge, Starlight Operator, Lumina draft) |
 | Specialists | `cards/specialists/` (GenCreator L2 set) |
 | KB packs | `kb-packs/` |
@@ -60,6 +62,8 @@ Single strategy home for faced agents across GenCreator, FrankX, Starlight ops, 
 
 ```powershell
 python scripts/validate_agent_cards.py
+python scripts/validate_character_studio.py
+python scripts/test_character_studio.py
 python scripts/run_eval_suite.py
 python scripts/validate_agent_observability.py
 python scripts/calculate_agent_scorecard.py --profile observability/deployments/gencreator-studio-gen-omega.json --receipts observability/examples/gencreator-pilot.sample.json --expected-runs 3
@@ -76,6 +80,7 @@ python scripts/calculate_agent_scorecard.py --profile observability/deployments/
 | Configure gateway policy | [OpenClaw gateway example](configs/openclaw-gateway.example.json) |
 | Configure research harness | [DeepAgents harness example](configs/deepagents-harness.example.yaml) |
 | Measure cost, capability, and ROI | [Agent economics and capability](docs/operations/AGENT_ECONOMICS_AND_CAPABILITY.md) |
+| Design a truthful agent character system | [Starlight Character Studio](docs/visuals/STARLIGHT_CHARACTER_STUDIO.md) |
 | Verify machine readiness | [Health checks](docs/health-checks.md) |
 
 ```powershell

@@ -1,0 +1,253 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlightintelligence.org/schemas/character-studio/character-visual-contract.schema.json",
+  "title": "Starlight Character Visual Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract_id",
+    "agent_id",
+    "contract_version",
+    "state",
+    "authority",
+    "role",
+    "identity",
+    "personality",
+    "palette",
+    "invariants",
+    "mutable",
+    "prohibited",
+    "references",
+    "outputs",
+    "provenance"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": "starlight.character_visual_contract.v1" },
+    "contract_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-visual-v[0-9]+$"
+    },
+    "agent_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "contract_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "state": {
+      "type": "string",
+      "enum": ["draft", "candidate", "approved", "deprecated"]
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["visual_identity_only", "grants_runtime_authority", "human_owner"],
+      "properties": {
+        "visual_identity_only": { "const": true },
+        "grants_runtime_authority": { "const": false },
+        "human_owner": { "type": "string", "minLength": 1 }
+      }
+    },
+    "role": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "family",
+        "label",
+        "specialty",
+        "first_read",
+        "transformation",
+        "outcome",
+        "inbound_artifacts",
+        "outbound_artifacts",
+        "handoff_cues"
+      ],
+      "properties": {
+        "family": {
+          "type": "string",
+          "enum": ["relay", "lens", "loom", "prism", "vault", "measure"]
+        },
+        "label": { "type": "string", "minLength": 2 },
+        "specialty": { "type": "string", "minLength": 4 },
+        "first_read": { "type": "string", "minLength": 8 },
+        "transformation": { "type": "string", "minLength": 8 },
+        "outcome": { "type": "string", "minLength": 4 },
+        "inbound_artifacts": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "outbound_artifacts": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "handoff_cues": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 3 },
+          "minItems": 1,
+          "maxItems": 4
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "shared_dna",
+        "silhouette_signature",
+        "cranial_geometry",
+        "body_proportions",
+        "seam_map",
+        "materials",
+        "insignia",
+        "signature_instrument"
+      ],
+      "properties": {
+        "shared_dna": { "type": "string", "minLength": 12 },
+        "silhouette_signature": { "type": "string", "minLength": 8 },
+        "cranial_geometry": { "type": "string", "minLength": 8 },
+        "body_proportions": { "type": "string", "minLength": 8 },
+        "seam_map": { "type": "string", "minLength": 8 },
+        "materials": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 2 },
+          "minItems": 3,
+          "uniqueItems": true
+        },
+        "insignia": { "type": "string", "minLength": 3 },
+        "signature_instrument": { "type": "string", "minLength": 6 }
+      }
+    },
+    "personality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "communication",
+        "challenge_style",
+        "tempo",
+        "evidence_posture",
+        "visual_cues"
+      ],
+      "properties": {
+        "communication": { "type": "string", "minLength": 3 },
+        "challenge_style": { "type": "string", "minLength": 3 },
+        "tempo": { "type": "string", "minLength": 3 },
+        "evidence_posture": { "type": "string", "minLength": 3 },
+        "visual_cues": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 3 },
+          "minItems": 2,
+          "maxItems": 3,
+          "uniqueItems": true
+        }
+      }
+    },
+    "palette": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["porcelain", "mechanics", "machine_activity", "human_authority", "risk"],
+      "properties": {
+        "porcelain": { "$ref": "#/$defs/hexColor" },
+        "mechanics": { "$ref": "#/$defs/hexColor" },
+        "machine_activity": { "$ref": "#/$defs/hexColor" },
+        "human_authority": { "$ref": "#/$defs/hexColor" },
+        "risk": { "$ref": "#/$defs/hexColor" }
+      }
+    },
+    "invariants": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 4 },
+      "minItems": 4,
+      "uniqueItems": true
+    },
+    "mutable": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 3 },
+      "minItems": 2,
+      "uniqueItems": true
+    },
+    "prohibited": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 3 },
+      "minItems": 5,
+      "uniqueItems": true
+    },
+    "references": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/reference" },
+      "minItems": 1
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["profile", "aspect_ratio", "target_width", "target_height", "format"],
+        "properties": {
+          "profile": {
+            "type": "string",
+            "enum": ["recognition-portrait", "identity-reference", "operational-scene", "team-tableau", "role-badge"]
+          },
+          "aspect_ratio": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" },
+          "target_width": { "type": "integer", "minimum": 48 },
+          "target_height": { "type": "integer", "minimum": 48 },
+          "format": { "type": "string", "enum": ["png", "webp", "avif", "svg"] }
+        }
+      },
+      "minItems": 1
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_card", "source_commit", "created_at", "created_by", "model_policy", "human_decision"],
+      "properties": {
+        "source_card": { "$ref": "#/$defs/repoPath" },
+        "source_commit": { "type": "string", "pattern": "^[a-f0-9]{40}$" },
+        "created_at": { "type": "string", "format": "date" },
+        "created_by": { "type": "string", "minLength": 2 },
+        "model_policy": { "type": "string", "enum": ["runtime-best-available", "verified-model", "unknown", "blocked"] },
+        "human_decision": { "type": "string", "enum": ["pending", "approve", "iterate", "restart"] }
+      }
+    }
+  },
+  "$defs": {
+    "hexColor": {
+      "type": "string",
+      "pattern": "^#[A-Fa-f0-9]{6}$"
+    },
+    "repoPath": {
+      "type": "string",
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9._/-]+$"
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "path", "role", "rights_status", "lock_level"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "path": { "$ref": "#/$defs/repoPath" },
+        "role": { "type": "string", "enum": ["identity", "material", "composition", "style", "product-proof"] },
+        "rights_status": { "type": "string", "enum": ["owned", "licensed", "official-use-permitted", "source-linked-review", "blocked"] },
+        "lock_level": { "type": "string", "enum": ["inspiration", "preserve-silhouette", "preserve-identity", "preserve-layout", "exact-asset"] }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "state": { "const": "approved" } } },
+      "then": {
+        "properties": {
+          "provenance": {
+            "properties": { "human_decision": { "const": "approve" } }
+          }
+        }
+      }
+    }
+  ]
+}
