@@ -61,6 +61,7 @@ Maker-authored scores are hypotheses, not audience evidence and never constitute
 - `style-study.v1.json` — rejected Phase C outcome contract, hypotheses, exact deltas, and founder decision.
 - `phase-c-style-languages/` — ten rejected style-language exports, preserved as negative evidence.
 - `ROBOT_MORPHOLOGY_SYSTEM_V2.md` — replacement body-family, face, context, and validation proposal.
+- `phase-d-morphology-silhouettes/` — morphology-first generation queue and inspected silhouette boards; Phase D is draft work requiring founder selection.
 - `design-loop-evidence.json` — premium-asset provenance, inspection, scoring, and decision trace.
 - `style-evaluation.v1.json` — historical Phase C export facts, maker scoring, and the superseding founder rejection.
 - `phase-*-contact-sheet.png` and `phase-*-avatar-96-sheet.png` — normalized visual comparison boards and small-crop checks.

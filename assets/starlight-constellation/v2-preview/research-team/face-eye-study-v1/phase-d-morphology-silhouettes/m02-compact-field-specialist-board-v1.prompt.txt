@@ -1,0 +1,12 @@
+Use case: stylized-concept
+Asset type: Starlight Intelligence robot morphology exploration sheet, pre-production silhouette gate
+Primary request: Create four genuinely different compact short-legged robot character silhouettes for an original Starlight Intelligence agent. These are capable adult machine specialists, not children and not toys. Each candidate must have a different body architecture and locomotion idea while belonging to one coherent design universe.
+Scene/backdrop: clean warm-white industrial design presentation sheet, no environment
+Subject: four separate full-body compact field specialists standing in neutral three-quarter poses, arranged left to right with generous separation. Target proportions are 4 to 4.75 heads tall, short stable legs, broad expressive feet, compact torso with a functional tool bay, useful articulated hands, and a clearly readable head. Explore: rounded trapezoid torso; low cylindrical torso; folded ceramic shell; modular pack-and-tool chassis.
+Style/medium: premium feature-animation and AAA game character-development silhouette study; original design; flat black and charcoal cut-paper silhouettes with only subtle mid-gray overlap planes; precise industrial design; strong negative space
+Composition/framing: 3:2 landscape concept sheet, every body fully visible, consistent scale and baseline, no cropping
+Lighting/mood: neutral studio readability, warm competence, curious and capable
+Color palette: black, charcoal, warm white only
+Materials/textures: no material rendering yet; silhouette and proportion only
+Constraints: every silhouette must be immediately distinct at thumbnail size; preserve a softened rounded-square Starlight motif somewhere in each form; role function must be visible through body architecture; no eyes, no faces, no mouth, no text, no labels, no numbers, no logos, no weapons, no capes, no halos, no decorative circuitry, no glowing effects, no background scene
+Avoid: tall humanoid proportions, baby bodies, mascot cliché, copied Pixar or game characters, Astro Bot resemblance, WALL-E resemblance, Baymax resemblance, chibi proportions, generic sci-fi armor, superhero stance, random antennae, ornamental AI nodes

@@ -1,0 +1,109 @@
+{
+  "version": "2026-08-24",
+  "task": "Generate and evaluate morphology-first Starlight robot silhouette boards across fourteen form families.",
+  "surface": "Character-system pre-production for Starlight .ai, .org, Academy, marketplace, runtime maps, and spatial experiences.",
+  "audience": "Founders, operators, developers, researchers, creators, and Academy learners.",
+  "first_read": "A coherent constellation of original robot forms whose roles are legible through silhouette and function before face, color, or rendering style.",
+  "standards": [
+    "design-agent-standards/PREMIUM_ASSET_STANDARD.md",
+    "design-agent-standards/OUTCOMES.md",
+    "design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "design-agent-standards/best-practices/image-logo-visual-generation.md",
+    "starlight-design-intelligence/evals/generated-asset-quality-gate.md"
+  ],
+  "references": [
+    {
+      "label": "Founder-approved stronger structural baseline",
+      "source": "../phase-a-contact-sheet.png",
+      "reason": "Phase A varied face architecture and is the continuity benchmark for meaningful structural diversity."
+    },
+    {
+      "label": "Starlight morphology proposal",
+      "source": "../ROBOT_MORPHOLOGY_SYSTEM_V2.md",
+      "reason": "Defines the body families, surface mapping, face rules, and corrected generation workflow."
+    }
+  ],
+  "direction": {
+    "keep": [
+      "structurally different silhouettes",
+      "role-led tool and locomotion logic",
+      "warm competence without franchise imitation",
+      "readability before color and face"
+    ],
+    "avoid": [
+      "repainting one tall humanoid",
+      "toy or infant coding for adult specialists",
+      "decorative AI circuitry and glow",
+      "polish used to hide weak form"
+    ],
+    "signature": "A constellation of functional, emotionally legible machine forms connected by restrained Starlight geometry.",
+    "system": [
+      "one image-generation call per distinct form family",
+      "four silhouette candidates per board",
+      "founder selection before face, materials, or cinematic polish",
+      "deterministic role metadata remains outside generated pixels"
+    ]
+  },
+  "asset_quality": {
+    "tier": "B",
+    "source_method": "generated-media",
+    "provenance": "generated",
+    "why_premium": "The study isolates morphology, uses a role-led prompt and explicit franchise-avoidance constraints, preserves exact receipts and hashes, and requires founder approval before polish.",
+    "shortcut_risk": "medium",
+    "context_tested": false
+  },
+  "artifacts": [
+    {
+      "path_or_url": "m02-compact-field-specialist-board-v1.png",
+      "kind": "morphology silhouette board",
+      "inspected": true,
+      "notes": "Four meaningfully different compact chassis at 1536x1024. Strong improvement in body diversity versus rejected Phase C; generated component seams are too detailed for a strict silhouette gate and should be reduced in the next pass."
+    },
+    {
+      "path_or_url": "generation-manifest.v1.json",
+      "kind": "generation manifest and prompt queue",
+      "inspected": true,
+      "notes": "Fourteen separate form-family prompts are queued; no batch prompt conflates distinct assets."
+    },
+    {
+      "path_or_url": "m02-compact-field-specialist-board-v1.prompt.txt",
+      "kind": "exact built-in image generation prompt",
+      "inspected": true,
+      "notes": "Verbatim prompt receipt for the completed M02 board."
+    }
+  ],
+  "checks": [
+    {
+      "name": "morphology-before-style",
+      "status": "pass",
+      "evidence": "The completed board varies chassis, torso, stance, tool storage, and proportion while withholding eyes and color."
+    },
+    {
+      "name": "export-inspection",
+      "status": "pass",
+      "evidence": "The 1536x1024 PNG was visually inspected and hashed after copying into the project."
+    },
+    {
+      "name": "strict-silhouette-restraint",
+      "status": "fail",
+      "evidence": "The generator introduced gray component and seam detail beyond the requested flat silhouette treatment."
+    },
+    {
+      "name": "founder-approval",
+      "status": "blocked",
+      "evidence": "The new Phase D board has not yet received Frank's selection or rejection."
+    },
+    {
+      "name": "machine-performance",
+      "status": "blocked",
+      "evidence": "Both browser-qa and review-lite preflights returned HOLD; generation stopped after the current atomic image."
+    }
+  ],
+  "score": {
+    "total": 22,
+    "max": 30,
+    "notes": "Draft maker score only: strong morphological diversity and clean presentation, reduced for excessive internal detail, no 96-pixel crop test, no real UI context, and no founder review."
+  },
+  "decision": "blocked",
+  "best_resumable_next_step": "After inactive Codex tasks are archived and review-lite preflight allows work, generate m03-chibi-academy-guide-board-v1.png, then m07-biotech-symbiote-board-v1.png. These provide the highest contrast to the completed compact specialist board."
+}
