@@ -1,8 +1,14 @@
 {
   "schema_version": "starlight.character_style_evaluation.v1",
   "study_id": "lyra-style-language-study-2026-08-24",
-  "evaluation_status": "maker_diagnostic_complete_human_review_required",
-  "claim_boundary": "These scores summarize inspected artifacts and predicted audience fit. They are not measured preference, cannot approve an identity, and must be superseded by Frank's decision and intended-audience testing.",
+  "evaluation_status": "founder_rejected_historical_maker_diagnostic",
+  "claim_boundary": "Frank rejected the complete Phase C set on 2026-08-24 because it varied surface rendering rather than the requested robot morphology. The historical scores below are preserved only to document why maker scoring cannot substitute for founder judgment or a correctly framed experiment.",
+  "human_decision": {
+    "verdict": "reject_all_phase_c_candidates",
+    "production_eligible": false,
+    "supersedes_candidate_scores": true,
+    "next_direction": "ROBOT_MORPHOLOGY_SYSTEM_V2.md"
+  },
   "inspection": {
     "full_size_exports": true,
     "normalized_4x5_sheet": "phase-c-style-languages/phase-c-contact-sheet.png",
@@ -45,7 +51,7 @@
       "surface_fit": { "ai": 4, "org": 5, "academy": 4, "marketplace": 4 },
       "strongest": "Best overall warm-competence balance; feels institutional and authored rather than technological by default.",
       "weakest": "Painted background and chest accent need a tighter reusable grammar across fifty agents.",
-      "decision": "finalist"
+      "historical_maker_decision": "finalist"
     },
     {
       "id": "c02-precision-pen-wash",
@@ -56,7 +62,7 @@
       "surface_fit": { "ai": 5, "org": 4, "academy": 5, "marketplace": 4 },
       "strongest": "Most credible operational profile language; precise, calm, legible, and easy to connect to real agent documentation.",
       "weakest": "Less ownable at first glance than the strongest print directions unless role-specific mark-making is systematized.",
-      "decision": "finalist"
+      "historical_maker_decision": "finalist"
     },
     {
       "id": "c03-modernist-screenprint",
@@ -67,7 +73,7 @@
       "surface_fit": { "ai": 4, "org": 4, "academy": 3, "marketplace": 5 },
       "strongest": "Highest small-crop recognition and a highly scalable spot-color system.",
       "weakest": "Large geometric fields can read as campaign art and overwhelm the quieter governance promise.",
-      "decision": "context_style"
+      "historical_maker_decision": "context_style"
     },
     {
       "id": "c04-risograph-research-portrait",
@@ -78,7 +84,7 @@
       "surface_fit": { "ai": 3, "org": 4, "academy": 4, "marketplace": 4 },
       "strongest": "Friendly tactile ink overlap with authentic independent-publishing character.",
       "weakest": "Trend and zine associations may reduce enterprise maturity, and the coral optic can overstate emotional activity.",
-      "decision": "secondary"
+      "historical_maker_decision": "secondary"
     },
     {
       "id": "c05-scientific-naturalist-plate",
@@ -89,7 +95,7 @@
       "surface_fit": { "ai": 4, "org": 5, "academy": 5, "marketplace": 3 },
       "strongest": "Strongest Academy and .org specimen language; calm, inspectable, archival, and trustworthy.",
       "weakest": "Low contrast weakens thumbnail distinction and it overlaps visually with pen-and-wash.",
-      "decision": "context_style"
+      "historical_maker_decision": "context_style"
     },
     {
       "id": "c06-architectural-cutaway-drawing",
@@ -100,7 +106,7 @@
       "surface_fit": { "ai": 5, "org": 4, "academy": 5, "marketplace": 4 },
       "strongest": "Only candidate that directly visualizes inspectability and how a specialist might work.",
       "weakest": "Invented internal machinery is expensive to keep canonical; the red module could be mistaken for a battery, hazard, or weapon component.",
-      "decision": "iterate_as_explainer_not_portrait"
+      "historical_maker_decision": "iterate_as_explainer_not_portrait"
     },
     {
       "id": "c07-linocut-civic-poster",
@@ -111,7 +117,7 @@
       "surface_fit": { "ai": 4, "org": 5, "academy": 4, "marketplace": 5 },
       "strongest": "Most ownable icon and strongest profile-card silhouette; feels public-minded, tactile, and memorable.",
       "weakest": "The heavy black field is less suited to subtle runtime-state expression and can become campaign-like if overused.",
-      "decision": "finalist"
+      "historical_maker_decision": "finalist"
     },
     {
       "id": "c08-animation-keyframe",
@@ -122,7 +128,7 @@
       "surface_fit": { "ai": 3, "org": 4, "academy": 5, "marketplace": 4 },
       "strongest": "Accessible story tone and a feasible bridge into Academy motion sequences.",
       "weakest": "This export remains too close to watercolor illustration to justify a distinct canonical style.",
-      "decision": "iterate"
+      "historical_maker_decision": "iterate"
     },
     {
       "id": "c09-paper-relief-collage",
@@ -133,7 +139,7 @@
       "surface_fit": { "ai": 4, "org": 4, "academy": 5, "marketplace": 4 },
       "strongest": "Ownable modular material metaphor; warmth comes from construction rather than a cute face.",
       "weakest": "Background layers are busy in profile contexts and consistent depth across a large agent portfolio will require strict templates.",
-      "decision": "context_style"
+      "historical_maker_decision": "context_style"
     },
     {
       "id": "c10-stop-motion-maquette",
@@ -144,21 +150,14 @@
       "surface_fit": { "ai": 3, "org": 4, "academy": 5, "marketplace": 4 },
       "strongest": "Warmest physical presence and a strong route for story stills, exhibitions, or Academy sequences.",
       "weakest": "Workbench context may imply a toy or prototype, and photoreal continuity across many agents is costly.",
-      "decision": "context_style"
+      "historical_maker_decision": "context_style"
     }
   ],
   "recommendation": {
-    "canonical_geometry": "Keep one stable character geometry across every surface; do not use medium changes to imply different identities or runtime authority.",
-    "ai_default": "Develop c02 precision pen-and-wash as the operational profile system, with deterministic role labels and role-specific tool or artifact silhouettes outside generated pixels.",
-    "org_default": "Develop c01 civic editorial gouache for public-trust profiles, essays, and human-value storytelling.",
-    "academy_system": "Use c05 scientific plates for subject profiles, c06 canonicalized cutaways for lessons about workflows and skills, and an improved c08 or c10 lane for narrative scenes.",
-    "marketplace_system": "Use c07 linocut or c03 screenprint for highly recognizable collection tiles and campaign covers; do not let either replace the quieter operational portrait.",
-    "founder_choice_set": [
-      "c01-civic-editorial-gouache",
-      "c02-precision-pen-wash",
-      "c07-linocut-civic-poster"
-    ],
-    "next_test": "Place the three finalists into the same real .ai agent-profile layout and run a randomized five-second role-recognition, warmth, competence, calibrated-trust, and adoption-intent study with the intended audience."
+    "status": "withdrawn",
+    "do_not_continue": "Do not place any Phase C candidate into production UI or audience testing.",
+    "lesson": "Hold identity and role constant, but vary silhouette, proportion, locomotion, body architecture, face logic, material system, and performance before comparing rendering media.",
+    "replacement": "ROBOT_MORPHOLOGY_SYSTEM_V2.md"
   },
   "generation_receipts": [
     { "id": "c01-civic-editorial-gouache", "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-fef124d8-1cd3-4eb1-a5bc-e2989918f2c0.png" },

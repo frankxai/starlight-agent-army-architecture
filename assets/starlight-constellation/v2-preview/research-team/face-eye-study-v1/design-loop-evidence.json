@@ -1,6 +1,6 @@
 {
   "version": "2026-08-24",
-  "task": "Compare ten materially distinct illustration and rendering languages for the same Starlight research-conductor identity.",
+  "task": "Historical rejected study: compare ten illustration and rendering languages for the same Starlight research-conductor identity.",
   "surface": "Starlight .ai and .org agent profiles, with secondary Academy story, agent-card, documentation, and marketplace use.",
   "audience": "Founders, product leads, developers, researchers, and operators designing or adopting governed multi-agent systems.",
   "first_read": "A credible, humane, clearly non-human research conductor rendered with authored civic intelligence rather than generic science-fiction styling.",
@@ -66,7 +66,7 @@
       "path_or_url": "phase-c-style-languages/phase-c-contact-sheet.png",
       "kind": "image",
       "inspected": true,
-      "notes": "All ten 4:5 exports compared at normalized scale; geometry remained recognizable and media distinctions are visible."
+      "notes": "All ten 4:5 exports were inspected. Frank rejected the set because it changed media while leaving the underlying humanoid morphology substantially unchanged. Preserved as negative evidence only."
     },
     {
       "path_or_url": "phase-c-style-languages/phase-c-avatar-96-sheet.png",
@@ -84,7 +84,7 @@
       "path_or_url": "style-evaluation.v1.json",
       "kind": "evaluation",
       "inspected": true,
-      "notes": "Maker diagnostic and surface recommendation; human approval remains blocked."
+      "notes": "Historical maker diagnostic superseded by Frank's explicit rejection on 2026-08-24."
     }
   ],
   "checks": [
@@ -105,17 +105,18 @@
     },
     {
       "name": "independent-human-approval",
-      "status": "blocked",
-      "evidence": "Frank and intended-audience review not yet run."
+      "status": "fail",
+      "evidence": "Frank explicitly rejected the complete Phase C set on 2026-08-24. Human judgment overrides the maker score."
     }
   ],
   "score": {
     "total": 28,
     "max": 30,
-    "notes": "Study execution score: clear first read 5, brand fit 5, craft 5, accessibility/crops 4, provenance/artifact discipline 5, decision usefulness 4. This is a maker diagnostic, not candidate approval."
+    "notes": "Historical maker execution score only. It failed to measure whether the study explored the correct design variable, and is superseded by founder rejection. A high craft score cannot rescue the wrong experiment."
   },
-  "decision": "iterate",
+  "decision": "restart",
   "known_risks": [
+    "The experiment locked the key variable Frank wanted to explore: morphology, scale, proportion, locomotion, and embodiment.",
     "Style transfer may drift the exact panel geometry or eye shape.",
     "Print and craft simulation can become nostalgic decoration instead of operational trust.",
     "One master crop cannot prove every web and marketplace placement.",

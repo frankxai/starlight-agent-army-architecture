@@ -1,8 +1,14 @@
 {
   "schema_version": "starlight.character_style_study.v1",
   "study_id": "lyra-style-language-study-2026-08-24",
-  "state": "generated_pending_human_review",
-  "claim_boundary": "The ten candidates are controlled visual hypotheses. Maker-authored appeal scores cannot approve an identity and do not substitute for tests with founders, product leads, developers, researchers, and operators.",
+  "state": "founder_rejected_preserved_as_negative_evidence",
+  "claim_boundary": "Frank rejected this set on 2026-08-24. The ten outputs varied rendering media while over-locking the same tall humanoid morphology, so they did not answer the intended character-design question. They are retained only as negative evidence and are not approved for production, identity development, or audience testing.",
+  "founder_decision": {
+    "date": "2026-08-24",
+    "verdict": "reject_and_restart_at_morphology_layer",
+    "reason": "The previous face-architecture studies were materially stronger. Phase C repainted a single adult humanoid instead of testing full robots, compact short-legged forms, chibi companions, non-humanoid instruments, biotech embodiments, and swarm forms.",
+    "asset_policy": "Preserve files for provenance and learning; exclude them from production and future finalist sets."
+  },
   "brand_operating_unit": "starlight-substrate",
   "brand_territory": "civic-intelligence",
   "surface": {
@@ -32,7 +38,7 @@
     "source_method": "reference-guided generated media",
     "tool_lane": "Codex built-in image_gen; runtime-best-available",
     "provenance": "generated from an owned Starlight character reference",
-    "publication_status": "exploration only"
+    "publication_status": "founder rejected; negative evidence only"
   },
   "base_reference": {
     "path": "phase-b-eye-systems/b03-soft-square-apertures.png",

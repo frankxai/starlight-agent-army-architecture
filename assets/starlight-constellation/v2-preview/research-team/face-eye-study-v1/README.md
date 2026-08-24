@@ -2,6 +2,8 @@
 
 This is a controlled visual research study, not a production identity release.
 
+> **Founder decision, 2026-08-24:** Phase C is rejected. Its ten images are retained only as negative evidence because the study changed rendering media while over-locking one tall humanoid morphology. None is production eligible. Continue with `ROBOT_MORPHOLOGY_SYSTEM_V2.md`.
+
 The existing twin-cyan-lens face is the continuity control. It is recognizable and clearly mechanical, but it is not assumed to be optimal. The study tests ten broader face architectures, selects the most promising structural base, tests ten eye systems while holding that base constant, and then compares ten illustration and material languages while holding the selected character geometry constant.
 
 ## Audience
@@ -33,7 +35,7 @@ Across Phase A:
 
 Across Phase B, the selected Phase A face, pose, crop, light, materials, mouth treatment, and collar are locked. Only the optical system changes.
 
-Across Phase C, the Civic Instrument shell with soft-square optics is the identity reference. Head silhouette, panel structure, optics, adult proportions, role, and calm posture remain fixed; medium, mark-making, palette, light, and presentation language change. This phase deliberately tests civic editorial, technical, printmaking, academy, narrative, and tactile approaches rather than ten color-swapped science-fiction renders.
+Across the now-rejected Phase C, the Civic Instrument shell with soft-square optics was kept fixed while medium, mark-making, palette, light, and presentation language changed. Inspection showed that this over-controlled the most important variables: silhouette, proportion, scale, locomotion, embodiment, face logic, and performance. The study is preserved to prevent the same experiment from being repeated.
 
 ## Evaluation model
 
@@ -56,10 +58,11 @@ Maker-authored scores are hypotheses, not audience evidence and never constitute
 - `study-plan.v1.json` — hypotheses, controlled prompt, and output plan.
 - `phase-a-face-architecture/` — ten face architecture exports.
 - `phase-b-eye-systems/` — ten eye-system exports.
-- `style-study.v1.json` — Phase C outcome contract, hypotheses, controlled prompt, and exact style deltas.
-- `phase-c-style-languages/` — ten style-language exports and comparison crops.
+- `style-study.v1.json` — rejected Phase C outcome contract, hypotheses, exact deltas, and founder decision.
+- `phase-c-style-languages/` — ten rejected style-language exports, preserved as negative evidence.
+- `ROBOT_MORPHOLOGY_SYSTEM_V2.md` — replacement body-family, face, context, and validation proposal.
 - `design-loop-evidence.json` — premium-asset provenance, inspection, scoring, and decision trace.
-- `evaluation.v1.json` — export facts, heuristic scoring, ranking, and decision once generation finishes.
+- `style-evaluation.v1.json` — historical Phase C export facts, maker scoring, and the superseding founder rejection.
 - `phase-*-contact-sheet.png` and `phase-*-avatar-96-sheet.png` — normalized visual comparison boards and small-crop checks.
 
 No candidate replaces the existing Starlight character identity until independent critique, Frank's decision, a true production crop, and site-context QA pass.
