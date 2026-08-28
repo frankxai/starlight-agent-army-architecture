@@ -179,3 +179,57 @@ The most informative first choice is not “which final style?” It is which **
 5. M09 non-humanoid instrument as the strongest anti-humanoid alternative.
 
 On 2026-08-28 Frank authorized the full morphology exploration with the instruction “create them all and more.” This authorizes bounded comparison boards across the declared families; it does not approve any candidate for production. The required next human gate is selection, rejection, or synthesis after the boards are inspected together.
+
+## 11. Phase E–I synthesis: the cast system
+
+The fifty Phase E–I renders are a design probe, not a final cast. They establish enough contrast to reject the idea of one universal robot and enough repetition to expose the current risks: too much porcelain/gold sameness, circular ornament, glowing-eye dependence, ceremonial architecture, and beautiful objects whose specialty is still unclear without a caption.
+
+### Recommended embodiment portfolio
+
+| Lane | Primary audience promise | Preferred morphology | Typical surfaces | Consequence ceiling |
+| --- | --- | --- | --- | --- |
+| Sovereign specialist | calm competence and accountable orchestration | M01 full specialist | `.ai` profile hero, founder story, team portrait | may explain and recommend; human still approves consequential action |
+| Working operator | practical help and visible task handling | M02 compact specialist | product flows, marketplace cards, spatial collaboration | may operate only inside the exact runtime contract shown in UI |
+| Academy companion | curiosity, encouragement, and low-friction learning | M03 chibi guide or M10 companion | lessons, onboarding, celebrations, empty states | never used to soften spend, consent, deletion, security, or legal gates |
+| Care collaborator | patient listening and safe assistance | M11 soft-shell form | reflective learning, accessibility, community support | no diagnosis, therapy claim, or emotional dependency cue |
+| Guardian and verifier | restraint, traceability, and interruption | M05 guardian or M09 instrument | trust boundaries, evidence, policy, incident flows | may stop or escalate according to displayed policy; no coercive styling |
+| Adaptive living-system metaphor | ecological adaptation and distributed sensing | M07 biotech | health research, ecology, synthesis stories | scientific metaphor only; never claims biological life or medical authority |
+| Distributed collective | parallel work with visible membership | M08 swarm gestalt | orchestration explainers and workflow stories | every unit and human gate remain separately legible |
+| Spatial intelligence | the institution or environment as interface | M14 architectural form | Academy chapters, immersive maps, system-scale views | atmosphere never substitutes for exact controls and audit state |
+
+An agent can have at most one approved canonical lane and purpose-built derivatives. Chibi, avatar, or spatial versions are translations of that identity, not separate agents and not higher or lower intelligence levels.
+
+### Eye systems are state grammar, not a beauty contest
+
+No Phase F face is “best” for every role. The production system should route optics by communicative need:
+
+| Need | Eye architecture | Communicates | Guardrail |
+| --- | --- | --- | --- |
+| nuanced joint attention | layered twin aperture | focus, turn-taking, uncertainty | reduce human lashes, cosmetics, and seductive gaze |
+| routing across several inputs | soft visor or optical line | breadth and directional handoff | do not become a generic smiling screen |
+| vigilance and containment | protected shutter | guarded sensing and calm interruption | never narrow into angry or weapon-like eyes |
+| adaptive sensing | opaline living aperture | distributed, non-human perception | keep dry, clean, and engineered; avoid tissue or wet-eye realism |
+| evidence-only utility | eyeless directional aperture | instrumentality and low anthropomorphic pressure | attention state must remain visible through orientation or witness light |
+| premium deep analysis | deep glass chamber | layered observation and depth | keep pupil scale restrained and avoid alien menace |
+
+Expression is composed from gaze direction, aperture, head angle, task posture, distance, and timing. Eye size alone must never encode intelligence, innocence, permission, success, or moral worth.
+
+### Rendering lanes by product surface
+
+| Surface | Primary lane | Secondary lane | Excluded as the universal base |
+| --- | --- | --- | --- |
+| `starlightintelligence.ai` | restrained cinematic 3D with real product overlays | physical product editorial for proof and case studies | storybook cuteness, glass spectacle, or fantasy halls on every page |
+| `starlightintelligence.org` | documentary/product editorial and exact diagrams | gouache or risograph for public-interest explainers | luxury statuette portraiture as institutional proof |
+| Starlight Intelligence Academy | gouache, line-and-wash, and selective cinematic chapters | cel-shaded interactive states and compact 3D companions | one continuous dark cathedral aesthetic |
+| marketplace | clean product card, canonical crop, exact capability data | one contextual task scene | trading-card rarity language or visual power rankings |
+| runtime graph and control plane | deterministic UI glyphs and exact labels | approved avatar crop on demand | generated diagrams, decorative node webs, or character-only status |
+| lore and campaign chapters | cinematic, stop-motion, paper relief, or glass as authored episodes | motion and sound with reduced-motion alternatives | implying fictional visuals are runtime evidence |
+
+### Required next proof before canon selection
+
+1. Test the same four finalists in a bright modern workspace, a dark editorial profile, an Academy lesson, and an exact operational UI.
+2. Test 96-pixel silhouette and grayscale recognition before evaluating beauty.
+3. Ask target users to identify specialty, temperament, and consequence level without seeing the name.
+4. Compare an expressive face with an eyeless instrument for the same task to measure whether anthropomorphism helps or misleads.
+5. Replace ornamental circles, levitation, and fantasy architecture with role artifacts, real handoffs, and visible evidence boundaries.
+6. Promote only candidates scoring 26/30 or higher on the actual target crop, after an explicit human selection receipt.

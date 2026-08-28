@@ -1,9 +1,9 @@
 # Starlight Civilization 144 identity contract
 
-> Status: implementation contract for a draft public projection  
-> Target: exactly 144 stable agent profiles  
-> Runtime authority: none  
-> Production source: `frankxai/starlight-intelligence-web`  
+> Status: implementation contract for a draft public projection
+> Target: exactly 144 stable agent profiles
+> Runtime authority: none
+> Production source: `frankxai/starlight-intelligence-web`
 > Agent Card and prompt source: this repository
 
 ## Why this contract exists

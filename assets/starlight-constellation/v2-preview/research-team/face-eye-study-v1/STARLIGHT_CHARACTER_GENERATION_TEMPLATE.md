@@ -9,6 +9,7 @@ identity; it does not create identity or grant authority.
 agent_id: <stable kebab-case id>
 display_name: <public name>
 surface: <.ai profile | .org story | Academy | graph | marketplace | spatial>
+representation_level: <canonical | companion | avatar | state-glyph | spatial>
 specialty_verb: <what the agent does>
 primary_artifact: <what changes or gets produced>
 exclusive_instrument: <one function-shaped object>
@@ -18,6 +19,8 @@ working_behaviors:
 authority_boundary: <what remains human-held>
 morphology_family: <M01-M14 or approved descendant>
 candidate_seed: <board and candidate number>
+eye_semantic: <joint-attention | routing | vigilance | adaptive-sensing | evidence-only | deep-analysis>
+render_lane: <cinematic-3d | product-editorial | gouache | line-wash | cel-interactive | stop-motion | paper-relief | glass-editorial>
 identity_invariants:
   silhouette: <dominant and supporting shape>
   proportions: <adult compact, chibi, room-scale, etc.>
@@ -27,6 +30,7 @@ identity_invariants:
   accent: <semantic, never decorative>
 target_crop: <1:1 | 4:5 | 16:9 | 9:16>
 resolution_master: <2048px minimum edge for production character art>
+prompt_receipt_path: <repo-relative .prompt.txt written before generation>
 ```
 
 ## 2. Prompt skeleton
@@ -90,3 +94,27 @@ Reject or restart when any answer is no:
 
 Every production asset receives a provenance sidecar and an entry in `design-loop-evidence.json`.
 
+## 5. Atomic prompt and receipt protocol
+
+Prompt provenance is part of the asset, not optional documentation added later.
+
+1. Create the image-job JSON in `queued` state and save the exact final prompt as a sibling `.prompt.txt` before calling an image model.
+2. Record the provider, available model or lane identifier, references, rights status, target surface, intended crop, and creation timestamp in the queued job.
+3. Generate one controlled candidate per call. Do not combine morphology, eye, material, and rendering experiments in one untraceable batch.
+4. Copy—not move—the original result into the project-bound asset directory; preserve the provider output.
+5. Record the original source path, repository path, SHA-256, dimensions, bytes, and inspection timestamp immediately after generation.
+6. Create compressed derivatives only from the preserved master and record every transformation.
+7. If the exact prompt or source receipt is missing, label the output `research_candidate` with `prompt_capture_status: unavailable_at_audit`. It cannot advance to production approval, regardless of visual score.
+
+### Controlled comparison formula
+
+```text
+one stable agent contract
+× one morphology hypothesis
+× one eye/state hypothesis
+× one rendering lane
+× one named surface and crop
+= one auditable candidate
+```
+
+Change one primary variable between comparison candidates. A visually exciting result is not informative when the experiment cannot explain what improved.
