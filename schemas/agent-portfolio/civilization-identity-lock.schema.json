@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlightintelligence.ai/schemas/civilization-identity-lock.v1.json",
+  "title": "Starlight Civilization identity lock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "lock_id", "status", "policy", "source_identity_set_digest", "counts", "identities"],
+  "properties": {
+    "schema_version": { "const": "starlight.civilization_identity_lock.v1" },
+    "lock_id": { "const": "starlight-civilization-144-identities" },
+    "status": { "const": "immutable_identity_registry" },
+    "policy": {
+      "type": "object",
+      "required": ["agent_id", "profile_slug", "source_identifier", "seat_and_ring_are_identity"],
+      "properties": {
+        "agent_id": { "const": "immutable" },
+        "profile_slug": { "type": "string", "minLength": 1 },
+        "source_identifier": { "type": "string", "minLength": 1 },
+        "seat_and_ring_are_identity": { "const": false }
+      }
+    },
+    "source_identity_set_digest": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identities"],
+      "properties": { "identities": { "const": 144 } }
+    },
+    "identities": {
+      "type": "array",
+      "minItems": 144,
+      "maxItems": 144,
+      "items": { "$ref": "#/$defs/identity" }
+    }
+  },
+  "$defs": {
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_identifier", "agent_id", "profile_slug", "cohort", "immutable", "alias_history", "redirects", "migration_history"],
+      "properties": {
+        "source_identifier": { "type": "string", "minLength": 3 },
+        "agent_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "profile_slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "cohort": { "enum": ["founding-50", "expansion-94"] },
+        "immutable": { "const": true },
+        "alias_history": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["agent_ids", "profile_slugs", "source_identifiers"],
+          "properties": {
+            "agent_ids": { "type": "array", "maxItems": 0 },
+            "profile_slugs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+            "source_identifiers": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+          }
+        },
+        "redirects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["from_slug", "to_slug", "status"],
+            "properties": {
+              "from_slug": { "type": "string" },
+              "to_slug": { "type": "string" },
+              "status": { "const": 308 }
+            }
+          }
+        },
+        "migration_history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["field", "from", "to", "reason", "reviewed_by", "reviewed_at", "receipt_ref"],
+            "properties": {
+              "field": { "enum": ["profile_slug", "source_identifier"] },
+              "from": { "type": "string" },
+              "to": { "type": "string" },
+              "reason": { "type": "string", "minLength": 1 },
+              "reviewed_by": { "type": "string", "minLength": 1 },
+              "reviewed_at": { "type": "string", "format": "date-time" },
+              "receipt_ref": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    }
+  }
+}

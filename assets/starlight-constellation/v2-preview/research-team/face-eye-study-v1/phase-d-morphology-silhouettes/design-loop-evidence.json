@@ -70,6 +70,54 @@
       "kind": "exact built-in image generation prompt",
       "inspected": true,
       "notes": "Verbatim prompt receipt for the completed M02 board."
+    },
+    {
+      "path_or_url": "m03-chibi-academy-guide-board-v1.png",
+      "kind": "Academy morphology board",
+      "inspected": true,
+      "notes": "Four role-distinct grayscale maquettes. The observatory candidate is too tall for the stated chibi range; the set is useful comparison evidence, not a final family."
+    },
+    {
+      "path_or_url": "m07-biotech-symbiote-board-v1.png",
+      "kind": "clean-biotech morphology board",
+      "inspected": true,
+      "notes": "Four strongly differentiated non-humanoid structures with dry engineered materials and visible support logic. Candidate three needs a generic biomimetic-sculpture check."
+    },
+    {
+      "path_or_url": "m03-chibi-academy-guide-board-v1.prompt.txt",
+      "kind": "exact built-in image generation prompt",
+      "inspected": true,
+      "notes": "Prompt and founder-provided construction-quality reference are recorded."
+    },
+    {
+      "path_or_url": "m07-biotech-symbiote-board-v1.prompt.txt",
+      "kind": "exact built-in image generation prompt",
+      "inspected": true,
+      "notes": "Prompt and founder-provided construction-quality reference are recorded."
+    },
+    {
+      "path_or_url": "m01-full-specialist-board-v1.png through m14-architectural-room-intelligence-board-v1.png",
+      "kind": "complete fourteen-family morphology comparison",
+      "inspected": true,
+      "notes": "Fourteen separate 1536x1024 boards, at least 56 candidates, fourteen exact prompt receipts, and SHA-256 verification in generation-manifest.v1.json. M04, M05, M07, M09, and M14 are strongest; M08 is restart-only negative evidence."
+    },
+    {
+      "path_or_url": "INDEPENDENT_CRITIQUE.md",
+      "kind": "independent visual quality gate",
+      "inspected": true,
+      "notes": "A separate critic inspected all fourteen original-resolution boards, scored the study 20/30, kept only M04 and M14 as directions, and identified six restart families."
+    },
+    {
+      "path_or_url": "morphology-selection.v1.json",
+      "kind": "machine-readable morphology decision map",
+      "inspected": true,
+      "notes": "Records all board scores, keep/iterate/restart verdicts, candidate seeds, surface policy, and the required 96-pixel comparison gate without claiming production approval."
+    },
+    {
+      "path_or_url": "../STARLIGHT_CHARACTER_GENERATION_TEMPLATE.md",
+      "kind": "reusable character-generation contract",
+      "inspected": true,
+      "notes": "Binds future images to stable agent identity, specialty, artifact, working behavior, authority boundary, morphology seed, mechanical proof, provenance, and the 30-point surface gate."
     }
   ],
   "checks": [
@@ -86,24 +134,39 @@
     {
       "name": "strict-silhouette-restraint",
       "status": "fail",
-      "evidence": "The generator introduced gray component and seam detail beyond the requested flat silhouette treatment."
+      "evidence": "After founder feedback favored the earlier high-craft direction, the resumed study used two-tone grayscale maquettes with thumbnail silhouette checks instead of flat cut-paper output."
     },
     {
       "name": "founder-approval",
       "status": "blocked",
-      "evidence": "The new Phase D board has not yet received Frank's selection or rejection."
+      "evidence": "Frank authorized generating all declared families, but has not selected or approved any candidate for production."
+    },
+    {
+      "name": "family-completeness-and-integrity",
+      "status": "pass",
+      "evidence": "All fourteen declared boards and fourteen prompt receipts exist; every PNG is 1536x1024 and matches the SHA-256 digest recorded in generation-manifest.v1.json."
+    },
+    {
+      "name": "restart-discipline",
+      "status": "pass",
+      "evidence": "Independent review marks M01, M06, M08, M10, M11, and M13 for restart while preserving only specific seeds."
+    },
+    {
+      "name": "independent-critique",
+      "status": "pass",
+      "evidence": "A separate visual critic inspected all fourteen original-resolution boards and recorded per-family keep, iterate, and restart verdicts in INDEPENDENT_CRITIQUE.md."
     },
     {
       "name": "machine-performance",
-      "status": "blocked",
-      "evidence": "Both browser-qa and review-lite preflights returned HOLD; generation stopped after the current atomic image."
+      "status": "pass",
+      "evidence": "The 2026-08-28 swarm preflight returned ALLOW with 10823 MB free RAM and a two-process ceiling; the image loop remains single-threaded."
     }
   ],
   "score": {
-    "total": 22,
+    "total": 20,
     "max": 30,
-    "notes": "Draft maker score only: strong morphological diversity and clean presentation, reduced for excessive internal detail, no 96-pixel crop test, no real UI context, and no founder review."
+    "notes": "Independent study-level score. The set has valuable seeds but fails the strict silhouette gate: thirteen boards are grayscale renders, real 96-pixel and UI tests are missing, and several families retain generic robot, surveillance, node, or generated-text artifacts."
   },
   "decision": "blocked",
-  "best_resumable_next_step": "After inactive Codex tasks are archived and review-lite preflight allows work, generate m03-chibi-academy-guide-board-v1.png, then m07-biotech-symbiote-board-v1.png. These provide the highest contrast to the completed compact specialist board."
+  "best_resumable_next_step": "Complete independent visual critique, then test M04, M05, M07, M09, and M14 plus one compact/chibi candidate at 96 pixels and inside real .ai, .org, Academy, marketplace, and graph surfaces before any individual-agent portrait fanout."
 }

@@ -79,5 +79,6 @@ IDEATE → SPEC → CARD → KB → TOOLS → BODY → EVAL → SHIP → OBSERVE
 - Face without boundaries
 - Specialist without host
 - Swarm without cost/human gates
-- “144 agents” exposed as a picker
+- 144 opaque agents exposed as an undifferentiated picker without stable identity, profile depth,
+  boundaries, workflow mechanics, or lineage
 - Strategy docs without cards or evals

@@ -1,0 +1,16 @@
+Create an original premium character-development board for Starlight Intelligence.
+
+Use case: stylized-concept exploration. Final surface: a 3:2 landscape pre-production morphology board for clean biotech agent embodiments used in ecology, health research, adaptive knowledge, and collective-intelligence stories.
+
+The attached image is only a benchmark for sophisticated construction, calm presence, disciplined materials, and production-level character design. Do not reproduce its humanoid body, face, halo, cape, blue eye, circular background, costume, palette, or celestial ornament.
+
+Subject: four genuinely different clean biotech symbiote machines, each visibly engineered and role-led: a flexible standing membrane synthesist with a stable structural spine; a low manta-like laboratory companion with credible support and locomotion; a branching photosensitive knowledge gardener with distributed sensing; and a modular coral-like walker that can carry and reorganize samples.
+
+Use principles from soft robotics, tensegrity, plant phyllotaxis, manta load paths, coral modularity, and cephalopod distributed sensing, but do not imitate literal organisms. Every candidate must have a distinct body architecture and credible mass/support logic. Character comes from orientation, balance, and functional behavior, not a humanoid face.
+
+Art direction: an elite original feature-animation, speculative industrial-design, and advanced game creature-design studio board, without imitating any franchise, studio character, or living artist. Strong silhouette at 96 px. One dominant shape, one supporting shape, one surprising functional detail. Two-tone grayscale concept maquettes: warm translucent dry elastomer, pale ceramic lattice, charcoal engineered frame, extremely restrained internal fiber detail. Clear institutional daylight. Clean warm-white design sheet. Four separate complete candidates, left to right, consistent scale, generous negative space, nothing cropped.
+
+No text, labels, numbers, logos, human eyes, face, mouth, wet tissue, flesh, organs, veins, human musculature, parasites, body horror, medical-device mimicry, weapons, capes, halos, glowing orbs, decorative circuitry, background scene, fake UI, nodes, floating unsupported parts, franchise resemblance, or repeated body base. Avoid generic alien creatures. Do not hide weak geometry with glow, translucent effects, surface noise, or dramatic lighting.
+
+Reference image: C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6666d658-5e6c-4d16-a724-63527625135b.png
+Model/tool: Codex built-in image_gen

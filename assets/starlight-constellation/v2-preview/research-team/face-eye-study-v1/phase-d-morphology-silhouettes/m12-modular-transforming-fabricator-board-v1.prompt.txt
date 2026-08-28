@@ -1,0 +1,16 @@
+Create an original premium character-development board for Starlight Intelligence.
+
+Use case: stylized-concept exploration. Final surface: a 3:2 landscape morphology board for fabrication, prototyping, repair, and build-workflow agents whose bodies visibly reconfigure around real tasks.
+
+The attached image is only a benchmark for sophisticated construction, calm dignity, refined materials, and production-level character design. Do not reproduce its humanoid fashion body, face, halo, cape, blue eye, circular background, costume, palette, or celestial ornament.
+
+Create four genuinely different modular transforming fabricators, each shown in one stable neutral configuration with a small inset ghosted outline of its alternate task mode: folding bench-to-biped; tool cart-to-helper; stacked modules forming a tall reach mode; and compact carrier unfolding into a self-braced fabrication frame.
+
+Every design must show plausible joints, hinges, latches, mass distribution, tool access, and a safe human interaction zone. Transformation should look mechanical and repairable, never magical. Each candidate needs a unique primary volume and support system.
+
+Art direction: original elite industrial-design, feature-animation prop design, and AAA game fabrication-system quality, without imitating any franchise, transforming-robot property, studio character, or living artist. Strong silhouette at 96 px. One dominant shape, one supporting shape, one surprising functional detail. Two-tone grayscale maquettes: warm enamel or porcelain modules, graphite frames and joints, charcoal grip/contact surfaces. Clear institutional daylight on a clean warm-white sheet. Four separate complete candidates left to right, consistent scale, generous spacing, nothing cropped. Insets contain no arrows or text.
+
+No text, labels, numbers, logos, human eyes, faces, mouths, weapons, combat forms, magical shape-shifting, impossible floating parts, glowing orbs, capes, crowns, halos, decorative circuitry, background scene, fake UI, node diagrams, copied transformation silhouette, repeated base body, or franchise resemblance. Do not hide weak mechanics with sparks, blur, props, or dramatic lighting.
+
+Reference image: C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6666d658-5e6c-4d16-a724-63527625135b.png
+Model/tool: Codex built-in image_gen

@@ -1,0 +1,16 @@
+Create an original premium character-development board for Starlight Intelligence.
+
+Use case: stylized-concept exploration. Final surface: a 3:2 landscape pre-production morphology board for an Academy onboarding character system, later used in web profiles, learning stories, and small UI avatars.
+
+The attached image is only a benchmark for sophisticated construction, calm presence, refined material transitions, and production-level character design. Do not reproduce its character, silhouette, halo, cape, blue eye, circular background, costume, colors, or ornamental celestial language.
+
+Subject: four genuinely different chibi Academy guide robots, each a capable non-child machine with a distinct role: book-carrying tutor, hands-on workshop guide, observatory and curiosity guide, and human-values steward.
+
+Proportions: 2.7–3.2 heads tall, very short stable legs, generous rounded-square head volume, oversized but functional hands, simple confident feet. Warmth comes from body language, helpful orientation, and tactile construction—not smiles or baby features. Each must use a different body architecture, not one model with different props.
+
+Art direction: an elite feature-animation and game character-design studio’s original shape-language exploration, without imitating any franchise, studio character, or living artist. Strong silhouette at 96 px. One dominant shape, one supporting shape, one surprising functional detail. Two-tone grayscale clay maquettes: warm porcelain structural shells, charcoal soft-contact components, sparse graphite joint details. Clear institutional daylight. Clean warm-white industrial-design sheet. Four separate full-body three-quarter standing candidates, left to right, consistent scale, generous negative space, nothing cropped.
+
+No text, labels, numbers, logos, eyes, mouth, eyebrows, lashes, hair, baby onesies, plush-toy anatomy, toy packaging, glossy consumer gadget language, weapons, capes, crowns, halos, glowing orbs, decorative circuitry, background scene, fake UI, nodes, franchise resemblance, or repeated body base. Do not hide weak shapes with seams, greebles, lighting effects, or props.
+
+Reference image: C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6666d658-5e6c-4d16-a724-63527625135b.png
+Model/tool: Codex built-in image_gen

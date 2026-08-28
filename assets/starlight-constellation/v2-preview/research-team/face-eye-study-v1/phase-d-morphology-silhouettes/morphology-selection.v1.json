@@ -1,0 +1,163 @@
+{
+  "schema_version": "starlight.morphology_selection.v1",
+  "study_id": "starlight-morphology-silhouettes-2026-08-24",
+  "review_date": "2026-08-28",
+  "review_status": "founder_selection_pending",
+  "production_approved_count": 0,
+  "study_score": 20,
+  "board_average_score": 21.6,
+  "scoring_scale": 30,
+  "identity_rule": "Morphology is an application of stable agent identity and never implies authority, intelligence level, moral worth, gender, ethnicity, health, or capability.",
+  "recommended_grammar": [
+    "compact operational collaborators",
+    "screen-scale identity vessels",
+    "role-shaped instruments",
+    "bounded intelligent environments",
+    "context-earned biotech and Academy companions"
+  ],
+  "surface_policy": {
+    "starlight_ai": [
+      "m02-compact-field-specialist",
+      "m04-micro-avatar",
+      "m05-guardian-operator",
+      "m09-nonhumanoid-instrument"
+    ],
+    "starlight_org": [
+      "m07-biotech-symbiote",
+      "m09-nonhumanoid-instrument",
+      "m14-architectural-room-intelligence"
+    ],
+    "academy": [
+      "m03-chibi-academy-guide",
+      "m04-micro-avatar",
+      "m10-creature-companion",
+      "m14-architectural-room-intelligence"
+    ],
+    "runtime_graph": [
+      "m04-micro-avatar"
+    ],
+    "marketplace": [
+      "m02-compact-field-specialist",
+      "m04-micro-avatar",
+      "m09-nonhumanoid-instrument",
+      "m12-modular-transforming-fabricator"
+    ],
+    "spatial": [
+      "m07-biotech-symbiote",
+      "m12-modular-transforming-fabricator",
+      "m14-architectural-room-intelligence"
+    ]
+  },
+  "boards": [
+    {
+      "id": "m01-full-specialist",
+      "score": 18,
+      "verdict": "restart",
+      "advance_candidates": [3],
+      "reason": "Preserve the integrated analytical-workstation seed; restart generic retro-humanoid and literal lantern forms."
+    },
+    {
+      "id": "m02-compact-field-specialist",
+      "score": 23,
+      "verdict": "iterate",
+      "advance_candidates": [3, 4],
+      "reason": "Best versatile body family; simplify seams and prove adult competence at 96 pixels."
+    },
+    {
+      "id": "m03-chibi-academy-guide",
+      "score": 22,
+      "verdict": "iterate",
+      "advance_candidates": [1, 2],
+      "reason": "Book tutor and workshop guide are warm and role-legible; correct hands, optics, and chibi consistency."
+    },
+    {
+      "id": "m04-micro-avatar",
+      "score": 26,
+      "verdict": "keep_direction",
+      "advance_candidates": [1, 3],
+      "reason": "Strongest graph and dense-UI family; pair geometry with deterministic role, state, confidence, and permission glyphs."
+    },
+    {
+      "id": "m05-guardian-operator",
+      "score": 24,
+      "verdict": "iterate",
+      "advance_candidates": [2, 4],
+      "reason": "Evidence custodian and boundary steward communicate calm protection without militarization."
+    },
+    {
+      "id": "m06-agile-scout",
+      "score": 17,
+      "verdict": "restart",
+      "advance_candidates": [4],
+      "reason": "Preserve folding-wheel mechanics only; remove combat, surveillance, and familiar inspection-robot adjacency."
+    },
+    {
+      "id": "m07-biotech-symbiote",
+      "score": 23,
+      "verdict": "iterate",
+      "advance_candidates": [1, 2],
+      "reason": "Distinctive public-interest territory; simplify membrane and manta forms and prove load paths."
+    },
+    {
+      "id": "m08-swarm-gestalt",
+      "score": 16,
+      "verdict": "restart",
+      "advance_candidates": [2],
+      "reason": "Keep bridge behavior only; units need distinct responsibilities and governance, with no central hub trope."
+    },
+    {
+      "id": "m09-nonhumanoid-instrument",
+      "score": 25,
+      "verdict": "iterate",
+      "advance_candidates": [1, 2],
+      "reason": "Archive instrument and verification press are strong function-first characters; remove fake text and antique-scroll noise."
+    },
+    {
+      "id": "m10-creature-companion",
+      "score": 21,
+      "verdict": "restart",
+      "advance_candidates": [2],
+      "reason": "Preserve the book-carrying bird for Academy; restart generic pet, mono-eye, fake-text, and drone-adjacent forms."
+    },
+    {
+      "id": "m11-soft-shell-care-collaborator",
+      "score": 19,
+      "verdict": "restart",
+      "advance_candidates": [],
+      "reason": "Current forms read as mobility products or furniture; reuse soft-contact materials in bounded spatial intelligence."
+    },
+    {
+      "id": "m12-modular-transforming-fabricator",
+      "score": 24,
+      "verdict": "iterate",
+      "advance_candidates": [1],
+      "reason": "Bench-to-fabricator is clearest; validate every transformation mechanically before character polish."
+    },
+    {
+      "id": "m13-aerial-knowledge-navigator",
+      "score": 18,
+      "verdict": "restart",
+      "advance_candidates": [],
+      "reason": "Knowledge work is not legible and lift logic is weak; preserve only ring and manta architectural ideas."
+    },
+    {
+      "id": "m14-architectural-room-intelligence",
+      "score": 26,
+      "verdict": "keep_direction",
+      "advance_candidates": [1, 2],
+      "reason": "Best proof that an agent need not resemble a person; pair the alcove and archive doorway with explicit state and provenance UI."
+    }
+  ],
+  "next_gate": {
+    "name": "flat_black_96px_surface_test",
+    "candidate_count": 16,
+    "required_surfaces": [
+      "profile card",
+      "graph node",
+      "mobile list",
+      "Academy story panel",
+      "marketplace thumbnail"
+    ],
+    "approval_required": "Founder selects seeds before turnaround, eyes, materials, color, or cinematic rendering."
+  }
+}

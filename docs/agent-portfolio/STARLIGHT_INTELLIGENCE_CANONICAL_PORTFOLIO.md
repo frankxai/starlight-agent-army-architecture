@@ -4,6 +4,11 @@
 > Contract: exactly **10 bounded swarms × 5 agents = 50 agents**  
 > Evidence: structural validation only; **live evaluation has not run**
 
+This v1 contract is the **founding cohort**, not a competing identity universe. The draft
+Civilization v2 projection preserves all 50 canonical agent ids and adds 94 source-backed draft
+profiles to form exactly 12 rings × 12 agents = 144. Ring and seat are presentation coordinates,
+never identity. See `CIVILIZATION_144_IDENTITY_CONTRACT.md` before extending or publishing v2.
+
 This portfolio is the data-driven Starlight Intelligence roster. It compiles into the repo's native
 `agent-card.v1` cards, prompt contracts, and structural eval suites. Existing GenCreator, FrankX,
 Arcanea, Starlight Operator, and business-ops cards remain separate product/runtime identities and
@@ -23,6 +28,21 @@ do not count toward this exact 50-agent roster.
 | Compiler | `scripts/generate_canonical_portfolio.py` |
 | Structural validator | `scripts/validate_canonical_portfolio.py` |
 | Focused tests | `scripts/test_canonical_portfolio.py` |
+
+### Civilization v2 draft projection
+
+| Artifact | Contract |
+| --- | --- |
+| Identity contract | `docs/agent-portfolio/CIVILIZATION_144_IDENTITY_CONTRACT.md` |
+| Source matrix receipt | `portfolio/sources/civilization-matrix.public.2026-08-26.json` |
+| Governed portfolio | `portfolio/civilization-portfolio.v2.json` — 50 preserved + 94 expansion drafts |
+| Shared typed graph | `portfolio/civilization-graph.v2.json` — one graph plane, not 144 isolated diagrams |
+| Compiler and validator | `scripts/compile_civilization_portfolio.py` |
+| Focused tests | `scripts/test_civilization_portfolio.py` |
+
+V2 is an additive, public-safe projection. It does not replace the native v1 cards, grant runtime
+authority, or imply that every role needs a cinematic humanoid portrait. Deep characters remain
+scarce; compact guides, symbols, instruments, and environmental intelligences carry the remainder.
 
 The capability pack is content-addressed and immutable. It is still descriptive evidence, not an
 authority token. Authenticated runtime leases, server-owned routing policy, tool adapters, and

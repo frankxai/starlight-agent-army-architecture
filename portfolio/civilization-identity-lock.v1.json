@@ -1,0 +1,2033 @@
+{
+  "schema_version": "starlight.civilization_identity_lock.v1",
+  "lock_id": "starlight-civilization-144-identities",
+  "status": "immutable_identity_registry",
+  "policy": {
+    "agent_id": "immutable",
+    "profile_slug": "stable; any change requires alias, redirect, and reviewed migration receipt",
+    "source_identifier": "provenance key; any rename requires alias and reviewed migration receipt",
+    "seat_and_ring_are_identity": false
+  },
+  "source_identity_set_digest": "sha256:84a9d3e4db05f05edbdf5fd76a3ce3c1f35579f68c4a2492b502196dd3fded9d",
+  "counts": {
+    "identities": 144
+  },
+  "identities": [
+    {
+      "source_identifier": "starlight-concierge.md",
+      "agent_id": "operative-concierge",
+      "profile_slug": "operative-concierge",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-envoy.md",
+      "agent_id": "operative-envoy",
+      "profile_slug": "operative-envoy",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-voice-operator.md",
+      "agent_id": "operative-voice-operator",
+      "profile_slug": "operative-voice-operator",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-genius.md",
+      "agent_id": "operative-genius",
+      "profile_slug": "operative-genius",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-evaluator.md",
+      "agent_id": "vera-decision-verifier",
+      "profile_slug": "vera-decision-verifier",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-orchestrator.md",
+      "agent_id": "ignis-product-conductor",
+      "profile_slug": "ignis-product-conductor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-prime.md",
+      "agent_id": "astra-sovereign",
+      "profile_slug": "astra-sovereign",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-architect.md",
+      "agent_id": "tess-system-designer",
+      "profile_slug": "tess-system-designer",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-navigator.md",
+      "agent_id": "orion-mission-architect",
+      "profile_slug": "orion-mission-architect",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-sentinel.md",
+      "agent_id": "aegis-trust-conductor",
+      "profile_slug": "aegis-trust-conductor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-weaver.md",
+      "agent_id": "aria-story-architect",
+      "profile_slug": "aria-story-architect",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-sage.md",
+      "agent_id": "mira-continuity-keeper",
+      "profile_slug": "mira-continuity-keeper",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-hermes.md",
+      "agent_id": "lyra-research-conductor",
+      "profile_slug": "lyra-research-conductor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-steward.md",
+      "agent_id": "cassian-resource-steward",
+      "profile_slug": "cassian-resource-steward",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "sis-extractor-transcripts.md",
+      "agent_id": "operative-extractor-transcripts",
+      "profile_slug": "operative-extractor-transcripts",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "sis-extractor-vault.md",
+      "agent_id": "operative-extractor-vault",
+      "profile_slug": "operative-extractor-vault",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "sis-extractor-prompts.md",
+      "agent_id": "operative-extractor-prompts",
+      "profile_slug": "operative-extractor-prompts",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "sis-extractor-repos.md",
+      "agent_id": "operative-extractor-repos",
+      "profile_slug": "operative-extractor-repos",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "sis-extractor-external.md",
+      "agent_id": "operative-extractor-external",
+      "profile_slug": "operative-extractor-external",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-sentinel-daemon.md",
+      "agent_id": "sentinel-risk-analyst",
+      "profile_slug": "sentinel-risk-analyst",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-self-is.md",
+      "agent_id": "operative-self-is",
+      "profile_slug": "operative-self-is",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-secondbrain.md",
+      "agent_id": "operative-secondbrain",
+      "profile_slug": "operative-secondbrain",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-brand-is.md",
+      "agent_id": "operative-brand-is",
+      "profile_slug": "operative-brand-is",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-business-is.md",
+      "agent_id": "meridian-venture-conductor",
+      "profile_slug": "meridian-venture-conductor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-creator-is.md",
+      "agent_id": "ember-creator-conductor",
+      "profile_slug": "ember-creator-conductor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-wealth-is.md",
+      "agent_id": "operative-wealth-is",
+      "profile_slug": "operative-wealth-is",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-code-is.md",
+      "agent_id": "rivet-build-engineer",
+      "profile_slug": "rivet-build-engineer",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-voice-video-is.md",
+      "agent_id": "operative-voice-video-is",
+      "profile_slug": "operative-voice-video-is",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-family-is.md",
+      "agent_id": "operative-family-is",
+      "profile_slug": "operative-family-is",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-spiritual-is.md",
+      "agent_id": "operative-spiritual-is",
+      "profile_slug": "operative-spiritual-is",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-health-is.md",
+      "agent_id": "solace-flourishing-conductor",
+      "profile_slug": "solace-flourishing-conductor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-hiring.md",
+      "agent_id": "operative-hiring",
+      "profile_slug": "operative-hiring",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-performance.md",
+      "agent_id": "rune-learning-evaluator",
+      "profile_slug": "rune-learning-evaluator",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-training.md",
+      "agent_id": "kai-curriculum-architect",
+      "profile_slug": "kai-curriculum-architect",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-culture.md",
+      "agent_id": "sophia-academy-conductor",
+      "profile_slug": "sophia-academy-conductor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-talent.md",
+      "agent_id": "relay-change-enablement",
+      "profile_slug": "relay-change-enablement",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-org.md",
+      "agent_id": "maya-operating-model-architect",
+      "profile_slug": "maya-operating-model-architect",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-sound-composition.md",
+      "agent_id": "operative-sound-composition",
+      "profile_slug": "operative-sound-composition",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-sound-production.md",
+      "agent_id": "operative-sound-production",
+      "profile_slug": "operative-sound-production",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-sound-catalog.md",
+      "agent_id": "operative-sound-catalog",
+      "profile_slug": "operative-sound-catalog",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-sound-performance.md",
+      "agent_id": "operative-sound-performance",
+      "profile_slug": "operative-sound-performance",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-sound-audience.md",
+      "agent_id": "echo-audience-resonance",
+      "profile_slug": "echo-audience-resonance",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-sound-sync.md",
+      "agent_id": "operative-sound-sync",
+      "profile_slug": "operative-sound-sync",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "music-curator.md",
+      "agent_id": "operative-music-curator",
+      "profile_slug": "operative-music-curator",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "music-archivist.md",
+      "agent_id": "operative-music-archivist",
+      "profile_slug": "operative-music-archivist",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "persona-keeper.md",
+      "agent_id": "operative-persona-keeper",
+      "profile_slug": "operative-persona-keeper",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "music-producer.md",
+      "agent_id": "sol-visual-world-director",
+      "profile_slug": "sol-visual-world-director",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "music-distributor.md",
+      "agent_id": "cadence-release-producer",
+      "profile_slug": "cadence-release-producer",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "music-amplifier.md",
+      "agent_id": "piper-demand-strategist",
+      "profile_slug": "piper-demand-strategist",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "royalty-architect.md",
+      "agent_id": "operative-royalty-architect",
+      "profile_slug": "operative-royalty-architect",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "music-sync-specialist.md",
+      "agent_id": "operative-music-sync-specialist",
+      "profile_slug": "operative-music-sync-specialist",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-energy-sizing.md",
+      "agent_id": "operative-energy-sizing",
+      "profile_slug": "operative-energy-sizing",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-energy-cost.md",
+      "agent_id": "ledger-unit-economist",
+      "profile_slug": "ledger-unit-economist",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-energy-installer.md",
+      "agent_id": "operative-energy-installer",
+      "profile_slug": "operative-energy-installer",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-energy-operations.md",
+      "agent_id": "operative-energy-operations",
+      "profile_slug": "operative-energy-operations",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-energy-buyer.md",
+      "agent_id": "operative-energy-buyer",
+      "profile_slug": "operative-energy-buyer",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-energy-grid.md",
+      "agent_id": "operative-energy-grid",
+      "profile_slug": "operative-energy-grid",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-energy-recovery.md",
+      "agent_id": "beacon-incident-coordinator",
+      "profile_slug": "beacon-incident-coordinator",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "verticals/crypto-intelligence/onchain/agent.md",
+      "agent_id": "operative-crypto-intelligence-onchain",
+      "profile_slug": "operative-crypto-intelligence-onchain",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-crypto-macro.md",
+      "agent_id": "delta-forecast-challenger",
+      "profile_slug": "delta-forecast-challenger",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-crypto-defi.md",
+      "agent_id": "operative-crypto-defi",
+      "profile_slug": "operative-crypto-defi",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-crypto-custody.md",
+      "agent_id": "operative-crypto-custody",
+      "profile_slug": "operative-crypto-custody",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-crypto-research.md",
+      "agent_id": "horizon-futures-scout",
+      "profile_slug": "horizon-futures-scout",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-crypto-allocation.md",
+      "agent_id": "operative-crypto-allocation",
+      "profile_slug": "operative-crypto-allocation",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-legal-contracts.md",
+      "agent_id": "clara-deal-critic",
+      "profile_slug": "clara-deal-critic",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-legal-gdpr.md",
+      "agent_id": "cipher-privacy-steward",
+      "profile_slug": "cipher-privacy-steward",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-legal-jurisdiction.md",
+      "agent_id": "quorum-governance-designer",
+      "profile_slug": "quorum-governance-designer",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-legal-trademarks.md",
+      "agent_id": "operative-legal-trademarks",
+      "profile_slug": "operative-legal-trademarks",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-legal-ip.md",
+      "agent_id": "operative-legal-ip",
+      "profile_slug": "operative-legal-ip",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-legal-terms.md",
+      "agent_id": "equa-policy-auditor",
+      "profile_slug": "equa-policy-auditor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-legal-liaison.md",
+      "agent_id": "vector-transformation-conductor",
+      "profile_slug": "vector-transformation-conductor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-space-orbit.md",
+      "agent_id": "operative-space-orbit",
+      "profile_slug": "operative-space-orbit",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-space-telescope.md",
+      "agent_id": "operative-space-telescope",
+      "profile_slug": "operative-space-telescope",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-space-telemetry.md",
+      "agent_id": "operative-space-telemetry",
+      "profile_slug": "operative-space-telemetry",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-space-mapper.md",
+      "agent_id": "orbit-spatial-interface-designer",
+      "profile_slug": "orbit-spatial-interface-designer",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-space-payload.md",
+      "agent_id": "operative-space-payload",
+      "profile_slug": "operative-space-payload",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-space-downlink.md",
+      "agent_id": "operative-space-downlink",
+      "profile_slug": "operative-space-downlink",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-space-debris.md",
+      "agent_id": "operative-space-debris",
+      "profile_slug": "operative-space-debris",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-marine-acoustics.md",
+      "agent_id": "operative-marine-acoustics",
+      "profile_slug": "operative-marine-acoustics",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-marine-water.md",
+      "agent_id": "operative-marine-water",
+      "profile_slug": "operative-marine-water",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-marine-vessel.md",
+      "agent_id": "operative-marine-vessel",
+      "profile_slug": "operative-marine-vessel",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-marine-species.md",
+      "agent_id": "operative-marine-species",
+      "profile_slug": "operative-marine-species",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-marine-coastal.md",
+      "agent_id": "operative-marine-coastal",
+      "profile_slug": "operative-marine-coastal",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-marine-dive.md",
+      "agent_id": "operative-marine-dive",
+      "profile_slug": "operative-marine-dive",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-marine-pollution.md",
+      "agent_id": "operative-marine-pollution",
+      "profile_slug": "operative-marine-pollution",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-health-biomarkers.md",
+      "agent_id": "operative-health-biomarkers",
+      "profile_slug": "operative-health-biomarkers",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-health-supplements.md",
+      "agent_id": "operative-health-supplements",
+      "profile_slug": "operative-health-supplements",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-health-sleep.md",
+      "agent_id": "operative-health-sleep",
+      "profile_slug": "operative-health-sleep",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-health-training.md",
+      "agent_id": "kinetica-movement-coach",
+      "profile_slug": "kinetica-movement-coach",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-health-research.md",
+      "agent_id": "harbor-care-navigator",
+      "profile_slug": "harbor-care-navigator",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-health-diet.md",
+      "agent_id": "terra-nutrition-educator",
+      "profile_slug": "terra-nutrition-educator",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-health-stress.md",
+      "agent_id": "serene-reflection-guide",
+      "profile_slug": "serene-reflection-guide",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-ops-deploy.md",
+      "agent_id": "operative-ops-deploy",
+      "profile_slug": "operative-ops-deploy",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-ops-cluster.md",
+      "agent_id": "operative-ops-cluster",
+      "profile_slug": "operative-ops-cluster",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-ops-cost.md",
+      "agent_id": "metric-value-realization",
+      "profile_slug": "metric-value-realization",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-ops-backup.md",
+      "agent_id": "operative-ops-backup",
+      "profile_slug": "operative-ops-backup",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-ops-cdn.md",
+      "agent_id": "operative-ops-cdn",
+      "profile_slug": "operative-ops-cdn",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-ops-logs.md",
+      "agent_id": "operative-ops-logs",
+      "profile_slug": "operative-ops-logs",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-ops-hardware.md",
+      "agent_id": "operative-ops-hardware",
+      "profile_slug": "operative-ops-hardware",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-adapter-hermes.md",
+      "agent_id": "operative-adapter-hermes",
+      "profile_slug": "operative-adapter-hermes",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-adapter-paperclip.md",
+      "agent_id": "operative-adapter-paperclip",
+      "profile_slug": "operative-adapter-paperclip",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-adapter-mastra.md",
+      "agent_id": "operative-adapter-mastra",
+      "profile_slug": "operative-adapter-mastra",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-adapter-agno.md",
+      "agent_id": "operative-adapter-agno",
+      "profile_slug": "operative-adapter-agno",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-adapter-openai.md",
+      "agent_id": "lattice-interoperability-architect",
+      "profile_slug": "lattice-interoperability-architect",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-adapter-langgraph.md",
+      "agent_id": "nexus-futures-conductor",
+      "profile_slug": "nexus-futures-conductor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-adapter-autogen.md",
+      "agent_id": "operative-adapter-autogen",
+      "profile_slug": "operative-adapter-autogen",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-adapter-crewai.md",
+      "agent_id": "operative-adapter-crewai",
+      "profile_slug": "operative-adapter-crewai",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-adapter-dify.md",
+      "agent_id": "operative-adapter-dify",
+      "profile_slug": "operative-adapter-dify",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-adapter-ollama.md",
+      "agent_id": "operative-adapter-ollama",
+      "profile_slug": "operative-adapter-ollama",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-research-arxiv.md",
+      "agent_id": "operative-research-arxiv",
+      "profile_slug": "operative-research-arxiv",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-research-biorxiv.md",
+      "agent_id": "operative-research-biorxiv",
+      "profile_slug": "operative-research-biorxiv",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-research-pmc.md",
+      "agent_id": "operative-research-pmc",
+      "profile_slug": "operative-research-pmc",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-research-openalex.md",
+      "agent_id": "atlas-signal-scout",
+      "profile_slug": "atlas-signal-scout",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-research-distill.md",
+      "agent_id": "soren-synthesis-analyst",
+      "profile_slug": "soren-synthesis-analyst",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-research-format.md",
+      "agent_id": "operative-research-format",
+      "profile_slug": "operative-research-format",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-research-attest.md",
+      "agent_id": "verity-source-auditor",
+      "profile_slug": "verity-source-auditor",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-asset-midjourney.md",
+      "agent_id": "operative-asset-midjourney",
+      "profile_slug": "operative-asset-midjourney",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-asset-higgsfield.md",
+      "agent_id": "operative-asset-higgsfield",
+      "profile_slug": "operative-asset-higgsfield",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-asset-nb.md",
+      "agent_id": "operative-asset-nb",
+      "profile_slug": "operative-asset-nb",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-asset-ui.md",
+      "agent_id": "pixel-web-experience-architect",
+      "profile_slug": "pixel-web-experience-architect",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-asset-video.md",
+      "agent_id": "operative-asset-video",
+      "profile_slug": "operative-asset-video",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-asset-prompts.md",
+      "agent_id": "operative-asset-prompts",
+      "profile_slug": "operative-asset-prompts",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-asset-quality.md",
+      "agent_id": "prism-quality-critic",
+      "profile_slug": "prism-quality-critic",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dist-linkedin.md",
+      "agent_id": "operative-dist-linkedin",
+      "profile_slug": "operative-dist-linkedin",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dist-x.md",
+      "agent_id": "operative-dist-x",
+      "profile_slug": "operative-dist-x",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dist-newsletter.md",
+      "agent_id": "operative-dist-newsletter",
+      "profile_slug": "operative-dist-newsletter",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dist-instagram.md",
+      "agent_id": "operative-dist-instagram",
+      "profile_slug": "operative-dist-instagram",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dist-tiktok.md",
+      "agent_id": "operative-dist-tiktok",
+      "profile_slug": "operative-dist-tiktok",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dist-seo.md",
+      "agent_id": "operative-dist-seo",
+      "profile_slug": "operative-dist-seo",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dist-scheduler.md",
+      "agent_id": "operative-dist-scheduler",
+      "profile_slug": "operative-dist-scheduler",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-comm-github.md",
+      "agent_id": "operative-comm-github",
+      "profile_slug": "operative-comm-github",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-comm-discord.md",
+      "agent_id": "mina-community-steward",
+      "profile_slug": "mina-community-steward",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-comm-alliance.md",
+      "agent_id": "bridge-partnership-architect",
+      "profile_slug": "bridge-partnership-architect",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-comm-events.md",
+      "agent_id": "pulse-cohort-facilitator",
+      "profile_slug": "pulse-cohort-facilitator",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-comm-faq.md",
+      "agent_id": "operative-comm-faq",
+      "profile_slug": "operative-comm-faq",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-comm-contributing.md",
+      "agent_id": "operative-comm-contributing",
+      "profile_slug": "operative-comm-contributing",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-comm-feedback.md",
+      "agent_id": "nova-customer-discovery",
+      "profile_slug": "nova-customer-discovery",
+      "cohort": "founding-50",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dev-meter.md",
+      "agent_id": "operative-dev-meter",
+      "profile_slug": "operative-dev-meter",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dev-pi.md",
+      "agent_id": "operative-dev-pi",
+      "profile_slug": "operative-dev-pi",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dev-syncthing.md",
+      "agent_id": "operative-dev-syncthing",
+      "profile_slug": "operative-dev-syncthing",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dev-audio.md",
+      "agent_id": "operative-dev-audio",
+      "profile_slug": "operative-dev-audio",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dev-camera.md",
+      "agent_id": "operative-dev-camera",
+      "profile_slug": "operative-dev-camera",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dev-display.md",
+      "agent_id": "operative-dev-display",
+      "profile_slug": "operative-dev-display",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    },
+    {
+      "source_identifier": "starlight-dev-thermal.md",
+      "agent_id": "operative-dev-thermal",
+      "profile_slug": "operative-dev-thermal",
+      "cohort": "expansion-94",
+      "immutable": true,
+      "alias_history": {
+        "agent_ids": [],
+        "profile_slugs": [],
+        "source_identifiers": []
+      },
+      "redirects": [],
+      "migration_history": []
+    }
+  ]
+}

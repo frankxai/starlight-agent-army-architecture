@@ -1,0 +1,16 @@
+Create an original premium character-development board for Starlight Intelligence.
+
+Use case: stylized-concept exploration. Final surface: a 3:2 landscape morphology board for agile research, discovery, retrieval, and field-sensing agents.
+
+The attached image is only a benchmark for sophisticated construction, poised intelligence, refined material transitions, and production-level character design. Do not reproduce its humanoid fashion body, face, halo, cape, blue eye, circular background, costume, palette, or celestial ornament.
+
+Create four genuinely different agile scout architectures: a light asymmetric biped whose directional sensor and sample hand visibly orient toward evidence; a compact digitigrade courier with spring geometry and a protected retrieval capsule; a three-point rolling walker that can stop, brace, and raise a focused sensing mast; and a folding directional-sensor chassis that changes profile to pass through tight spaces.
+
+Every candidate must show credible locomotion, center of gravity, task orientation, and minimal cargo. Use purposeful asymmetry. Alert and curious rather than predatory. Avoid humanoid hero anatomy when another support system works better.
+
+Art direction: original elite feature-animation, advanced industrial-design, and AAA game character-development quality, without imitating any franchise, studio character, animal, or living artist. Strong silhouette at 96 px. One dominant shape, one supporting shape, one surprising functional detail. Two-tone grayscale maquettes: warm porcelain protective shells, graphite spring mechanisms, matte charcoal grip surfaces. Clear institutional daylight on a clean warm-white sheet. Four separate complete three-quarter candidates left to right, consistent scale, generous spacing, nothing cropped.
+
+No text, labels, numbers, logos, human eyes, mouth, predatory insect styling, combat-drone language, weapons, blades, antenna forests, capes, crowns, halos, glowing orbs, decorative circuitry, background scene, fake UI, speed lines, floating unsupported parts, repeated base body, or franchise resemblance. Do not hide weak locomotion with blur, props, seams, or dramatic lighting.
+
+Reference image: C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6666d658-5e6c-4d16-a724-63527625135b.png
+Model/tool: Codex built-in image_gen

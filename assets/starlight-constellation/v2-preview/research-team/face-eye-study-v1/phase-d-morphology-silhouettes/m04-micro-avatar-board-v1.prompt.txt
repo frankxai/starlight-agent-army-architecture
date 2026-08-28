@@ -1,0 +1,16 @@
+Create an original premium micro-avatar development board for Starlight Intelligence.
+
+Use case: stylized-concept exploration. Final surface: a 3:2 landscape board testing four avatar architectures that must remain distinctive at 32, 48, and 96 pixels in agent lists, graph nodes, mobile notifications, and profile headers.
+
+The attached refined humanoid and Academy-guide board are construction and material benchmarks only. Do not reproduce their exact heads, circular optics, characters, proportions, halo, cape, costumes, or layouts.
+
+Create four materially different physical head, bust, or emblem architectures using only two or three dominant shapes: soft-square aperture witness; lantern-housing scholar; folded-plane analyst; and screenless tactile steward whose attention is shown by orientation rather than a face.
+
+Each design needs a unique exterior contour and negative-space signature. They should belong to one original Starlight character family through a softened architectural corner and hard-to-soft material transition, not through identical eyes. Show each as one large three-quarter object with a small flat black thumbnail silhouette directly beneath it. No full bodies. No expressions. No text.
+
+Art direction: elite original product-character design and feature-animation icon craft, without imitating any franchise, studio character, consumer robot product, or living artist. Warm porcelain shell, graphite structure, a small amount of matte charcoal compliant material, institutional daylight, warm-white sheet, generous spacing. Extremely clean surfaces and intentional edge radii. The silhouettes must not depend on interior detail.
+
+No labels, numbers, letters, logos, human eyes, paired camera lenses repeated across the set, mouths, brows, screens, fake UI, glowing orbs, halos, stars, antenna forests, decorative circuitry, background scene, node diagrams, toy packaging, franchise resemblance, or tiny greebles.
+
+Reference images: C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6666d658-5e6c-4d16-a724-63527625135b.png; m03-chibi-academy-guide-board-v1.png
+Model/tool: Codex built-in image_gen

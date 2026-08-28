@@ -89,7 +89,9 @@ Income/RA thin L1 · Anime Legends companion · public Starlight concierge · Mi
 
 ## Explicit non-goals (now)
 
-- 144 public faces
+- 144 interchangeable cinematic faces or an undifferentiated agent picker. A governed 144-profile
+  constellation is valid when stable identity, boundaries, lineage, shared workflows, and proof are
+  present; deep character faces stay intentionally scarce.
 - OpenAI/Google ADK as identity home
 - Private vaults on marketing chat
 - Native apps before GenCreator PWA

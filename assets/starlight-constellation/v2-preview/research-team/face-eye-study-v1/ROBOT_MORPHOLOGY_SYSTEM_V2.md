@@ -1,6 +1,6 @@
 # Starlight Robot Morphology System v2
 
-**Status:** founder-review proposal; no generation authorized by this document  
+**Status:** founder-authorized exploration in progress; no production selection yet
 **Supersedes:** Phase C rendering-media study  
 **Principle:** one identity may have several purpose-built embodiments, but every embodiment must preserve a small, governed set of Starlight identity invariants.
 
@@ -168,7 +168,7 @@ Create short neutral loops for idle, orient-to-task, think, ask-for-help, and hu
 
 Only after Frank selects a direction: create the canonical turnaround, proportion tokens, materials, face states, motion sheet, 3D/2D translation rules, crop-safe exports, prompt receipts, alt text, and agent-profile metadata.
 
-## 10. Founder decision requested before generation
+## 10. Founder authorization and selection gate
 
 The most informative first choice is not “which final style?” It is which **four morphology families** deserve silhouette exploration. The recommended starting set is:
 
@@ -178,4 +178,4 @@ The most informative first choice is not “which final style?” It is which **
 4. M07 biotech symbiote for the most distinctive new Starlight territory;
 5. M09 non-humanoid instrument as the strongest anti-humanoid alternative.
 
-Select four of those five, or substitute M05 guardian, M08 swarm gestalt, or M10 creature companion. No polished generation should begin until that morphology shortlist is approved.
+On 2026-08-28 Frank authorized the full morphology exploration with the instruction “create them all and more.” This authorizes bounded comparison boards across the declared families; it does not approve any candidate for production. The required next human gate is selection, rejection, or synthesis after the boards are inspected together.

@@ -1,0 +1,1508 @@
+{
+  "schema_version": "starlight.public_civilization_matrix.v1",
+  "status": "architecture_projection",
+  "generated_on": "2026-08-26",
+  "truth_contract": {
+    "operative_seats": 144,
+    "council_archetypes": 6,
+    "total_blueprint_records": 150,
+    "seat_is_runtime_claim": false,
+    "grants_authority": false,
+    "ring_grouping": "sequential_source_order",
+    "ring_titles_are_source_canonical": false,
+    "claim": "This matrix is a public projection of the SIS 150-agent blueprint: 144 operative seats plus six council archetypes. The twelve ring titles and vows are editorial groupings over sequential source seats, not source-canonical domains. A listed seat is not evidence of deployment, sentience, AGI, live evaluation, or tool authority."
+  },
+  "source": {
+    "repository": "frankxai/Starlight-Intelligence-System",
+    "file": "docs/AGENT_BLUEPRINT.md",
+    "commit": "3f775458f0acc6ac04514c68ef8307ddd01ccf8e",
+    "sha256": "7b7cd21018ccb20010e3323554ea4e00ce8cb45f5589924dddb45e4abf30a8b2",
+    "href": "https://github.com/frankxai/Starlight-Intelligence-System/blob/3f775458f0acc6ac04514c68ef8307ddd01ccf8e/docs/AGENT_BLUEPRINT.md"
+  },
+  "rings": [
+    {
+      "id": "ring-01",
+      "number": 1,
+      "name": "Sovereign Command",
+      "vow": "Hold purpose, boundaries, and accountable direction.",
+      "input": "intent",
+      "output": "bounded mission",
+      "human_boundary": "Credentials and irreversible decisions remain human-held.",
+      "seats": [
+        {
+          "seat": 1,
+          "display_name": "Concierge",
+          "source_identifier": "starlight-concierge.md",
+          "source_domain": "Intake",
+          "responsibility": "Handles first-time user intake and routes vague requests.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 2,
+          "display_name": "Envoy",
+          "source_identifier": "starlight-envoy.md",
+          "source_domain": "Handoff",
+          "responsibility": "Facilitates zero-terminal artifact delivery for non-technical users.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 3,
+          "display_name": "Voice Operator",
+          "source_identifier": "starlight-voice-operator.md",
+          "source_domain": "Cockpit",
+          "responsibility": "Listens to spoken executive intents and generates session packets.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 4,
+          "display_name": "Genius",
+          "source_identifier": "starlight-genius.md",
+          "source_domain": "Excavation",
+          "responsibility": "Analyzes personal corpus to extract voice signatures and frameworks.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 5,
+          "display_name": "Evaluator",
+          "source_identifier": "starlight-evaluator.md",
+          "source_domain": "Benchmarks",
+          "responsibility": "Runs model arena tests and rates compliance against standards.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 6,
+          "display_name": "Orchestrator",
+          "source_identifier": "starlight-orchestrator.md",
+          "source_domain": "Coordination",
+          "responsibility": "Routes tasks, manages multi-step workflows, and drives YOLO sessions.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 7,
+          "display_name": "Prime",
+          "source_identifier": "starlight-prime.md",
+          "source_domain": "Synthesis",
+          "responsibility": "Synthesizes conflicting council inputs into a single rational path.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 8,
+          "display_name": "Architect",
+          "source_identifier": "starlight-architect.md",
+          "source_domain": "Infrastructure",
+          "responsibility": "Designs database schemas, directory layouts, and system boundaries.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 9,
+          "display_name": "Navigator",
+          "source_identifier": "starlight-navigator.md",
+          "source_domain": "Strategy",
+          "responsibility": "Charts execution roadmaps, identifies bottlenecks, and schedules tasks.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 10,
+          "display_name": "Sentinel",
+          "source_identifier": "starlight-sentinel.md",
+          "source_domain": "Quality",
+          "responsibility": "Audits code changes, monitors vulnerabilities, and triggers git rollbacks.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 11,
+          "display_name": "Weaver",
+          "source_identifier": "starlight-weaver.md",
+          "source_domain": "Narrative",
+          "responsibility": "Weaves creative themes, brand design layouts, and technical copy.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 12,
+          "display_name": "Sage",
+          "source_identifier": "starlight-sage.md",
+          "source_domain": "Institutional",
+          "responsibility": "Retrieves past lessons, resolves contradictions, and queries vaults.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-02",
+      "number": 2,
+      "name": "Memory & Intelligence",
+      "vow": "Preserve context without confusing recollection with truth.",
+      "input": "signals and history",
+      "output": "retrievable evidence",
+      "human_boundary": "Private memory never crosses a public boundary by implication.",
+      "seats": [
+        {
+          "seat": 13,
+          "display_name": "Hermes",
+          "source_identifier": "starlight-hermes.md",
+          "source_domain": "Retrieval",
+          "responsibility": "Conducts semantic lookup across local vaults, repositories, and web.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 14,
+          "display_name": "Steward",
+          "source_identifier": "starlight-steward.md",
+          "source_domain": "Maintenance",
+          "responsibility": "Manages active file-cleanup, resolves merge conflicts, and maintains packages.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 15,
+          "display_name": "Transcripts Extractor",
+          "source_identifier": "sis-extractor-transcripts.md",
+          "source_domain": "Parsing",
+          "responsibility": "Extracts structured JSONL memory atoms from terminal logs.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 16,
+          "display_name": "Vault Extractor",
+          "source_identifier": "sis-extractor-vault.md",
+          "source_domain": "Parsing",
+          "responsibility": "Scrapes Obsidian vault markdown files and indexes connections.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 17,
+          "display_name": "Prompts Extractor",
+          "source_identifier": "sis-extractor-prompts.md",
+          "source_domain": "Parsing",
+          "responsibility": "Evaluates custom agent prompt files and compiles system instructions.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 18,
+          "display_name": "Repos Extractor",
+          "source_identifier": "sis-extractor-repos.md",
+          "source_domain": "Parsing",
+          "responsibility": "Scans repository configurations to identify dependencies and exports.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 19,
+          "display_name": "External Extractor",
+          "source_identifier": "sis-extractor-external.md",
+          "source_domain": "Parsing",
+          "responsibility": "Integrates Notion, Drive, and Google Keep entries via MCP.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 20,
+          "display_name": "Sentinel Daemon",
+          "source_identifier": "starlight-sentinel-daemon.md",
+          "source_domain": "Daemon",
+          "responsibility": "Background process monitoring file drift and checking licenses.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 21,
+          "display_name": "Self IS",
+          "source_identifier": "starlight-self-is.md",
+          "source_domain": "Layer 1",
+          "responsibility": "Establishes the core persona, identity keys, and personal values.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 22,
+          "display_name": "Second Brain IS",
+          "source_identifier": "starlight-secondbrain.md",
+          "source_domain": "Layer 2",
+          "responsibility": "Handles daily inbox parsing, tags notes, and surfaces repeating patterns.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 23,
+          "display_name": "Brand IS",
+          "source_identifier": "starlight-brand-is.md",
+          "source_domain": "Layer 3",
+          "responsibility": "Maintains visual assets, font alignments, and brand kits.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 24,
+          "display_name": "Business IS",
+          "source_identifier": "starlight-business-is.md",
+          "source_domain": "Layer 4",
+          "responsibility": "Manages BV accounting, corporate tax compliance, and entity rules.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-03",
+      "number": 3,
+      "name": "Life & Enterprise",
+      "vow": "Turn human values into durable personal and business systems.",
+      "input": "needs and constraints",
+      "output": "operating rhythm",
+      "human_boundary": "Health, family, finance, and identity decisions remain human-owned.",
+      "seats": [
+        {
+          "seat": 25,
+          "display_name": "Creator IS",
+          "source_identifier": "starlight-creator-is.md",
+          "source_domain": "Layer 5",
+          "responsibility": "Formulates content calendars, newsletters, and creative pipeline gates.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 26,
+          "display_name": "Wealth IS",
+          "source_identifier": "starlight-wealth-is.md",
+          "source_domain": "Layer 6",
+          "responsibility": "Drives capital allocation decisions and monitors investment metrics.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 27,
+          "display_name": "Code IS",
+          "source_identifier": "starlight-code-is.md",
+          "source_domain": "Layer 7",
+          "responsibility": "Coordinates local workspace automation and MCP tool development.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 28,
+          "display_name": "Voice & Video IS",
+          "source_identifier": "starlight-voice-video-is.md",
+          "source_domain": "Layer 8",
+          "responsibility": "Guides media asset attestation, audio editing, and video pipelines.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 29,
+          "display_name": "Family IS",
+          "source_identifier": "starlight-family-is.md",
+          "source_domain": "Layer 9",
+          "responsibility": "Updates kinship trees, manages private estate files, and schedules rituals.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 30,
+          "display_name": "Spiritual IS",
+          "source_identifier": "starlight-spiritual-is.md",
+          "source_domain": "Optional",
+          "responsibility": "Private, encrypted node handling long-term existential alignment.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 31,
+          "display_name": "Health IS",
+          "source_identifier": "starlight-health-is.md",
+          "source_domain": "Rhythm",
+          "responsibility": "Monitors nutrition plans, sleep logs, and physical exercises.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 32,
+          "display_name": "ICP Recruiter",
+          "source_identifier": "starlight-hiring.md",
+          "source_domain": "Hiring",
+          "responsibility": "Screens candidate metrics and plans candidate sourcing pipelines.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 33,
+          "display_name": "Performance Coach",
+          "source_identifier": "starlight-performance.md",
+          "source_domain": "Reviews",
+          "responsibility": "Rehearses feedback conversations and plans performance calibrations.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 34,
+          "display_name": "Curriculum Designer",
+          "source_identifier": "starlight-training.md",
+          "source_domain": "Training",
+          "responsibility": "Designs outcome-backed courses and measures skill transfer rates.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 35,
+          "display_name": "Culture Architect",
+          "source_identifier": "starlight-culture.md",
+          "source_domain": "Rituals",
+          "responsibility": "Structures company-wide values and schedules onboarding checkpoints.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 36,
+          "display_name": "Talent Safeguard",
+          "source_identifier": "starlight-talent.md",
+          "source_domain": "Safety",
+          "responsibility": "Detects team burnout signs and evaluates team psychological safety.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-04",
+      "number": 4,
+      "name": "People, Sound & Culture",
+      "vow": "Help communities learn, create, perform, and belong.",
+      "input": "human expression",
+      "output": "shared practice",
+      "human_boundary": "Consent, dignity, authorship, and cultural context are non-negotiable.",
+      "seats": [
+        {
+          "seat": 37,
+          "display_name": "Org Structuralist",
+          "source_identifier": "starlight-org.md",
+          "source_domain": "Structure",
+          "responsibility": "Models organizational charts, span of control, and role definitions.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 38,
+          "display_name": "Composer",
+          "source_identifier": "starlight-sound-composition.md",
+          "source_domain": "Sound",
+          "responsibility": "Designs arrangements, drafts scores, and formats demo files.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 39,
+          "display_name": "Audio Producer",
+          "source_identifier": "starlight-sound-production.md",
+          "source_domain": "Sound",
+          "responsibility": "Drafts mixing and mastering configurations and logs vocal chains.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 40,
+          "display_name": "Catalog Mint",
+          "source_identifier": "starlight-sound-catalog.md",
+          "source_domain": "Sound",
+          "responsibility": "Registers ISRCs, compiles metadata sheets, and handles deplatforming.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 41,
+          "display_name": "Performance Director",
+          "source_identifier": "starlight-sound-performance.md",
+          "source_domain": "Sound",
+          "responsibility": "Plans live show setlists, broadcast schedules, and tour riders.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 42,
+          "display_name": "Audience Builder",
+          "source_identifier": "starlight-sound-audience.md",
+          "source_domain": "Sound",
+          "responsibility": "Handles listener maps, subscriber newsletters, and Fan stay-reviews.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 43,
+          "display_name": "Sync Agent",
+          "source_identifier": "starlight-sound-sync.md",
+          "source_domain": "Sound",
+          "responsibility": "Evaluates movie/TV briefs, sync placement fits, and licenses rights.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 44,
+          "display_name": "Music Curator",
+          "source_identifier": "music-curator.md",
+          "source_domain": "Music IS",
+          "responsibility": "Apex gate keeper auditing track quality before greenlighting a release.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 45,
+          "display_name": "Music Archivist",
+          "source_identifier": "music-archivist.md",
+          "source_domain": "Music IS",
+          "responsibility": "Curates the digital song masters database and manages label audits.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 46,
+          "display_name": "Persona Keeper",
+          "source_identifier": "persona-keeper.md",
+          "source_domain": "Music IS",
+          "responsibility": "Manages AI voice models and logs persona background histories.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 47,
+          "display_name": "Visual Producer",
+          "source_identifier": "music-producer.md",
+          "source_domain": "Music IS",
+          "responsibility": "Generates album artwork, canvas slides, and promotional teasers.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 48,
+          "display_name": "Distro Router",
+          "source_identifier": "music-distributor.md",
+          "source_domain": "Music IS",
+          "responsibility": "Delivers master stems to streaming services and compiles link trees.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-05",
+      "number": 5,
+      "name": "Media, Energy & Resilience",
+      "vow": "Carry creative and physical systems from production into continuity.",
+      "input": "resources and releases",
+      "output": "reliable flow",
+      "human_boundary": "Spend, publication, infrastructure, and safety gates return to an owner.",
+      "seats": [
+        {
+          "seat": 49,
+          "display_name": "Promo Amplifier",
+          "source_identifier": "music-amplifier.md",
+          "source_domain": "Music IS",
+          "responsibility": "Coordinates social media posts, advertising, and email drip feeds.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 50,
+          "display_name": "Royalty Calculator",
+          "source_identifier": "royalty-architect.md",
+          "source_domain": "Music IS",
+          "responsibility": "Models payout waterfalls, splits, and blockchain-based tokens.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 51,
+          "display_name": "Sync Specialist",
+          "source_identifier": "music-sync-specialist.md",
+          "source_domain": "Music IS",
+          "responsibility": "Pitches tracks directly to supervisors and handles licensing payouts.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 52,
+          "display_name": "Solar Sizer",
+          "source_identifier": "starlight-energy-sizing.md",
+          "source_domain": "Sizing",
+          "responsibility": "Calculates panel setups, battery cells, and heat pump outputs.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 53,
+          "display_name": "Cost Modeler",
+          "source_identifier": "starlight-energy-cost.md",
+          "source_domain": "Cost",
+          "responsibility": "Calculates solar ROI, tax exemptions, and utility tariff plans.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 54,
+          "display_name": "Project Estimator",
+          "source_identifier": "starlight-energy-installer.md",
+          "source_domain": "Installer",
+          "responsibility": "Creates installation layouts, bill of materials, and permit files.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 55,
+          "display_name": "Ops Monitor",
+          "source_identifier": "starlight-energy-operations.md",
+          "source_domain": "Operations",
+          "responsibility": "Logs panel generation, flags low efficiency, and triggers repairs.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 56,
+          "display_name": "Tariff Broker",
+          "source_identifier": "starlight-energy-buyer.md",
+          "source_domain": "Buyer",
+          "responsibility": "Evaluates utility agreements and recommends grid sell-back paths.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 57,
+          "display_name": "Grid Interface",
+          "source_identifier": "starlight-energy-grid.md",
+          "source_domain": "Grid",
+          "responsibility": "Synchronizes with municipal virtual power plant (VPP) events.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 58,
+          "display_name": "Failover Manager",
+          "source_identifier": "starlight-energy-recovery.md",
+          "source_domain": "Recovery",
+          "responsibility": "Manages grid blackout alerts, battery backups, and local routing.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 59,
+          "display_name": "On-Chain Tracker",
+          "source_identifier": "verticals/crypto-intelligence/onchain/agent.md",
+          "source_domain": "On-Chain",
+          "responsibility": "Monitors smart contract calls, gas costs, and whale address movements.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 60,
+          "display_name": "Macro Analyst",
+          "source_identifier": "starlight-crypto-macro.md",
+          "source_domain": "Macro",
+          "responsibility": "Models interest rate policies, market cycles, and liquidity pools.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-06",
+      "number": 6,
+      "name": "Wealth, Law & Governance",
+      "vow": "Make value, risk, rights, and jurisdiction inspectable.",
+      "input": "assets and obligations",
+      "output": "governed decision",
+      "human_boundary": "No agent may authorize transactions, legal commitments, or custody changes.",
+      "seats": [
+        {
+          "seat": 61,
+          "display_name": "DeFi Auditor",
+          "source_identifier": "starlight-crypto-defi.md",
+          "source_domain": "DeFi",
+          "responsibility": "Inspects lending pool ratios, yield pools, and arbitrage logs.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 62,
+          "display_name": "Custody Custodian",
+          "source_identifier": "starlight-crypto-custody.md",
+          "source_domain": "Sovereignty",
+          "responsibility": "Audits multi-sig wallet layouts, key paths, and cold storage locations.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 63,
+          "display_name": "Protocol Researcher",
+          "source_identifier": "starlight-crypto-research.md",
+          "source_domain": "Research",
+          "responsibility": "Reviews new whitepapers, token structures, and developer commits.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 64,
+          "display_name": "Asset Allocator",
+          "source_identifier": "starlight-crypto-allocation.md",
+          "source_domain": "Allocation",
+          "responsibility": "Rebalances digital asset allocations based on risk targets.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 65,
+          "display_name": "Contract Reviewer",
+          "source_identifier": "starlight-legal-contracts.md",
+          "source_domain": "Legal",
+          "responsibility": "Highlights liability terms, terminations, and intellectual rights.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 66,
+          "display_name": "GDPR Auditor",
+          "source_identifier": "starlight-legal-gdpr.md",
+          "source_domain": "Compliance",
+          "responsibility": "Audits user data storage structures, consent forms, and cookie APIs.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 67,
+          "display_name": "Jurisdiction Mapper",
+          "source_identifier": "starlight-legal-jurisdiction.md",
+          "source_domain": "Legal",
+          "responsibility": "Compiles local tax and corporate filing laws across active nodes.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 68,
+          "display_name": "Trademark Sentinel",
+          "source_identifier": "starlight-legal-trademarks.md",
+          "source_domain": "IP",
+          "responsibility": "Scrapes domain listings and logs trademark registrations.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 69,
+          "display_name": "IP Custodian",
+          "source_identifier": "starlight-legal-ip.md",
+          "source_domain": "IP",
+          "responsibility": "Catalogues software licenses, copyright registrations, and source keys.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 70,
+          "display_name": "Terms Compiler",
+          "source_identifier": "starlight-legal-terms.md",
+          "source_domain": "Compliance",
+          "responsibility": "Maintains terms of service documents and privacy statements.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 71,
+          "display_name": "Board Liaison",
+          "source_identifier": "starlight-legal-liaison.md",
+          "source_domain": "Governance",
+          "responsibility": "Prepares compliance checklists before substrate board hearings.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 72,
+          "display_name": "Orbit calculator",
+          "source_identifier": "starlight-space-orbit.md",
+          "source_domain": "Cosmos",
+          "responsibility": "Models Keplerian satellite pathways and estimates decay dates.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-07",
+      "number": 7,
+      "name": "Cosmos & Planetary Observation",
+      "vow": "Observe distant and planetary systems with evidence and humility.",
+      "input": "telemetry and models",
+      "output": "bounded observation",
+      "human_boundary": "Scientific uncertainty and physical safety remain explicit.",
+      "seats": [
+        {
+          "seat": 73,
+          "display_name": "Telescope Scheduler",
+          "source_identifier": "starlight-space-telescope.md",
+          "source_domain": "Observation",
+          "responsibility": "Schedules dark sky observation blocks and reviews weather models.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 74,
+          "display_name": "Telemetry Parser",
+          "source_identifier": "starlight-space-telemetry.md",
+          "source_domain": "Cosmos",
+          "responsibility": "Logs sensor metrics, packet loss rates, and solar storm warnings.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 75,
+          "display_name": "Sky Mapper",
+          "source_identifier": "starlight-space-mapper.md",
+          "source_domain": "Observation",
+          "responsibility": "Updates astronomical database files with target constellations.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 76,
+          "display_name": "Payload Integrator",
+          "source_identifier": "starlight-space-payload.md",
+          "source_domain": "Cosmos",
+          "responsibility": "Configures sensor capture intervals and registers image assets.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 77,
+          "display_name": "Downlink Router",
+          "source_identifier": "starlight-space-downlink.md",
+          "source_domain": "Cosmos",
+          "responsibility": "Coordinates data dumps with ground stations and verifies hash keys.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 78,
+          "display_name": "Space Debris Tracker",
+          "source_identifier": "starlight-space-debris.md",
+          "source_domain": "Cosmos",
+          "responsibility": "Cross-references space object catalogs to flag collision alerts.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 79,
+          "display_name": "Acoustic Sensor",
+          "source_identifier": "starlight-marine-acoustics.md",
+          "source_domain": "Marine",
+          "responsibility": "Analyzes hydrophone audio files to flag vessel noise or whale calls.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 80,
+          "display_name": "Water Analyst",
+          "source_identifier": "starlight-marine-water.md",
+          "source_domain": "Marine",
+          "responsibility": "Tracks salinity, temperature variations, and pH logs.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 81,
+          "display_name": "Vessel Tracker",
+          "source_identifier": "starlight-marine-vessel.md",
+          "source_domain": "Marine",
+          "responsibility": "Evaluates AIS transponder signals to log marine reserve encroachments.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 82,
+          "display_name": "Species Logger",
+          "source_identifier": "starlight-marine-species.md",
+          "source_domain": "Conservation",
+          "responsibility": "Logs marine mammal sightings and maps migration pathways.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 83,
+          "display_name": "Coastal Sentinel",
+          "source_identifier": "starlight-marine-coastal.md",
+          "source_domain": "Marine",
+          "responsibility": "Scans satellite views to flag coastal erosion and reef bleaching.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 84,
+          "display_name": "Dive Planner",
+          "source_identifier": "starlight-marine-dive.md",
+          "source_domain": "Marine",
+          "responsibility": "Compiles tide tables, current speeds, and dive safety checklists.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-08",
+      "number": 8,
+      "name": "Ocean, Health & Continuity",
+      "vow": "Care for living systems without pretending to replace expert judgment.",
+      "input": "environmental and body signals",
+      "output": "safe guidance",
+      "human_boundary": "Clinical, emergency, and field-safety decisions escalate to qualified people.",
+      "seats": [
+        {
+          "seat": 85,
+          "display_name": "Pollution Monitor",
+          "source_identifier": "starlight-marine-pollution.md",
+          "source_domain": "Marine",
+          "responsibility": "Maps oil spill patterns and registers ocean plastic collection logs.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 86,
+          "display_name": "Biomarker Analyst",
+          "source_identifier": "starlight-health-biomarkers.md",
+          "source_domain": "Longevity",
+          "responsibility": "Flags hormone, vitamin, and cardiovascular metrics from blood sheets.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 87,
+          "display_name": "Supplement Advisor",
+          "source_identifier": "starlight-health-supplements.md",
+          "source_domain": "Longevity",
+          "responsibility": "Coordinates supplement schedules based on biomarker deficits.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 88,
+          "display_name": "Sleep Optimizer",
+          "source_identifier": "starlight-health-sleep.md",
+          "source_domain": "Rhythm",
+          "responsibility": "Audits sleep cycles, heart rate variability, and bedroom environments.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 89,
+          "display_name": "Training Planner",
+          "source_identifier": "starlight-health-training.md",
+          "source_domain": "Rhythm",
+          "responsibility": "Models resistance workouts, zone-2 cardio plans, and rest steps.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 90,
+          "display_name": "Longevity Researcher",
+          "source_identifier": "starlight-health-research.md",
+          "source_domain": "Longevity",
+          "responsibility": "Reviews clinical longevity studies, peptide trials, and drug guides.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 91,
+          "display_name": "Dietary Synthesizer",
+          "source_identifier": "starlight-health-diet.md",
+          "source_domain": "Rhythm",
+          "responsibility": "Logs caloric intakes, macronutrient profiles, and glucose metrics.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 92,
+          "display_name": "Stress Tracker",
+          "source_identifier": "starlight-health-stress.md",
+          "source_domain": "Rhythm",
+          "responsibility": "Tracks daily stress spikes and schedules breathing sessions.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 93,
+          "display_name": "Deploy Overseer",
+          "source_identifier": "starlight-ops-deploy.md",
+          "source_domain": "Ops",
+          "responsibility": "Manages Vercel, Railway, and Cloudflare Workers deploy pipelines.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 94,
+          "display_name": "Cluster Tuner",
+          "source_identifier": "starlight-ops-cluster.md",
+          "source_domain": "Ops",
+          "responsibility": "Tunes Kubernetes node configurations and memory allocations.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 95,
+          "display_name": "Cost Optimization",
+          "source_identifier": "starlight-ops-cost.md",
+          "source_domain": "Ops",
+          "responsibility": "Audits cloud monthly usage and cleans orphaned storage blocks.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 96,
+          "display_name": "Backup Guard",
+          "source_identifier": "starlight-ops-backup.md",
+          "source_domain": "Ops",
+          "responsibility": "Runs automated database backups and validates target checksums.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-09",
+      "number": 9,
+      "name": "Infrastructure & Operations",
+      "vow": "Keep digital systems observable, reversible, and cost-aware.",
+      "input": "runtime state",
+      "output": "reliable service",
+      "human_boundary": "Production, secrets, migration, and destructive actions are gated.",
+      "seats": [
+        {
+          "seat": 97,
+          "display_name": "CDN Warden",
+          "source_identifier": "starlight-ops-cdn.md",
+          "source_domain": "Ops",
+          "responsibility": "Configures Cloudflare caching rules and mitigates DDoS attempts.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 98,
+          "display_name": "Log Aggregator",
+          "source_identifier": "starlight-ops-logs.md",
+          "source_domain": "Ops",
+          "responsibility": "Filters debug logs, alerts on fatal crashes, and archives data.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 99,
+          "display_name": "Hardware Monitor",
+          "source_identifier": "starlight-ops-hardware.md",
+          "source_domain": "Ops",
+          "responsibility": "Tracks local CPU temperatures, fan speeds, and NVMe disk health.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 100,
+          "display_name": "Nous Hermes Adapter",
+          "source_identifier": "starlight-adapter-hermes.md",
+          "source_domain": "Partner",
+          "responsibility": "Imports profiles and kanban tasks from Nous Research Hermes agent.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 101,
+          "display_name": "Paperclip Broker",
+          "source_identifier": "starlight-adapter-paperclip.md",
+          "source_domain": "Partner",
+          "responsibility": "Syncs project task queues and budgets with Paperclip dashboard.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 102,
+          "display_name": "Mastra Connector",
+          "source_identifier": "starlight-adapter-mastra.md",
+          "source_domain": "Partner",
+          "responsibility": "Exposes TypeScript-native tools and agent steps via Mastra.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 103,
+          "display_name": "Agno Bridge",
+          "source_identifier": "starlight-adapter-agno.md",
+          "source_domain": "Partner",
+          "responsibility": "Bridges lightweight Python agents built on Agno framework.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 104,
+          "display_name": "OpenAI SDK Adapter",
+          "source_identifier": "starlight-adapter-openai.md",
+          "source_domain": "Partner",
+          "responsibility": "Formats function call responses for the OpenAI Agents SDK.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 105,
+          "display_name": "LangGraph Router",
+          "source_identifier": "starlight-adapter-langgraph.md",
+          "source_domain": "Partner",
+          "responsibility": "Traces cyclical agent pathways and state branches in LangGraph.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 106,
+          "display_name": "AutoGen Bridge",
+          "source_identifier": "starlight-adapter-autogen.md",
+          "source_domain": "Partner",
+          "responsibility": "Facilitates chat loops between AutoGen conversation nodes.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 107,
+          "display_name": "CrewAI Orchestrator",
+          "source_identifier": "starlight-adapter-crewai.md",
+          "source_domain": "Partner",
+          "responsibility": "Formats goal prompts to invoke CrewAI role-playing agents.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 108,
+          "display_name": "Dify Sync",
+          "source_identifier": "starlight-adapter-dify.md",
+          "source_domain": "Partner",
+          "responsibility": "Exports workflow structures and prompts to Dify visual engines.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-10",
+      "number": 10,
+      "name": "Harnesses & Research",
+      "vow": "Connect models, tools, and knowledge without hiding provenance.",
+      "input": "tasks and sources",
+      "output": "portable evidence",
+      "human_boundary": "Adapters grant no authority beyond their authenticated runtime lease.",
+      "seats": [
+        {
+          "seat": 109,
+          "display_name": "Ollama Localizer",
+          "source_identifier": "starlight-adapter-ollama.md",
+          "source_domain": "Partner",
+          "responsibility": "Configures local model configurations and manages GGUF files.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 110,
+          "display_name": "arXiv Scraper",
+          "source_identifier": "starlight-research-arxiv.md",
+          "source_domain": "Research",
+          "responsibility": "Scrapes latest machine learning and science preprints from arXiv.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 111,
+          "display_name": "BioRxiv Scraper",
+          "source_identifier": "starlight-research-biorxiv.md",
+          "source_domain": "Research",
+          "responsibility": "Downloads biology preprints and filters them by target tags.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 112,
+          "display_name": "Europe PMC Fetcher",
+          "source_identifier": "starlight-research-pmc.md",
+          "source_domain": "Research",
+          "responsibility": "Queries PubMed IDs and formats citation link trees.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 113,
+          "display_name": "OpenAlex Aggregator",
+          "source_identifier": "starlight-research-openalex.md",
+          "source_domain": "Research",
+          "responsibility": "Aggregates citation metrics, h-indexes, and author lists.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 114,
+          "display_name": "PDF Distiller",
+          "source_identifier": "starlight-research-distill.md",
+          "source_domain": "Research",
+          "responsibility": "Extracts charts and abstracts from scientific PDF documents.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 115,
+          "display_name": "Markdown Formatter",
+          "source_identifier": "starlight-research-format.md",
+          "source_domain": "Publishing",
+          "responsibility": "Formats text columns into clean academic GitHub Markdown.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 116,
+          "display_name": "Attestation Pinner",
+          "source_identifier": "starlight-research-attest.md",
+          "source_domain": "Publishing",
+          "responsibility": "Pins digital signatures and cryptographic hashes onto papers.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 117,
+          "display_name": "Midjourney Adapter",
+          "source_identifier": "starlight-asset-midjourney.md",
+          "source_domain": "Asset",
+          "responsibility": "Formats cinematic prompts and schedules generation calls.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 118,
+          "display_name": "Higgsfield Director",
+          "source_identifier": "starlight-asset-higgsfield.md",
+          "source_domain": "Asset",
+          "responsibility": "Structures video prompts and edits camera panning metrics.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 119,
+          "display_name": "Nano Banana Renderer",
+          "source_identifier": "starlight-asset-nb.md",
+          "source_domain": "Asset",
+          "responsibility": "Renders flat book cover and thumbnail vectors via nb-image.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 120,
+          "display_name": "UI Mockup Designer",
+          "source_identifier": "starlight-asset-ui.md",
+          "source_domain": "UI",
+          "responsibility": "Generates Tailwind, shadcn, and HTML dashboard frames.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-11",
+      "number": 11,
+      "name": "Creation & Distribution",
+      "vow": "Transform ideas into useful artifacts and responsible public releases.",
+      "input": "creative intent",
+      "output": "published artifact",
+      "human_boundary": "Authorship, claims, audience data, and external sends remain human-reviewed.",
+      "seats": [
+        {
+          "seat": 121,
+          "display_name": "Video Assembler",
+          "source_identifier": "starlight-asset-video.md",
+          "source_domain": "Asset",
+          "responsibility": "Composes keyframe slides, background tunes, and voice tracks.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 122,
+          "display_name": "Prompt Hub Manager",
+          "source_identifier": "starlight-asset-prompts.md",
+          "source_domain": "Prompt Hub",
+          "responsibility": "Optimizes visual prompt parameters and manages presets.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 123,
+          "display_name": "Quality Checker",
+          "source_identifier": "starlight-asset-quality.md",
+          "source_domain": "Quality",
+          "responsibility": "Audits visual outputs to reject blurry panels or text errors.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 124,
+          "display_name": "LinkedIn Formatter",
+          "source_identifier": "starlight-dist-linkedin.md",
+          "source_domain": "Dist",
+          "responsibility": "Translates technical whitepapers into business insights.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 125,
+          "display_name": "X Thread Compiler",
+          "source_identifier": "starlight-dist-x.md",
+          "source_domain": "Dist",
+          "responsibility": "Distills complex codebase changes into engaging punchy posts.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 126,
+          "display_name": "Newsletter Editor",
+          "source_identifier": "starlight-dist-newsletter.md",
+          "source_domain": "Dist",
+          "responsibility": "Formats email campaigns, maps banner images, and checks links.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 127,
+          "display_name": "Instagram Composer",
+          "source_identifier": "starlight-dist-instagram.md",
+          "source_domain": "Dist",
+          "responsibility": "Pairs visual tiles with descriptive captions and location logs.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 128,
+          "display_name": "TikTok Scriptwriter",
+          "source_identifier": "starlight-dist-tiktok.md",
+          "source_domain": "Dist",
+          "responsibility": "Drafts fast-paced video narratives and structures B-roll steps.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 129,
+          "display_name": "SEO Optimizer",
+          "source_identifier": "starlight-dist-seo.md",
+          "source_domain": "Dist",
+          "responsibility": "Generates meta titles, descriptions, and structures headers.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 130,
+          "display_name": "Scheduler Postman",
+          "source_identifier": "starlight-dist-scheduler.md",
+          "source_domain": "Dist",
+          "responsibility": "Publishes approved updates to Buffer, n8n, or API hooks.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 131,
+          "display_name": "GitHub Issue Responder",
+          "source_identifier": "starlight-comm-github.md",
+          "source_domain": "Community",
+          "responsibility": "Triages open bug issues, flags repeating bugs, and comments.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 132,
+          "display_name": "Discord Moderator",
+          "source_identifier": "starlight-comm-discord.md",
+          "source_domain": "Community",
+          "responsibility": "Answers general questions and responds to server commands.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    },
+    {
+      "id": "ring-12",
+      "number": 12,
+      "name": "Community, Devices & Safety",
+      "vow": "Bind participation and physical interfaces to visible responsibility.",
+      "input": "community and device events",
+      "output": "safe coordinated action",
+      "human_boundary": "Access, permissions, public communication, and hardware safety fail closed.",
+      "seats": [
+        {
+          "seat": 133,
+          "display_name": "Alliance Assessor",
+          "source_identifier": "starlight-comm-alliance.md",
+          "source_domain": "Alliances",
+          "responsibility": "Reviews partner API integration requests against board limits.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 134,
+          "display_name": "Event Coordinator",
+          "source_identifier": "starlight-comm-events.md",
+          "source_domain": "Community",
+          "responsibility": "Coordinates hackathons, workshop calendars, and schedules.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 135,
+          "display_name": "FAQ Compiler",
+          "source_identifier": "starlight-comm-faq.md",
+          "source_domain": "Community",
+          "responsibility": "Updates product guides based on recurring community questions.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 136,
+          "display_name": "Contributor Warden",
+          "source_identifier": "starlight-comm-contributing.md",
+          "source_domain": "Community",
+          "responsibility": "Welcomes new repository forks and audits PR checklist rules.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 137,
+          "display_name": "Feedback Analyzer",
+          "source_identifier": "starlight-comm-feedback.md",
+          "source_domain": "Community",
+          "responsibility": "Measures product sentiment logs and extracts core feature requests.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 138,
+          "display_name": "Smart Meter Bridge",
+          "source_identifier": "starlight-dev-meter.md",
+          "source_domain": "Devices",
+          "responsibility": "Scrapes local solar battery stats and uploads CSV summaries.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 139,
+          "display_name": "Raspberry Pi Monitor",
+          "source_identifier": "starlight-dev-pi.md",
+          "source_domain": "Devices",
+          "responsibility": "Logs status statistics for local hardware server endpoints.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 140,
+          "display_name": "Syncthing Warden",
+          "source_identifier": "starlight-dev-syncthing.md",
+          "source_domain": "Devices",
+          "responsibility": "Checks P2P memory folder sync status and resolves duplicate files.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 141,
+          "display_name": "Audio Capture Hub",
+          "source_identifier": "starlight-dev-audio.md",
+          "source_domain": "Devices",
+          "responsibility": "Captures voice recordings from microphone inputs.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 142,
+          "display_name": "Camera Integrator",
+          "source_identifier": "starlight-dev-camera.md",
+          "source_domain": "Devices",
+          "responsibility": "Pulls images from local webcams to verify site status.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 143,
+          "display_name": "Display Controller",
+          "source_identifier": "starlight-dev-display.md",
+          "source_domain": "Devices",
+          "responsibility": "Controls physical HUD monitors or local e-ink status pages.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        },
+        {
+          "seat": 144,
+          "display_name": "Thermal Safety Lock",
+          "source_identifier": "starlight-dev-thermal.md",
+          "source_domain": "Devices",
+          "responsibility": "Shuts down background tasks if hardware CPU heat exceeds limits.",
+          "status": "blueprint-seat",
+          "grants_authority": false
+        }
+      ]
+    }
+  ],
+  "council": [
+    {
+      "seat": 145,
+      "display_name": "Elder Father",
+      "source_identifier": "council/elder-father.md",
+      "source_domain": "Council",
+      "responsibility": "Evaluates proposals for discipline, liability, and long-term legacy.",
+      "status": "council-archetype",
+      "grants_authority": false
+    },
+    {
+      "seat": 146,
+      "display_name": "Elder Mother",
+      "source_identifier": "council/elder-mother.md",
+      "source_domain": "Council",
+      "responsibility": "Evaluates proposals for team health, relations, and beauty.",
+      "status": "council-archetype",
+      "grants_authority": false
+    },
+    {
+      "seat": 147,
+      "display_name": "Sage Seat",
+      "source_identifier": "council/sage.md",
+      "source_domain": "Council",
+      "responsibility": "Evaluates proposals for philosophical meaning and context limits.",
+      "status": "council-archetype",
+      "grants_authority": false
+    },
+    {
+      "seat": 148,
+      "display_name": "Builder-Elder",
+      "source_identifier": "council/builder-elder.md",
+      "source_domain": "Council",
+      "responsibility": "Evaluates proposals for cost, execution speed, and simplicity.",
+      "status": "council-archetype",
+      "grants_authority": false
+    },
+    {
+      "seat": 149,
+      "display_name": "Shadow Witness",
+      "source_identifier": "council/shadow-witness.md",
+      "source_domain": "Council",
+      "responsibility": "Highlights hidden assumptions, ego motives, and security risks.",
+      "status": "council-archetype",
+      "grants_authority": false
+    },
+    {
+      "seat": 150,
+      "display_name": "Future Self at 90",
+      "source_identifier": "council/future-self-at-90.md",
+      "source_domain": "Council",
+      "responsibility": "Focuses on long-horizon life fulfillment and value commitments.",
+      "status": "council-archetype",
+      "grants_authority": false
+    }
+  ]
+}
