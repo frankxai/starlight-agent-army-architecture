@@ -9,4 +9,4 @@ This folder is a non-production design review space for the Starlight Research T
 
 Nothing in `v2-preview` replaces the current v1 production portraits. Human identity approval and downstream site QA remain required.
 
-The latest founder review is recorded in `face-eye-study-v1/FOUNDER_REVIEW_STATUS.md`. Phase E–I remains preserved research, not a production direction; the governed next pass is held in `face-eye-study-v1/asset-program.v1.json` until machine admission and founder selection are both explicit.
+The latest founder review is recorded in `face-eye-study-v1/FOUNDER_REVIEW_STATUS.md`. Phase E–I remains preserved research, not a production direction; the governed tiered next pass is held in `face-eye-study-v1/asset-program.v2.json` until machine admission and founder selection are both explicit.

@@ -1,8 +1,8 @@
 {
   "$schema": "../../../../../schemas/character-studio/asset-program.schema.json",
-  "schema_version": "starlight.character_asset_program.v1",
-  "program_id": "starlight-constellation-portfolio-100x-v1",
-  "program_version": "1.0.0",
+  "schema_version": "starlight.character_asset_program.v2",
+  "program_id": "starlight-constellation-cast-system-v2",
+  "program_version": "2.0.0",
   "status": "held",
   "authority": {
     "visual_research_only": true,
@@ -33,11 +33,66 @@
   },
   "scale_model": {
     "portfolio_agent_count": 144,
-    "master_assets_per_agent": 5,
-    "derivatives_per_master": 6,
-    "generated_master_count": 720,
-    "deterministic_derivative_count": 4320,
-    "target_deliverable_count": 5040
+    "master_assets_per_agent": null,
+    "derivatives_per_master": null,
+    "generated_master_count": 156,
+    "deterministic_derivative_count": 5232,
+    "target_deliverable_count": 5388,
+    "rich_card_count": 50,
+    "expansion_draft_count": 94,
+    "scaling_strategy": "Invest generative craft in a legible signature cast and the founding specialists; give expansion drafts deterministic vector identities until their agent lifecycle evidence earns richer embodiment.",
+    "generated_master_tiers": [
+      {
+        "id": "signature-cast",
+        "label": "Signature cast",
+        "subject_count": 12,
+        "masters_per_subject": 5,
+        "generated_master_count": 60,
+        "eligibility": "Ten founding conductors plus Vera and Mira after a founder-approved application quartet."
+      },
+      {
+        "id": "founding-specialists",
+        "label": "Founding specialists",
+        "subject_count": 38,
+        "masters_per_subject": 2,
+        "generated_master_count": 76,
+        "eligibility": "The remaining rich founding cards after role, silhouette, workflow, and surface contracts pass."
+      },
+      {
+        "id": "shared-world-workflows",
+        "label": "Shared world and workflow scenes",
+        "subject_count": 20,
+        "masters_per_subject": 1,
+        "generated_master_count": 20,
+        "eligibility": "Reusable multi-agent handoff, supervision, evidence, and world scenes with deterministic interface overlays."
+      }
+    ],
+    "deterministic_export_programs": [
+      {
+        "id": "agent-master-responsive-exports",
+        "label": "Agent master responsive exports",
+        "source_count": 136,
+        "exports_per_source": 24,
+        "output_count": 3264,
+        "export_logic": "Four exact crops by three responsive widths by AVIF and WebP; no generative recropping or baked interface text."
+      },
+      {
+        "id": "shared-scene-responsive-exports",
+        "label": "Shared scene responsive exports",
+        "source_count": 20,
+        "exports_per_source": 12,
+        "output_count": 240,
+        "export_logic": "Three exact crops by two responsive widths by AVIF and WebP, with proof labels rendered as code."
+      },
+      {
+        "id": "portfolio-interface-identity-kit",
+        "label": "Portfolio interface identity kit",
+        "source_count": 144,
+        "exports_per_source": 12,
+        "output_count": 1728,
+        "export_logic": "Three vector-first levels of detail by two themes by SVG and PNG; runtime state and permission glyphs remain separate structured overlays."
+      }
+    ]
   },
   "style_territories": [
     {
@@ -309,7 +364,7 @@
     "source_copy_required": true,
     "export_inspection_required": true,
     "independent_review_required": true,
-    "machine_admission": "allowed",
+    "machine_admission": "held",
     "production_gate": "human-approval-required"
   },
   "batches": [
@@ -318,40 +373,60 @@
       "label": "Foundation application quartet",
       "agent_count": 1,
       "master_asset_count": 4,
-      "status": "review",
+      "status": "blocked",
       "variable_under_test": "one coherent design territory per candidate",
       "entry_criteria": ["founder feedback recorded", "machine generation admission allowed"],
       "exit_criteria": ["four exports inspected in exact contexts", "founder selects, blends, or restarts the territory"]
     },
     {
-      "batch_id": "representative-twelve-agent-pilot",
-      "label": "Representative twelve-agent pilot",
+      "batch_id": "signature-cast-wave",
+      "label": "Signature cast wave",
       "agent_count": 12,
       "master_asset_count": 60,
       "status": "blocked",
-      "variable_under_test": "approved territory translated across role families and consequence levels",
-      "entry_criteria": ["foundation territory approved", "twelve canonical cards and visual contracts linked"],
-      "exit_criteria": ["all masters score at least 26 of 30", "role recognition and authority calibration pass human review"]
+      "variable_under_test": "role-shaped embodiment inside one founder-approved family",
+      "entry_criteria": ["foundation application quartet explicitly approved", "all twelve character contracts and silhouette proofs pass"],
+      "exit_criteria": ["all masters score at least 26 of 30", "human review approves every production-facing asset"]
     },
     {
-      "batch_id": "remaining-portfolio-expansion",
-      "label": "Remaining portfolio expansion",
-      "agent_count": 132,
-      "master_asset_count": 660,
+      "batch_id": "founding-specialist-wave",
+      "label": "Founding specialist wave",
+      "agent_count": 38,
+      "master_asset_count": 76,
       "status": "blocked",
-      "variable_under_test": "role-specific morphology within an approved identity and surface system",
-      "entry_criteria": ["representative pilot approved", "all remaining canonical agent cards pass truth review"],
-      "exit_criteria": ["720 portfolio masters inspected", "every agent has a complete provenance and selection receipt"]
+      "variable_under_test": "specialty legibility with only identity and workflow masters",
+      "entry_criteria": ["signature cast establishes the shared design grammar", "each specialist has an approved morphology and exact workflow"],
+      "exit_criteria": ["role recognition passes without labels", "desktop mobile marketplace and graph crops are inspected"]
     },
     {
-      "batch_id": "deterministic-surface-derivatives",
-      "label": "Deterministic surface derivatives",
+      "batch_id": "shared-world-workflow-wave",
+      "label": "Shared world and workflow wave",
+      "agent_count": 20,
+      "master_asset_count": 20,
+      "status": "blocked",
+      "variable_under_test": "reusable multi-agent handoff and governance scenes",
+      "entry_criteria": ["signature cast wave is approved", "every scene maps to a real workflow and human gate"],
+      "exit_criteria": ["all scenes pass operational truth review", "generated interface text is replaced with exact code overlays"]
+    },
+    {
+      "batch_id": "expansion-vector-identity-kit",
+      "label": "Expansion vector identity kit",
+      "agent_count": 94,
+      "master_asset_count": 0,
+      "status": "blocked",
+      "variable_under_test": "deterministic role-vessel geometry for draft expansion identities",
+      "entry_criteria": ["civilization identity lock remains valid", "vector compiler and accessibility state grammar pass"],
+      "exit_criteria": ["all expansion identities distinguish at 96 pixels", "no visual implies authority or maturity absent from the card"]
+    },
+    {
+      "batch_id": "deterministic-surface-exports",
+      "label": "Deterministic surface exports",
       "agent_count": 144,
       "master_asset_count": 0,
       "status": "blocked",
-      "variable_under_test": "crop, compression, responsive behavior, and accessible state overlays",
-      "entry_criteria": ["identity masters human approved", "surface crop specifications locked"],
-      "exit_criteria": ["4320 derivatives pass automated integrity checks", "desktop, mobile, graph, and marketplace visual QA pass"]
+      "variable_under_test": "exact crop compression theme and accessible level-of-detail variants",
+      "entry_criteria": ["eligible masters are human approved", "surface crop and vector specifications are locked"],
+      "exit_criteria": ["5232 deterministic outputs pass integrity checks", "desktop mobile graph and marketplace visual QA pass"]
     }
   ],
   "evidence": {

@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlightintelligence.org/schemas/character-studio/character-asset-decision-ledger.schema.json",
+  "title": "Starlight Character Asset Decision Ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "ledger_id",
+    "status",
+    "authority",
+    "sources",
+    "collection_dispositions",
+    "surface_contracts",
+    "cast_model",
+    "agent_assignments",
+    "expansion_policy",
+    "updated_at"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": "starlight.character_asset_decision_ledger.v1" },
+    "ledger_id": { "$ref": "#/$defs/slug" },
+    "status": { "type": "string", "enum": ["draft", "human-review", "approved", "deprecated"] },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["visual_identity_only", "grants_runtime_authority", "production_mutation_allowed", "human_owner"],
+      "properties": {
+        "visual_identity_only": { "const": true },
+        "grants_runtime_authority": { "const": false },
+        "production_mutation_allowed": { "const": false },
+        "human_owner": { "type": "string", "minLength": 1 }
+      }
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_portfolio", "civilization_projection", "v1_provenance", "morphology_system", "morphology_selection", "founder_review", "asset_program"],
+      "properties": {
+        "canonical_portfolio": { "$ref": "#/$defs/repoPath" },
+        "civilization_projection": { "$ref": "#/$defs/repoPath" },
+        "v1_provenance": { "$ref": "#/$defs/repoPath" },
+        "morphology_system": { "$ref": "#/$defs/repoPath" },
+        "morphology_selection": { "$ref": "#/$defs/repoPath" },
+        "founder_review": { "$ref": "#/$defs/repoPath" },
+        "asset_program": { "$ref": "#/$defs/repoPath" }
+      }
+    },
+    "collection_dispositions": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["collection_id", "evidence_ref", "disposition", "pixel_use", "allowed_surfaces", "prohibited_surfaces", "rationale", "human_decision"],
+        "properties": {
+          "collection_id": { "$ref": "#/$defs/slug" },
+          "evidence_ref": { "$ref": "#/$defs/repoPath" },
+          "disposition": {
+            "type": "string",
+            "enum": ["retain-continuity", "evolve", "research-reference", "founder-rejected", "negative-evidence"]
+          },
+          "pixel_use": {
+            "type": "string",
+            "enum": ["production-continuity", "reference-only", "noindex-research", "blocked"]
+          },
+          "allowed_surfaces": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/surface" },
+            "uniqueItems": true
+          },
+          "prohibited_surfaces": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/surface" },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "rationale": { "type": "string", "minLength": 30 },
+          "human_decision": { "type": "string", "enum": ["pending", "approve", "iterate", "reject"] }
+        }
+      }
+    },
+    "surface_contracts": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["surface_id", "primary_audience", "character_mode", "required_truth", "success_read", "avoid"],
+        "properties": {
+          "surface_id": { "$ref": "#/$defs/surface" },
+          "primary_audience": {
+            "type": "array",
+            "items": { "type": "string", "enum": ["creator", "developer", "reader", "operator", "educator", "public-interest-practitioner"] },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "character_mode": { "type": "string", "minLength": 12 },
+          "required_truth": { "type": "array", "items": { "type": "string", "minLength": 4 }, "minItems": 2, "uniqueItems": true },
+          "success_read": { "type": "string", "minLength": 24 },
+          "avoid": { "type": "array", "items": { "type": "string", "minLength": 3 }, "minItems": 2, "uniqueItems": true }
+        }
+      }
+    },
+    "cast_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["signature_agent_ids", "signature_count", "founding_specialist_count", "expansion_identity_count", "generated_master_count", "deterministic_output_count"],
+      "properties": {
+        "signature_agent_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/slug" },
+          "minItems": 12,
+          "maxItems": 12,
+          "uniqueItems": true
+        },
+        "signature_count": { "const": 12 },
+        "founding_specialist_count": { "const": 38 },
+        "expansion_identity_count": { "const": 94 },
+        "generated_master_count": { "const": 156 },
+        "deterministic_output_count": { "const": 5232 }
+      }
+    },
+    "agent_assignments": {
+      "type": "array",
+      "minItems": 50,
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "agent_id",
+          "swarm_id",
+          "cast_tier",
+          "current_asset_ref",
+          "current_disposition",
+          "target_morphology",
+          "target_face_system",
+          "primary_territory",
+          "persona_traits",
+          "specialty_cue",
+          "permitted_surfaces",
+          "prohibited_surfaces",
+          "rationale",
+          "human_decision"
+        ],
+        "properties": {
+          "agent_id": { "$ref": "#/$defs/slug" },
+          "swarm_id": { "$ref": "#/$defs/slug" },
+          "cast_tier": { "type": "string", "enum": ["signature", "founding-specialist"] },
+          "current_asset_ref": { "$ref": "#/$defs/repoPath" },
+          "current_disposition": { "const": "retain-as-cinematic-continuity" },
+          "target_morphology": { "$ref": "#/$defs/morphology" },
+          "target_face_system": { "$ref": "#/$defs/faceSystem" },
+          "primary_territory": { "$ref": "#/$defs/territory" },
+          "persona_traits": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 3 },
+            "minItems": 2,
+            "maxItems": 4,
+            "uniqueItems": true
+          },
+          "specialty_cue": { "type": "string", "minLength": 12 },
+          "permitted_surfaces": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/surface" },
+            "minItems": 2,
+            "uniqueItems": true
+          },
+          "prohibited_surfaces": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/surface" },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "rationale": { "type": "string", "minLength": 24 },
+          "human_decision": { "const": "pending" }
+        }
+      }
+    },
+    "expansion_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["agent_count", "identity_mode", "rich_character_generation", "promotion_criteria"],
+      "properties": {
+        "agent_count": { "const": 94 },
+        "identity_mode": { "const": "deterministic-vector-first" },
+        "rich_character_generation": { "const": "blocked-until-adlc-promotion" },
+        "promotion_criteria": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 8 },
+          "minItems": 4,
+          "uniqueItems": true
+        }
+      }
+    },
+    "updated_at": { "type": "string", "format": "date" }
+  },
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "repoPath": { "type": "string", "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9._/-]+$" },
+    "surface": {
+      "type": "string",
+      "enum": [
+        "cinematic-hero",
+        "constellation-story",
+        "ai-agent-profile",
+        "ai-workflow",
+        "org-explainer",
+        "academy-story",
+        "marketplace-card",
+        "runtime-directory",
+        "runtime-graph",
+        "research-lab"
+      ]
+    },
+    "morphology": {
+      "type": "string",
+      "enum": [
+        "m01-full-specialist",
+        "m02-compact-field-specialist",
+        "m03-chibi-academy-guide",
+        "m04-micro-avatar",
+        "m05-guardian-operator",
+        "m06-agile-scout",
+        "m07-biotech-symbiote",
+        "m08-swarm-gestalt",
+        "m09-nonhumanoid-instrument",
+        "m10-creature-companion",
+        "m11-soft-shell-care-collaborator",
+        "m12-modular-transforming-fabricator",
+        "m13-aerial-knowledge-navigator",
+        "m14-architectural-room-intelligence"
+      ]
+    },
+    "faceSystem": {
+      "type": "string",
+      "enum": [
+        "twin-micro-aperture",
+        "soft-square-attention",
+        "protective-shutter",
+        "directional-sensor-trench",
+        "opaline-biotech-aperture",
+        "restrained-eink-band",
+        "primary-secondary-optic",
+        "monoscopic-calibrated-iris",
+        "faceted-prism-sensor",
+        "environmental-witness-lights"
+      ]
+    },
+    "territory": {
+      "type": "string",
+      "enum": [
+        "legacy-cinematic-sovereign",
+        "civic-intelligence-editorial",
+        "precision-product-character",
+        "academy-compact-guide",
+        "engineered-biotech-symbiote",
+        "evidence-instrument",
+        "architectural-intelligence",
+        "modular-fabricator",
+        "creature-companion",
+        "micro-interface-identity"
+      ]
+    }
+  }
+}

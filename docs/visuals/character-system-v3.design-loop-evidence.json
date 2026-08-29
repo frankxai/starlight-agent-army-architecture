@@ -1,0 +1,132 @@
+{
+  "version": "2026-08-29",
+  "task": "Replace flat portfolio image scaling with an audience-led Starlight cast system and a governed asset decision layer.",
+  "surface": "Starlight Intelligence .ai and .org character, profile, workflow, marketplace, story, and runtime planning.",
+  "audience": "Creators, developers, readers, educators, operators, and public-interest practitioners.",
+  "first_read": "Starlight is a memorable world of specialized collaborators whose work, limits, relationships, and human gates remain inspectable.",
+  "standards": [
+    "design-agent-standards/DESIGN_TASTE.md",
+    "design-agent-standards/WEB_EXPERIENCE_STANDARD.md",
+    "design-agent-standards/PREMIUM_ASSET_STANDARD.md",
+    "design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "design-agent-standards/VISUAL_QA_GATE.md",
+    "starlight-design-intelligence/ANTI_SLOP_DESIGN_SYSTEM_2026.md"
+  ],
+  "asset_quality": {
+    "tier": "C",
+    "source_method": "vector-diagram",
+    "provenance": "owned",
+    "why_premium": "The system maps every founding agent to a cast tier, role-shaped morphology, attention system, personality read, specialty cue, surface policy, provenance source, and human gate.",
+    "shortcut_risk": "high",
+    "context_tested": false
+  },
+  "references": [
+    {
+      "label": "Canonical portfolio",
+      "source": "portfolio/canonical-portfolio.v1.json",
+      "reason": "Fifty rich founding cards are the identity and operational truth source."
+    },
+    {
+      "label": "Civilization identity contract",
+      "source": "docs/agent-portfolio/CIVILIZATION_144_IDENTITY_CONTRACT.md",
+      "reason": "The 144 identities are stable while surface embodiments remain mutable projections."
+    },
+    {
+      "label": "Founder visual review",
+      "source": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/FOUNDER_REVIEW_STATUS.md",
+      "reason": "Preserves v1 continuity and blocks Phase C and Phase E-I from automatic production use."
+    },
+    {
+      "label": "Independent visual critique",
+      "source": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-i-independent-critique.md",
+      "reason": "Separates useful composition and media hypotheses from unapproved pixels."
+    }
+  ],
+  "direction": {
+    "keep": [
+      "v1 porcelain obsidian material lineage and adult emotional presence",
+      "fifty canonical founding identities and their exact operational cards",
+      "noindex research evidence with provenance scores and decisions",
+      "human authority gates and deterministic runtime truth"
+    ],
+    "avoid": [
+      "one tall humanoid body repeated across the portfolio",
+      "halos pedestals chest cores orbit nodes and ceremonial authority",
+      "generated interface state permissions confidence charts or documents",
+      "rich character generation for ninety-four expansion drafts"
+    ],
+    "signature": "A small memorable cast of role-shaped collaborators opens emotion while exact system and workflow views earn trust.",
+    "system": [
+      "twelve signature agents with five generated masters each",
+      "thirty-eight founding specialists with two generated masters each",
+      "ninety-four vector-first draft expansion identities",
+      "twenty reusable world and governed workflow scenes",
+      "five thousand two hundred thirty-two deterministic exports"
+    ]
+  },
+  "artifacts": [
+    {
+      "path_or_url": "docs/visuals/STARLIGHT_CHARACTER_ART_BIBLE_V3.md",
+      "kind": "art-bible",
+      "inspected": true,
+      "notes": "Defines audience, cast hierarchy, shape language, morphology, eyes, behavior, web mapping, domain roles, disposition, production packets, and evaluation."
+    },
+    {
+      "path_or_url": "portfolio/character-asset-decision-ledger.v1.json",
+      "kind": "decision-ledger",
+      "inspected": true,
+      "notes": "Covers all fifty founding agents and all known asset collections with explicit surface rules and pending human decisions."
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/asset-program.v2.json",
+      "kind": "tiered-asset-program",
+      "inspected": true,
+      "notes": "Reduces generated masters from 720 to 156 while producing 5,388 governed deliverables through exact derivatives and vector identity kits."
+    },
+    {
+      "path_or_url": "schemas/character-studio/character-asset-decision-ledger.schema.json",
+      "kind": "schema",
+      "inspected": true,
+      "notes": "Makes cast, provenance, surface, morphology, face, and human-decision rules machine-checkable."
+    }
+  ],
+  "checks": [
+    {
+      "name": "canonical-agent-coverage",
+      "status": "pass",
+      "evidence": "Validator confirms exactly fifty unique assignments matching canonical IDs, swarms, and v1 provenance."
+    },
+    {
+      "name": "runtime-truth-boundary",
+      "status": "pass",
+      "evidence": "Every current cinematic portrait is prohibited from runtime-directory and runtime-graph use."
+    },
+    {
+      "name": "tiered-scale-arithmetic",
+      "status": "pass",
+      "evidence": "Validator checks each generated and deterministic tier and the 5,388-output total."
+    },
+    {
+      "name": "human-visual-selection",
+      "status": "blocked",
+      "evidence": "No new visual direction is approved; machine admission is held and the next image test is limited to one call."
+    },
+    {
+      "name": "production-context-qa",
+      "status": "blocked",
+      "evidence": "No web implementation or production mutation occurred in this design-system lane."
+    }
+  ],
+  "score": {
+    "total": 25,
+    "max": 30,
+    "notes": "Strong governed direction and implementation contract; not eligible to ship as a visual identity until a real character application passes human review and site-context QA."
+  },
+  "decision": "iterate",
+  "known_risks": [
+    "The signature-cast morphology map is a proposed art-director assignment, not a founder-approved character redesign.",
+    "The web app does not yet compile this ledger into public profile, marketplace, graph, or story components.",
+    "Biotech, aerial, compact, guardian, and room families need controlled silhouette tests before high-fidelity rendering.",
+    "Current machine admission blocks new image, build, browser, server, and swarm workloads."
+  ]
+}

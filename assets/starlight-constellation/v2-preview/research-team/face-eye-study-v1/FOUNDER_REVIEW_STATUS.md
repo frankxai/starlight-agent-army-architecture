@@ -27,4 +27,4 @@ The next pass must be a controlled improvement, not a wholesale aesthetic reset:
 4. Treat eye systems as attention and state instruments. Warmth should come mainly from posture, timing, cooperation, and honest uncertainty—not oversized eyes or simulated human emotion.
 5. Generate only after one application quartet is inspected and Frank selects, blends, or restarts the direction.
 
-The executable plan is `asset-program.v1.json`. Until its machine, evidence, and human gates pass, its status remains `held` and production mutation remains false.
+The executable plan is `asset-program.v2.json`. It uses a tiered signature-cast model rather than five generated masters for every draft identity. Until its machine, evidence, and human gates pass, its status remains `held` and production mutation remains false.

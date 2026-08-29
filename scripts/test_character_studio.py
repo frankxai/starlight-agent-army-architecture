@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from validate_character_studio import (  # noqa: E402
+    validate_asset_decision_ledger,
     load_json,
     validate_asset_program,
     validate_direction_batch,
@@ -31,6 +32,16 @@ class CharacterStudioTests(unittest.TestCase):
         cls.program = load_json(
             ROOT / "templates" / "starlight-character-studio" / "asset-program.template.json"
         )
+        cls.tiered_program = load_json(
+            ROOT
+            / "assets"
+            / "starlight-constellation"
+            / "v2-preview"
+            / "research-team"
+            / "face-eye-study-v1"
+            / "asset-program.v2.json"
+        )
+        cls.decision_ledger = load_json(ROOT / "portfolio" / "character-asset-decision-ledger.v1.json")
 
     def test_repository_fixtures_are_valid(self) -> None:
         self.assertEqual(validate_repository(), [])
@@ -89,6 +100,26 @@ class CharacterStudioTests(unittest.TestCase):
         candidate["batches"][0]["status"] = "generating"
         issues = validate_document(candidate) + validate_asset_program(candidate, source="<memory>")
         self.assertTrue(any("held machine admission" in issue.message for issue in issues))
+
+    def test_tiered_asset_program_scale_math_is_enforced(self) -> None:
+        candidate = copy.deepcopy(self.tiered_program)
+        candidate["scale_model"]["generated_master_tiers"][0]["generated_master_count"] += 1
+        issues = validate_document(candidate) + validate_asset_program(candidate, source="<memory>")
+        messages = "\n".join(issue.message for issue in issues)
+        self.assertIn("subject_count x masters_per_subject", messages)
+        self.assertIn("generated tier total", messages)
+
+    def test_asset_decision_ledger_must_cover_every_founding_agent(self) -> None:
+        candidate = copy.deepcopy(self.decision_ledger)
+        candidate["agent_assignments"].pop()
+        issues = validate_document(candidate) + validate_asset_decision_ledger(candidate, source="<memory>")
+        self.assertTrue(any("missing canonical agents" in issue.message for issue in issues))
+
+    def test_cinematic_pixels_are_blocked_from_runtime_state(self) -> None:
+        candidate = copy.deepcopy(self.decision_ledger)
+        candidate["agent_assignments"][0]["prohibited_surfaces"].remove("runtime-graph")
+        issues = validate_document(candidate) + validate_asset_decision_ledger(candidate, source="<memory>")
+        self.assertTrue(any("must block v1 cinematic pixels" in issue.message for issue in issues))
 
 
 if __name__ == "__main__":

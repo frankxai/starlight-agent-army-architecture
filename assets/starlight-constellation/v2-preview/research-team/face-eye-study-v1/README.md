@@ -4,7 +4,7 @@ This is a controlled visual research study, not a production identity release.
 
 > **Founder decision, 2026-08-24:** Phase C is rejected. Its ten images are retained only as negative evidence because the study changed rendering media while over-locking one tall humanoid morphology. None is production eligible. Continue with `ROBOT_MORPHOLOGY_SYSTEM_V2.md`.
 
-> **Founder review, 2026-08-29:** Phase E–I is also not approved as the next production identity direction. The earlier v1 portraits remain the continuity baseline. See `FOUNDER_REVIEW_STATUS.md` and the held `asset-program.v1.json` for the controlled next pass.
+> **Founder review, 2026-08-29:** Phase E–I is also not approved as the next production identity direction. The earlier v1 portraits remain the continuity baseline. See `FOUNDER_REVIEW_STATUS.md` and the held `asset-program.v2.json` for the controlled tiered next pass.
 
 The existing twin-cyan-lens face is the continuity control. It is recognizable and clearly mechanical, but it is not assumed to be optimal. The study tests ten broader face architectures, selects the most promising structural base, tests ten eye systems while holding that base constant, and then compares ten illustration and material languages while holding the selected character geometry constant.
 
@@ -66,7 +66,7 @@ Maker-authored scores are hypotheses, not audience evidence and never constitute
 - `phase-d-morphology-silhouettes/` — morphology-first generation queue and inspected silhouette boards; Phase D is draft work requiring founder selection.
 - `design-loop-evidence.json` — premium-asset provenance, inspection, scoring, and decision trace.
 - `FOUNDER_REVIEW_STATUS.md` — the latest human decision and the binding disposition of Phase E–I.
-- `asset-program.v1.json` — the held 144-agent, 5,040-deliverable scale plan with ten design territories and ten face systems.
+- `asset-program.v2.json` — the held 12-signature / 38-founding-specialist / 94-vector-first expansion plan, producing 5,388 governed deliverables from 156 generated masters.
 - `style-evaluation.v1.json` — historical Phase C export facts, maker scoring, and the superseding founder rejection.
 - `phase-*-contact-sheet.png` and `phase-*-avatar-96-sheet.png` — normalized visual comparison boards and small-crop checks.
 

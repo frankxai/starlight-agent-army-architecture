@@ -23,7 +23,13 @@
   ],
   "properties": {
     "$schema": { "type": "string" },
-    "schema_version": { "const": "starlight.character_asset_program.v1" },
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "starlight.character_asset_program.v1",
+        "starlight.character_asset_program.v2"
+      ]
+    },
     "program_id": { "$ref": "#/$defs/slug" },
     "program_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
     "status": {
@@ -105,11 +111,72 @@
       ],
       "properties": {
         "portfolio_agent_count": { "type": "integer", "minimum": 1 },
-        "master_assets_per_agent": { "type": "integer", "minimum": 1 },
-        "derivatives_per_master": { "type": "integer", "minimum": 0 },
+        "master_assets_per_agent": {
+          "oneOf": [
+            { "type": "integer", "minimum": 1 },
+            { "type": "null" }
+          ]
+        },
+        "derivatives_per_master": {
+          "oneOf": [
+            { "type": "integer", "minimum": 0 },
+            { "type": "null" }
+          ]
+        },
         "generated_master_count": { "type": "integer", "minimum": 1 },
         "deterministic_derivative_count": { "type": "integer", "minimum": 0 },
-        "target_deliverable_count": { "type": "integer", "minimum": 1 }
+        "target_deliverable_count": { "type": "integer", "minimum": 1 },
+        "rich_card_count": { "type": "integer", "minimum": 1 },
+        "expansion_draft_count": { "type": "integer", "minimum": 0 },
+        "scaling_strategy": { "type": "string", "minLength": 30 },
+        "generated_master_tiers": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "subject_count",
+              "masters_per_subject",
+              "generated_master_count",
+              "eligibility"
+            ],
+            "properties": {
+              "id": { "$ref": "#/$defs/slug" },
+              "label": { "type": "string", "minLength": 3 },
+              "subject_count": { "type": "integer", "minimum": 1 },
+              "masters_per_subject": { "type": "integer", "minimum": 1 },
+              "generated_master_count": { "type": "integer", "minimum": 1 },
+              "eligibility": { "type": "string", "minLength": 16 }
+            }
+          }
+        },
+        "deterministic_export_programs": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "source_count",
+              "exports_per_source",
+              "output_count",
+              "export_logic"
+            ],
+            "properties": {
+              "id": { "$ref": "#/$defs/slug" },
+              "label": { "type": "string", "minLength": 3 },
+              "source_count": { "type": "integer", "minimum": 1 },
+              "exports_per_source": { "type": "integer", "minimum": 1 },
+              "output_count": { "type": "integer", "minimum": 1 },
+              "export_logic": { "type": "string", "minLength": 20 }
+            }
+          }
+        }
       }
     },
     "style_territories": {
@@ -310,6 +377,30 @@
     }
   },
   "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schema_version": { "const": "starlight.character_asset_program.v2" }
+        }
+      },
+      "then": {
+        "properties": {
+          "scale_model": {
+            "required": [
+              "rich_card_count",
+              "expansion_draft_count",
+              "scaling_strategy",
+              "generated_master_tiers",
+              "deterministic_export_programs"
+            ],
+            "properties": {
+              "master_assets_per_agent": { "const": null },
+              "derivatives_per_master": { "const": null }
+            }
+          }
+        }
+      }
+    },
     {
       "if": {
         "properties": {

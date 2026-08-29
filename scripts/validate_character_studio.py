@@ -27,6 +27,8 @@ SCHEMAS = {
     "starlight.character_image_job.v1": "image-job.schema.json",
     "starlight.character_selection_receipt.v1": "selection-receipt.schema.json",
     "starlight.character_asset_program.v1": "asset-program.schema.json",
+    "starlight.character_asset_program.v2": "asset-program.schema.json",
+    "starlight.character_asset_decision_ledger.v1": "character-asset-decision-ledger.schema.json",
 }
 
 
@@ -285,7 +287,67 @@ def validate_asset_program(document: dict[str, Any], *, source: str) -> list[Val
     generated_masters = scale.get("generated_master_count")
     deterministic_derivatives = scale.get("deterministic_derivative_count")
     target_deliverables = scale.get("target_deliverable_count")
-    if all(isinstance(value, int) for value in (agent_count, masters_per_agent, generated_masters)):
+    master_tiers = scale.get("generated_master_tiers", [])
+    export_programs = scale.get("deterministic_export_programs", [])
+    if master_tiers:
+        rich_card_count = scale.get("rich_card_count")
+        expansion_draft_count = scale.get("expansion_draft_count")
+        if all(isinstance(value, int) for value in (agent_count, rich_card_count, expansion_draft_count)):
+            expected_portfolio_count = rich_card_count + expansion_draft_count
+            if agent_count != expected_portfolio_count:
+                issues.append(
+                    ValidationIssue(
+                        source,
+                        f"portfolio_agent_count must equal rich cards plus expansion drafts ({expected_portfolio_count})",
+                    )
+                )
+
+        tier_total = 0
+        for index, tier in enumerate(master_tiers):
+            subject_count = tier.get("subject_count")
+            per_subject = tier.get("masters_per_subject")
+            tier_count = tier.get("generated_master_count")
+            if all(isinstance(value, int) for value in (subject_count, per_subject, tier_count)):
+                expected_tier_count = subject_count * per_subject
+                if tier_count != expected_tier_count:
+                    issues.append(
+                        ValidationIssue(
+                            source,
+                            f"generated_master_tiers[{index}].generated_master_count must equal subject_count x masters_per_subject ({expected_tier_count})",
+                        )
+                    )
+                tier_total += tier_count
+        if isinstance(generated_masters, int) and generated_masters != tier_total:
+            issues.append(
+                ValidationIssue(
+                    source,
+                    f"generated_master_count must equal the generated tier total ({tier_total})",
+                )
+            )
+
+        export_total = 0
+        for index, program in enumerate(export_programs):
+            source_count = program.get("source_count")
+            per_source = program.get("exports_per_source")
+            output_count = program.get("output_count")
+            if all(isinstance(value, int) for value in (source_count, per_source, output_count)):
+                expected_output_count = source_count * per_source
+                if output_count != expected_output_count:
+                    issues.append(
+                        ValidationIssue(
+                            source,
+                            f"deterministic_export_programs[{index}].output_count must equal source_count x exports_per_source ({expected_output_count})",
+                        )
+                    )
+                export_total += output_count
+        if isinstance(deterministic_derivatives, int) and deterministic_derivatives != export_total:
+            issues.append(
+                ValidationIssue(
+                    source,
+                    f"deterministic_derivative_count must equal the export program total ({export_total})",
+                )
+            )
+    elif all(isinstance(value, int) for value in (agent_count, masters_per_agent, generated_masters)):
         expected_masters = agent_count * masters_per_agent
         if generated_masters != expected_masters:
             issues.append(
@@ -294,7 +356,9 @@ def validate_asset_program(document: dict[str, Any], *, source: str) -> list[Val
                     f"generated_master_count must equal portfolio_agent_count x master_assets_per_agent ({expected_masters})",
                 )
             )
-    if all(isinstance(value, int) for value in (generated_masters, derivatives_per_master, deterministic_derivatives)):
+    if not export_programs and all(
+        isinstance(value, int) for value in (generated_masters, derivatives_per_master, deterministic_derivatives)
+    ):
         expected_derivatives = generated_masters * derivatives_per_master
         if deterministic_derivatives != expected_derivatives:
             issues.append(
@@ -387,6 +451,130 @@ def validate_asset_program(document: dict[str, Any], *, source: str) -> list[Val
     return issues
 
 
+def validate_asset_decision_ledger(document: dict[str, Any], *, source: str) -> list[ValidationIssue]:
+    """Validate the cast hierarchy, source assets, surface boundaries, and portfolio coverage."""
+
+    issues: list[ValidationIssue] = []
+    authority = document.get("authority", {})
+    if authority.get("visual_identity_only") is not True or authority.get("grants_runtime_authority") is not False:
+        issues.append(ValidationIssue(source, "asset decisions must be visual-only and grant no runtime authority"))
+
+    source_paths: dict[str, Path] = {}
+    for key, value in document.get("sources", {}).items():
+        path = _require_existing_repo_path(value, source=source, field=f"sources.{key}", issues=issues)
+        if path is not None:
+            source_paths[key] = path
+
+    canonical_ids: set[str] = set()
+    canonical_swarms: dict[str, str] = {}
+    canonical_path = source_paths.get("canonical_portfolio")
+    if canonical_path is not None:
+        try:
+            canonical = load_json(canonical_path)
+        except (OSError, ValueError, json.JSONDecodeError) as exc:
+            issues.append(ValidationIssue(source, f"canonical portfolio cannot be read: {exc}"))
+        else:
+            for swarm in canonical.get("swarms", []):
+                for agent in swarm.get("agents", []):
+                    agent_id = agent.get("id")
+                    if isinstance(agent_id, str):
+                        canonical_ids.add(agent_id)
+                        canonical_swarms[agent_id] = swarm.get("id")
+
+    provenance_assets: dict[str, str] = {}
+    provenance_path = source_paths.get("v1_provenance")
+    if provenance_path is not None:
+        try:
+            provenance = load_json(provenance_path)
+        except (OSError, ValueError, json.JSONDecodeError) as exc:
+            issues.append(ValidationIssue(source, f"v1 provenance cannot be read: {exc}"))
+        else:
+            for asset in provenance.get("assets", []):
+                agent_id = asset.get("agent_id")
+                asset_path = asset.get("asset_path")
+                if isinstance(agent_id, str) and isinstance(asset_path, str):
+                    provenance_assets[agent_id] = f"assets/starlight-constellation/v1/{asset_path}"
+
+    assignment_ids: list[str] = []
+    signature_from_assignments: set[str] = set()
+    for index, assignment in enumerate(document.get("agent_assignments", [])):
+        agent_id = assignment.get("agent_id")
+        if isinstance(agent_id, str):
+            assignment_ids.append(agent_id)
+            if assignment.get("cast_tier") == "signature":
+                signature_from_assignments.add(agent_id)
+            if canonical_swarms.get(agent_id) != assignment.get("swarm_id"):
+                issues.append(
+                    ValidationIssue(source, f"agent_assignments[{index}].swarm_id does not match the canonical portfolio")
+                )
+            expected_asset = provenance_assets.get(agent_id)
+            if expected_asset is not None and assignment.get("current_asset_ref") != expected_asset:
+                issues.append(
+                    ValidationIssue(source, f"agent_assignments[{index}].current_asset_ref does not match v1 provenance")
+                )
+        _require_existing_repo_path(
+            assignment.get("current_asset_ref"),
+            source=source,
+            field=f"agent_assignments[{index}].current_asset_ref",
+            issues=issues,
+        )
+        permitted = set(assignment.get("permitted_surfaces", []))
+        prohibited = set(assignment.get("prohibited_surfaces", []))
+        overlap = sorted(permitted & prohibited)
+        if overlap:
+            issues.append(
+                ValidationIssue(source, f"agent_assignments[{index}] permits and prohibits: {', '.join(overlap)}")
+            )
+        required_runtime_blocks = {"runtime-directory", "runtime-graph"}
+        if not required_runtime_blocks.issubset(prohibited):
+            issues.append(
+                ValidationIssue(
+                    source,
+                    f"agent_assignments[{index}] must block v1 cinematic pixels from runtime-directory and runtime-graph",
+                )
+            )
+
+    duplicate_ids = sorted({agent_id for agent_id in assignment_ids if assignment_ids.count(agent_id) > 1})
+    if duplicate_ids:
+        issues.append(ValidationIssue(source, f"agent_assignments contains duplicate agents: {', '.join(duplicate_ids)}"))
+    if canonical_ids and set(assignment_ids) != canonical_ids:
+        missing = sorted(canonical_ids - set(assignment_ids))
+        extra = sorted(set(assignment_ids) - canonical_ids)
+        if missing:
+            issues.append(ValidationIssue(source, f"agent_assignments is missing canonical agents: {', '.join(missing)}"))
+        if extra:
+            issues.append(ValidationIssue(source, f"agent_assignments contains non-canonical agents: {', '.join(extra)}"))
+
+    cast = document.get("cast_model", {})
+    declared_signatures = set(cast.get("signature_agent_ids", []))
+    if declared_signatures != signature_from_assignments:
+        issues.append(ValidationIssue(source, "cast_model.signature_agent_ids must match signature agent assignments"))
+    if len(signature_from_assignments) != cast.get("signature_count"):
+        issues.append(ValidationIssue(source, "signature assignment count does not match cast_model.signature_count"))
+
+    collection_ids: list[str] = []
+    for index, disposition in enumerate(document.get("collection_dispositions", [])):
+        collection_id = disposition.get("collection_id")
+        if isinstance(collection_id, str):
+            collection_ids.append(collection_id)
+        _require_existing_repo_path(
+            disposition.get("evidence_ref"),
+            source=source,
+            field=f"collection_dispositions[{index}].evidence_ref",
+            issues=issues,
+        )
+        if set(disposition.get("allowed_surfaces", [])) & set(disposition.get("prohibited_surfaces", [])):
+            issues.append(ValidationIssue(source, f"collection_dispositions[{index}] has conflicting surfaces"))
+    duplicate_collections = sorted(
+        {collection_id for collection_id in collection_ids if collection_ids.count(collection_id) > 1}
+    )
+    if duplicate_collections:
+        issues.append(
+            ValidationIssue(source, f"collection_dispositions contains duplicate IDs: {', '.join(duplicate_collections)}")
+        )
+    return issues
+
+
 def validate_direction_batch(
     jobs: Sequence[dict[str, Any]],
     *,
@@ -423,6 +611,9 @@ def discover_documents() -> list[Path]:
             or path.name.startswith("asset-program")
             or "visual-contract" in path.name
         )
+    portfolio_root = ROOT / "portfolio"
+    if portfolio_root.exists():
+        paths.extend(portfolio_root.glob("character-asset-decision-ledger*.json"))
     return sorted(set(paths))
 
 
@@ -445,8 +636,10 @@ def validate_repository(paths: Sequence[Path] | None = None) -> list[ValidationI
             issues.extend(validate_image_job(document, source=relative))
         elif version == "starlight.character_selection_receipt.v1":
             issues.extend(validate_selection_receipt(document, source=relative))
-        elif version == "starlight.character_asset_program.v1":
+        elif version in {"starlight.character_asset_program.v1", "starlight.character_asset_program.v2"}:
             issues.extend(validate_asset_program(document, source=relative))
+        elif version == "starlight.character_asset_decision_ledger.v1":
+            issues.extend(validate_asset_decision_ledger(document, source=relative))
 
     batches: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for path, document in documents:

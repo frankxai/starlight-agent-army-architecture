@@ -79,25 +79,27 @@ Eyes do not encode intelligence, moral worth, permission, confidence, or approva
 
 The selection question is not “Which eyes are cutest?” It is “Which attention system helps this audience correctly predict what the agent is attending to, what it knows, and when it needs a human?”
 
-## The 5,040-deliverable scale model
+## The 5,388-deliverable tiered scale model
 
-The requested 100× scale should come from disciplined masters and deterministic derivatives, not thousands of unrelated image-model calls.
+The requested 100× scale should come from cast hierarchy, disciplined masters, and deterministic derivatives—not equal cinematic investment in 144 identities or thousands of unrelated image-model calls.
 
 ```text
-144 canonical agents
-× 5 inspected generated masters per agent
-= 720 generated masters
+12 signature agents × 5 generated masters = 60
+38 founding specialists × 2 generated masters = 76
+20 shared world and workflow scenes = 20
+Generated master total = 156
 
-720 masters
-× 6 deterministic derivatives per master
-= 4,320 derivatives
+136 agent masters × 24 exact responsive exports = 3,264
+20 shared scenes × 12 exact responsive exports = 240
+144 vector identity kits × 12 exports = 1,728
+Deterministic output total = 5,232
 
-720 + 4,320 = 5,040 governed visual deliverables
+156 + 5,232 = 5,388 governed visual deliverables
 ```
 
-The five master profiles are an identity portrait, cinematic operational scene, governed workflow scene, mobile story composition, and one context-earned specialty master. The six derivatives are exact crops, compression formats, and overlay-ready variants. Text, charts, status, permissions, confidence, edges, and controls are real HTML, SVG, or code overlays; they are never generated into the pixels.
+Only the twelve signature characters receive five masters: identity, operational scene, governed workflow, mobile story, and one context-earned specialty master. The other 38 rich founding agents receive identity and workflow masters. The 94 expansion drafts receive deterministic vector identity kits until agent-lifecycle evidence earns richer embodiment. Exact crops, widths, formats, themes, and levels of detail create the remaining outputs. Text, charts, status, permissions, confidence, edges, and controls are real HTML, SVG, or code overlays; they are never generated into the pixels.
 
-This model creates more than 100 times the current fifty-image research batch while reducing the expensive creative variable count.
+This model creates more than 100 times the current fifty-image founding set while reducing generated masters from 720 to 156—a 78.3 percent reduction in expensive, failure-prone creative work.
 
 ## Production sequence
 
@@ -156,7 +158,7 @@ Every generation job must state:
 - prohibited capability claims, generated text, logos, fake UI, and visual clichés;
 - output path, receipt path, and required inspection crops.
 
-The reusable JSON contracts are in `templates/starlight-character-studio/`. The concrete scale plan is `assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/asset-program.v1.json`.
+The reusable JSON contracts are in `templates/starlight-character-studio/`. The concrete scale plan is `assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/asset-program.v2.json`. The all-agent assignment and surface decision ledger is `portfolio/character-asset-decision-ledger.v1.json`; the art direction is `docs/visuals/STARLIGHT_CHARACTER_ART_BIBLE_V3.md`.
 
 ## Web experience mapping
 
@@ -191,4 +193,4 @@ The audience protocol and research basis live in `docs/visuals/STARLIGHT_CHARACT
 
 ## Current execution state
 
-`asset-program.v1.json` is deliberately `held`. Machine admission did not allow a generation or build workload during creation of this plan, and the founder has not selected a foundation application quartet. The next resumable action is therefore precise: admit one image workload, generate four controlled application candidates with complete prompt receipts, inspect all four, and present them for founder selection before any portfolio fanout.
+`asset-program.v2.json` is deliberately `held`. Current Peak Performance admission does not allow generation, builds, browser QA, local servers, or swarm fanout. The first Lyra civic-editorial pilot scored 21/30 and is preserved as negative evidence. The next resumable action is precise: when one image workload is admitted, create one identity-lock Lyra design plate from the owned v1 source, inspect its full export and critical crops, score it, and stop before any second call. No portfolio fanout begins until the application direction receives explicit founder approval.
