@@ -1,0 +1,95 @@
+{
+  "$schema": "../../../../../../schemas/character-studio/image-job.schema.json",
+  "schema_version": "starlight.character_image_job.v1",
+  "job_id": "2026-08-29-lyra-civic-editorial-identity-v1",
+  "agent_id": "lyra-research-conductor",
+  "contract_ref": "templates/starlight-character-studio/character-visual-contract.template.json",
+  "direction": {
+    "territory_id": "civic-intelligence-editorial",
+    "label": "Civic editorial identity master",
+    "hypothesis": "Preserving Lyra's v1 geometry and materials while replacing ceremonial and fake-interface cues with grounded evidence handling will improve role legibility and calibrated warmth without rebranding the agent.",
+    "controlled_variables": [
+      "same owned Lyra v1 identity",
+      "same adult human-scale proportions",
+      "same four-to-five full-body crop",
+      "same aged porcelain obsidian and ink-blue material family",
+      "same calm research-conductor posture"
+    ],
+    "changed_variables": [
+      "replace the pedestal and floating cards with a grounded civic editorial atelier",
+      "replace the ceremonial coat with a serviceable split work mantle",
+      "replace the embedded glowing core with an external human approval lamp",
+      "show one physically bounded evidence-routing handoff"
+    ]
+  },
+  "use_case": "identity-preserve",
+  "asset": {
+    "type": "direction-preview",
+    "surface": "Starlight Intelligence .ai and .org identity and profile review",
+    "aspect_ratio": "4:5",
+    "target_width": 2048,
+    "target_height": 2560,
+    "tier": "B",
+    "publication_state": "working"
+  },
+  "references": [
+    {
+      "id": "lyra-v1-owned-portrait",
+      "path": "assets/starlight-constellation/v1/agents/intelligence-research/lyra-research-conductor.webp",
+      "role": "edit-target",
+      "rights_status": "owned",
+      "lock_level": "preserve-identity"
+    }
+  ],
+  "prompt": {
+    "primary_request": "Create one identity-preserving Lyra application master for the Foundation application quartet",
+    "scene": "A quiet civic editorial atelier built from dark mineral plaster, warm paper, blackened steel, and daylight",
+    "subject": "Lyra, a clearly non-human porcelain-and-obsidian research conductor handling a bounded evidence-routing handoff",
+    "style_medium": "high-fidelity tactile editorial character render with mechanically plausible construction",
+    "composition": "full-body eye-level four-to-five portrait with a clean silhouette and generous edge safety",
+    "lighting_mood": "calm daylight with restrained contrast and no global glow",
+    "color_palette": "aged ivory porcelain, obsidian, ink blue, restrained cyan activity light, and one external amber approval cue",
+    "materials_textures": "matte porcelain grain, precise seams, subtle wear, functional textile, warm paper, and blackened steel",
+    "constraints": [
+      "preserve Lyra's exact segmented ivory porcelain cranium and narrow obsidian faceplate",
+      "preserve two compact recessed cyan optical apertures and adult human-scale proportions",
+      "preserve obsidian mechanics ink-blue materials fine warm-metal seams and calm identity",
+      "make warmth come from posture orientation tactile materials and cooperative distance",
+      "show three bounded evidence cartridges entering and one sealed task packet leaving toward a human reviewer",
+      "keep the amber human-approval cue separate from Lyra",
+      "remove all generated text logos and interface copy"
+    ],
+    "avoid": [
+      "pedestal floating panels cards or holograms",
+      "glowing chest core halo crown throne or ceremonial authority coat",
+      "weapons combat armor superhero stance or high heels",
+      "human skin wet eyeballs eyelashes lips or smile simulation",
+      "toy proportions cute mascot schema or baby-schema eyes",
+      "generic neon cyberpunk node networks or global glow",
+      "imitation of any named studio or living artist"
+    ],
+    "final_prompt": "Use case: identity-preserve. Asset type: 4:5 Foundation application-quartet identity master for Starlight Intelligence .ai and .org. Image 1 is the owned Lyra v1 edit target and identity anchor. Preserve Lyra's exact segmented ivory porcelain cranium, narrow obsidian faceplate, two compact recessed cyan optical apertures, adult human-scale proportions, obsidian mechanics, ink-blue material family, fine warm-metal seams, and calm research-conductor identity. Make this a slight premium functional evolution, not a redesign. Remove the pedestal, floating cards, glowing chest core, ceremonial high collar, and floor-length authority coat. Give Lyra a serviceable split work mantle ending above the knees, visible articulated legs and hands, and one compact physical routing instrument: three small bounded evidence cartridges enter on one side and one sealed task packet exits toward an off-frame human reviewer. Full-body eye-level 4:5 portrait with generous edge safety in a quiet civic editorial atelier built from dark mineral plaster, warm paper, blackened steel, and daylight. Warmth comes from an open handoff posture, patient head orientation, tactile materials, and cooperative distance, not enlarged eyes or human facial mimicry. Cyan appears only as low-intensity machine activity; one amber approval lamp is mounted in the environment and clearly separate from Lyra. High-fidelity tactile editorial realism, matte porcelain grain, precise seams, subtle wear, restrained contrast, no global glow. No text, logos, fake UI, holograms, floating panels, node networks, pedestal, halo, crown, throne, weapon, combat armor, superhero stance, high heels, human skin, wet eyeballs, eyelashes, lips, smile simulation, toy proportions, cute mascot schema, generic neon cyberpunk, or imitation of any named studio or living artist."
+  },
+  "output": {
+    "status": "generated",
+    "path": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/candidates/lyra-civic-editorial-identity-v1.png",
+    "sha256": "f40192c0472afa1c2539a81eac7ceb84c0312f8148767990f8170fdc1834236f",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "provider": "OpenAI",
+    "model_or_lane": "runtime-best-available",
+    "generation_receipt": "One identity-preserving image-edit call completed 2026-08-29T12:09:25.460Z from the owned Lyra v1 reference. Original retained at C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-a064c8e7-9568-4663-90f3-cd1d658b4bb5.png; source copy stored at the declared repo output path."
+  },
+  "qa": {
+    "inspected": true,
+    "score30": 21,
+    "decision": "restart",
+    "strongest_element": "Tactile porcelain, dark textile, natural light, and the human handoff create a credible calm institutional scene.",
+    "weakest_element": "The output drifts Lyra's exact head geometry and resolves to a generic premium humanoid robot while omitting the distinctive three-input-to-one-review-packet routing function.",
+    "next_change": "Restart from the v1 cranium lock and make a mechanically explicit three-to-one routing instrument part of Lyra's silhouette; remove generic coat tailoring, wall pseudo-documents, and incidental archive styling.",
+    "human_decision": "pending"
+  },
+  "created_at": "2026-08-29"
+}

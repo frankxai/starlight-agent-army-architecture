@@ -1,0 +1,132 @@
+{
+  "version": "2026-08-29",
+  "task": "Generate and evaluate one identity-preserving Lyra master for the governed Foundation application quartet.",
+  "surface": "Starlight Intelligence .ai and .org agent profile and identity review.",
+  "audience": "Founders, operators, developers, researchers, and public-interest practitioners evaluating governed multi-agent systems.",
+  "first_read": "Lyra turns several bounded evidence inputs into one human-reviewable research task packet.",
+  "standards": [
+    "design-agent-standards/PREMIUM_ASSET_STANDARD.md",
+    "design-agent-standards/AGENT_WARMUP_PROTOCOL.md",
+    "design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "design-agent-standards/OUTCOMES.md",
+    "design-agent-standards/best-practices/image-logo-visual-generation.md",
+    "starlight-design-intelligence/evals/generated-asset-quality-gate.md",
+    "starlight-design-intelligence/brand-image-system/runtime/brands/sis/brand-pack.json"
+  ],
+  "references": [
+    {
+      "label": "Owned Lyra v1 identity anchor",
+      "source": "assets/starlight-constellation/v1/agents/intelligence-research/lyra-research-conductor.webp",
+      "reason": "Preserve the recognized cranium, faceplate, adult proportions, material family, and calm research-conductor identity."
+    },
+    {
+      "label": "Governed character asset program",
+      "source": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/asset-program.v1.json",
+      "reason": "Defines the civic-intelligence territory, one-call policy, surface profile, authority boundary, and human approval gate."
+    },
+    {
+      "label": "Founder rejection record",
+      "source": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/FOUNDER_REVIEW_STATUS.md",
+      "reason": "Requires continuity with the preferred v1 identity and rejects earlier style-only changes as a replacement system."
+    }
+  ],
+  "direction": {
+    "keep": [
+      "owned Lyra v1 cranium and faceplate identity",
+      "adult clearly non-human specialist proportions",
+      "aged porcelain obsidian ink-blue and restrained cyan materials",
+      "calm competence and external human authority"
+    ],
+    "avoid": [
+      "pedestals glowing cores halos and ceremonial authority",
+      "generic luxury humanoid robot tailoring",
+      "fake interfaces floating cards and pseudo-documents",
+      "baby-schema eyes human facial mimicry and toy proportions"
+    ],
+    "signature": "Several physically bounded evidence inputs become one sealed packet handed to an off-frame human reviewer.",
+    "system": [
+      "Tier B reference-guided image edit",
+      "one master per image-generation call",
+      "4:5 full-body identity frame with generous edge safety",
+      "cyan denotes machine activity and amber remains an external human approval cue",
+      "exact text and diagrams remain deterministic and outside generated pixels"
+    ]
+  },
+  "asset_quality": {
+    "tier": "B",
+    "source_method": "image-edit",
+    "provenance": "generated",
+    "why_premium": "The pilot used an owned identity anchor, a schema-valid exact prompt, one controlled territory hypothesis, full-export inspection, recorded hash and dimensions, and a governed stop decision.",
+    "shortcut_risk": "high",
+    "context_tested": false
+  },
+  "artifacts": [
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/candidates/lyra-civic-editorial-identity-v1.png",
+      "kind": "image",
+      "inspected": true,
+      "notes": "1122 x 1402 PNG inspected at original detail; tactile craft and human handoff are strong, but identity and role-function requirements fail."
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/prompts/lyra-civic-editorial-identity-v1.json",
+      "kind": "prompt-and-provenance",
+      "inspected": true,
+      "notes": "Exact prompt, owned reference, output receipt, SHA-256, dimensions, and maker diagnostic are recorded."
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/reviews/lyra-civic-editorial-identity-v1.quality-review.md",
+      "kind": "quality-review",
+      "inspected": true,
+      "notes": "Maker review scores the candidate 21 of 30 and routes it to restart pending independent and founder review."
+    }
+  ],
+  "checks": [
+    {
+      "name": "asset-tier",
+      "status": "pass",
+      "evidence": "Tier B reference-guided generated media was declared before production."
+    },
+    {
+      "name": "prompt-and-provenance",
+      "status": "pass",
+      "evidence": "Exact prompt, owned reference, source copy, generation receipt, hash, and dimensions are recorded."
+    },
+    {
+      "name": "full-export-inspection",
+      "status": "pass",
+      "evidence": "The final repo PNG was inspected at original detail."
+    },
+    {
+      "name": "identity-preservation",
+      "status": "fail",
+      "evidence": "The cranium, faceplate, and optics drift from the exact owned v1 identity lock."
+    },
+    {
+      "name": "role-transformation",
+      "status": "fail",
+      "evidence": "The visible handoff does not show three bounded evidence inputs becoming one sealed review packet."
+    },
+    {
+      "name": "brand-ownability",
+      "status": "fail",
+      "evidence": "The tailored humanoid robot in an archive remains a generic premium-AI trope without the intended ownable routing behavior."
+    },
+    {
+      "name": "independent-human-review",
+      "status": "blocked",
+      "evidence": "Maker scoring cannot approve visual work; Frank and an independent critic have not reviewed this candidate."
+    }
+  ],
+  "score": {
+    "total": 21,
+    "max": 30,
+    "notes": "Restart: craft is strong, but the critical identity, role-transformation, and ownability requirements are not met."
+  },
+  "decision": "restart",
+  "known_risks": [
+    "A generic premium humanoid can appear polished while remaining indistinguishable from unrelated AI brands.",
+    "Wall papers contain generated pseudo-diagrams and become noise at small crops.",
+    "The feet and off-frame handoff are too tight for robust marketplace and mobile derivation.",
+    "No second direction exists for comparison, so human approval is structurally impossible."
+  ]
+}

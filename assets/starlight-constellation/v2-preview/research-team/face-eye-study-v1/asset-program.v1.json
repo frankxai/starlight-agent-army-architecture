@@ -309,7 +309,7 @@
     "source_copy_required": true,
     "export_inspection_required": true,
     "independent_review_required": true,
-    "machine_admission": "held",
+    "machine_admission": "allowed",
     "production_gate": "human-approval-required"
   },
   "batches": [
@@ -318,7 +318,7 @@
       "label": "Foundation application quartet",
       "agent_count": 1,
       "master_asset_count": 4,
-      "status": "blocked",
+      "status": "review",
       "variable_under_test": "one coherent design territory per candidate",
       "entry_criteria": ["founder feedback recorded", "machine generation admission allowed"],
       "exit_criteria": ["four exports inspected in exact contexts", "founder selects, blends, or restarts the territory"]
