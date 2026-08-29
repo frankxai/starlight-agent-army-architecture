@@ -78,3 +78,5 @@ Every generated candidate retains its prompt, reference role and rights status, 
 7. Site implementation passes visual, accessibility, performance, and reduced-motion QA.
 
 The schemas and reusable files live in `schemas/character-studio/` and `templates/starlight-character-studio/`. The initial Lyra pilot lives in `assets/starlight-constellation/v2-preview/research-team/` and remains a preview until Frank selects or blends a direction.
+
+The portfolio-scale execution model, ten context territories, ten face systems, 5,040-deliverable arithmetic, and `.ai` / `.org` experience mapping are defined in `docs/visuals/STARLIGHT_CHARACTER_ASSET_PROGRAM.md`. Its concrete program is held until one founder-reviewed application quartet passes.

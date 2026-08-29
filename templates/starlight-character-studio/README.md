@@ -7,6 +7,7 @@ These templates turn character generation into a governed design process rather 
 - `character-visual-contract.template.json` defines the agent's recognizable identity, role-shaped morphology, operational personality, mutable elements, prohibited cues, provenance, and human approval state.
 - `image-job.template.json` records one controlled design hypothesis in the prompt structure used by the OpenAI `imagegen` workflow.
 - `selection-receipt.template.json` compares at least two inspected candidates without allowing an automated reviewer to silently approve a brand identity.
+- `asset-program.template.json` plans a governed multi-agent image portfolio with context-specific territories, face systems, surfaces, scale math, machine admission, human gates, and rejection evidence.
 - `direction-brief.template.md` is the human-readable brief used before a generation batch.
 - `quality-review.template.md` is the inspection record used after actual exports exist.
 
@@ -20,6 +21,8 @@ These templates turn character generation into a governed design process rather 
 6. Mark scores of 26–30 as eligible for human review, 22–25 as iterate, and below 22 as restart.
 7. Record the comparison in a selection receipt. Only a human decision can set `selected` or approve an identity contract.
 8. Derive site crops, icons, motion source, and marketplace media only after the identity master is approved.
+
+For portfolio scale, validate one application quartet before scheduling the representative-agent pilot. Expand the remaining portfolio only after that pilot is human approved. Generate master assets one at a time; create responsive crops, formats, and interface overlays deterministically.
 
 The character contract is descriptive. It deliberately grants no tools, permissions, memory, runtime admission, or execution authority.
 

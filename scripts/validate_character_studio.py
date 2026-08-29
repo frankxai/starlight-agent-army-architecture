@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Starlight Character Studio contracts, jobs, and receipts.
+"""Validate Starlight Character Studio contracts, jobs, receipts, and asset programs.
 
 The JSON Schemas provide the portable contract. This validator adds repository
 truth checks that a schema cannot express: referenced files must exist, agent
@@ -26,6 +26,7 @@ SCHEMAS = {
     "starlight.character_visual_contract.v1": "character-visual-contract.schema.json",
     "starlight.character_image_job.v1": "image-job.schema.json",
     "starlight.character_selection_receipt.v1": "selection-receipt.schema.json",
+    "starlight.character_asset_program.v1": "asset-program.schema.json",
 }
 
 
@@ -269,6 +270,123 @@ def validate_selection_receipt(document: dict[str, Any], *, source: str) -> list
     return issues
 
 
+def validate_asset_program(document: dict[str, Any], *, source: str) -> list[ValidationIssue]:
+    """Validate scale arithmetic, human gates, evidence, and unique design IDs."""
+
+    issues: list[ValidationIssue] = []
+    authority = document.get("authority", {})
+    if authority.get("visual_research_only") is not True or authority.get("grants_runtime_authority") is not False:
+        issues.append(ValidationIssue(source, "asset programs must be visual research only and grant no runtime authority"))
+
+    scale = document.get("scale_model", {})
+    agent_count = scale.get("portfolio_agent_count")
+    masters_per_agent = scale.get("master_assets_per_agent")
+    derivatives_per_master = scale.get("derivatives_per_master")
+    generated_masters = scale.get("generated_master_count")
+    deterministic_derivatives = scale.get("deterministic_derivative_count")
+    target_deliverables = scale.get("target_deliverable_count")
+    if all(isinstance(value, int) for value in (agent_count, masters_per_agent, generated_masters)):
+        expected_masters = agent_count * masters_per_agent
+        if generated_masters != expected_masters:
+            issues.append(
+                ValidationIssue(
+                    source,
+                    f"generated_master_count must equal portfolio_agent_count x master_assets_per_agent ({expected_masters})",
+                )
+            )
+    if all(isinstance(value, int) for value in (generated_masters, derivatives_per_master, deterministic_derivatives)):
+        expected_derivatives = generated_masters * derivatives_per_master
+        if deterministic_derivatives != expected_derivatives:
+            issues.append(
+                ValidationIssue(
+                    source,
+                    f"deterministic_derivative_count must equal generated_master_count x derivatives_per_master ({expected_derivatives})",
+                )
+            )
+    if all(isinstance(value, int) for value in (generated_masters, deterministic_derivatives, target_deliverables)):
+        expected_total = generated_masters + deterministic_derivatives
+        if target_deliverables != expected_total:
+            issues.append(
+                ValidationIssue(
+                    source,
+                    f"target_deliverable_count must equal masters plus deterministic derivatives ({expected_total})",
+                )
+            )
+
+    collections = {
+        "style_territories": "id",
+        "face_systems": "id",
+        "surface_profiles": "id",
+        "batches": "batch_id",
+    }
+    for collection_name, identifier_key in collections.items():
+        identifiers = [
+            item.get(identifier_key)
+            for item in document.get(collection_name, [])
+            if isinstance(item.get(identifier_key), str)
+        ]
+        duplicates = sorted({identifier for identifier in identifiers if identifiers.count(identifier) > 1})
+        if duplicates:
+            issues.append(
+                ValidationIssue(source, f"{collection_name} contains duplicate identifiers: {', '.join(duplicates)}")
+            )
+
+    territory_ids = {item.get("id") for item in document.get("style_territories", [])}
+    identity_policy = document.get("identity_policy", {})
+    for field in ("default_territory", "continuity_lane"):
+        if identity_policy.get(field) not in territory_ids:
+            issues.append(ValidationIssue(source, f"identity_policy.{field} must identify a declared style territory"))
+
+    for index, profile in enumerate(document.get("surface_profiles", [])):
+        ratio_text = profile.get("aspect_ratio", "")
+        try:
+            ratio_width, ratio_height = (int(value) for value in ratio_text.split(":"))
+            actual = profile["target_width"] / profile["target_height"]
+            expected = ratio_width / ratio_height
+        except (KeyError, TypeError, ValueError, ZeroDivisionError):
+            continue
+        if abs(actual - expected) > 0.01:
+            issues.append(
+                ValidationIssue(
+                    source,
+                    f"surface_profiles[{index}] dimensions do not match aspect_ratio {ratio_text}",
+                )
+            )
+
+    evidence = document.get("evidence", {})
+    _require_existing_repo_path(
+        evidence.get("founder_feedback_path"),
+        source=source,
+        field="evidence.founder_feedback_path",
+        issues=issues,
+    )
+    for index, value in enumerate(evidence.get("rejected_research_paths", [])):
+        _require_existing_repo_path(
+            value,
+            source=source,
+            field=f"evidence.rejected_research_paths[{index}]",
+            issues=issues,
+        )
+
+    generation_policy = document.get("generation_policy", {})
+    if generation_policy.get("machine_admission") == "held":
+        active_batches = [
+            batch.get("batch_id")
+            for batch in document.get("batches", [])
+            if batch.get("status") in {"generating", "review", "approved", "complete"}
+        ]
+        if active_batches:
+            issues.append(
+                ValidationIssue(
+                    source,
+                    f"held machine admission cannot contain active or completed batches: {', '.join(active_batches)}",
+                )
+            )
+    if document.get("status") == "held" and authority.get("production_mutation_allowed") is not False:
+        issues.append(ValidationIssue(source, "a held asset program cannot allow production mutation"))
+    return issues
+
+
 def validate_direction_batch(
     jobs: Sequence[dict[str, Any]],
     *,
@@ -302,6 +420,7 @@ def discover_documents() -> list[Path]:
             for path in preview_root.rglob("*.json")
             if path.parent.name == "prompts"
             or path.name.startswith("selection-receipt")
+            or path.name.startswith("asset-program")
             or "visual-contract" in path.name
         )
     return sorted(set(paths))
@@ -326,6 +445,8 @@ def validate_repository(paths: Sequence[Path] | None = None) -> list[ValidationI
             issues.extend(validate_image_job(document, source=relative))
         elif version == "starlight.character_selection_receipt.v1":
             issues.extend(validate_selection_receipt(document, source=relative))
+        elif version == "starlight.character_asset_program.v1":
+            issues.extend(validate_asset_program(document, source=relative))
 
     batches: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for path, document in documents:

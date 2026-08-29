@@ -1,0 +1,367 @@
+{
+  "$schema": "../../../../../schemas/character-studio/asset-program.schema.json",
+  "schema_version": "starlight.character_asset_program.v1",
+  "program_id": "starlight-constellation-portfolio-100x-v1",
+  "program_version": "1.0.0",
+  "status": "held",
+  "authority": {
+    "visual_research_only": true,
+    "grants_runtime_authority": false,
+    "production_mutation_allowed": false,
+    "human_owner": "Frank Riemer"
+  },
+  "objective": {
+    "primary_goal": "Create a premium, truthful, context-aware visual system for 144 Starlight agents without scaling any unapproved identity direction.",
+    "target_audience": [
+      "founders and operators adopting governed agent teams",
+      "developers and architects designing multi-agent systems",
+      "creators, educators, and public-interest practitioners"
+    ],
+    "desired_first_read": "Each agent is a distinctive, warm, clearly non-human specialist whose work, personality, handoff, and authority boundary are legible before lore.",
+    "target_domains": [
+      "starlightintelligence.ai",
+      "starlightintelligence.org",
+      "marketplace",
+      "runtime"
+    ]
+  },
+  "identity_policy": {
+    "default_territory": "civic-intelligence-editorial",
+    "continuity_lane": "legacy-cinematic-sovereign",
+    "global_identity_approved": false,
+    "human_decision": "pending"
+  },
+  "scale_model": {
+    "portfolio_agent_count": 144,
+    "master_assets_per_agent": 5,
+    "derivatives_per_master": 6,
+    "generated_master_count": 720,
+    "deterministic_derivative_count": 4320,
+    "target_deliverable_count": 5040
+  },
+  "style_territories": [
+    {
+      "id": "legacy-cinematic-sovereign",
+      "label": "Legacy cinematic sovereign",
+      "purpose": "Retain the strongest earlier Starlight recognition for selective hero, lore, and evolution moments.",
+      "surfaces": ["cinematic-hero", "constellation-story"],
+      "morphology_family": "adult full-scale specialist",
+      "visual_signature": "Dark porcelain and obsidian, restrained brass and cyan, sculptural depth, adult proportions, and one real role instrument.",
+      "avoid": ["default halo", "orbit-node decoration", "cape or high heels as authority"],
+      "status": "proposed"
+    },
+    {
+      "id": "civic-intelligence-editorial",
+      "label": "Civic intelligence editorial",
+      "purpose": "Make governed intelligence feel useful, public-minded, inspectable, humane, and institutionally credible.",
+      "surfaces": ["profile-hero", "workflow-scene", "org-explainer"],
+      "morphology_family": "compact specialist, instrument, or bounded environment",
+      "visual_signature": "Tactile editorial craft, calm natural light, mineral and paper color, visible evidence artifacts, and accountable human context.",
+      "avoid": ["glass command center", "generic black-cyan luxury", "fake generated interface"],
+      "status": "proposed"
+    },
+    {
+      "id": "precision-product-character",
+      "label": "Precision product character",
+      "purpose": "Give agent profiles and marketplace surfaces the credibility of a designed physical instrument.",
+      "surfaces": ["profile-hero", "marketplace-card", "identity-master"],
+      "morphology_family": "compact field specialist",
+      "visual_signature": "Neutral product-editorial staging, mechanically plausible seams, quiet material contrast, clean silhouette, and one serviceable tool.",
+      "avoid": ["toy photography", "consumer appliance genericism", "decorative greebles"],
+      "status": "proposed"
+    },
+    {
+      "id": "academy-compact-guide",
+      "label": "Academy compact guide",
+      "purpose": "Support learning and onboarding with original animation warmth while keeping capability and authority calibrated.",
+      "surfaces": ["academy-story", "mobile-story", "learning-card"],
+      "morphology_family": "compact short-legged guide",
+      "visual_signature": "Original feature-animation-informed proportions, authored machine construction, task-focused hands, readable learning tools, and expressive timing.",
+      "avoid": ["named studio imitation", "large baby-schema eyes", "childlike authority"],
+      "status": "held"
+    },
+    {
+      "id": "engineered-biotech-symbiote",
+      "label": "Engineered biotech symbiote",
+      "purpose": "Express living-systems intelligence through functional biomimicry without fantasy, predation, or body horror.",
+      "surfaces": ["org-explainer", "cinematic-hero", "academy-story"],
+      "morphology_family": "non-arachnid symbiote or bounded living environment",
+      "visual_signature": "Dry opaline membranes, ceramic load paths, biopolymer joints, clean scientific light, and one observable living-system function.",
+      "avoid": ["wet organs", "predatory insect anatomy", "neural-lattice decoration"],
+      "status": "proposed"
+    },
+    {
+      "id": "evidence-instrument",
+      "label": "Evidence instrument",
+      "purpose": "Turn verification, research, and provenance roles into function-first non-humanoid characters.",
+      "surfaces": ["workflow-scene", "org-explainer", "marketplace-card"],
+      "morphology_family": "lens, measure, press, archive, or relay instrument",
+      "visual_signature": "Readable input and output paths, calibrated optics, physical evidence handling, restrained motion, and no decorative face requirement.",
+      "avoid": ["arachnid legs", "antique scroll noise", "generated documents or telemetry"],
+      "status": "proposed"
+    },
+    {
+      "id": "architectural-intelligence",
+      "label": "Architectural intelligence",
+      "purpose": "Represent agents that are rooms, thresholds, archives, studios, or other bounded intelligent environments.",
+      "surfaces": ["org-explainer", "workflow-scene", "constellation-story"],
+      "morphology_family": "alcove, archive doorway, studio, or instrumented room",
+      "visual_signature": "Human-scale civic architecture, legible thresholds, material state changes, accessible wayfinding, and visible governance boundaries.",
+      "avoid": ["science-fiction throne room", "holographic command center", "monumental intimidation"],
+      "status": "proposed"
+    },
+    {
+      "id": "modular-fabricator",
+      "label": "Modular fabricator",
+      "purpose": "Visualize agents that build, transform, package, or maintain artifacts through mechanically credible reconfiguration.",
+      "surfaces": ["workflow-scene", "marketplace-card", "profile-hero"],
+      "morphology_family": "bench-to-tool transforming specialist",
+      "visual_signature": "Visible kinematic logic, modular work surfaces, restrained industrial color, reversible states, and the artifact at the center.",
+      "avoid": ["weapon silhouette", "game mecha armor", "impossible transformation"],
+      "status": "proposed"
+    },
+    {
+      "id": "creature-companion",
+      "label": "Creature companion",
+      "purpose": "Use non-humanoid social forms for bounded guidance, exploration, and return visits where relationship matters.",
+      "surfaces": ["academy-story", "mobile-story", "constellation-story"],
+      "morphology_family": "book-carrying bird, soft quadruped, or articulated navigator",
+      "visual_signature": "Clearly mechanical creature anatomy, role-shaped carrying or pointing behavior, authored locomotion, and quiet relational presence.",
+      "avoid": ["generic pet imitation", "drone adjacency", "cuteness as competence"],
+      "status": "held"
+    },
+    {
+      "id": "micro-interface-identity",
+      "label": "Micro interface identity",
+      "purpose": "Make agent identity, state, and role distinguishable in dense graphs, lists, notifications, and compact controls.",
+      "surfaces": ["directory-avatar", "graph-node", "runtime-status"],
+      "morphology_family": "vector-first role vessel",
+      "visual_signature": "One silhouette, one role cut, one color-independent state glyph, high contrast, exact geometry, and no simulated emotion.",
+      "avoid": ["portrait shrunk to icon", "color-only state", "mascot expression as status"],
+      "status": "proposed"
+    }
+  ],
+  "face_systems": [
+    {
+      "id": "twin-micro-aperture",
+      "label": "Twin micro aperture",
+      "architecture": "A narrow mechanical faceplate with two small recessed optical apertures.",
+      "eye_logic": "Direction communicates attention and intensity communicates machine activity, never emotion or authority.",
+      "warmth_source": "Patient head orientation, open posture, and measured response timing.",
+      "best_for": ["legacy continuity", "adult specialists"],
+      "risks": ["surveillance reading", "coldness at small crop"],
+      "status": "proposed"
+    },
+    {
+      "id": "soft-square-attention",
+      "label": "Soft square attention",
+      "architecture": "Two compact soft-square apertures set behind a strong non-human brow shell.",
+      "eye_logic": "Subtle parallax and focus depth communicate joint attention without pupils or eyelids.",
+      "warmth_source": "Readable turn-taking, small head tilts, and competent hand behavior.",
+      "best_for": ["compact specialists", "guides"],
+      "risks": ["consumer robot familiarity", "baby schema if enlarged"],
+      "status": "proposed"
+    },
+    {
+      "id": "protective-shutter",
+      "label": "Protective shutter",
+      "architecture": "Two recessed optics behind calm mechanical shutters and a broad protective plane.",
+      "eye_logic": "Shutters narrow only for focus or risk containment and never simulate anger.",
+      "warmth_source": "Protective stance, controlled distance, and visible de-escalation behavior.",
+      "best_for": ["guardians", "privacy stewards"],
+      "risks": ["militarization", "angry mask reading"],
+      "status": "proposed"
+    },
+    {
+      "id": "directional-sensor-trench",
+      "label": "Directional sensor trench",
+      "architecture": "An eyeless vertical sensor recess integrated into a calibrated instrument head.",
+      "eye_logic": "A moving internal marker shows scan direction without pretending to express emotion.",
+      "warmth_source": "Careful pacing, transparent status, and an outward-facing evidence artifact.",
+      "best_for": ["verifiers", "evidence instruments"],
+      "risks": ["low social connection", "security-camera association"],
+      "status": "proposed"
+    },
+    {
+      "id": "opaline-biotech-aperture",
+      "label": "Opaline biotech aperture",
+      "architecture": "A dry translucent optical chamber seated in a ceramic and biopolymer shell.",
+      "eye_logic": "Internal polarization indicates sensing mode while external shape remains mechanically stable.",
+      "warmth_source": "Responsive body orientation and cooperative proximity rather than humanlike gaze.",
+      "best_for": ["biotech collaborators", "living-systems guides"],
+      "risks": ["wet-eye association", "alien or insect reading"],
+      "status": "proposed"
+    },
+    {
+      "id": "restrained-eink-band",
+      "label": "Restrained e-ink band",
+      "architecture": "A low-power monochrome strip embedded in a compact mechanical face shell.",
+      "eye_logic": "Aperture blocks and simple directional marks show attention, uncertainty, or pause without a cartoon face.",
+      "warmth_source": "Honest uncertainty signals, respectful spacing, and responsive task behavior.",
+      "best_for": ["Academy guides", "careful companions"],
+      "risks": ["screen-face cliché", "emoji drift"],
+      "status": "proposed"
+    },
+    {
+      "id": "primary-secondary-optic",
+      "label": "Primary and secondary optic",
+      "architecture": "One calibrated primary lens and one smaller contextual sensor in an asymmetric tool head.",
+      "eye_logic": "The primary follows the active object while the secondary tracks context and handoff readiness.",
+      "warmth_source": "Visible divided attention, careful reorientation, and explicit task completion.",
+      "best_for": ["analysts", "research scouts"],
+      "risks": ["three-eye confusion", "monocle caricature"],
+      "status": "proposed"
+    },
+    {
+      "id": "monoscopic-calibrated-iris",
+      "label": "Monoscopic calibrated iris",
+      "architecture": "A single protected precision iris centered inside a clearly instrumental housing.",
+      "eye_logic": "Iris diameter encodes measurement range and never maps to emotional arousal.",
+      "warmth_source": "Stable distance, gentle movement, and transparent measurement handoffs.",
+      "best_for": ["measurement agents", "archive instruments"],
+      "risks": ["cyclops character reading", "camera surveillance association"],
+      "status": "proposed"
+    },
+    {
+      "id": "faceted-prism-sensor",
+      "label": "Faceted prism sensor",
+      "architecture": "A non-ocular refractive sensor assembled from a few durable mineral planes.",
+      "eye_logic": "Light separates by comparison mode and recombines when a synthesis is ready for review.",
+      "warmth_source": "Curious orientation, collaborative framing, and a visible comparison artifact.",
+      "best_for": ["critics", "creative comparison agents"],
+      "risks": ["decorative gemstone", "luxury excess"],
+      "status": "proposed"
+    },
+    {
+      "id": "environmental-witness-lights",
+      "label": "Environmental witness lights",
+      "architecture": "An eyeless room or threshold uses several fixed witness lights at human-readable locations.",
+      "eye_logic": "Location and rhythm show which zone is sensing, processing, waiting, or requesting review.",
+      "warmth_source": "Legible invitation, accessible thresholds, daylight, and human-scale spatial behavior.",
+      "best_for": ["architectural intelligence", "bounded studios"],
+      "risks": ["ambient smart-home genericism", "unclear attention target"],
+      "status": "proposed"
+    }
+  ],
+  "surface_profiles": [
+    {
+      "id": "identity-master-4x5",
+      "aspect_ratio": "4:5",
+      "target_width": 2048,
+      "target_height": 2560,
+      "mode": "generated-master",
+      "critical_read": "Identity, silhouette, specialty instrument, and grounded posture survive without a caption."
+    },
+    {
+      "id": "cinematic-hero-16x9",
+      "aspect_ratio": "16:9",
+      "target_width": 2560,
+      "target_height": 1440,
+      "mode": "generated-master",
+      "critical_read": "One real workflow transformation is visible with negative space reserved for accessible HTML copy."
+    },
+    {
+      "id": "workflow-scene-3x2",
+      "aspect_ratio": "3:2",
+      "target_width": 2400,
+      "target_height": 1600,
+      "mode": "generated-master",
+      "critical_read": "Maker, verifier, artifact, failure route, and human gate are separable before deterministic overlays."
+    },
+    {
+      "id": "mobile-story-9x16",
+      "aspect_ratio": "9:16",
+      "target_width": 1440,
+      "target_height": 2560,
+      "mode": "generated-master",
+      "critical_read": "The active agent and artifact remain clear inside a narrow one-handed storytelling crop."
+    },
+    {
+      "id": "marketplace-card-4x5",
+      "aspect_ratio": "4:5",
+      "target_width": 1600,
+      "target_height": 2000,
+      "mode": "deterministic-derivative",
+      "critical_read": "Specialty and visual identity remain legible beside real structured package metadata."
+    },
+    {
+      "id": "directory-avatar-1x1",
+      "aspect_ratio": "1:1",
+      "target_width": 512,
+      "target_height": 512,
+      "mode": "deterministic-derivative",
+      "critical_read": "Face architecture and one role cue remain distinguishable from every sibling agent."
+    },
+    {
+      "id": "graph-node-1x1",
+      "aspect_ratio": "1:1",
+      "target_width": 96,
+      "target_height": 96,
+      "mode": "deterministic-derivative",
+      "critical_read": "Silhouette and state glyph survive while permission and confidence remain structured metadata."
+    }
+  ],
+  "generation_policy": {
+    "one_asset_per_call": true,
+    "max_parallel_generation_calls": 1,
+    "exact_prompt_required": true,
+    "prompt_receipt_required": true,
+    "source_copy_required": true,
+    "export_inspection_required": true,
+    "independent_review_required": true,
+    "machine_admission": "held",
+    "production_gate": "human-approval-required"
+  },
+  "batches": [
+    {
+      "batch_id": "foundation-application-quartet",
+      "label": "Foundation application quartet",
+      "agent_count": 1,
+      "master_asset_count": 4,
+      "status": "blocked",
+      "variable_under_test": "one coherent design territory per candidate",
+      "entry_criteria": ["founder feedback recorded", "machine generation admission allowed"],
+      "exit_criteria": ["four exports inspected in exact contexts", "founder selects, blends, or restarts the territory"]
+    },
+    {
+      "batch_id": "representative-twelve-agent-pilot",
+      "label": "Representative twelve-agent pilot",
+      "agent_count": 12,
+      "master_asset_count": 60,
+      "status": "blocked",
+      "variable_under_test": "approved territory translated across role families and consequence levels",
+      "entry_criteria": ["foundation territory approved", "twelve canonical cards and visual contracts linked"],
+      "exit_criteria": ["all masters score at least 26 of 30", "role recognition and authority calibration pass human review"]
+    },
+    {
+      "batch_id": "remaining-portfolio-expansion",
+      "label": "Remaining portfolio expansion",
+      "agent_count": 132,
+      "master_asset_count": 660,
+      "status": "blocked",
+      "variable_under_test": "role-specific morphology within an approved identity and surface system",
+      "entry_criteria": ["representative pilot approved", "all remaining canonical agent cards pass truth review"],
+      "exit_criteria": ["720 portfolio masters inspected", "every agent has a complete provenance and selection receipt"]
+    },
+    {
+      "batch_id": "deterministic-surface-derivatives",
+      "label": "Deterministic surface derivatives",
+      "agent_count": 144,
+      "master_asset_count": 0,
+      "status": "blocked",
+      "variable_under_test": "crop, compression, responsive behavior, and accessible state overlays",
+      "entry_criteria": ["identity masters human approved", "surface crop specifications locked"],
+      "exit_criteria": ["4320 derivatives pass automated integrity checks", "desktop, mobile, graph, and marketplace visual QA pass"]
+    }
+  ],
+  "evidence": {
+    "founder_feedback_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/FOUNDER_REVIEW_STATUS.md",
+    "rejected_research_paths": [
+      "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-c-style-languages/FOUNDER_REJECTION.md",
+      "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-i-independent-critique.md"
+    ],
+    "current_production_baseline": "Existing v1 Starlight portraits remain the continuity baseline; Phase E-I does not replace them.",
+    "planned_output_root": "assets/starlight-constellation/v2-preview/next-pass"
+  },
+  "created_at": "2026-08-29"
+}

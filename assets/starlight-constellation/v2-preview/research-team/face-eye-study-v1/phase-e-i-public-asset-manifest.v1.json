@@ -5,7 +5,14 @@
     "phase-e-i-provenance.v1.json",
     "phase-e-i-quality-scorecard.v1.json"
   ],
-  "claim_boundary": "Research metadata only. No runtime authority, production approval, or exact prompt receipt is implied.",
+  "claim_boundary": "Research metadata only. Frank did not approve Phase E-I as the next production identity direction on 2026-08-29. No runtime authority, production approval, or exact prompt receipt is implied.",
+  "founder_review": {
+    "date": "2026-08-29",
+    "status": "not_approved_as_production_direction",
+    "production_eligible": false,
+    "continuity_baseline": "existing_v1_portraits",
+    "decision_record": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/FOUNDER_REVIEW_STATUS.md"
+  },
   "asset_count": 50,
   "assets": [
     {

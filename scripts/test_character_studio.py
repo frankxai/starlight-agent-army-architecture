@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from validate_character_studio import (  # noqa: E402
     load_json,
+    validate_asset_program,
     validate_direction_batch,
     validate_document,
     validate_repository,
@@ -27,6 +28,9 @@ class CharacterStudioTests(unittest.TestCase):
             ROOT / "templates" / "starlight-character-studio" / "character-visual-contract.template.json"
         )
         cls.job = load_json(ROOT / "templates" / "starlight-character-studio" / "image-job.template.json")
+        cls.program = load_json(
+            ROOT / "templates" / "starlight-character-studio" / "asset-program.template.json"
+        )
 
     def test_repository_fixtures_are_valid(self) -> None:
         self.assertEqual(validate_repository(), [])
@@ -73,6 +77,18 @@ class CharacterStudioTests(unittest.TestCase):
         second["direction"]["controlled_variables"][0] = "different identity"
         issues = validate_direction_batch([first, second])
         self.assertTrue(any("controlled-variable baseline" in issue.message for issue in issues))
+
+    def test_asset_program_scale_math_is_enforced(self) -> None:
+        candidate = copy.deepcopy(self.program)
+        candidate["scale_model"]["generated_master_count"] += 1
+        issues = validate_document(candidate) + validate_asset_program(candidate, source="<memory>")
+        self.assertTrue(any("generated_master_count" in issue.message for issue in issues))
+
+    def test_held_asset_program_cannot_generate(self) -> None:
+        candidate = copy.deepcopy(self.program)
+        candidate["batches"][0]["status"] = "generating"
+        issues = validate_document(candidate) + validate_asset_program(candidate, source="<memory>")
+        self.assertTrue(any("held machine admission" in issue.message for issue in issues))
 
 
 if __name__ == "__main__":

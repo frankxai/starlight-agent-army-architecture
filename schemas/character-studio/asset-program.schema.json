@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlightintelligence.org/schemas/character-studio/asset-program.schema.json",
+  "title": "Starlight Character Asset Program",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "program_id",
+    "program_version",
+    "status",
+    "authority",
+    "objective",
+    "identity_policy",
+    "scale_model",
+    "style_territories",
+    "face_systems",
+    "surface_profiles",
+    "generation_policy",
+    "batches",
+    "evidence",
+    "created_at"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": "starlight.character_asset_program.v1" },
+    "program_id": { "$ref": "#/$defs/slug" },
+    "program_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "held", "approved", "generating", "complete", "deprecated"]
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "visual_research_only",
+        "grants_runtime_authority",
+        "production_mutation_allowed",
+        "human_owner"
+      ],
+      "properties": {
+        "visual_research_only": { "const": true },
+        "grants_runtime_authority": { "const": false },
+        "production_mutation_allowed": { "type": "boolean" },
+        "human_owner": { "type": "string", "minLength": 1 }
+      }
+    },
+    "objective": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary_goal", "target_audience", "desired_first_read", "target_domains"],
+      "properties": {
+        "primary_goal": { "type": "string", "minLength": 20 },
+        "target_audience": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 3 },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "desired_first_read": { "type": "string", "minLength": 20 },
+        "target_domains": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "starlightintelligence.ai",
+              "starlightintelligence.org",
+              "starlightintelligence.academy",
+              "marketplace",
+              "runtime"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "identity_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "default_territory",
+        "continuity_lane",
+        "global_identity_approved",
+        "human_decision"
+      ],
+      "properties": {
+        "default_territory": { "$ref": "#/$defs/slug" },
+        "continuity_lane": { "$ref": "#/$defs/slug" },
+        "global_identity_approved": { "type": "boolean" },
+        "human_decision": { "type": "string", "enum": ["pending", "approve", "iterate", "restart"] }
+      }
+    },
+    "scale_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "portfolio_agent_count",
+        "master_assets_per_agent",
+        "derivatives_per_master",
+        "generated_master_count",
+        "deterministic_derivative_count",
+        "target_deliverable_count"
+      ],
+      "properties": {
+        "portfolio_agent_count": { "type": "integer", "minimum": 1 },
+        "master_assets_per_agent": { "type": "integer", "minimum": 1 },
+        "derivatives_per_master": { "type": "integer", "minimum": 0 },
+        "generated_master_count": { "type": "integer", "minimum": 1 },
+        "deterministic_derivative_count": { "type": "integer", "minimum": 0 },
+        "target_deliverable_count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "style_territories": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "purpose",
+          "surfaces",
+          "morphology_family",
+          "visual_signature",
+          "avoid",
+          "status"
+        ],
+        "properties": {
+          "id": { "$ref": "#/$defs/slug" },
+          "label": { "type": "string", "minLength": 3 },
+          "purpose": { "type": "string", "minLength": 12 },
+          "surfaces": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/slug" },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "morphology_family": { "type": "string", "minLength": 3 },
+          "visual_signature": { "type": "string", "minLength": 20 },
+          "avoid": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 3 },
+            "minItems": 3,
+            "uniqueItems": true
+          },
+          "status": { "type": "string", "enum": ["proposed", "held", "selected", "rejected"] }
+        }
+      }
+    },
+    "face_systems": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "architecture",
+          "eye_logic",
+          "warmth_source",
+          "best_for",
+          "risks",
+          "status"
+        ],
+        "properties": {
+          "id": { "$ref": "#/$defs/slug" },
+          "label": { "type": "string", "minLength": 3 },
+          "architecture": { "type": "string", "minLength": 12 },
+          "eye_logic": { "type": "string", "minLength": 12 },
+          "warmth_source": { "type": "string", "minLength": 12 },
+          "best_for": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 3 },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "risks": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 3 },
+            "minItems": 2,
+            "uniqueItems": true
+          },
+          "status": { "type": "string", "enum": ["proposed", "held", "selected", "rejected"] }
+        }
+      }
+    },
+    "surface_profiles": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "aspect_ratio",
+          "target_width",
+          "target_height",
+          "mode",
+          "critical_read"
+        ],
+        "properties": {
+          "id": { "$ref": "#/$defs/slug" },
+          "aspect_ratio": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" },
+          "target_width": { "type": "integer", "minimum": 48 },
+          "target_height": { "type": "integer", "minimum": 48 },
+          "mode": { "type": "string", "enum": ["generated-master", "deterministic-derivative"] },
+          "critical_read": { "type": "string", "minLength": 12 }
+        }
+      }
+    },
+    "generation_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "one_asset_per_call",
+        "max_parallel_generation_calls",
+        "exact_prompt_required",
+        "prompt_receipt_required",
+        "source_copy_required",
+        "export_inspection_required",
+        "independent_review_required",
+        "machine_admission",
+        "production_gate"
+      ],
+      "properties": {
+        "one_asset_per_call": { "const": true },
+        "max_parallel_generation_calls": { "type": "integer", "const": 1 },
+        "exact_prompt_required": { "const": true },
+        "prompt_receipt_required": { "const": true },
+        "source_copy_required": { "const": true },
+        "export_inspection_required": { "const": true },
+        "independent_review_required": { "const": true },
+        "machine_admission": { "type": "string", "enum": ["held", "allowed"] },
+        "production_gate": { "const": "human-approval-required" }
+      }
+    },
+    "batches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "batch_id",
+          "label",
+          "agent_count",
+          "master_asset_count",
+          "status",
+          "variable_under_test",
+          "entry_criteria",
+          "exit_criteria"
+        ],
+        "properties": {
+          "batch_id": { "$ref": "#/$defs/slug" },
+          "label": { "type": "string", "minLength": 3 },
+          "agent_count": { "type": "integer", "minimum": 0 },
+          "master_asset_count": { "type": "integer", "minimum": 0 },
+          "status": { "type": "string", "enum": ["blocked", "queued", "generating", "review", "approved", "complete"] },
+          "variable_under_test": { "type": "string", "minLength": 8 },
+          "entry_criteria": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 4 },
+            "minItems": 2,
+            "uniqueItems": true
+          },
+          "exit_criteria": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 4 },
+            "minItems": 2,
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "founder_feedback_path",
+        "rejected_research_paths",
+        "current_production_baseline",
+        "planned_output_root"
+      ],
+      "properties": {
+        "founder_feedback_path": { "$ref": "#/$defs/repoPath" },
+        "rejected_research_paths": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/repoPath" },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "current_production_baseline": { "type": "string", "minLength": 8 },
+        "planned_output_root": { "$ref": "#/$defs/repoPath" }
+      }
+    },
+    "created_at": { "type": "string", "format": "date" }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "repoPath": {
+      "type": "string",
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9._/-]+$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "identity_policy": {
+            "properties": { "global_identity_approved": { "const": true } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "identity_policy": {
+            "properties": { "human_decision": { "const": "approve" } }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "authority": {
+            "properties": { "production_mutation_allowed": { "const": true } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "identity_policy": {
+            "properties": { "human_decision": { "const": "approve" } }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "enum": ["generating", "complete"] } } },
+      "then": {
+        "properties": {
+          "generation_policy": {
+            "properties": { "machine_admission": { "const": "allowed" } }
+          }
+        }
+      }
+    }
+  ]
+}

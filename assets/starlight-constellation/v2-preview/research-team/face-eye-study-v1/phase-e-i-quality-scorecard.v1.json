@@ -10,7 +10,14 @@
     "desktop_mobile_crop_test": false,
     "founder_approval_recorded": false
   },
-  "claim_boundary": "Scores are independent expert diagnostics of the exported pixels and intended surface fit. They are not measured audience preference, production approval, runtime truth, or proof of the depicted systems.",
+  "claim_boundary": "Scores are independent expert diagnostics of the exported pixels and intended surface fit. Frank did not approve Phase E-I as the next production identity direction on 2026-08-29. Scores are not measured audience preference, production approval, runtime truth, or proof of the depicted systems.",
+  "founder_review": {
+    "date": "2026-08-29",
+    "status": "not_approved_as_production_direction",
+    "supersedes_maker_scores": true,
+    "production_eligible": false,
+    "decision_record": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/FOUNDER_REVIEW_STATUS.md"
+  },
   "rubric": {
     "total_max": 30,
     "dimensions": {
