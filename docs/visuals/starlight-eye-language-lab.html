@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Starlight eye-language lab</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap");
+    :root {
+      color-scheme: dark;
+      --ink: #080b0e;
+      --panel: #11171c;
+      --panel-2: #151d23;
+      --paper: #eee7da;
+      --muted: #aaa69d;
+      --line: rgba(238, 231, 218, 0.14);
+      --line-strong: rgba(238, 231, 218, 0.28);
+      --amber: #d6b36c;
+      --cyan: #73c8cf;
+      --sage: #91a988;
+      --coral: #d07d6b;
+      --violet: #9d8bca;
+      --radius: 6px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 10% -5%, rgba(214, 179, 108, 0.1), transparent 27rem),
+        radial-gradient(circle at 91% 3%, rgba(115, 200, 207, 0.07), transparent 29rem),
+        var(--ink);
+      color: var(--paper);
+      font-family: "Manrope", "Aptos", sans-serif;
+      line-height: 1.55;
+    }
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      content: "";
+      opacity: 0.1;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E");
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button { color: inherit; font: inherit; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2 {
+      font-weight: 700;
+      letter-spacing: -0.055em;
+    }
+    h1 {
+      max-width: 1040px;
+      margin-bottom: 22px;
+      font-size: clamp(3.7rem, 8vw, 8.5rem);
+      line-height: 0.87;
+    }
+    h2 {
+      margin-bottom: 15px;
+      font-size: clamp(2.4rem, 5vw, 5.3rem);
+      line-height: 0.94;
+    }
+    h3 {
+      font-size: 1.06rem;
+      font-weight: 600;
+    }
+    .shell { width: min(1500px, calc(100% - 36px)); margin: 0 auto; }
+    .internal {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px 18px;
+      border-bottom: 1px solid var(--line);
+      color: #c7c1b7;
+      font-size: 0.8rem;
+    }
+    .eyebrow, .micro {
+      color: var(--amber);
+      font-family: "IBM Plex Mono", "Cascadia Mono", monospace;
+      font-size: 0.76rem;
+      letter-spacing: 0.05em;
+    }
+    .lede {
+      max-width: 880px;
+      color: #cbc5ba;
+      font-size: clamp(1.06rem, 1.6vw, 1.42rem);
+    }
+    .masthead {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(300px, 0.6fr);
+      gap: 54px;
+      padding: 70px 0 44px;
+      border-bottom: 1px solid var(--line-strong);
+    }
+    .verdict {
+      align-self: end;
+      padding-left: 24px;
+      border-left: 1px solid var(--line-strong);
+    }
+    .verdict strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    .verdict p { color: var(--muted); }
+    .section {
+      padding: 76px 0;
+      border-bottom: 1px solid var(--line-strong);
+    }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
+      gap: 36px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+    .section-head > p { max-width: 800px; margin-bottom: 0; color: var(--muted); }
+    .synthesis {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+      gap: 14px;
+    }
+    .synthesis-image {
+      position: relative;
+      overflow: hidden;
+      min-height: 700px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .synthesis-image img { width: 100%; height: 100%; min-height: 700px; object-fit: cover; object-position: center top; }
+    .image-note {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      left: 16px;
+      padding: 13px 14px;
+      background: rgba(8, 11, 14, 0.84);
+      border: 1px solid rgba(238, 231, 218, 0.22);
+      backdrop-filter: blur(14px);
+    }
+    .image-note strong, .image-note span { display: block; }
+    .image-note span { margin-top: 3px; color: var(--muted); font-size: 0.8rem; }
+    .synthesis-copy { display: grid; gap: 12px; }
+    .panel {
+      padding: 20px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .panel.primary { border-color: rgba(214, 179, 108, 0.55); }
+    .panel p, .panel li { color: var(--muted); }
+    .panel ul { margin-bottom: 0; padding-left: 18px; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 7px; }
+    .pill {
+      display: inline-flex;
+      min-height: 27px;
+      align-items: center;
+      padding: 3px 9px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      color: #cec8bd;
+      font-size: 0.75rem;
+    }
+    .pill.keep { border-color: rgba(145, 169, 136, 0.52); color: #b9cdb2; }
+    .pill.warn { border-color: rgba(208, 125, 107, 0.52); color: #e3a395; }
+    .new-grid, .legacy-grid, .principle-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 12px;
+    }
+    .option {
+      grid-column: span 3;
+      overflow: hidden;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      transition: border-color 180ms ease, transform 180ms ease;
+    }
+    .option:hover { transform: translateY(-2px); border-color: var(--line-strong); }
+    .option.recommended { border-color: rgba(214, 179, 108, 0.55); }
+    .option.boundary { border-color: rgba(208, 125, 107, 0.42); }
+    .option img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+      border-bottom: 1px solid var(--line);
+      background: #090b0d;
+    }
+    .option-copy { padding: 18px; }
+    .option-copy p { color: var(--muted); font-size: 0.86rem; }
+    .score-line {
+      display: grid;
+      grid-template-columns: 56px 1fr auto;
+      gap: 9px;
+      align-items: center;
+      margin: 7px 0;
+      font-size: 0.72rem;
+    }
+    .score-line span:first-child { color: var(--muted); }
+    .bar {
+      height: 4px;
+      overflow: hidden;
+      background: rgba(238, 231, 218, 0.1);
+      border-radius: 999px;
+    }
+    .bar i { display: block; height: 100%; background: var(--cyan); }
+    .score-line strong { font-weight: 500; }
+    .choose {
+      width: 100%;
+      min-height: 40px;
+      margin-top: 14px;
+      background: transparent;
+      border: 1px solid var(--line-strong);
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .choose:hover, .choose:focus-visible { border-color: var(--amber); outline: 0; }
+    .choose[aria-pressed="true"] { background: rgba(214, 179, 108, 0.11); border-color: var(--amber); color: #ead09c; }
+    .taste-receipt {
+      display: none;
+      margin-top: 18px;
+      padding: 18px;
+      background: rgba(214, 179, 108, 0.08);
+      border: 1px solid rgba(214, 179, 108, 0.38);
+    }
+    .taste-receipt.visible { display: block; }
+    .legacy {
+      grid-column: span 3;
+      overflow: hidden;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .legacy img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+      filter: saturate(0.76);
+      border-bottom: 1px solid var(--line);
+    }
+    .legacy-copy { padding: 15px; }
+    .legacy-copy p { color: var(--muted); font-size: 0.78rem; }
+    .principle {
+      grid-column: span 4;
+      min-height: 218px;
+      padding: 20px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .principle p { color: var(--muted); }
+    .role-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+    .role-table th, .role-table td {
+      padding: 14px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .role-table th {
+      color: var(--amber);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.75rem;
+      font-weight: 400;
+    }
+    .role-table td { color: var(--muted); font-size: 0.84rem; }
+    .role-table td:first-child { color: var(--paper); }
+    .text-link {
+      display: inline-block;
+      margin-top: 7px;
+      color: var(--amber);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(214, 179, 108, 0.35);
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 28px 0 50px;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+    @media (max-width: 1120px) {
+      .option, .legacy { grid-column: span 6; }
+      .principle { grid-column: span 6; }
+      .synthesis { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 720px) {
+      .shell { width: min(100% - 24px, 1500px); }
+      .internal, footer { flex-direction: column; }
+      .masthead, .section-head { grid-template-columns: 1fr; }
+      .masthead { padding-top: 48px; }
+      .option, .legacy, .principle { grid-column: span 12; }
+      .synthesis-image, .synthesis-image img { min-height: 540px; }
+      .role-table { display: block; overflow-x: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .option { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="internal">
+    <span>Internal taste laboratory · generated candidates are not approved identities</span>
+    <span>29 August 2026 · four new options · seven legacy controls</span>
+  </div>
+  <main class="shell">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Starlight eye-language calibration</p>
+        <h1>Readable gaze. Never a fake human soul.</h1>
+        <p class="lede">The goal is not to make every agent cute or human. It is to make attention legible, personality memorable, and machine identity beautiful—without cold LED dots, manipulative baby schema, or uncanny biological eyes.</p>
+      </div>
+      <aside class="verdict">
+        <p class="micro">Current design verdict</p>
+        <strong>The best direction is between E01 and E02.</strong>
+        <p>Use E01’s gaze and depth, E02’s non-human construction, smaller adult proportions, almost no glow, and the exact approved Lyra face geometry.</p>
+      </aside>
+    </header>
+
+    <section class="section" id="synthesis">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">My recommendation</p>
+          <h2>The Starlight iris.</h2>
+        </div>
+        <p>None of the four new outputs is a final identity master. E01 comes closest to broad appeal; E02 contributes the ownable civilization language. The next high-value image should be one exact identity-preserving E01 × E02 synthesis—not another wide batch.</p>
+      </div>
+      <div class="synthesis">
+        <div class="synthesis-image">
+          <img src="../../assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/candidates/e01-layered-synthetic-iris-v1.png" alt="E01 layered synthetic iris on Lyra">
+          <div class="image-note"><strong>E01 is the strongest single ingredient</strong><span>Keep gaze, dark pupil, layered depth, and restraint. Reduce the size and replace the biological radial iris with quieter mechanical petals.</span></div>
+        </div>
+        <div class="synthesis-copy">
+          <article class="panel primary">
+            <p class="micro">Proposed eye recipe</p>
+            <h3>E01 readability × E02 civilization</h3>
+            <ul>
+              <li>Softly faceted, medium-small aperture</li>
+              <li>Approximately twelve percent smaller than E01</li>
+              <li>Dark movable focus core</li>
+              <li>Six quiet mechanical iris petals</li>
+              <li>Smoked lens depth and one tiny catchlight</li>
+              <li>Low-reflection turquoise, never cyan emission</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <p class="micro">Borrow from human vision</p>
+            <div class="pill-row"><span class="pill keep">Gaze direction</span><span class="pill keep">Joint attention</span><span class="pill keep">Dark pupil</span><span class="pill keep">Moderate roundness</span></div>
+          </article>
+          <article class="panel">
+            <p class="micro">Keep unmistakably synthetic</p>
+            <div class="pill-row"><span class="pill warn">No sclera</span><span class="pill warn">No wet cornea</span><span class="pill warn">No eyebrows</span><span class="pill warn">No smile</span><span class="pill warn">No projected emotions</span></div>
+          </article>
+          <article class="panel">
+            <p class="micro">The key taste question</p>
+            <p>Do you prefer E01’s more familiar elegance, E02’s more alien originality, or the recommended synthesis? Your answer determines the primary signature grammar; E03 can still live as a technical family.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="new-options">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Four new spectrum tests</p>
+          <h2>Choose a territory, not a final face.</h2>
+        </div>
+        <p>Each candidate isolates a different degree of human readability. Select the one that feels closest to your taste; the page remembers the choice only in this browser.</p>
+      </div>
+      <div class="new-grid" id="new-grid"></div>
+      <div class="taste-receipt" id="taste-receipt" aria-live="polite"></div>
+    </section>
+
+    <section class="section" id="legacy">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Seven earlier controls</p>
+          <h2>Why the old study did not settle it.</h2>
+        </div>
+        <p>The earlier board changed openings on a nearly blank mask. It taught us what to avoid, but not how to integrate gaze, character identity, optical depth, and role. These remain useful controls rather than canon candidates.</p>
+      </div>
+      <div class="legacy-grid" id="legacy-grid"></div>
+    </section>
+
+    <section class="section" id="principles">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Science translated into design</p>
+          <h2>Six rules for likeable machine vision.</h2>
+        </div>
+        <p>These are design inferences, not universal psychological laws. The research is contextual, so Starlight should test actual target users and avoid treating appearance as proof of trustworthiness.</p>
+      </div>
+      <div class="principle-grid">
+        <article class="principle"><p class="micro">01 · Gaze before glow</p><h3>A dark focus core must visibly orient.</h3><p>People need to know what the agent is attending to. A bright LED signals activity but not gaze.</p></article>
+        <article class="principle"><p class="micro">02 · Moderate roundness</p><h3>Rounder than hostile slits; smaller than mascots.</h3><p>Use enough roundness for approachability without activating childlike authority cues.</p></article>
+        <article class="principle"><p class="micro">03 · Optical depth</p><h3>Socket, lens, iris, focus core.</h3><p>Layered construction creates life-like attention through physics, not biological imitation.</p></article>
+        <article class="principle"><p class="micro">04 · Honest materials</p><h3>Smoked glass, ceramic, graphite, quiet light.</h3><p>No wet sclera, skin, lashes, or features that imply a biological interior.</p></article>
+        <article class="principle"><p class="micro">05 · Functional motion</p><h3>Attention, thinking, uncertainty, handoff.</h3><p>Move the focus core and aperture for operational states; do not simulate joy, sadness, or love as if felt.</p></article>
+        <article class="principle"><p class="micro">06 · Role-weighted warmth</p><h3>Social agents can be warmer; authority agents calmer.</h3><p>Health, safety, finance, governance, and infrastructure must not borrow cuteness to gain compliance.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="roles">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Civilization evolution</p>
+          <h2>One ethical grammar, several optical families.</h2>
+        </div>
+        <p>The civilization should evolve different sensor forms for different work. Consistency comes from the gaze rules, materials, luminance, and behavior—not from forcing 144 agents to wear the same face.</p>
+      </div>
+      <table class="role-table">
+        <thead><tr><th>Agent family</th><th>Preferred eye language</th><th>Allowed warmth</th><th>Blocked cues</th></tr></thead>
+        <tbody>
+          <tr><td>Creator and generalist conductors</td><td>E01 × E02 Starlight iris</td><td>Clear gaze, gentle canopy, moderate aperture</td><td>Baby eyes, smile screen, emotional manipulation</td></tr>
+          <tr><td>Academy and community guides</td><td>Softer Starlight iris; compact derivatives allowed</td><td>More gaze movement and approachable proportions</td><td>Childlike authority, dependency cues</td></tr>
+          <tr><td>Research and foresight</td><td>E02-weighted petal iris</td><td>Curious focus and visible aperture mechanics</td><td>Magic glow, omniscient gaze</td></tr>
+          <tr><td>Build, protocol, spatial, operations</td><td>E03-derived instrument optics or no humanoid face</td><td>Legible attention and state</td><td>Fake social expression, anonymous surveillance styling</td></tr>
+          <tr><td>Trust, safety, finance, governance</td><td>Smaller low-luminance Starlight iris</td><td>Calm, neutral, procedural</td><td>Cuteness, seduction, intimidation, implied approval</td></tr>
+          <tr><td>Health, ecology, biotech</td><td>Soft material aperture with non-human organic mechanics</td><td>Gentle orientation and low contrast</td><td>Human biological eye imitation, clinical authority theater</td></tr>
+          <tr><td>Rooms, instruments, micro-agents</td><td>Directional lenses, light fields, or environmental focus points</td><td>Functional acknowledgement only</td><td>Unnecessary humanoid faces</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer class="shell">
+    <span>Eye-language laboratory · no generated candidate is production-approved</span>
+    <span><a href="../../assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/reviews/eye-language-calibration.v1.md">Open the full review</a> · <a href="agent-workflow-atlas.html">Return to agent atlas</a></span>
+  </footer>
+  <script>
+    const prefix = "../../assets/starlight-constellation/v2-preview/";
+    const options = [
+      {
+        id: "e01",
+        name: "E01 · Layered synthetic iris",
+        territory: "Readable synthetic",
+        image: prefix + "next-pass/eye-language-calibration/candidates/e01-layered-synthetic-iris-v1.png",
+        score: "25/30",
+        copy: "Best broad appeal. Excellent gaze and depth; slightly too biological and a little large.",
+        appeal: 88,
+        honesty: 82,
+        distinction: 72,
+        className: "recommended"
+      },
+      {
+        id: "e02",
+        name: "E02 · Mechanical petal aperture",
+        territory: "Poetic non-human",
+        image: prefix + "next-pass/eye-language-calibration/candidates/e02-mechanical-petal-aperture-v1.png",
+        score: "24/30",
+        copy: "Most ownable and evolved. Beautifully non-human; slightly more alien and less instantly readable.",
+        appeal: 79,
+        honesty: 94,
+        distinction: 92,
+        className: ""
+      },
+      {
+        id: "e03",
+        name: "E03 · Binocular vision bridge",
+        territory: "Machine instrument",
+        image: prefix + "next-pass/eye-language-calibration/candidates/e03-binocular-vision-bridge-v1.png",
+        score: "22/30",
+        copy: "Most technical and honest. Useful family for builders, protocols, devices, and infrastructure.",
+        appeal: 70,
+        honesty: 97,
+        distinction: 73,
+        className: ""
+      },
+      {
+        id: "e04",
+        name: "E04 · Human-readable boundary",
+        territory: "Anthropomorphic limit",
+        image: prefix + "next-pass/eye-language-calibration/candidates/e04-human-readable-boundary-v1.png",
+        score: "18/30",
+        copy: "Emotionally immediate but uncanny and too biologically suggestive. Retain as negative boundary evidence.",
+        appeal: 72,
+        honesty: 42,
+        distinction: 51,
+        className: "boundary"
+      },
+      {
+        id: "hybrid",
+        name: "E01 × E02 · Proposed synthesis",
+        territory: "Recommended next test",
+        image: prefix + "next-pass/eye-language-calibration/candidates/e01-layered-synthetic-iris-v1.png",
+        score: "Not generated",
+        copy: "E01 gaze and depth, E02 mechanical petals, twelve percent smaller, exact Lyra identity restored.",
+        appeal: 92,
+        honesty: 93,
+        distinction: 91,
+        className: "recommended"
+      }
+    ];
+    const legacy = [
+      ["B01 · Compact round dual", "Small camera apertures", "Too cold and observational; little social gaze.", "b01-compact-round-dual.png"],
+      ["B02 · Wide light wells", "Large glowing circles", "More approachable, but toy-like and dominated by baby schema.", "b02-wide-round-light-wells.png"],
+      ["B03 · Soft square apertures", "Friendly interface eyes", "Readable but generic, flat, and screen-like.", "b03-soft-square-apertures.png"],
+      ["B04 · Tapered mechanical", "Narrow technical eyes", "Competent but hostile, suspicious, and unsuitable for the core brand.", "b04-tapered-mechanical.png"],
+      ["B05 · Dual-focus visor", "Anonymous optical band", "Clearly robotic but emotionally distant and insufficiently individual.", "b05-dual-focus-visor.png"],
+      ["B06 · Single central iris", "Cyclopean instrument", "Strong for devices and instruments, weak as a general social identity.", "b06-single-central-iris.png"],
+      ["B07 · Primary and secondary", "Asymmetric analyst optics", "Role-specific but visually unstable and less universally likeable.", "b07-primary-secondary.png"]
+    ];
+
+    const grid = document.getElementById("new-grid");
+    options.forEach(function(option) {
+      const card = document.createElement("article");
+      card.className = "option " + option.className;
+      card.innerHTML =
+        '<img src="' + option.image + '" alt="' + option.name + '">' +
+        '<div class="option-copy"><p class="micro">' + option.territory + ' · ' + option.score + '</p>' +
+        '<h3>' + option.name + '</h3><p>' + option.copy + '</p>' +
+        metric("Appeal", option.appeal) + metric("Honesty", option.honesty) + metric("Distinct", option.distinction) +
+        '<button class="choose" type="button" data-choice="' + option.id + '" aria-pressed="false">This is closest to my taste</button></div>';
+      grid.appendChild(card);
+    });
+
+    function metric(label, value) {
+      return '<div class="score-line"><span>' + label + '</span><span class="bar"><i style="width:' + value + '%"></i></span><strong>' + value + '</strong></div>';
+    }
+
+    const legacyGrid = document.getElementById("legacy-grid");
+    legacy.forEach(function(item) {
+      const card = document.createElement("article");
+      card.className = "legacy";
+      card.innerHTML =
+        '<img src="' + prefix + 'research-team/face-eye-study-v1/phase-b-eye-systems/' + item[3] + '" alt="' + item[0] + '">' +
+        '<div class="legacy-copy"><p class="micro">' + item[1] + '</p><h3>' + item[0] + '</h3><p>' + item[2] + '</p></div>';
+      legacyGrid.appendChild(card);
+    });
+
+    const receipt = document.getElementById("taste-receipt");
+    function setChoice(choice) {
+      document.querySelectorAll(".choose").forEach(function(button) {
+        button.setAttribute("aria-pressed", button.dataset.choice === choice ? "true" : "false");
+      });
+      const selected = options.find(function(option) { return option.id === choice; });
+      if (!selected) return;
+      localStorage.setItem("starlight-eye-taste-v1", choice);
+      receipt.classList.add("visible");
+      receipt.innerHTML = '<p class="micro">Your local taste receipt</p><h3>' + selected.name + '</h3><p>' + selected.copy + '</p>';
+    }
+    grid.addEventListener("click", function(event) {
+      const button = event.target.closest(".choose");
+      if (button) setChoice(button.dataset.choice);
+    });
+    const remembered = localStorage.getItem("starlight-eye-taste-v1");
+    if (remembered) setChoice(remembered);
+  </script>
+</body>
+</html>

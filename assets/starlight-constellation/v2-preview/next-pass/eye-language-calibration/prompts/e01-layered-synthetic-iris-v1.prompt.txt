@@ -1,0 +1,30 @@
+Use case: identity-preserve.
+Asset type: internal Starlight eye-language calibration portrait, not a final character master.
+Image 1 is the edit target and identity reference.
+
+Primary request:
+Create one close head-and-upper-shoulders portrait of the exact same Lyra design, testing a more likeable, intelligent, distinctly non-human eye system for creators and developers. Change the framing and eye construction only. Preserve every other identity feature.
+
+Scene and framing:
+Use the same quiet warm-mineral studio, background, palette, materials, lighting direction, head angle, and calm posture from Image 1. Crop to a premium eye-level head-and-upper-shoulders portrait so the optical construction is clearly inspectable. Lyra looks toward the viewer with calm attentive gaze, not a stare.
+
+Identity invariants:
+Preserve the exact elongated segmented porcelain cranium, compact obsidian faceplate outline, narrow tapered lower face, side cranial mechanisms, porcelain/obsidian/deep-ink-blue/warm-metal material family, adult proportions, and serene precise personality from Image 1. No mouth and no simulated human facial muscles.
+
+Change only the eyes:
+Replace the two tiny bright cyan dots with two medium-small rounded-oval recessed optical irises. They should be only moderately larger than the current apertures: adult and composed, never baby-like.
+Each eye has four readable physical layers:
+1. a thin dark graphite outer socket integrated into the obsidian faceplate;
+2. a smoky transparent protective lens with subtle realistic depth;
+3. a restrained desaturated turquoise iris ring made from fine mechanical radial segments;
+4. a small dark central aperture with one tiny soft catchlight.
+The eyes emit almost no light. Cyan is a quiet internal status reflection, not a glowing orb. Keep visible dark pupil mass and optical depth.
+Add a very subtle porcelain upper canopy above each socket to soften the expression and clarify gaze direction, but no eyebrows, eyelashes, eyelids, human sclera, tears, or wet biological eyeballs.
+Keep the eye spacing balanced at the adult mid-face position. The gaze should feel curious, competent, generous, and present—an advanced civilization choosing legibility and respect rather than imitating a human face.
+
+Design intent:
+Premium original game-studio character development quality, highly refined industrial design, trustworthy without baby schema, emotionally legible without claiming human feelings, strong at profile-card scale, beautiful enough for a flagship AI brand.
+
+Strict constraints:
+No text, labels, comparison panels, extra characters, props, interface, hologram, mouth, smile, nose, human skin, white sclera, wet cornea, eyelashes, eyebrows, anime eyes, oversized eyes, sad eyes, aggressive narrow eyes, glowing cyan dots, flat LED circles, visor, facial screen, uncanny human imitation, or franchise imitation.
+No other redesign.

@@ -1,0 +1,130 @@
+{
+  "version": "2026-08-29",
+  "task": "Calibrate a more likeable, honest, and ownable Starlight eye language without redesigning the full cast.",
+  "surface": "Internal Starlight character studio and future .ai/.org identity systems after approval.",
+  "audience": "Creators, developers, founders, researchers, and operators.",
+  "standards": [
+    "design-agent-standards/PREMIUM_ASSET_STANDARD.md",
+    "design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "design-agent-standards/OUTCOMES.md",
+    "design-agent-standards/best-practices/image-logo-visual-generation.md",
+    "starlight-design-intelligence/evals/generated-asset-quality-gate.md"
+  ],
+  "references": [
+    {
+      "label": "Lyra V1.5 identity candidate",
+      "source": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/candidates/lyra-v15-functional-identity-lock-v1.png",
+      "reason": "Provide a controlled face, material, lighting, and identity starting point."
+    },
+    {
+      "label": "Existing eye systems",
+      "source": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-b-eye-systems",
+      "reason": "Preserve prior evidence about small dots, wide light wells, square apertures, narrow eyes, visors, single irises, and asymmetry."
+    },
+    {
+      "label": "Human–robot interaction evidence",
+      "source": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/eye-language-calibration.v1.json",
+      "reason": "Record primary-source findings and the design inferences derived from them."
+    }
+  ],
+  "direction": {
+    "keep": [
+      "clearly robotic identity",
+      "readable gaze direction",
+      "adult moderate eye scale",
+      "dark pupil or focus core",
+      "low-luminance turquoise optical detail",
+      "material and mechanical depth"
+    ],
+    "avoid": [
+      "tiny glowing cyan dots",
+      "large baby-schema light wells",
+      "aggressive narrow eyes",
+      "flat anonymous visors",
+      "wet human eyes and biological mimicry",
+      "projected emotions and deceptive facial simulation"
+    ],
+    "signature": "A softly faceted, medium-small, low-luminance optical iris with a movable dark focus core and quiet mechanical petals.",
+    "system": [
+      "generate one eye-language candidate per call",
+      "inspect the repo copy at high detail",
+      "record prompt, original path, repo path, hash, dimensions, score, and decision",
+      "treat gaze states as functional communication rather than simulated emotion",
+      "require human selection before an identity-preserving master edit"
+    ]
+  },
+  "asset_quality": {
+    "tier": "B",
+    "source_method": "image-edit",
+    "provenance": "generated",
+    "why_premium": "Four controlled variants isolate human readability, poetic non-human construction, explicit machine vision, and the anthropomorphic boundary; every prompt and export receipt is preserved and the complete set was inspected.",
+    "shortcut_risk": "high",
+    "context_tested": false
+  },
+  "artifacts": [
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/candidates/e01-layered-synthetic-iris-v1.png",
+      "kind": "eye-language candidate",
+      "inspected": true
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/candidates/e02-mechanical-petal-aperture-v1.png",
+      "kind": "eye-language candidate",
+      "inspected": true
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/candidates/e03-binocular-vision-bridge-v1.png",
+      "kind": "eye-language candidate",
+      "inspected": true
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/candidates/e04-human-readable-boundary-v1.png",
+      "kind": "negative boundary evidence",
+      "inspected": true
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/eye-language-calibration.v1.json",
+      "kind": "prompt provenance and decision ledger",
+      "inspected": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "machine-admission",
+      "status": "pass",
+      "evidence": "Peak Performance interactive preflight returned ALLOW with one parallel job."
+    },
+    {
+      "name": "one-call-per-asset",
+      "status": "pass",
+      "evidence": "Four sequential built-in image generation calls produced four separately prompted assets."
+    },
+    {
+      "name": "export-inspection",
+      "status": "pass",
+      "evidence": "All four repo copies were inspected at high detail."
+    },
+    {
+      "name": "prompt-and-provenance",
+      "status": "pass",
+      "evidence": "Exact prompt text, generated source, repo copy, SHA-256, dimensions, score, and decision are recorded for every option."
+    },
+    {
+      "name": "identity-preservation",
+      "status": "fail",
+      "evidence": "All four close-up studies drifted some face geometry and are therefore eye-language concepts, not identity masters."
+    },
+    {
+      "name": "human-taste-selection",
+      "status": "blocked",
+      "evidence": "Frank has not yet selected E01, E02, E03, or the recommended E01 × E02 synthesis."
+    }
+  ],
+  "score": {
+    "total": 25,
+    "max": 30,
+    "notes": "E01 is the strongest single candidate at 25/30; the proposed hybrid requires human selection and a precise identity-restoration pass."
+  },
+  "decision": "iterate",
+  "created_at": "2026-08-29"
+}

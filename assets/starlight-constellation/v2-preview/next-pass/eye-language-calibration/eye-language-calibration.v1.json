@@ -1,0 +1,147 @@
+{
+  "schema_version": "starlight.eye_language_calibration.v1",
+  "program_id": "2026-08-29-starlight-eye-language-calibration",
+  "agent_id": "lyra-research-conductor",
+  "status": "human_taste_selection_pending",
+  "use_case": "identity-preserve",
+  "purpose": "Calibrate the Starlight optical language across social readability, non-human honesty, brand distinctiveness, and audience appeal before another full character master is generated.",
+  "audience": [
+    "creators",
+    "developers",
+    "founders",
+    "researchers",
+    "operators"
+  ],
+  "reference": {
+    "path": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/candidates/lyra-v15-functional-identity-lock-v1.png",
+    "role": "edit-target and identity reference",
+    "rights_status": "owned-generated-project-asset"
+  },
+  "science_grounding": [
+    {
+      "finding": "Perceived competence and warmth support trust; maximizing anthropomorphism is not a universal solution.",
+      "source": "https://doi.org/10.3389/frobt.2021.640444"
+    },
+    {
+      "finding": "Subtle human-like gaze behavior can reduce processing effort and support engagement without requiring a human-looking face.",
+      "source": "https://doi.org/10.3389/frobt.2021.642796"
+    },
+    {
+      "finding": "Rounder robot eyes can increase first-impression trustworthiness relative to narrow eyes, but this evidence comes from social-robot contexts and must not become manipulative baby schema.",
+      "source": "https://doi.org/10.3390/s24134215"
+    },
+    {
+      "finding": "Adding eyes can produce only marginal subjective trust gains and may reduce collaborative task performance; eyes should communicate function, not merely humanize machinery.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10382291/"
+    },
+    {
+      "finding": "Recent implicit-measure work continues to find an uncanny-valley response to near-human robot faces.",
+      "source": "https://doi.org/10.1016/j.ijhcs.2024.103443"
+    }
+  ],
+  "variants": [
+    {
+      "id": "e01-layered-synthetic-iris-v1",
+      "label": "Layered synthetic iris",
+      "territory": "socially readable synthetic",
+      "prompt_path": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/prompts/e01-layered-synthetic-iris-v1.prompt.txt",
+      "output_path": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/candidates/e01-layered-synthetic-iris-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-54ac7eb1-0600-4956-9827-04819cad85bb.png",
+      "sha256": "f8d42742d9c448decce148535a524bed71c737349ee968251492f087c9c94d51",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "provider": "OpenAI built-in image generation",
+      "inspected": true,
+      "score30": 25,
+      "decision": "iterate",
+      "strength": "Best balance of immediately readable gaze, adult warmth, optical depth, and flagship appeal.",
+      "risk": "The radial iris is still close to biological eye grammar and the face identity drifted during reframing.",
+      "recommended_use": "Primary ingredient for creator-facing and generalist signatures."
+    },
+    {
+      "id": "e02-mechanical-petal-aperture-v1",
+      "label": "Mechanical petal aperture",
+      "territory": "poetic non-human civilization",
+      "prompt_path": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/prompts/e02-mechanical-petal-aperture-v1.prompt.txt",
+      "output_path": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/candidates/e02-mechanical-petal-aperture-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-2c8566eb-3e36-40f6-ac63-5391f6fd203d.png",
+      "sha256": "bd35d625362d46522de8ca6a36436bd2096fc9888463aa05f51bc549d50c30ca",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "provider": "OpenAI built-in image generation",
+      "inspected": true,
+      "score30": 24,
+      "decision": "iterate",
+      "strength": "Most distinctive and ownable expression of an evolved non-human optical civilization.",
+      "risk": "The faceted black cores can read insect-like or alien, and gaze direction is less effortless than E01.",
+      "recommended_use": "Research, intelligence, foresight, and advanced non-human signature roles."
+    },
+    {
+      "id": "e03-binocular-vision-bridge-v1",
+      "label": "Binocular vision bridge",
+      "territory": "explicit machine instrument",
+      "prompt_path": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/prompts/e03-binocular-vision-bridge-v1.prompt.txt",
+      "output_path": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/candidates/e03-binocular-vision-bridge-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6d887903-e16a-48aa-823f-dd8ef558e588.png",
+      "sha256": "2c504c5fa412bbc0576368fe33f8cb61b015423945fcade97d37bc0870213431",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "provider": "OpenAI built-in image generation",
+      "inspected": true,
+      "score30": 22,
+      "decision": "iterate",
+      "strength": "Clearly robotic, honest, legible, and suitable for technical or infrastructure specialists.",
+      "risk": "Reads as goggles or dual cameras and loses some elegance and emotional affinity.",
+      "recommended_use": "Build, infrastructure, protocol, spatial, and instrument-oriented agents."
+    },
+    {
+      "id": "e04-human-readable-boundary-v1",
+      "label": "Human-readable ocular boundary",
+      "territory": "maximum anthropomorphic boundary",
+      "prompt_path": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/prompts/e04-human-readable-boundary-v1.prompt.txt",
+      "output_path": "assets/starlight-constellation/v2-preview/next-pass/eye-language-calibration/candidates/e04-human-readable-boundary-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-46ae2053-bc3c-460d-a59a-dde8fc9d6671.png",
+      "sha256": "643df5111c616406f8781d18a184996f300cd10ab8a71e0f0404dcd5ae7d30fd",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "provider": "OpenAI built-in image generation",
+      "inspected": true,
+      "score30": 18,
+      "decision": "restart",
+      "strength": "Highest immediate emotional and gaze readability.",
+      "risk": "Crosses into uncanny and deceptive human-likeness; it suggests biological experience the system does not possess.",
+      "recommended_use": "Negative boundary evidence only; not core Starlight canon."
+    }
+  ],
+  "recommended_synthesis": {
+    "label": "E01 × E02 Starlight iris",
+    "decision": "proposed_after_human_taste_selection",
+    "keep_from_e01": [
+      "dark central focus core",
+      "clear gaze direction",
+      "layered optical depth",
+      "moderately rounded adult proportions"
+    ],
+    "keep_from_e02": [
+      "softly faceted non-human outer aperture",
+      "mechanical petal construction",
+      "ownable civilization language"
+    ],
+    "adjust": [
+      "reduce E01 eye size by approximately twelve percent",
+      "use six quieter petal segments rather than sharp facets",
+      "keep luminance below a low-status reflection rather than emission",
+      "restore the exact approved Lyra faceplate and cranium",
+      "test neutral, attentive, thinking, uncertain, and human-review gaze states through motion rather than facial emotion"
+    ]
+  },
+  "created_at": "2026-08-29"
+}

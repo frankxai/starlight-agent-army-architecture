@@ -1,0 +1,25 @@
+Use case: identity-preserve.
+Asset type: internal Starlight eye-language calibration portrait, option three of a controlled spectrum.
+Image 1 is the edit target and identity reference.
+
+Primary request:
+Create one close head-and-upper-shoulders portrait of the exact same Lyra design, testing a more explicitly robotic yet socially readable binocular vision bridge for adult creators and developers. Change the framing and eye construction only.
+
+Scene and framing:
+Preserve Image 1's quiet warm-mineral studio, restrained lighting, palette, materials, head orientation, and calm posture. Crop to a premium eye-level head-and-upper-shoulders portrait. Lyra directs attentive gaze toward the viewer without staring.
+
+Identity invariants:
+Preserve the exact elongated segmented porcelain cranium, narrow tapered lower face, side cranial mechanisms, porcelain/obsidian/deep-ink-blue/warm-metal material family, adult scale, and serene precise personality. No mouth and no simulated human facial muscles.
+
+Change only the eye zone:
+Evolve the upper portion of the existing compact obsidian faceplate into one narrow gently curved smoked-glass vision bridge spanning only between the temples; it must remain integrated into the existing black faceplate, not become a helmet visor.
+Within the bridge are two clearly separated softly rounded lens bays at adult eye spacing. Each lens bay contains a small movable dark focus bead surrounded by a thin muted turquoise crescent and subtle layered glass depth. The two focus beads align toward the viewer, making gaze direction immediately readable.
+The bridge remains mostly dark graphite and smoked glass. The turquoise elements are dim internal polarization, never glowing dots or neon. A thin porcelain canopy shades the upper edge, creating a calm neutral expression without eyebrows. Preserve generous dark negative space between and around the two lens bays.
+The system should feel precise, quiet, advanced, serviceable, and unmistakably non-human—closer to a superb optical instrument than a face screen.
+
+Design intent:
+A mature Starlight civilization uses a truthful machine vision system that communicates attention and joint focus without copying human eyeballs. Premium original game-studio character development quality; minimal, iconic, and strong at profile-card scale.
+
+Strict constraints:
+No text, labels, multi-panel sheet, extra characters, props, interface, mouth, smile, nose, human skin, white sclera, biological iris, wet cornea, eyelashes, eyebrows, anime eyes, oversized eyes, baby schema, aggressive slit eyes, cyan LED dots, full-width featureless visor, glowing light bar, facial display, projected expressions, uncanny human imitation, or franchise imitation.
+No other redesign.

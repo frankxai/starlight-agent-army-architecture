@@ -1,0 +1,26 @@
+Use case: identity-preserve.
+Asset type: internal Starlight eye-language calibration portrait, human-likeness boundary test.
+Image 1 is the edit target and identity reference.
+
+Primary request:
+Create one close head-and-upper-shoulders portrait of the exact same Lyra design, testing the maximum amount of human-readable eye anatomy that can remain honest, elegant, and visibly synthetic. This is a boundary experiment, not a request for a human face. Change the framing and eye construction only.
+
+Scene and framing:
+Preserve Image 1's quiet warm-mineral studio, restrained lighting, palette, materials, head orientation, and calm posture. Crop to a premium eye-level head-and-upper-shoulders portrait. Lyra directs a calm attentive gaze toward the viewer.
+
+Identity invariants:
+Preserve the exact elongated segmented porcelain cranium, compact obsidian faceplate silhouette, narrow tapered lower face, side cranial mechanisms, porcelain/obsidian/deep-ink-blue/warm-metal material family, adult scale, and serene precise personality. No mouth, nose, skin, or simulated human facial muscles.
+
+Change only the eyes:
+Replace the tiny cyan dots with two medium-small almond-rounded synthetic ocular assemblies integrated into the obsidian faceplate.
+Each assembly has a matte pearl-gray ceramic scleral ring—not white flesh—a clearly mechanical desaturated teal iris made of micro-shutter blades, a deep black central pupil, and one restrained soft catchlight.
+The openings are framed by thin articulated graphite upper and lower shutter plates that suggest attentive neutral lids but cannot mimic human skin. The upper shutter rests slightly lower at the outer edge to feel calm and thoughtful, not sad or seductive.
+Keep adult eye spacing and moderate size. Make gaze direction unmistakable while retaining visible joints, ceramic edges, and mechanical iris construction. No emission or glow.
+The result may evoke the readability of human eyes, but it must remain unambiguously a designed optical machine at first glance.
+
+Design intent:
+Test whether Starlight should ever use human-readable ocular anatomy for close social and Academy characters. Premium original game-studio character development quality; sophisticated, warm, honest, and non-deceptive.
+
+Strict constraints:
+No text, labels, multi-panel sheet, extra characters, props, interface, mouth, smile, nose, human skin, flesh eyelids, veins, wet biological cornea, eyelashes, eyebrows, makeup, anime eyes, oversized eyes, baby schema, seductive gaze, sad expression, cyan LED dots, visor, facial display, uncanny photoreal human imitation, or franchise imitation.
+No other redesign.
