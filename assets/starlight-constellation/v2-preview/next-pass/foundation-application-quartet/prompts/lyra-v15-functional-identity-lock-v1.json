@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../../../../schemas/character-studio/image-job.schema.json",
+  "schema_version": "starlight.character_image_job.v1",
+  "job_id": "2026-08-29-lyra-v15-functional-identity-lock-v1",
+  "agent_id": "lyra-research-conductor",
+  "contract_ref": "templates/starlight-character-studio/character-visual-contract.template.json",
+  "direction": {
+    "territory_id": "v15-functional-identity-lock",
+    "label": "V1.5 functional identity master",
+    "hypothesis": "An exact v1 face and material lock combined with a restrained v3 service body can preserve emotional recognition while beginning to make Lyra's evidence-routing role visible.",
+    "controlled_variables": [
+      "owned Lyra v1 cranium and faceplate identity",
+      "adult clearly synthetic proportions",
+      "four-to-five full-body identity crop",
+      "porcelain obsidian ink-blue and restrained warm-metal materials",
+      "two compact cyan optical apertures and calm research-conductor posture"
+    ],
+    "changed_variables": [
+      "remove the long coat high collar glowing core floating cards portal and pedestal",
+      "introduce a serviceable precision-panel body",
+      "integrate bounded evidence channels and a small sealed review-packet module",
+      "move to a neutral warm-mineral design stage"
+    ]
+  },
+  "use_case": "identity-preserve",
+  "asset": {
+    "type": "direction-preview",
+    "surface": "Internal Starlight character and workflow atlas; candidate for .ai and .org profile surfaces after approval",
+    "aspect_ratio": "4:5",
+    "target_width": 1122,
+    "target_height": 1402,
+    "tier": "B",
+    "publication_state": "working"
+  },
+  "references": [
+    {
+      "id": "lyra-v1-owned-portrait",
+      "path": "assets/starlight-constellation/v1/agents/intelligence-research/lyra-research-conductor.webp",
+      "role": "edit-target",
+      "rights_status": "owned",
+      "lock_level": "preserve-identity"
+    }
+  ],
+  "prompt": {
+    "primary_request": "Create one identity-preserving Lyra V1.5 functional character master",
+    "scene": "Quiet warm-mineral design stage with restrained charcoal-to-warm-gray background",
+    "subject": "Lyra alone as an adult synthetic research conductor with role-specific evidence-routing morphology",
+    "style_medium": "top-tier game-studio character concept quality translated into a restrained premium cinematic product render",
+    "composition": "full-body centered three-quarter standing view at eye level with generous crop safety",
+    "lighting_mood": "controlled soft key and subtle cool rim with a readable silhouette",
+    "color_palette": "porcelain ivory, obsidian, deep ink blue, restrained warm metal, and sparse cyan activity points",
+    "materials_textures": "tactile ceramic, brushed metal, precise seams, believable joints, subtle wear, and service access",
+    "constraints": [
+      "preserve the same elegant elongated oval ivory cranium segmented porcelain shell compact black faceplate narrow tapered lower face and two small circular cyan optical apertures",
+      "preserve adult calm precise and trustworthy identity",
+      "replace costume styling with a compact serviceable research-conductor body",
+      "express three bounded evidence inputs converging into one sealed human-review packet through physical inlaid channels",
+      "keep hands empty and feet stable",
+      "remove all generated text labels diagrams and interface copy"
+    ],
+    "avoid": [
+      "long coat high collar glowing chest core floating cards orbit lines pedestal or portal",
+      "text labels letters numbers logos charts screens documents or holograms",
+      "halo wings magic weapons extra limbs or generic archive robot styling",
+      "oversized anime eyes doll face chibi proportions sexualized anatomy gown or cape",
+      "imitation of any named franchise studio or living artist"
+    ],
+    "final_prompt": "Mode: identity-preserving character design evolution.\nImage 1 is the edit target and identity reference.\n\nIntended use:\nA premium full-body character master for the Starlight Intelligence agent atlas, website profile, and future supervised workflow scenes. This is a neutral design-stage asset, not a narrative illustration.\n\nBackdrop and composition:\nPlace Lyra alone in a quiet warm-mineral studio environment with a restrained charcoal-to-warm-gray background and soft horizonless floor. Full body visible, centered three-quarter standing view, eye level, 4:5 portrait composition, generous crop safety around the head, hands, and feet. No pedestal. Controlled cinematic product-character lighting with a soft key, subtle cool rim, and readable silhouette.\n\nIdentity invariants — preserve from Image 1:\nKeep Lyra recognizably the same adult feminine-coded synthetic intelligence: the same elegant elongated oval ivory cranium, segmented porcelain cranial shell, compact black faceplate, narrow tapered lower face, two small circular cyan optical apertures in the same relative position, slender humanoid proportions, composed intelligence, and porcelain-ivory / obsidian / deep ink-blue / restrained warm-metal material family. Preserve the calm, precise, trustworthy personality. Do not make the eyes larger, cuter, rounder, more human, or more expressive.\n\nChange only the functional body design:\nRemove the long coat, high collar, glowing chest core, floating cards, orbit lines, pedestal, and theatrical portal environment.\nEvolve the torso and limbs into a compact, serviceable research-conductor body with layered precision panels, fine archival instrument seams, quiet articulated joints, and one narrow ink-blue mantle panel that stops above the knee and does not resemble clothing.\nExpress Lyra’s specialty through morphology, not props: three subtle bounded evidence-input channels are integrated into the upper torso and forearms, converging into one sealed human-review packet module at the sternum. The input paths should read as physical inlaid channels and tiny controlled cyan status points, not holographic UI. The sealed packet module must be small, non-glowing, tamper-evident, and clearly part of the body architecture.\nHands relaxed and empty. Stable practical feet. No weapons.\n\nSurface and rendering:\nTop-tier game-studio character concept quality translated into a premium cinematic product render; sophisticated hard-surface design with a few tactile ceramic and brushed-metal imperfections; believable service access; exquisite but restrained detailing; adult, serene, intelligent, designed for long-term brand use. Strong silhouette at thumbnail size. No franchise imitation.\n\nStrict exclusions:\nNo text, labels, letters, numbers, logos, charts, screens, documents, floating interface, holograms, magic, halo, wings, glowing chest orb, extra arms, extra fingers, oversized anime eyes, doll face, chibi proportions, sexualized anatomy, gown, cape, long coat, throne, pedestal, generic archive robot, fantasy sorcerer styling, or busy scenery.\nNo extra elements."
+  },
+  "output": {
+    "status": "generated",
+    "path": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/candidates/lyra-v15-functional-identity-lock-v1.png",
+    "sha256": "aee88987566ff8e81831e439052ce19863a0b0e594be71ebc5c0731cb40e7e99",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "provider": "OpenAI",
+    "model_or_lane": "runtime-best-available",
+    "generation_receipt": "One identity-preserving built-in image generation call completed on 2026-08-29 from the owned Lyra v1 reference. Original retained at C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-f8a03e7f-adf6-4b65-b2a0-f375be0ab198.png; source copy stored at the declared repo output path."
+  },
+  "qa": {
+    "inspected": true,
+    "score30": 25,
+    "decision": "iterate",
+    "strongest_element": "The output preserves Lyra's compact cyan optics and porcelain-obsidian identity while delivering a much cleaner, more reusable premium silhouette.",
+    "weakest_element": "The three-input-to-one-review-packet function remains too subtle to identify Lyra as a research conductor without supporting copy.",
+    "next_change": "Keep this exact face, palette, body proportions, and neutral stage; make only the three bounded inputs and sealed review packet mechanically unmistakable in one targeted edit.",
+    "human_decision": "pending"
+  },
+  "created_at": "2026-08-29"
+}

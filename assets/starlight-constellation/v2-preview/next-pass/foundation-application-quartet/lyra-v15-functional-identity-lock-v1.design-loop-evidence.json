@@ -1,0 +1,129 @@
+{
+  "version": "2026-08-29",
+  "task": "Generate and evaluate one identity-preserving Lyra V1.5 functional character master.",
+  "surface": "Internal Starlight character and workflow atlas; prospective .ai and .org profile surfaces after approval.",
+  "audience": "Creators, developers, founders, researchers, and operators evaluating understandable governed agent systems.",
+  "first_read": "Lyra is a calm synthetic research conductor whose body turns bounded evidence inputs into one reviewable packet.",
+  "standards": [
+    "design-agent-standards/PREMIUM_ASSET_STANDARD.md",
+    "design-agent-standards/AGENT_WARMUP_PROTOCOL.md",
+    "design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "design-agent-standards/OUTCOMES.md",
+    "design-agent-standards/best-practices/image-logo-visual-generation.md",
+    "starlight-design-intelligence/evals/generated-asset-quality-gate.md",
+    "starlight-design-intelligence/WORLD_CLASS_FONT_AND_TYPOGRAPHY_MATRIX.json"
+  ],
+  "references": [
+    {
+      "label": "Owned Lyra v1 identity anchor",
+      "source": "assets/starlight-constellation/v1/agents/intelligence-research/lyra-research-conductor.webp",
+      "reason": "Preserve the recognized cranium, compact optics, adult proportions, material family, and calm identity."
+    },
+    {
+      "label": "Character art bible",
+      "source": "docs/visuals/STARLIGHT_CHARACTER_ART_BIBLE_V3.md",
+      "reason": "Apply the V1.5 identity lane, role-shaped morphology, surface policy, and one-call approval gate."
+    },
+    {
+      "label": "First Lyra pilot review",
+      "source": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/reviews/lyra-civic-editorial-identity-v1.quality-review.md",
+      "reason": "Preserve negative evidence and explicitly correct identity drift, costume, fake-interface, crop, and role-legibility failures."
+    }
+  ],
+  "direction": {
+    "keep": [
+      "owned Lyra v1 cranium, faceplate, compact optics, adult scale, and calm precision",
+      "porcelain, obsidian, deep ink blue, restrained warm metal, and sparse cyan activity",
+      "neutral full-body studio composition with generous crop safety"
+    ],
+    "avoid": [
+      "long coat, high collar, glowing chest core, floating cards, portal, pedestal, and fake interface",
+      "oversized eyes, human facial mimicry, chibi authority, and sexualized anatomy",
+      "generic premium humanoid styling without role-shaped function"
+    ],
+    "signature": "Three mechanically bounded evidence inputs converge into one sealed human-review packet within Lyra's serviceable research-conductor body.",
+    "system": [
+      "V1.5 cinematic functional identity is the primary character lane",
+      "V3 morphology makes specialty legible before supporting copy",
+      "generated character art remains separate from exact code-rendered workflows, labels, permissions, and state",
+      "one generated master per call with prompt, receipt, repo copy, export inspection, and 30-point score"
+    ]
+  },
+  "asset_quality": {
+    "tier": "B",
+    "source_method": "image-edit",
+    "provenance": "generated",
+    "why_premium": "The candidate uses an owned identity reference, a single controlled functional hypothesis, an exact persisted prompt, one generated master, a repo-preserved source copy, full-export inspection, and a governed stop decision.",
+    "shortcut_risk": "high",
+    "context_tested": false
+  },
+  "artifacts": [
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/candidates/lyra-v15-functional-identity-lock-v1.png",
+      "kind": "image",
+      "inspected": true,
+      "notes": "1122 × 1402 PNG inspected at high detail after repo copy."
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/prompts/lyra-v15-functional-identity-lock-v1.json",
+      "kind": "prompt-and-provenance",
+      "inspected": true,
+      "notes": "Exact prompt, reference role, generated-image receipt, repo path, hash, dimensions, and self-review are recorded."
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/reviews/lyra-v15-functional-identity-lock-v1.quality-review.md",
+      "kind": "quality-review",
+      "inspected": true,
+      "notes": "Maker review scores the candidate 25 of 30 and routes it to one targeted iteration."
+    }
+  ],
+  "checks": [
+    {
+      "name": "machine-admission",
+      "status": "pass",
+      "evidence": "Peak Performance interactive preflight returned ALLOW with a one-parallel-job bound."
+    },
+    {
+      "name": "one-call-policy",
+      "status": "pass",
+      "evidence": "One built-in image generation call produced one character master."
+    },
+    {
+      "name": "prompt-and-provenance",
+      "status": "pass",
+      "evidence": "The owned reference, exact prompt, original generated path, repo copy, SHA-256, and pixel dimensions are preserved."
+    },
+    {
+      "name": "full-export-inspection",
+      "status": "pass",
+      "evidence": "The repo PNG was inspected at high detail after copying."
+    },
+    {
+      "name": "identity-preservation",
+      "status": "pass",
+      "evidence": "The faceplate, compact optics, cranium, adult scale, and material lineage remain recognizably Lyra."
+    },
+    {
+      "name": "role-transformation",
+      "status": "fail",
+      "evidence": "The routing channels exist but do not yet explain the research-conductor specialty without copy."
+    },
+    {
+      "name": "independent-human-review",
+      "status": "blocked",
+      "evidence": "Frank has not yet selected this candidate and maker self-review cannot approve it."
+    }
+  ],
+  "score": {
+    "total": 25,
+    "max": 30,
+    "notes": "Keep the identity and visual craft; iterate only the visible three-input-to-one-review-packet function."
+  },
+  "decision": "iterate",
+  "known_risks": [
+    "The clean premium humanoid body can still read as generic without an unmistakable role-shaped mechanism.",
+    "Fanout before identity approval would multiply correction cost across the full cast.",
+    "A generated portrait cannot communicate workflow topology, authority, version, permissions, or installation truth; those remain deterministic UI layers."
+  ],
+  "created_at": "2026-08-29T16:41:20Z"
+}
