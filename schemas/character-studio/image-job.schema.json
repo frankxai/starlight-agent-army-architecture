@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlightintelligence.org/schemas/character-studio/image-job.schema.json",
+  "title": "Starlight Character Image Job",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "job_id",
+    "agent_id",
+    "contract_ref",
+    "direction",
+    "use_case",
+    "asset",
+    "references",
+    "prompt",
+    "output",
+    "qa",
+    "created_at"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": "starlight.character_image_job.v1" },
+    "job_id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "agent_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "contract_ref": { "$ref": "#/$defs/repoPath" },
+    "direction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["territory_id", "label", "hypothesis", "controlled_variables", "changed_variables"],
+      "properties": {
+        "territory_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "label": { "type": "string", "minLength": 3 },
+        "hypothesis": { "type": "string", "minLength": 12 },
+        "controlled_variables": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 2 },
+          "minItems": 4,
+          "uniqueItems": true
+        },
+        "changed_variables": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 2 },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "use_case": {
+      "type": "string",
+      "enum": ["stylized-concept", "identity-preserve"]
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "surface", "aspect_ratio", "target_width", "target_height", "tier", "publication_state"],
+      "properties": {
+        "type": { "type": "string", "enum": ["direction-preview", "recognition-portrait", "identity-reference", "operational-scene", "team-tableau"] },
+        "surface": { "type": "string", "minLength": 3 },
+        "aspect_ratio": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" },
+        "target_width": { "type": "integer", "minimum": 256 },
+        "target_height": { "type": "integer", "minimum": 256 },
+        "tier": { "type": "string", "enum": ["A", "B", "C", "D", "blocked"] },
+        "publication_state": { "type": "string", "enum": ["working", "candidate", "published"] }
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "path", "role", "rights_status", "lock_level"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "path": { "$ref": "#/$defs/repoPath" },
+          "role": { "type": "string", "enum": ["edit-target", "identity", "material", "composition", "style"] },
+          "rights_status": { "type": "string", "enum": ["owned", "licensed", "official-use-permitted", "source-linked-review", "blocked"] },
+          "lock_level": { "type": "string", "enum": ["inspiration", "preserve-silhouette", "preserve-identity", "preserve-layout", "exact-asset"] }
+        }
+      },
+      "minItems": 1
+    },
+    "prompt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_request",
+        "scene",
+        "subject",
+        "style_medium",
+        "composition",
+        "lighting_mood",
+        "color_palette",
+        "materials_textures",
+        "constraints",
+        "avoid",
+        "final_prompt"
+      ],
+      "properties": {
+        "primary_request": { "type": "string", "minLength": 12 },
+        "scene": { "type": "string", "minLength": 8 },
+        "subject": { "type": "string", "minLength": 8 },
+        "style_medium": { "type": "string", "minLength": 6 },
+        "composition": { "type": "string", "minLength": 8 },
+        "lighting_mood": { "type": "string", "minLength": 8 },
+        "color_palette": { "type": "string", "minLength": 8 },
+        "materials_textures": { "type": "string", "minLength": 8 },
+        "constraints": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 3 },
+          "minItems": 5,
+          "uniqueItems": true
+        },
+        "avoid": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 3 },
+          "minItems": 5,
+          "uniqueItems": true
+        },
+        "final_prompt": { "type": "string", "minLength": 100 }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "path", "sha256", "dimensions", "provider", "model_or_lane", "generation_receipt"],
+      "properties": {
+        "status": { "type": "string", "enum": ["queued", "generated", "rejected", "selected"] },
+        "path": { "$ref": "#/$defs/repoPath" },
+        "sha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
+        "dimensions": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["width", "height"],
+              "properties": {
+                "width": { "type": "integer", "minimum": 1 },
+                "height": { "type": "integer", "minimum": 1 }
+              }
+            }
+          ]
+        },
+        "provider": { "type": "string", "minLength": 2 },
+        "model_or_lane": { "type": "string", "minLength": 2 },
+        "generation_receipt": { "type": "string", "minLength": 2 }
+      }
+    },
+    "qa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["inspected", "score30", "decision", "strongest_element", "weakest_element", "next_change", "human_decision"],
+      "properties": {
+        "inspected": { "type": "boolean" },
+        "score30": { "type": ["integer", "null"], "minimum": 0, "maximum": 30 },
+        "decision": { "type": "string", "enum": ["draft", "eligible-for-human-review", "iterate", "restart", "rejected", "selected"] },
+        "strongest_element": { "type": "string" },
+        "weakest_element": { "type": "string" },
+        "next_change": { "type": "string" },
+        "human_decision": { "type": "string", "enum": ["pending", "approve", "iterate", "restart"] }
+      }
+    },
+    "created_at": { "type": "string", "format": "date" }
+  },
+  "$defs": {
+    "repoPath": {
+      "type": "string",
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9._/-]+$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "output": {
+            "properties": { "status": { "enum": ["generated", "selected"] } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "output": {
+            "properties": {
+              "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+              "dimensions": { "type": "object" }
+            }
+          },
+          "qa": {
+            "properties": { "inspected": { "const": true } }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "qa": {
+            "properties": { "decision": { "enum": ["eligible-for-human-review", "selected"] } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "qa": {
+            "properties": {
+              "score30": { "type": "integer", "minimum": 26 },
+              "inspected": { "const": true }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "qa": {
+            "properties": { "decision": { "const": "selected" } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "qa": {
+            "properties": { "human_decision": { "const": "approve" } }
+          }
+        }
+      }
+    }
+  ]
+}

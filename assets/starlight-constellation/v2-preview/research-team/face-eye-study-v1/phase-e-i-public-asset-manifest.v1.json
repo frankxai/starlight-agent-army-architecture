@@ -1,0 +1,1542 @@
+{
+  "schema_version": "starlight.public_research_asset_manifest.v1",
+  "manifest_id": "starlight-phase-e-i-public-research-assets-2026-08-28",
+  "generated_from": [
+    "phase-e-i-provenance.v1.json",
+    "phase-e-i-quality-scorecard.v1.json"
+  ],
+  "claim_boundary": "Research metadata only. Frank did not approve Phase E-I as the next production identity direction on 2026-08-29. No runtime authority, production approval, or exact prompt receipt is implied.",
+  "founder_review": {
+    "date": "2026-08-29",
+    "status": "not_approved_as_production_direction",
+    "production_eligible": false,
+    "continuity_baseline": "existing_v1_portraits",
+    "decision_record": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/FOUNDER_REVIEW_STATUS.md"
+  },
+  "asset_count": 50,
+  "assets": [
+    {
+      "asset_id": "starlight.character-research.e01-orchestration-emissary-v1",
+      "filename": "e01-orchestration-emissary-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "orchestration emissary",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e01-orchestration-emissary-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-04d7979f-39ec-433b-bb23-af17961922dd.png",
+      "sha256": "777bbfbe2156ccbf5e22727303423c11f459b70f78586090238d3d16829a65b7",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 1935063,
+      "visual_intent_summary": "Canonical morphology-family study for “orchestration emissary”.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.ai"
+      ],
+      "surface_recommendation": "Agent roster concept and orchestration introduction on .ai.",
+      "risks": [
+        "orbit_cliche",
+        "gendered_humanoid_styling",
+        "high_heel_authority_coding",
+        "specialty_requires_caption"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e02-compact-field-operator-v1",
+      "filename": "e02-compact-field-operator-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "compact field operator",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e02-compact-field-operator-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-2fc0ed65-5a86-462d-a0fb-3b9875926676.png",
+      "sha256": "5e45f0cc329c4367d6d86cc08bfe83c71e884053c14c256938f9f47534de2f09",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2096768,
+      "visual_intent_summary": "Canonical morphology-family study for “compact field operator”.",
+      "score30": 24,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.ai"
+      ],
+      "surface_recommendation": "Field-operator profile or workflow explainer on .ai.",
+      "risks": [
+        "childlike",
+        "large_eye_baby_schema",
+        "orbit_prop",
+        "tool_overload"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e03-academy-guide-v1",
+      "filename": "e03-academy-guide-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "academy guide",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e03-academy-guide-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-e1666b0e-a890-43a3-9b59-3b813b000e08.png",
+      "sha256": "e426f90d35a7bd951e4fb74c91c41f7fedfb3d91732c60c26ed21f8472bcf302",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2041651,
+      "visual_intent_summary": "Canonical morphology-family study for “academy guide”.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Academy onboarding chapter or beginner-guide story.",
+      "risks": [
+        "childlike",
+        "large_eye_baby_schema",
+        "empty_book",
+        "knowledge_magic_cliche"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e04-trust-boundary-guardian-v1",
+      "filename": "e04-trust-boundary-guardian-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "trust boundary guardian",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e04-trust-boundary-guardian-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-ab9d9094-9d47-41fe-ab53-6f7c096e4ac4.png",
+      "sha256": "83c5144228233cbc68f43a89377d44b944e6b4391d907eeb1fb8e333c3bee5e0",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2059777,
+      "visual_intent_summary": "Canonical morphology-family study for “trust boundary guardian”.",
+      "score30": 21,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Trust-boundary explainer only after redesign.",
+      "risks": [
+        "generic",
+        "superhero_armor",
+        "martial_authority_coding",
+        "specialty_legibility_weak"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e05-biotech-collaborator-v1",
+      "filename": "e05-biotech-collaborator-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "biotech collaborator",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e05-biotech-collaborator-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-54bd957e-c5dd-4c0a-b8b6-b0d1373898de.png",
+      "sha256": "16c6662cbbf006f855903ef01b9b30356ffb0e30e2b4e5cb7b2da21ea81a88b4",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2255817,
+      "visual_intent_summary": "Canonical morphology-family study for “biotech collaborator”.",
+      "score30": 22,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Biotech or biomimicry story in the Academy.",
+      "risks": [
+        "arachnid",
+        "insect_predator_association",
+        "uncanny",
+        "fine_detail_crop_risk"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e06-evidence-instrument-v1",
+      "filename": "e06-evidence-instrument-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "evidence instrument",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e06-evidence-instrument-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-ec2971e8-0c0f-4703-a730-f4e69ee140fc.png",
+      "sha256": "4bca292273fe7b4d5eacdccceb5a4dbdba833b8a2fc2c0a7fec559548e400bf0",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2108841,
+      "visual_intent_summary": "Canonical morphology-family study for “evidence instrument”.",
+      "score30": 21,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.org"
+      ],
+      "surface_recommendation": "Evidence and provenance explainer on .org after deterministic overlays.",
+      "risks": [
+        "arachnid",
+        "fake_ui",
+        "generated_documents",
+        "visual_density",
+        "crop_risk"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e07-aerial-knowledge-navigator-v1",
+      "filename": "e07-aerial-knowledge-navigator-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "aerial knowledge navigator",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e07-aerial-knowledge-navigator-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-b3b6b568-1ce9-463d-a8af-48cb3252499c.png",
+      "sha256": "49b773e3da8e309dda6fd2f22a4568a126a220c92012da46113d6aef4f6ed7c1",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 1872695,
+      "visual_intent_summary": "Canonical morphology-family study for “aerial knowledge navigator”.",
+      "score30": 25,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.ai"
+      ],
+      "surface_recommendation": "Knowledge navigator profile, route transition, or mission scout on .ai.",
+      "risks": [
+        "specialty_requires_caption",
+        "bat_bird_association",
+        "wide_wing_crop_risk"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e08-modular-fabricator-v1",
+      "filename": "e08-modular-fabricator-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "modular fabricator",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e08-modular-fabricator-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-4bd76f84-3c99-47d9-aaf3-20db14ed58b8.png",
+      "sha256": "6710a86729919e9354a0d93cd7226d41c599531a08a4c91c957dbe2d657f5cd1",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2137668,
+      "visual_intent_summary": "Canonical morphology-family study for “modular fabricator”.",
+      "score30": 24,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.ai"
+      ],
+      "surface_recommendation": "Fabrication and tool-building profile on .ai.",
+      "risks": [
+        "generic_game_robot",
+        "visual_density",
+        "small_crop_complexity",
+        "specialty_prop_ambiguity"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e09-micro-avatar-v1",
+      "filename": "e09-micro-avatar-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "micro avatar",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e09-micro-avatar-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-093c03ce-5f00-4ba9-965e-2c5807071683.png",
+      "sha256": "107153661036220b6bd402a77e470bc3dd207e3ca2f0eeaeb7d070d05780c9cf",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 1725871,
+      "visual_intent_summary": "Canonical morphology-family study for “micro avatar”.",
+      "score30": 21,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "internal_research_gallery"
+      ],
+      "surface_recommendation": "Micro-avatar and notification-state research only.",
+      "risks": [
+        "generic",
+        "childlike",
+        "specialty_legibility_absent",
+        "mascot_risk"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e10-soft-shell-care-collaborator-v1",
+      "filename": "e10-soft-shell-care-collaborator-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "soft shell care collaborator",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e10-soft-shell-care-collaborator-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-5d849b4a-d03f-490b-ba3b-9e87e29fd5fb.png",
+      "sha256": "b8ca6395281f187df57f84c086947879db99453bce35eda79d1b4997e9da494d",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2064209,
+      "visual_intent_summary": "Canonical morphology-family study for “soft shell care collaborator”.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Care and collaboration profile or Academy story.",
+      "risks": [
+        "childlike",
+        "generic_care_robot",
+        "specialty_requires_caption",
+        "short_leg_mascot_coding"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e11-archive-companion-v1",
+      "filename": "e11-archive-companion-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "archive companion",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e11-archive-companion-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-414efa1a-ab05-462e-8719-ac9b9c81fd80.png",
+      "sha256": "ea1501f60d95aa1f46f42ed075431e2858ded8ce6199d5f4eca9035298b6243c",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 1891497,
+      "visual_intent_summary": "Canonical morphology-family study for “archive companion”.",
+      "score30": 21,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Archive-companion story vignette after morphology revision.",
+      "risks": [
+        "arachnid",
+        "gimmick_risk",
+        "book_literalism",
+        "crop_risk"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e12-swarm-gestalt-v1",
+      "filename": "e12-swarm-gestalt-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "swarm gestalt",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e12-swarm-gestalt-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-f33466d9-c0c8-4901-857f-a8da82037c42.png",
+      "sha256": "89efcb96c77e350f1e1d6127a436d1911495010a02029adfac75cead8ab3d8c0",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2299136,
+      "visual_intent_summary": "Canonical morphology-family study for “swarm gestalt”.",
+      "score30": 18,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "internal_research_gallery"
+      ],
+      "surface_recommendation": "Internal swarm-gestalt research only.",
+      "risks": [
+        "arachnid",
+        "orbit_node_cliche",
+        "menace_risk",
+        "role_separation_absent",
+        "fake_ui"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.e13-architectural-intelligence-v1",
+      "filename": "e13-architectural-intelligence-v1.png",
+      "phase": "phase-e-canonical-family-v1",
+      "display_label": "architectural intelligence",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-canonical-family-v1/e13-architectural-intelligence-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-8bdc3c7e-796f-4c83-bf81-747604d877cd.png",
+      "sha256": "1f49c6adeeb179c6bf2a2151380420a41ff4220bd7acc0a8b9823cd7a7ec70c9",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "bytes": 2460321,
+      "visual_intent_summary": "Canonical morphology-family study for “architectural intelligence”.",
+      "score30": 20,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Academy or operations establishing shot after architectural simplification.",
+      "risks": [
+        "generic_sci_fi_luxury",
+        "ornament",
+        "orbit_cliche",
+        "fake_hologram_ui",
+        "opulence"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.f01-layered-twin-aperture-v1",
+      "filename": "f01-layered-twin-aperture-v1.png",
+      "phase": "phase-f-face-eye-systems-v2",
+      "display_label": "layered twin aperture",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-f-face-eye-systems-v2/f01-layered-twin-aperture-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-e610c133-05b7-45ea-ae5a-31503dce8a85.png",
+      "sha256": "1527586503c42fba9bc8cc7b25b8a03c8b44465f48c751123fac1d53d8768140",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 2288462,
+      "visual_intent_summary": "Controlled face and eye-system study for “layered twin aperture”.",
+      "score30": 20,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "internal_research_gallery"
+      ],
+      "surface_recommendation": "Humanoid face research only; not a canonical identity.",
+      "risks": [
+        "human_eye_mimicry",
+        "eyelashes",
+        "lips",
+        "gendered",
+        "anthropomorphic_deception",
+        "specialty_absent"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.f02-soft-constellation-visor-v1",
+      "filename": "f02-soft-constellation-visor-v1.png",
+      "phase": "phase-f-face-eye-systems-v2",
+      "display_label": "soft constellation visor",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-f-face-eye-systems-v2/f02-soft-constellation-visor-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-b8b77baf-13ab-4a3b-942b-cdd255b6bc76.png",
+      "sha256": "278489a3886ee8525b6175f63e78bc5cd60934e9ce960b2dc8be3f64075c55a6",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 2198653,
+      "visual_intent_summary": "Controlled face and eye-system study for “soft constellation visor”.",
+      "score30": 22,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Routing-state or role-agnostic visor research.",
+      "risks": [
+        "generic",
+        "constellation_dot_cliche",
+        "visor_pop_culture_association",
+        "ornament",
+        "specialty_absent"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.f03-asymmetric-parallax-v1",
+      "filename": "f03-asymmetric-parallax-v1.png",
+      "phase": "phase-f-face-eye-systems-v2",
+      "display_label": "asymmetric parallax",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-f-face-eye-systems-v2/f03-asymmetric-parallax-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6ab10f78-c730-409a-8960-806e529e4569.png",
+      "sha256": "defaebf20c81558cfbe53e86071828a79bb13422310a9df979d092e940def838",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 2294378,
+      "visual_intent_summary": "Controlled face and eye-system study for “asymmetric parallax”.",
+      "score30": 21,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Analyst or perception-agent face study.",
+      "risks": [
+        "uncanny_asymmetry",
+        "three_eye_reading",
+        "surveillance_association",
+        "specialty_requires_caption"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.f04-expressive-optical-line-v1",
+      "filename": "f04-expressive-optical-line-v1.png",
+      "phase": "phase-f-face-eye-systems-v2",
+      "display_label": "expressive optical line",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-f-face-eye-systems-v2/f04-expressive-optical-line-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-90834fbc-06fb-4d3b-be95-747300f076b1.png",
+      "sha256": "beda3f44d683e1eac7252a751af81068497dd392fa354e68dd2b3236ee10fb90",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 2077660,
+      "visual_intent_summary": "Controlled face and eye-system study for “expressive optical line”.",
+      "score30": 18,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "social_editorial",
+        "internal_research_gallery"
+      ],
+      "surface_recommendation": "Social-interface failure case and negative evidence.",
+      "risks": [
+        "generic",
+        "smiley_face",
+        "childlike",
+        "deceptive_affect",
+        "consumer_appliance"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.f05-protective-shutter-v1",
+      "filename": "f05-protective-shutter-v1.png",
+      "phase": "phase-f-face-eye-systems-v2",
+      "display_label": "protective shutter",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-f-face-eye-systems-v2/f05-protective-shutter-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-c4dce241-2008-4f32-9751-2bee2c156975.png",
+      "sha256": "8bd99f003dd51b5bb90b283b48998b13011c6b68efe53486fb710164328d1b55",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 2211988,
+      "visual_intent_summary": "Controlled face and eye-system study for “protective shutter”.",
+      "score30": 24,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Guardian, privacy, or trust-boundary profile research.",
+      "risks": [
+        "third_eye_ornament",
+        "mask_severity",
+        "specialty_requires_caption"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.f06-opaline-living-aperture-v1",
+      "filename": "f06-opaline-living-aperture-v1.png",
+      "phase": "phase-f-face-eye-systems-v2",
+      "display_label": "opaline living aperture",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-f-face-eye-systems-v2/f06-opaline-living-aperture-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-700e484a-a7c6-4cd9-b837-c4bb56cc898a.png",
+      "sha256": "47b8ed5a80b11ff97eac26e2d15bbc30a8a2d8406ddc9e8f71638c0fcf5d2501",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 2180205,
+      "visual_intent_summary": "Controlled face and eye-system study for “opaline living aperture”.",
+      "score30": 24,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Biotech or living-systems face research.",
+      "risks": [
+        "alien_insect_association",
+        "uncanny",
+        "neural_lattice_cliche",
+        "specialty_requires_caption"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.f07-faceted-prism-v1",
+      "filename": "f07-faceted-prism-v1.png",
+      "phase": "phase-f-face-eye-systems-v2",
+      "display_label": "faceted prism",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-f-face-eye-systems-v2/f07-faceted-prism-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-9dab1652-7cb8-4feb-8e9d-5d324d2507ec.png",
+      "sha256": "1b3a8a602e0088f134e6157a74351bf7576115578f3c40d8857a92b32b2cfe7c",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 2217875,
+      "visual_intent_summary": "Controlled face and eye-system study for “faceted prism”.",
+      "score30": 20,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "internal_research_gallery"
+      ],
+      "surface_recommendation": "Creative or prism-optics face research only.",
+      "risks": [
+        "human_eye_mimicry",
+        "eyelashes",
+        "gendered",
+        "decorative_gem",
+        "specialty_absent"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.f08-eyeless-directional-aperture-v1",
+      "filename": "f08-eyeless-directional-aperture-v1.png",
+      "phase": "phase-f-face-eye-systems-v2",
+      "display_label": "eyeless directional aperture",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-f-face-eye-systems-v2/f08-eyeless-directional-aperture-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-2ff5a161-1a60-46d0-8a78-c674e44027fc.png",
+      "sha256": "619f00e76f977d4020f378197e17d40fcd8c927c204d14b83935a50318b938df",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 2013345,
+      "visual_intent_summary": "Controlled face and eye-system study for “eyeless directional aperture”.",
+      "score30": 24,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Verifier or evidence-agent profile research.",
+      "risks": [
+        "low_warmth",
+        "surveillance_association",
+        "side_fin_horn_reading",
+        "specialty_requires_caption"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.f09-dual-orbital-field-v1",
+      "filename": "f09-dual-orbital-field-v1.png",
+      "phase": "phase-f-face-eye-systems-v2",
+      "display_label": "dual orbital field",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-f-face-eye-systems-v2/f09-dual-orbital-field-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-f9a22f79-3ae5-4938-836e-f6b4a3fded6c.png",
+      "sha256": "cac8d35496e8618885ba0bba6128a92da6f4f1d20916b145182cc9e578167444",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 2249589,
+      "visual_intent_summary": "Controlled face and eye-system study for “dual orbital field”.",
+      "score30": 18,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "internal_research_gallery"
+      ],
+      "surface_recommendation": "Juvenile mascot failure case and negative evidence.",
+      "risks": [
+        "childlike",
+        "large_eye_baby_schema",
+        "orbit_cliche",
+        "mascot_risk",
+        "specialty_absent"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.f10-deep-glass-chamber-v1",
+      "filename": "f10-deep-glass-chamber-v1.png",
+      "phase": "phase-f-face-eye-systems-v2",
+      "display_label": "deep glass chamber",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-f-face-eye-systems-v2/f10-deep-glass-chamber-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-c4d1ef3c-43f7-4289-96c4-6b316711277d.png",
+      "sha256": "a9dc898d323a57a01f2c6295447de58b9d6b1fc6c4c2126d9eb580609efe4124",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "bytes": 2229490,
+      "visual_intent_summary": "Controlled face and eye-system study for “deep glass chamber”.",
+      "score30": 22,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "internal_research_gallery"
+      ],
+      "surface_recommendation": "Premium humanoid face research only.",
+      "risks": [
+        "anthropomorphic",
+        "gendered",
+        "human_eyelid_reading",
+        "uncanny",
+        "specialty_absent"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.g01-original-feature-animation-v1",
+      "filename": "g01-original-feature-animation-v1.png",
+      "phase": "phase-g-render-style-systems-v1",
+      "display_label": "original feature animation",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-g-render-style-systems-v1/g01-original-feature-animation-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-7cba93ef-50d2-47f5-8f53-47ee89d54e72.png",
+      "sha256": "8ca577c767c64bbe6417fc53bbfe4e9f0dd25cfd37b65c2fa10bdc26180af4c8",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2031865,
+      "visual_intent_summary": "Rendering-style study for “original feature animation” applied to the Academy guide archetype.",
+      "score30": 21,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Academy animation-still research.",
+      "risks": [
+        "childlike",
+        "generic_feature_animation",
+        "large_eye_baby_schema",
+        "morphology_unchanged"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.g02-narrative-game-cinematic-v1",
+      "filename": "g02-narrative-game-cinematic-v1.png",
+      "phase": "phase-g-render-style-systems-v1",
+      "display_label": "narrative game cinematic",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-g-render-style-systems-v1/g02-narrative-game-cinematic-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-dfe6b601-56f2-4e36-b575-6169de01b308.png",
+      "sha256": "5716f431a464daf4c3a08059ab5b7a9b4524efa38982eeaa0482b90037013722",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2267531,
+      "visual_intent_summary": "Rendering-style study for “narrative game cinematic” applied to the Academy guide archetype.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Academy game-narrative chapter or cinematic prototype.",
+      "risks": [
+        "childlike",
+        "game_fantasy_cliche",
+        "large_eye_baby_schema",
+        "lore_specificity_unproven"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.g03-cel-shaded-interactive-v1",
+      "filename": "g03-cel-shaded-interactive-v1.png",
+      "phase": "phase-g-render-style-systems-v1",
+      "display_label": "cel shaded interactive",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-g-render-style-systems-v1/g03-cel-shaded-interactive-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-c84f6288-b808-47e6-9563-9d6b2595004b.png",
+      "sha256": "1d3ae9842c5dda644fb23946dccd83960d618a0a61e51903e11fdee3c7edc4d0",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 1820079,
+      "visual_intent_summary": "Rendering-style study for “cel shaded interactive” applied to the Academy guide archetype.",
+      "score30": 24,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Academy interactive tutorial or game-state illustration.",
+      "risks": [
+        "childlike",
+        "generic_cel_game_style",
+        "large_eye_baby_schema",
+        "morphology_unchanged"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.g04-handcrafted-stop-motion-v1",
+      "filename": "g04-handcrafted-stop-motion-v1.png",
+      "phase": "phase-g-render-style-systems-v1",
+      "display_label": "handcrafted stop motion",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-g-render-style-systems-v1/g04-handcrafted-stop-motion-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-fff38447-5f19-43e4-a079-6c59e0eca942.png",
+      "sha256": "d9f7b09b4b746179ad6999c0a0e04f1f214cab2c128fed437dd90f68162897db",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2091022,
+      "visual_intent_summary": "Rendering-style study for “handcrafted stop motion” applied to the Academy guide archetype.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Academy stop-motion campaign or story vignette.",
+      "risks": [
+        "toy_maquette",
+        "childlike",
+        "stop_motion_claim_unverified",
+        "continuity_cost"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.g05-gouache-editorial-v1",
+      "filename": "g05-gouache-editorial-v1.png",
+      "phase": "phase-g-render-style-systems-v1",
+      "display_label": "gouache editorial",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-g-render-style-systems-v1/g05-gouache-editorial-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-3534891f-1028-46f4-b09f-36d151f8dfa8.png",
+      "sha256": "c120f40736bebc22bcd0274fe39660c653b3a3ce6a6b96b3ef5786a15042b46f",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2914274,
+      "visual_intent_summary": "Rendering-style study for “gouache editorial” applied to the Academy guide archetype.",
+      "score30": 25,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy",
+        "social_editorial"
+      ],
+      "surface_recommendation": "Academy editorial chapter illustration.",
+      "risks": [
+        "childlike",
+        "morphology_unchanged",
+        "cross_asset_consistency_risk",
+        "role_family_narrow"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.g06-industrial-line-wash-v1",
+      "filename": "g06-industrial-line-wash-v1.png",
+      "phase": "phase-g-render-style-systems-v1",
+      "display_label": "industrial line wash",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-g-render-style-systems-v1/g06-industrial-line-wash-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-fbc943c3-4844-487e-b5f4-33d8bbd5fb32.png",
+      "sha256": "3b1abf385391bce078f81a68ea4104fb7385ebfcf460ca52bea8b5111950bd0a",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2624369,
+      "visual_intent_summary": "Rendering-style study for “industrial line wash” applied to the Academy guide archetype.",
+      "score30": 25,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Academy design encyclopedia or morphology documentation.",
+      "risks": [
+        "generated_design_board",
+        "pseudo_system",
+        "deterministic_annotation_missing",
+        "childlike"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.g07-risograph-editorial-v1",
+      "filename": "g07-risograph-editorial-v1.png",
+      "phase": "phase-g-render-style-systems-v1",
+      "display_label": "risograph editorial",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-g-render-style-systems-v1/g07-risograph-editorial-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-69ad466d-ac9e-4c51-a54d-dc6478e7b438.png",
+      "sha256": "c3d99a1d87ce3f80abd88c614f8de4e36374f77383c7fa573d2501783f0d2f92",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 3023161,
+      "visual_intent_summary": "Rendering-style study for “risograph editorial” applied to the Academy guide archetype.",
+      "score30": 25,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.org",
+        "social_editorial"
+      ],
+      "surface_recommendation": "Editorial explainers, social cards, or .org learning pages.",
+      "risks": [
+        "zine_trend_association",
+        "childlike",
+        "limited_state_palette",
+        "morphology_unchanged"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.g08-paper-relief-diorama-v1",
+      "filename": "g08-paper-relief-diorama-v1.png",
+      "phase": "phase-g-render-style-systems-v1",
+      "display_label": "paper relief diorama",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-g-render-style-systems-v1/g08-paper-relief-diorama-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-a2ab5dab-494e-406a-a5e7-575a4dbe03f7.png",
+      "sha256": "5e09e8b161d1b983891476344cb7d1fd6b99745914302e34872d855235c4b5ce",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2651269,
+      "visual_intent_summary": "Rendering-style study for “paper relief diorama” applied to the Academy guide archetype.",
+      "score30": 24,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Academy chapter transition or paper-illustration prototype.",
+      "risks": [
+        "childlike",
+        "digital_simulation_of_paper",
+        "ornate_arch",
+        "morphology_unchanged"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.g09-physical-product-editorial-v1",
+      "filename": "g09-physical-product-editorial-v1.png",
+      "phase": "phase-g-render-style-systems-v1",
+      "display_label": "physical product editorial",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-g-render-style-systems-v1/g09-physical-product-editorial-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-85756782-07ad-4440-b57b-33416ed98454.png",
+      "sha256": "d2f929f46918ebef28cc1fa25a049dd902d0cf3485d5c73a859e932a796d44fe",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 1955788,
+      "visual_intent_summary": "Rendering-style study for “physical product editorial” applied to the Academy guide archetype.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.org",
+        "social_editorial"
+      ],
+      "surface_recommendation": "Physical-product editorial prototype for .org.",
+      "risks": [
+        "simulated_product_claim",
+        "childlike",
+        "story_context_thin",
+        "morphology_unchanged"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.g10-opaline-glass-sculpture-v1",
+      "filename": "g10-opaline-glass-sculpture-v1.png",
+      "phase": "phase-g-render-style-systems-v1",
+      "display_label": "opaline glass sculpture",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-g-render-style-systems-v1/g10-opaline-glass-sculpture-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-2800b159-bb12-4dd0-88f0-aec1b8056a12.png",
+      "sha256": "ff454ff44a2be310216e52392b8df3dc61eada8f17ce9281d1ec9cf18ac6002f",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2255234,
+      "visual_intent_summary": "Rendering-style study for “opaline glass sculpture” applied to the Academy guide archetype.",
+      "score30": 21,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "internal_research_gallery"
+      ],
+      "surface_recommendation": "Campaign or material-language research only.",
+      "risks": [
+        "decorative_glass",
+        "toy_like",
+        "bloom",
+        "cable_prop",
+        "profile_reuse_weak"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h01-sovereign-command-v1",
+      "filename": "h01-sovereign-command-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "sovereign command",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h01-sovereign-command-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-1b7d9dae-a17f-434f-9483-58f96ef335bb.png",
+      "sha256": "a4152a27ba978b44d5b781c694237e95f10455c46a56749c3ee44c74b004b193",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 1994698,
+      "visual_intent_summary": "Ring-steward concept portrait for “sovereign command”.",
+      "score30": 19,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "internal_research_gallery"
+      ],
+      "surface_recommendation": "Internal ring-steward research only.",
+      "risks": [
+        "orbit_cliche",
+        "ornament",
+        "high_heel_authority_coding",
+        "gendered",
+        "generic_command_ai",
+        "fake_ui"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h02-memory-intelligence-v1",
+      "filename": "h02-memory-intelligence-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "memory intelligence",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h02-memory-intelligence-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-f7b70018-2457-47d3-aae9-8a714d60a867.png",
+      "sha256": "be693a41d04c529f1dfa6d18f1a13e01917700c468eeb08898379a15be712249",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2063917,
+      "visual_intent_summary": "Ring-steward concept portrait for “memory intelligence”.",
+      "score30": 20,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Memory and provenance explainer only after deterministic overlays.",
+      "risks": [
+        "fake_ui",
+        "generated_text",
+        "orbit_cliche",
+        "blindfold_authority_coding",
+        "ornament"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h03-life-enterprise-v1",
+      "filename": "h03-life-enterprise-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "life enterprise",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h03-life-enterprise-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-582241f9-cc27-4b59-9781-6e4ddce54fa4.png",
+      "sha256": "09dc672d0d34f9dfe8e9de7ae08b9ef21b5abe98f70afe1320b1cf6a3c6a6e8f",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2107435,
+      "visual_intent_summary": "Ring-steward concept portrait for “life enterprise”.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Life-systems or biotech-enterprise story.",
+      "risks": [
+        "enterprise_legibility_weak",
+        "terrarium_cliche",
+        "gendered_humanoid",
+        "specialty_scope_too_broad"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h04-people-sound-culture-v1",
+      "filename": "h04-people-sound-culture-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "people sound culture",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h04-people-sound-culture-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-2e250d2d-b149-4ac5-9d4b-f119301f467e.png",
+      "sha256": "a580d69771416bf47313ce2acbfcda69e616fff7fa8b49d8883d72b88ecfbb50",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2086954,
+      "visual_intent_summary": "Ring-steward concept portrait for “people sound culture”.",
+      "score30": 22,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Sound and culture profile after removing fake visualization.",
+      "risks": [
+        "fake_hologram",
+        "speaker_necklace_ornament",
+        "childlike",
+        "culture_reduced_to_music"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h05-media-energy-resilience-v1",
+      "filename": "h05-media-energy-resilience-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "media energy resilience",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h05-media-energy-resilience-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-c2122beb-e263-4b15-a87f-a685d721a6db.png",
+      "sha256": "a0fea3ade269504c5f8a0f856a77f030c223be3099cd9b9b793e2e8e508d6b3d",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2115771,
+      "visual_intent_summary": "Ring-steward concept portrait for “media energy resilience”.",
+      "score30": 25,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Media, energy, and resilience profile or field story.",
+      "risks": [
+        "childlike",
+        "object_overload",
+        "crypto_symbol_ambiguity",
+        "scope_too_broad"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h06-wealth-law-governance-v1",
+      "filename": "h06-wealth-law-governance-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "wealth law governance",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h06-wealth-law-governance-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-273e5974-57d6-4a7e-9c6d-093b6d3c138d.png",
+      "sha256": "55720330473adc27982a667e7e08758a3b6c99de899438d59b19b5e5cc3f555d",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 1986244,
+      "visual_intent_summary": "Ring-steward concept portrait for “wealth law governance”.",
+      "score30": 18,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "internal_research_gallery"
+      ],
+      "surface_recommendation": "Internal negative evidence only.",
+      "risks": [
+        "arachnid",
+        "law_legibility_weak",
+        "wealth_legibility_weak",
+        "uncanny",
+        "fake_documents",
+        "ornament"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h07-cosmos-planetary-observation-v1",
+      "filename": "h07-cosmos-planetary-observation-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "cosmos planetary observation",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h07-cosmos-planetary-observation-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-63b22f63-2ff5-4c05-ae58-a2e335993c86.png",
+      "sha256": "aded25fc928105f8f5c76d0bc67a909babd9753830619a15f0c3676d9a76a66e",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2015181,
+      "visual_intent_summary": "Ring-steward concept portrait for “cosmos planetary observation”.",
+      "score30": 25,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Cosmos and planetary-observation profile or mission scene.",
+      "risks": [
+        "bat_like",
+        "role_overlap_with_e07",
+        "wide_wing_crop_risk",
+        "planetary_scope_requires_caption"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h08-ocean-health-continuity-v1",
+      "filename": "h08-ocean-health-continuity-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "ocean health continuity",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h08-ocean-health-continuity-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-5e30b7f3-87ed-4440-9fb6-47b04a7ffab9.png",
+      "sha256": "1e4b50231a009acfd9bab897ec4e86bc909e78cc142163e0be33fbd8a3a6e350",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2140697,
+      "visual_intent_summary": "Ring-steward concept portrait for “ocean health continuity”.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Ocean and living-continuity story after role clarification.",
+      "risks": [
+        "moth_jellyfish_ambiguity",
+        "ocean_legibility_weak",
+        "health_legibility_weak",
+        "biomechanical_uncanny"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h09-infrastructure-operations-v1",
+      "filename": "h09-infrastructure-operations-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "infrastructure operations",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h09-infrastructure-operations-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-f1e24c9c-144c-4ec7-bf05-f47d0ab755ae.png",
+      "sha256": "767b419ac4006c880713b28f5306cefaa6cc5cf7e64391bb7dacf8650b743f06",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2078021,
+      "visual_intent_summary": "Ring-steward concept portrait for “infrastructure operations”.",
+      "score30": 25,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Infrastructure and operations profile.",
+      "risks": [
+        "generic_industrial_game_robot",
+        "module_density",
+        "ops_scope_broad",
+        "diagnostics_case_ambiguous"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h10-harnesses-research-v1",
+      "filename": "h10-harnesses-research-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "harnesses research",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h10-harnesses-research-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-a3081900-a334-40a7-816e-f08da0f53f0f.png",
+      "sha256": "b75b0b897ffa541de7710d38fb73a02d26bb232ce9562ce3ef2cf16b62a4454f",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2083278,
+      "visual_intent_summary": "Ring-steward concept portrait for “harnesses research”.",
+      "score30": 24,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Harness and research profile.",
+      "risks": [
+        "weapon_loadout_silhouette",
+        "tool_overload",
+        "opaque_specimen",
+        "generic_research_robot"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h11-creation-distribution-v1",
+      "filename": "h11-creation-distribution-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "creation distribution",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h11-creation-distribution-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-69a34faf-a817-42d6-a7af-5fbd4bff7c74.png",
+      "sha256": "ef408fdb615dc20d7d1f156ab7a97833c79733c3c6b6944a57103624b7cfdd7a",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 2130407,
+      "visual_intent_summary": "Ring-steward concept portrait for “creation distribution”.",
+      "score30": 21,
+      "decision": "restart",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Creation-to-distribution workflow explainer after deterministic overlays.",
+      "risks": [
+        "blank_screen_fake_system",
+        "gendered_humanoid",
+        "high_heels",
+        "specialty_requires_caption",
+        "ornament"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.h12-community-devices-safety-v1",
+      "filename": "h12-community-devices-safety-v1.png",
+      "phase": "phase-h-ring-stewards-v1",
+      "display_label": "community devices safety",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-h-ring-stewards-v1/h12-community-devices-safety-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-ecf13e04-a41e-486b-b781-067a8a9f1a86.png",
+      "sha256": "91ed866b01188479ef12033cf5238e0df56d9ca886a0a2688834187376512ac6",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "bytes": 1899525,
+      "visual_intent_summary": "Ring-steward concept portrait for “community devices safety”.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Device safety profile or community-support vignette.",
+      "risks": [
+        "childlike",
+        "literal_key_symbol",
+        "community_legibility_weak",
+        "specialty_scope_broad"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.i01-arrival-provisioning-v1",
+      "filename": "i01-arrival-provisioning-v1.png",
+      "phase": "phase-i-agent-lifecycle-v1",
+      "display_label": "arrival provisioning",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-i-agent-lifecycle-v1/i01-arrival-provisioning-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-dea6d90e-a5d8-4738-9290-84d6235efafd.png",
+      "sha256": "af43e94ded38b490098c6e17c1f27afb316880589b30c2ae22a636e2b5591118",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "bytes": 2408275,
+      "visual_intent_summary": "Agent-lifecycle story scene for “arrival provisioning”.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Lifecycle story: human activation and provisioning gate.",
+      "risks": [
+        "newborn_anthropomorphism",
+        "baby_schema",
+        "fake_ui",
+        "sovereign_key_ceremony",
+        "authority_ambiguity"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.i02-human-values-studio-v1",
+      "filename": "i02-human-values-studio-v1.png",
+      "phase": "phase-i-agent-lifecycle-v1",
+      "display_label": "human values studio",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-i-agent-lifecycle-v1/i02-human-values-studio-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-cc115355-54c5-48de-b405-35edced8b864.png",
+      "sha256": "aca290b89ad0caedc9ce5e7089a488cb114cea2c2f7abdd88b68b833326a5a3d",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "bytes": 2492424,
+      "visual_intent_summary": "Agent-lifecycle story scene for “human values studio”.",
+      "score30": 24,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Lifecycle story: plural human-values deliberation.",
+      "risks": [
+        "values_as_cards_simplification",
+        "fake_holograms",
+        "robot_child",
+        "staged_diversity_risk"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.i03-evidence-archives-v1",
+      "filename": "i03-evidence-archives-v1.png",
+      "phase": "phase-i-agent-lifecycle-v1",
+      "display_label": "evidence archives",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-i-agent-lifecycle-v1/i03-evidence-archives-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-80a51295-ceb9-4162-b853-861a9234dbb9.png",
+      "sha256": "3b504ec950a0612747ee130fccf8b10d4ee9f775a4e07c20ba20783f45561271",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "bytes": 2281552,
+      "visual_intent_summary": "Agent-lifecycle story scene for “evidence archives”.",
+      "score30": 23,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Lifecycle story: evidence archives and provenance review.",
+      "risks": [
+        "fake_ui",
+        "generated_text",
+        "arachnid",
+        "gothic_darkness",
+        "causal_chain_unclear"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.i04-first-supervised-mission-v1",
+      "filename": "i04-first-supervised-mission-v1.png",
+      "phase": "phase-i-agent-lifecycle-v1",
+      "display_label": "first supervised mission",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-i-agent-lifecycle-v1/i04-first-supervised-mission-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-b419e251-af9c-4cd8-bad5-70aada2f797e.png",
+      "sha256": "7a45fe4bb4fd5952b0764760f613f4c9ce0e67b0c0687044972c991e83d33696",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "bytes": 2388389,
+      "visual_intent_summary": "Agent-lifecycle story scene for “first supervised mission”.",
+      "score30": 26,
+      "decision": "eligible_for_human_review_but_governance_blocked",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "starlightintelligence.ai",
+        "starlightintelligence.academy"
+      ],
+      "surface_recommendation": "Flagship .ai supervised-workflow explainer and Academy mission chapter.",
+      "risks": [
+        "fake_ui",
+        "causal_edges_need_overlay",
+        "idealized_field_site",
+        "childlike_field_operator"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    },
+    {
+      "asset_id": "starlight.character-research.i05-joining-constellation-v1",
+      "filename": "i05-joining-constellation-v1.png",
+      "phase": "phase-i-agent-lifecycle-v1",
+      "display_label": "joining constellation",
+      "source_path": "assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-i-agent-lifecycle-v1/i05-joining-constellation-v1.png",
+      "original_generated_path": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-994dfc01-e82a-4f25-a69c-9325c3e9bfdb.png",
+      "sha256": "9be99a42ba187069f7ba8a230e02941058fbdba68fb0a98170eaa6a3f9f56a53",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "bytes": 2865574,
+      "visual_intent_summary": "Agent-lifecycle story scene for “joining constellation”.",
+      "score30": 22,
+      "decision": "iterate",
+      "status": "research_candidate",
+      "recommended_surfaces": [
+        "research_preview"
+      ],
+      "surface_recommendation": "Lifecycle story: joining a constellation after major redesign.",
+      "risks": [
+        "orbit_node_cliche",
+        "fake_holograms",
+        "theatrical_chamber",
+        "governance_unclear",
+        "role_hierarchy_ambiguous"
+      ],
+      "production_approved": false,
+      "prompt_capture_status": "unavailable_at_audit"
+    }
+  ]
+}

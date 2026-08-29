@@ -1,0 +1,109 @@
+{
+  "version": "1.0.0",
+  "task": "Evolve the Starlight robot character system through a controlled Lyra direction pilot and reusable image-generation contracts",
+  "surface": "Starlight Research Team character direction review; no production surface yet",
+  "audience": "Frank as brand decision owner, followed by builders of governed multi-agent systems",
+  "standards": [
+    "design-agent-standards/PREMIUM_ASSET_STANDARD.md",
+    "design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "design-agent-standards/VISUAL_QA_GATE.md",
+    "starlight-design-intelligence/evals/generated-asset-quality-gate.md",
+    "starlight-design-intelligence/brand-image-system/PREMIUM_IMAGE_PROMPT_STANDARD.md"
+  ],
+  "references": [
+    {
+      "path_or_url": "assets/starlight-constellation/v1/agents/intelligence-research/lyra-research-conductor.webp",
+      "role": "owned identity reference",
+      "rights_status": "owned"
+    },
+    {
+      "path_or_url": "cards/portfolio/lyra-research-conductor.json",
+      "role": "canonical agent and capability truth",
+      "rights_status": "owned"
+    },
+    {
+      "path_or_url": "templates/starlight-character-studio/character-visual-contract.template.json",
+      "role": "visual identity and authority-boundary contract",
+      "rights_status": "owned"
+    }
+  ],
+  "direction": {
+    "keep": "The current dark Starlight porcelain-and-obsidian robot family, Lyra's segmented cranium and narrow faceplate, cinematic restraint, and premium material craft",
+    "avoid": "A fundamental rebrand, interchangeable cape-and-pedestal portraits, royal or divine symbolism, internal human-authority cues, fake interface text, and generic neon science fiction",
+    "signature": "Role-shaped morphology: several bounded research inputs become one tangible routed task packet under a separate human approval gate",
+    "system": "Three controlled hypotheses plus one corrective edit, all linked to the canonical card, source reference, immutable hash, inspection score, and human-gated selection receipt"
+  },
+  "asset_quality": {
+    "tier": "B",
+    "source_method": "image-edit",
+    "provenance": "generated",
+    "why_premium": "Owned identity continuity, controlled art direction, tactile role-specific instruments, high-fidelity materials, export inspection, immutable receipts, and explicit governance semantics",
+    "shortcut_risk": "low",
+    "context_tested": false
+  },
+  "artifacts": [
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-porcelain-atelier-v1.png",
+      "kind": "generated character direction preview",
+      "inspected": true
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-precision-instrument-v1.png",
+      "kind": "generated character direction preview",
+      "inspected": true
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-warm-companion-v1.png",
+      "kind": "generated character direction preview",
+      "inspected": true
+    },
+    {
+      "path_or_url": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-precision-instrument-v2.png",
+      "kind": "generated corrective character direction preview",
+      "inspected": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "asset-tier",
+      "status": "pass",
+      "evidence": "Tier B custom identity-preserving generated media is the correct medium for this direction decision"
+    },
+    {
+      "name": "export-inspection",
+      "status": "pass",
+      "evidence": "All four exported PNGs were inspected at original detail and recorded with SHA-256 and pixel dimensions"
+    },
+    {
+      "name": "schema-provenance",
+      "status": "pass",
+      "evidence": "Contracts, generation jobs, references, hashes, dimensions, and selection receipt pass the Character Studio validator"
+    },
+    {
+      "name": "authority-boundary",
+      "status": "pass",
+      "evidence": "The leading v2 direction has an unlit sternum and a physically separate amber human approval control"
+    },
+    {
+      "name": "requested-four-to-five-master",
+      "status": "fail",
+      "evidence": "The generation service returned varying portrait ratios; the leading v2 export is 971 by 1619 rather than a true four-to-five master"
+    },
+    {
+      "name": "independent-and-human-selection",
+      "status": "blocked",
+      "evidence": "Independent visual review and Frank's identity decision remain pending"
+    },
+    {
+      "name": "production-context",
+      "status": "blocked",
+      "evidence": "No candidate has been integrated or tested on starlightintelligence.ai or starlightintelligence.org"
+    }
+  ],
+  "score": {
+    "total": 26,
+    "max": 30,
+    "basis": "Leading Precision Instrument v2 direction: eligible for human direction review, not a production-ready master"
+  },
+  "decision": "iterate"
+}

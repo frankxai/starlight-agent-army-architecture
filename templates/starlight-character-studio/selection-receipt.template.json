@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/character-studio/selection-receipt.schema.json",
+  "schema_version": "starlight.character_selection_receipt.v1",
+  "receipt_id": "2026-08-23-lyra-direction-selection",
+  "agent_id": "lyra-research-conductor",
+  "batch_id": "research-team-visual-pilot-v1",
+  "candidates": [
+    {
+      "job_ref": "assets/starlight-constellation/v2-preview/research-team/prompts/lyra-porcelain-atelier.v1.json",
+      "territory_id": "porcelain-atelier",
+      "artifact_path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-porcelain-atelier-v1.png",
+      "sha256": null,
+      "inspected": false,
+      "score30": null,
+      "strongest_element": "",
+      "weakest_element": "",
+      "verdict": "pending"
+    },
+    {
+      "job_ref": "assets/starlight-constellation/v2-preview/research-team/prompts/lyra-precision-instrument.v1.json",
+      "territory_id": "precision-instrument",
+      "artifact_path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-precision-instrument-v1.png",
+      "sha256": null,
+      "inspected": false,
+      "score30": null,
+      "strongest_element": "",
+      "weakest_element": "",
+      "verdict": "pending"
+    },
+    {
+      "job_ref": "assets/starlight-constellation/v2-preview/research-team/prompts/lyra-warm-companion.v1.json",
+      "territory_id": "warm-companion",
+      "artifact_path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-warm-companion-v1.png",
+      "sha256": null,
+      "inspected": false,
+      "score30": null,
+      "strongest_element": "",
+      "weakest_element": "",
+      "verdict": "pending"
+    }
+  ],
+  "recommendation": "pending",
+  "selected_job": null,
+  "rationale": "Awaiting export inspection, independent visual critique, and founder decision.",
+  "independent_reviewer": "unassigned",
+  "human_decision": "pending",
+  "created_at": "2026-08-23"
+}

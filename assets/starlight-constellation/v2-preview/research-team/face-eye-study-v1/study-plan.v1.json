@@ -1,0 +1,223 @@
+{
+  "schema_version": "starlight.face_eye_study.v1",
+  "study_id": "lyra-face-eye-study-2026-08-24",
+  "agent_id": "lyra-research-conductor",
+  "state": "phase_b_in_progress",
+  "claim_boundary": "Scores are maker-authored expert heuristics, not measured audience preference and not identity approval.",
+  "reference": {
+    "path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-precision-instrument-v2.png",
+    "role": "owned identity and material reference",
+    "sha256": "94ffd34896660f95a31623f44277f36a1e7802d507c74860528a6fd740d74937"
+  },
+  "audiences": {
+    "primary_human": [
+      "founders",
+      "product leads",
+      "developers",
+      "researchers",
+      "operators"
+    ],
+    "human_target_response": "warm competence",
+    "agent_facing_definition": "stable identity, discriminable geometry, crop resilience, deterministic metadata linkage, and no implied runtime authority"
+  },
+  "controlled_variables": [
+    "same Lyra research-conductor identity",
+    "same adult human-scale non-human embodiment",
+    "same dark porcelain and obsidian material family",
+    "same restrained ink-blue accents",
+    "same charcoal studio backdrop",
+    "same soft editorial lighting",
+    "same head-and-upper-torso crop intent",
+    "same calm neutral posture",
+    "cyan means machine activity",
+    "amber remains a separate environmental human witness light"
+  ],
+  "phase_a": {
+    "id": "face-architecture",
+    "purpose": "Compare ten coherent face and head architectures before isolating eye geometry.",
+    "common_prompt": "Use case: stylized-concept. Asset type: controlled Starlight robot face-architecture study for a premium agent profile. Image 1 is the owned Lyra identity and material reference, not a layout lock. Preserve Lyra as an adult human-scale, clearly non-human research conductor with aged ivory porcelain, obsidian mechanics, restrained ink-blue accents, calm competence, an unlit sternum, and precise machine seams. Create a head-and-upper-torso portrait at eye level on a near-solid charcoal studio backdrop with soft editorial key light and one small amber human-owned witness lamp clearly separate from the robot. The face must communicate warm competence and remain readable at a 96-pixel crop. Change the head, facial plane, optic architecture, and collar only according to the named direction. Cyan is machine activity only. No human skin, wet human eyeballs, eyelashes, lips, simulated smile, crown, halo, weapon, text, logo, glyph, fake UI, superhero pose, toy proportions, or generic neon sci-fi. Keep the result premium, tactile, screen-reader-description-friendly, and clearly distinct from the other directions.",
+    "variants": [
+      {
+        "id": "a01-refined-control",
+        "label": "Refined Twin-Lens Control",
+        "hypothesis": "The current twin circular optics remain competitive when reduced, recessed, and stripped of glowing-core symbolism.",
+        "prompt_delta": "Use a refined version of Lyra's current segmented ovoid cranium, narrow obsidian faceplate, and two compact recessed circular cyan lenses. Reduce eye brightness, remove the pointed beak impression, use no mouth, and integrate a low-profile relay collar.",
+        "tradeoff": "High continuity and legibility; risks looking like familiar generic science-fiction robotics.",
+        "output": "phase-a-face-architecture/a01-refined-control.png"
+      },
+      {
+        "id": "a02-civic-instrument",
+        "label": "Civic Instrument",
+        "hypothesis": "A softly rounded shell over precise internal mechanics can balance approachability and enterprise competence.",
+        "prompt_delta": "Design a gently rounded porcelain head with a broad calm forehead, precise cheek planes, two medium round recessed light wells rather than eyeballs, and one neutral horizontal communication seam. Use an engineered but non-ceremonial collar with softly radiused edges.",
+        "tradeoff": "Predicted strongest warm-competence balance; risks becoming too friendly or appliance-like.",
+        "output": "phase-a-face-architecture/a02-civic-instrument.png"
+      },
+      {
+        "id": "a03-lantern-scholar",
+        "label": "Lantern Scholar",
+        "hypothesis": "Indirect light behind smoked glass can feel attentive without simulating biological eyes.",
+        "prompt_delta": "Use a smooth scholar-like porcelain cranium and a continuous smoked-obsidian facial inset containing two diffuse cyan light wells with no visible pupil. Add a quiet neutral lower seam and a soft protective collar like a precision reading instrument.",
+        "tradeoff": "Warm, contemplative, and non-surveillant; may lose sharp identity at small sizes.",
+        "output": "phase-a-face-architecture/a03-lantern-scholar.png"
+      },
+      {
+        "id": "a04-architectural-relay",
+        "label": "Architectural Relay",
+        "hypothesis": "Planar geometry and calibrated apertures can maximize competence and role precision.",
+        "prompt_delta": "Create a faceted architectural porcelain head with a broad upper plane, clean vertical centerline, two narrow but not aggressive rectangular cyan apertures, no mouth, and an integrated radial relay collar built into the shoulders.",
+        "tradeoff": "High competence and role distinctiveness; risks severity and lower interpersonal warmth.",
+        "output": "phase-a-face-architecture/a04-architectural-relay.png"
+      },
+      {
+        "id": "a05-kintsugi-steward",
+        "label": "Kintsugi Steward",
+        "hypothesis": "Visible repair history and tactile ceramic imperfection can signal care, memory, and fallibility.",
+        "prompt_delta": "Use hand-finished aged porcelain with a few restrained brass repair seams, two medium circular recessed cyan optics, an unlit neutral communication seam, subtle surface wear, and an enclosing but functional dark textile collar.",
+        "tradeoff": "Memorable warmth and honest material history; risks decorative mysticism or over-romanticizing damage.",
+        "output": "phase-a-face-architecture/a05-kintsugi-steward.png"
+      },
+      {
+        "id": "a06-asymmetric-analyst",
+        "label": "Asymmetric Analyst",
+        "hypothesis": "One primary inspection optic plus a secondary context sensor can make analytical specialization unmistakable.",
+        "prompt_delta": "Design a balanced asymmetrical head with one larger recessed cyan mechanical iris and one much smaller secondary context aperture, both clearly instruments rather than biological eyes. Keep the mouthless lower face calm and the collar compact.",
+        "tradeoff": "Highly ownable and role-specific; risks surveillance associations or reduced social reciprocity.",
+        "output": "phase-a-face-architecture/a06-asymmetric-analyst.png"
+      },
+      {
+        "id": "a07-folded-porcelain",
+        "label": "Folded Porcelain",
+        "hypothesis": "A strong faceted mask can produce a unique silhouette without adding ornamental parts.",
+        "prompt_delta": "Form the face from a small number of broad folded porcelain planes over an obsidian core, with two short vertical cyan optical slots and no mouth. The folds should feel industrially manufactured, not origami decoration, and flow into a simple split collar.",
+        "tradeoff": "Strong ownability and thumbnail silhouette; risks emotional coldness or villain coding.",
+        "output": "phase-a-face-architecture/a07-folded-porcelain.png"
+      },
+      {
+        "id": "a08-translucent-optic",
+        "label": "Translucent Optic",
+        "hypothesis": "A frosted translucent facial shell can suggest inspectability and layered cognition without fake UI.",
+        "prompt_delta": "Use an opaque porcelain cranium with one frosted translucent mineral-glass facial panel revealing restrained mechanical lens mounts and routing channels beneath. Keep two abstract cyan focal points, no eyeballs, no mouth, and no exposed brain metaphor.",
+        "tradeoff": "Premium material novelty and transparency metaphor; risks visual complexity and uncanny interior anatomy.",
+        "output": "phase-a-face-architecture/a08-translucent-optic.png"
+      },
+      {
+        "id": "a09-eink-social",
+        "label": "E-Ink Social Plane",
+        "hypothesis": "A low-glow graphic face can support expressive states while staying explicitly artificial.",
+        "prompt_delta": "Create a matte porcelain head with a flat smoked e-ink facial plane showing two simple off-white/cyan abstract round eye marks and one neutral short communication line. No smile, no emoji, no glossy screen, and no high-saturation display glow.",
+        "tradeoff": "High state expressiveness and accessibility; risks consumer-toy familiarity and reduced material prestige.",
+        "output": "phase-a-face-architecture/a09-eink-social.png"
+      },
+      {
+        "id": "a10-screenless-minimal",
+        "label": "Screenless Minimal",
+        "hypothesis": "The most restrained face may feel premium and clearly non-human while shifting personality into posture and motion.",
+        "prompt_delta": "Design a nearly featureless porcelain facial shell with two tiny indirect cyan pin-light wells set far enough apart for orientation, no visible pupils, no mouth or display, and one precise central seam. Use a low sculptural collar and exceptional material detail.",
+        "tradeoff": "Premium restraint and low anthropomorphic deception; risks low warmth, weak gaze cues, and poor role recognition.",
+        "output": "phase-a-face-architecture/a10-screenless-minimal.png"
+      }
+    ]
+  },
+  "phase_b": {
+    "id": "eye-systems",
+    "purpose": "Apply ten optical systems to the selected face architecture while changing nothing else.",
+    "base_reference": "phase-a-face-architecture/a02-civic-instrument.png",
+    "base_selection_reason": "A02 provides the cleanest neutral social face plane, strongest predicted warmth, and sufficient premium material detail for an isolated eye-system study. Its current large circular optics also expose the baby-schema risk the second phase is intended to correct; selection is as a test fixture, not as a final identity approval.",
+    "common_prompt": "Use case: identity-preserve edit. Asset type: controlled Starlight robot eye-system study for a premium agent profile. Image 1 is the selected Phase A edit target. Preserve exactly the head architecture, cranial proportions, facial planes, mouth or communication-seam treatment, collar, body, pose, camera, crop, materials, backdrop, lighting, and external amber witness light. Change only the optical system according to the named direction. Keep Lyra clearly non-human, calm, attentive, and readable at 96 pixels. The optics should orient subtly toward a task just below camera rather than staring confrontationally at the viewer. Cyan means machine activity only. No human skin, wet eyeballs, eyelashes, eyebrows, human iris texture, smile, text, logo, fake UI, weapon, crown, halo, or toy expression.",
+    "variants": [
+      {
+        "id": "b01-compact-round-dual",
+        "label": "Compact Round Dual",
+        "hypothesis": "Small recessed round lenses may preserve social reciprocity without baby-schema exaggeration.",
+        "prompt_delta": "Use two compact circular cyan mechanical lenses, deeply recessed with visible aperture rings and low luminance.",
+        "output": "phase-b-eye-systems/b01-compact-round-dual.png"
+      },
+      {
+        "id": "b02-wide-round-light-wells",
+        "label": "Wide Round Light Wells",
+        "hypothesis": "Larger round eyes should increase warmth and trust while testing the cost to senior competence.",
+        "prompt_delta": "Use two larger widely readable round cyan light wells with soft edges, no pupils, and restrained brightness; approachable but never cute or childlike.",
+        "output": "phase-b-eye-systems/b02-wide-round-light-wells.png"
+      },
+      {
+        "id": "b03-soft-square-apertures",
+        "label": "Soft-Square Apertures",
+        "hypothesis": "Rounded-square optics may combine friendly geometry with engineered precision.",
+        "prompt_delta": "Use two medium soft-square cyan apertures with radiused corners, dark internal depth, and a subtle mechanical focus element.",
+        "output": "phase-b-eye-systems/b03-soft-square-apertures.png"
+      },
+      {
+        "id": "b04-tapered-mechanical",
+        "label": "Tapered Mechanical Eyes",
+        "hypothesis": "Moderately tapered apertures can feel focused and intelligent without becoming aggressive.",
+        "prompt_delta": "Use two horizontally tapered abstract mechanical apertures with rounded inner corners and calm level alignment; avoid angry brow geometry.",
+        "output": "phase-b-eye-systems/b04-tapered-mechanical.png"
+      },
+      {
+        "id": "b05-dual-focus-visor",
+        "label": "Dual-Focus Visor",
+        "hypothesis": "A continuous dark visor with two subtle focal nodes may improve iconic recognition and gaze animation.",
+        "prompt_delta": "Use one narrow continuous smoked visor band containing two restrained cyan focal nodes; the band remains dark and materially integrated, not a glowing cyberpunk stripe.",
+        "output": "phase-b-eye-systems/b05-dual-focus-visor.png"
+      },
+      {
+        "id": "b06-single-central-iris",
+        "label": "Single Central Iris",
+        "hypothesis": "A single optical instrument maximizes machine honesty and distinctiveness but may reduce social comfort.",
+        "prompt_delta": "Use one centered recessed cyan mechanical iris with layered aperture blades and no secondary eye-like marks.",
+        "output": "phase-b-eye-systems/b06-single-central-iris.png"
+      },
+      {
+        "id": "b07-primary-secondary",
+        "label": "Primary + Secondary",
+        "hypothesis": "Asymmetric optics can communicate analytical hierarchy and specialist purpose.",
+        "prompt_delta": "Use one medium primary circular cyan lens and one tiny secondary context sensor, precisely balanced so the face remains calm rather than damaged.",
+        "output": "phase-b-eye-systems/b07-primary-secondary.png"
+      },
+      {
+        "id": "b08-triad-constellation",
+        "label": "Triad Constellation",
+        "hypothesis": "Three small focal points may become a proprietary Starlight signature and encode multi-source awareness.",
+        "prompt_delta": "Use three small cyan optical apertures arranged in a restrained shallow triangular constellation, with one primary and two quieter secondary points; no mystical third-eye symbolism.",
+        "output": "phase-b-eye-systems/b08-triad-constellation.png"
+      },
+      {
+        "id": "b09-indirect-light-wells",
+        "label": "Indirect Light Wells",
+        "hypothesis": "Pupil-less indirect wells may feel calm and non-surveillant while retaining a social face.",
+        "prompt_delta": "Use two recessed cavities illuminated by diffuse low-intensity cyan reflected light, with no visible lens, pupil, or display pixel.",
+        "output": "phase-b-eye-systems/b09-indirect-light-wells.png"
+      },
+      {
+        "id": "b10-shutter-irises",
+        "label": "Shutter Irises",
+        "hypothesis": "Mechanical shutters can support expressive gaze states through aperture and direction rather than fake eyebrows or smiles.",
+        "prompt_delta": "Use two circular mechanical irises with visible matte shutter blades, a small cyan core, and neutral half-open aperture state; clearly capable of directional focus without biological mimicry.",
+        "output": "phase-b-eye-systems/b10-shutter-irises.png"
+      }
+    ]
+  },
+  "evaluation": {
+    "human_appeal_dimensions": [
+      "warmth",
+      "competence",
+      "appropriately calibrated trust",
+      "brand ownability",
+      "low uncanny and surveillance risk",
+      "research-conductor fit"
+    ],
+    "agent_legibility_dimensions": [
+      "identity stability at small crop",
+      "geometry distinctiveness",
+      "deterministic metadata mapping"
+    ],
+    "production_dimensions": [
+      "cross-render consistency",
+      "gaze and state animation feasibility",
+      "scalability across the portfolio"
+    ],
+    "human_approval_required": true,
+    "empirical_validation_status": "not_run"
+  }
+}

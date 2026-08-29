@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schemas/character-studio/image-job.schema.json",
+  "schema_version": "starlight.character_image_job.v1",
+  "job_id": "2026-08-23-example-direction",
+  "agent_id": "lyra-research-conductor",
+  "contract_ref": "templates/starlight-character-studio/character-visual-contract.template.json",
+  "direction": {
+    "territory_id": "example-direction",
+    "label": "Example direction",
+    "hypothesis": "A controlled morphology change improves role recognition without replacing the shared Starlight identity",
+    "controlled_variables": [
+      "same agent identity",
+      "same four-to-five crop",
+      "same dark neutral background",
+      "same porcelain obsidian material family",
+      "same calm neutral pose baseline"
+    ],
+    "changed_variables": [
+      "role silhouette"
+    ]
+  },
+  "use_case": "identity-preserve",
+  "asset": {
+    "type": "direction-preview",
+    "surface": "Starlight character identity review",
+    "aspect_ratio": "4:5",
+    "target_width": 1600,
+    "target_height": 2000,
+    "tier": "B",
+    "publication_state": "working"
+  },
+  "references": [
+    {
+      "id": "lyra-v1-owned-portrait",
+      "path": "assets/starlight-constellation/v1/agents/intelligence-research/lyra-research-conductor.webp",
+      "role": "edit-target",
+      "rights_status": "owned",
+      "lock_level": "preserve-identity"
+    }
+  ],
+  "prompt": {
+    "primary_request": "Evolve the existing Lyra portrait through one controlled role-morphology hypothesis",
+    "scene": "A quiet dark editorial atelier used for character comparison",
+    "subject": "Lyra, a clearly non-human porcelain-and-obsidian research conductor",
+    "style_medium": "high-fidelity cinematic character design render",
+    "composition": "full-body four-to-five portrait, eye-level, clean silhouette, generous edge safety",
+    "lighting_mood": "soft directional studio light, calm competence, restrained contrast",
+    "color_palette": "aged porcelain, obsidian, ink blue, restrained cyan activity light, warm amber authority accent",
+    "materials_textures": "matte porcelain grain, precise mechanical seams, brushed metal, functional textile",
+    "constraints": [
+      "preserve Lyra's faceplate and cranium geometry",
+      "preserve the porcelain and obsidian material identity",
+      "make the research conductor role readable from silhouette and gesture",
+      "keep all authority cues external and human-controlled",
+      "no generated text or logos"
+    ],
+    "avoid": [
+      "weapons",
+      "royal symbolism",
+      "superhero stance",
+      "generic neon hacker styling",
+      "toy proportions"
+    ],
+    "final_prompt": "Use case: identity-preserve. Asset type: 4:5 Starlight character direction preview. Input image 1 is the owned Lyra edit target and identity reference. Evolve only the role morphology while preserving Lyra's segmented porcelain cranium, narrow black faceplate, calm non-human identity, obsidian mechanics, and ink-blue material family. Show a clearly readable research conductor through silhouette, a functional routing instrument, and an open bounded handoff gesture. Full-body eye-level portrait in a quiet dark editorial atelier with clean negative space, restrained cyan machine activity, and an external amber human-approval cue. Matte porcelain grain, precise seams, brushed metal, functional textile. No text, no logos, no weapons, no crowns or throne, no superhero pose, no toy proportions, no generic hacker neon."
+  },
+  "output": {
+    "status": "queued",
+    "path": "assets/starlight-constellation/v2-preview/research-team/candidates/example-direction.png",
+    "sha256": null,
+    "dimensions": null,
+    "provider": "OpenAI",
+    "model_or_lane": "runtime-best-available",
+    "generation_receipt": "pending"
+  },
+  "qa": {
+    "inspected": false,
+    "score30": null,
+    "decision": "draft",
+    "strongest_element": "",
+    "weakest_element": "",
+    "next_change": "",
+    "human_decision": "pending"
+  },
+  "created_at": "2026-08-23"
+}

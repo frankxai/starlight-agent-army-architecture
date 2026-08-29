@@ -1,0 +1,17 @@
+{
+  "schema_version": "biz-community-ritual.v1",
+  "rituals": [
+    {
+      "id": "weekly-shoutouts",
+      "cadence": "weekly",
+      "weekday": "friday",
+      "owner": "community"
+    },
+    {
+      "id": "demo-day",
+      "cadence": "monthly",
+      "day_of_month": 1,
+      "owner": "community"
+    }
+  ]
+}

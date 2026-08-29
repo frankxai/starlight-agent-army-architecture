@@ -1,0 +1,123 @@
+{
+  "$schema": "../../schemas/character-studio/character-visual-contract.schema.json",
+  "schema_version": "starlight.character_visual_contract.v1",
+  "contract_id": "lyra-research-conductor-visual-v2",
+  "agent_id": "lyra-research-conductor",
+  "contract_version": "2.0.0",
+  "state": "draft",
+  "authority": {
+    "visual_identity_only": true,
+    "grants_runtime_authority": false,
+    "human_owner": "Frank Riemer"
+  },
+  "role": {
+    "family": "relay",
+    "label": "Research conductor",
+    "specialty": "Frames research missions and routes evidence work across the team",
+    "first_read": "Many bounded evidence streams become one human-reviewable research plan",
+    "transformation": "Turns an ambiguous decision question into a scoped research mission, typed handoffs, and stop conditions",
+    "outcome": "A bounded research plan with named owners, evidence policy, and a final human gate",
+    "inbound_artifacts": [
+      "human decision question",
+      "source and privacy policy",
+      "time and budget ceiling"
+    ],
+    "outbound_artifacts": [
+      "research task packet",
+      "typed handoff map",
+      "human review packet"
+    ],
+    "handoff_cues": [
+      "separate input rails entering the relay collar",
+      "one resolved task packet leaving through the open palm",
+      "an amber human approval gate outside the robot body"
+    ]
+  },
+  "identity": {
+    "shared_dna": "Dark Starlight porcelain-and-obsidian machine language with visible non-human construction seams",
+    "silhouette_signature": "Open vertical relay form with a split functional mantle and a radial routing collar",
+    "cranial_geometry": "Smooth segmented porcelain cranium, narrow black faceplate, two small cyan optical apertures",
+    "body_proportions": "Human-scale, balanced and capable, with broad routing shoulders and articulated hands",
+    "seam_map": "Fine radial seams converge from the shoulders and sternum toward the relay collar and hands",
+    "materials": [
+      "matte dark porcelain",
+      "obsidian mechanics",
+      "brushed warm metal",
+      "ink-blue functional textile"
+    ],
+    "insignia": "A small open-ring relay mark at the sternum",
+    "signature_instrument": "A physical multi-channel routing instrument that visibly joins bounded task signals"
+  },
+  "personality": {
+    "communication": "calm and structured",
+    "challenge_style": "clarifying before directing",
+    "tempo": "measured and decisive",
+    "evidence_posture": "skeptical of unsupported certainty",
+    "visual_cues": [
+      "open two-handed routing gesture",
+      "steady forward gaze with low-intensity optics"
+    ]
+  },
+  "palette": {
+    "porcelain": "#D7D2C7",
+    "mechanics": "#101319",
+    "machine_activity": "#70D7E6",
+    "human_authority": "#D7A34A",
+    "risk": "#C85A4A"
+  },
+  "invariants": [
+    "clearly non-human machine anatomy",
+    "segmented porcelain cranium and narrow black faceplate",
+    "obsidian mechanics and restrained ink-blue textile",
+    "cyan light indicates machine activity only",
+    "amber authority cue remains external to the robot"
+  ],
+  "mutable": [
+    "pose and hand gesture",
+    "background architecture",
+    "relay instrument state",
+    "camera distance and crop"
+  ],
+  "prohibited": [
+    "weapons or combat armor",
+    "crown throne or royal insignia",
+    "divine core or omnipotence cue",
+    "superhero pose",
+    "embedded text logo or interface copy",
+    "generic neon hacker styling",
+    "cute toy proportions"
+  ],
+  "references": [
+    {
+      "id": "lyra-v1-owned-portrait",
+      "path": "assets/starlight-constellation/v1/agents/intelligence-research/lyra-research-conductor.webp",
+      "role": "identity",
+      "rights_status": "owned",
+      "lock_level": "preserve-identity"
+    }
+  ],
+  "outputs": [
+    {
+      "profile": "recognition-portrait",
+      "aspect_ratio": "4:5",
+      "target_width": 1600,
+      "target_height": 2000,
+      "format": "png"
+    },
+    {
+      "profile": "role-badge",
+      "aspect_ratio": "1:1",
+      "target_width": 96,
+      "target_height": 96,
+      "format": "svg"
+    }
+  ],
+  "provenance": {
+    "source_card": "cards/portfolio/lyra-research-conductor.json",
+    "source_commit": "9740f4219d65a8a437c5a6e414c912e30f5f518b",
+    "created_at": "2026-08-23",
+    "created_by": "Codex character-studio pilot",
+    "model_policy": "runtime-best-available",
+    "human_decision": "pending"
+  }
+}

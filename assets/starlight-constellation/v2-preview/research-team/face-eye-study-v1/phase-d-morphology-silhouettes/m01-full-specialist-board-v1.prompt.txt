@@ -1,0 +1,16 @@
+Create an original premium character-development board for Starlight Intelligence.
+
+Use case: stylized-concept exploration. Final surface: a 3:2 landscape morphology board for serious full-scale specialist agents used on public profiles, enterprise team stories, and cinematic narrative scenes.
+
+The attached image is only a benchmark for sophisticated construction, poised presence, refined hard/soft transitions, and production-level character design. Do not reproduce its exact character, feminine fashion anatomy, halo, cape, blue eye, circular background, costume, color palette, or celestial ornament.
+
+Create four genuinely different adult-proportioned machine specialists, roughly 6.5–7 heads tall: a civic evidence instrument—open, accountable, designed around presenting verifiable artifacts; a lantern scholar—quiet knowledge keeper with an architectural light housing and archive utility; a folded-shell systems architect—body built from a few strong planar shells and a deployable drafting surface; and an asymmetric analytical specialist—deliberately offset sensor/tool architecture that communicates comparison and doubt.
+
+Each must have a different torso, head/sensor, limb, and support architecture. Calm neutral poses, restrained useful hands, visible but understated role utility. Competent collaborators, never superheroes or fashion mannequins.
+
+Art direction: original elite feature-animation and AAA game character-development quality blended with serious industrial design, without imitating any franchise, studio character, or living artist. Strong silhouette at 96 px. One dominant shape, one supporting shape, one surprising functional detail. Two-tone grayscale maquettes: warm porcelain structural shells, graphite mechanisms, restrained linen-like soft contact surfaces. Clear institutional daylight on a clean warm-white sheet. Four separate complete three-quarter standing candidates left to right, consistent scale, generous spacing, nothing cropped.
+
+No text, labels, numbers, logos, human eyes, mouth, hair, weapons, capes, crowns, halos, glowing orbs, generic sci-fi armor, decorative circuitry, background scene, fake UI, node diagrams, heroic poses, repeated base body, or franchise resemblance. Do not hide weak shapes with seams, greebles, props, or dramatic lighting.
+
+Reference image: C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6666d658-5e6c-4d16-a724-63527625135b.png
+Model/tool: Codex built-in image_gen

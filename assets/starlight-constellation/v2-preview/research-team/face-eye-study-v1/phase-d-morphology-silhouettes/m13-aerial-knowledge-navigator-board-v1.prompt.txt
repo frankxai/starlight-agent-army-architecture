@@ -1,0 +1,16 @@
+Create an original premium character-development board for Starlight Intelligence.
+
+Use case: stylized-concept exploration. Final surface: a 3:2 landscape morphology board for aerial knowledge navigation, mapping, retrieval, observatory work, and quiet survey.
+
+The attached image is only a benchmark for sophisticated construction, calm dignity, refined materials, and production-level character design. Do not reproduce its humanoid character, face, halo, cape, blue eye, circular background, costume, palette, or celestial ornament.
+
+Create four genuinely different aerial or suspended knowledge navigators: a quiet ducted-lift ring whose lift system and protected archive core are visibly distinct; a manta-planform glider with credible aerodynamic surfaces and a deployable sampling cradle; a suspended archive spindle held by an explicit compact cable or counter-rotating lift mechanism; and a folding fan-like surveyor whose panels control lift, sensing, and landing.
+
+Every design must show credible lift or suspension logic, landing/rest behavior, orientation toward a task, and a calm non-military silhouette. Each candidate uses a different propulsion/support idea. They are instruments, not angels, birds, or combat drones.
+
+Art direction: original elite aerospace industrial design, feature-animation prop design, and AAA game world-object quality, without imitating any franchise, studio vehicle, or living artist. Strong silhouette at 96 px. One dominant shape, one supporting shape, one surprising functional detail. Two-tone grayscale maquettes: warm porcelain aerodynamic surfaces, graphite mechanics, matte charcoal contact and rotor zones, restrained translucent material only where sensors need it. Clear institutional daylight on a clean warm-white sheet. Four separate complete three-quarter candidates left to right, consistent visual scale, generous spacing, nothing cropped.
+
+No text, labels, numbers, logos, human eyes, faces, mouths, quadcopter cliché, combat-drone language, weapons, missiles, angel wings, feather imitation, halos, glowing orbs, decorative circuitry, background scene, fake UI, node diagrams, impossible levitation without support logic, repeated base, or franchise resemblance. Do not hide weak aerodynamics with motion blur, clouds, glow, or dramatic lighting.
+
+Reference image: C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6666d658-5e6c-4d16-a724-63527625135b.png
+Model/tool: Codex built-in image_gen

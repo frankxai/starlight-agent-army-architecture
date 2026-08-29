@@ -1,0 +1,16 @@
+Create an original premium character-development board for Starlight Intelligence.
+
+Use case: stylized-concept exploration. Final surface: a 3:2 landscape morphology board for non-humanoid specialist instruments used as archives, verifiers, cartographers, and mobile research utilities.
+
+The attached image is only a benchmark for sophisticated construction, calm presence, precision, refined material transitions, and production-level character design. Do not reproduce its humanoid body, face, halo, cape, blue eye, circular background, costume, palette, or celestial ornament.
+
+Create four genuinely different role-shaped machines: an archive lantern on a quiet mobile base that reveals source artifacts without becoming a literal street lamp; a folding verification press that opens to compare two claims and seals a receipt; a walking map table with stable articulated supports and a protected physical terrain surface; and a compact mobile lens-and-sample laboratory with believable storage, optics, and movement.
+
+Function must create character without a face. Each needs a clearly different plan, elevation, support, and interaction logic. Show credible openings, hinges, surfaces, carrying, and orientation toward a human collaborator. They are not mascots and not hidden humanoids.
+
+Art direction: original elite industrial-design, feature-animation prop design, and AAA game world-object quality, without imitating any franchise, studio prop, or living artist. Strong silhouette at 96 px. One dominant shape, one supporting shape, one surprising functional detail. Two-tone grayscale maquettes: warm porcelain or enamel outer structure, graphite mechanisms, linen or paper-like archive surfaces, restrained glass only where optics require it. Clear institutional daylight on a clean warm-white sheet. Four separate complete three-quarter candidates left to right, consistent visual scale, generous spacing, nothing cropped.
+
+No text, labels, numbers, logos, human eyes, face, mouth, generic glowing orb, random control panels, fake screens, fake UI, decorative circuitry, weapons, capes, crowns, halos, background scene, node diagrams, floating unsupported parts, hidden humanoid body, repeated base, or franchise resemblance. Do not hide weak forms with seams, greebles, props, or dramatic lighting.
+
+Reference image: C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6666d658-5e6c-4d16-a724-63527625135b.png
+Model/tool: Codex built-in image_gen

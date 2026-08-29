@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../../schemas/character-studio/selection-receipt.schema.json",
+  "schema_version": "starlight.character_selection_receipt.v1",
+  "receipt_id": "2026-08-23-lyra-direction-selection",
+  "agent_id": "lyra-research-conductor",
+  "batch_id": "research-team-visual-pilot-v1",
+  "candidates": [
+    {
+      "job_ref": "assets/starlight-constellation/v2-preview/research-team/prompts/lyra-porcelain-atelier.v1.json",
+      "territory_id": "porcelain-atelier",
+      "artifact_path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-porcelain-atelier-v1.png",
+      "sha256": "b76f8bf635ccb19a8312eed7378be2bbfd4e89ec17b0e84f212e69997b7e870c",
+      "inspected": true,
+      "score30": 25,
+      "strongest_element": "Tactile research work and excellent continuity with the existing Lyra identity",
+      "weakest_element": "Half-body composition and an internal amber core weaken both comparison and governance clarity",
+      "verdict": "iterate"
+    },
+    {
+      "job_ref": "assets/starlight-constellation/v2-preview/research-team/prompts/lyra-precision-instrument.v1.json",
+      "territory_id": "precision-instrument",
+      "artifact_path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-precision-instrument-v1.png",
+      "sha256": "d0d67144616473caa1bd911cb87d6e491f4cbcd8ae59e896f069ece2bffe452f",
+      "inspected": true,
+      "score30": 27,
+      "strongest_element": "Strongest first-glance relay silhouette and most legible physical workflow",
+      "weakest_element": "Amber chest core is a hard visual-governance failure despite the high craft score",
+      "verdict": "iterate"
+    },
+    {
+      "job_ref": "assets/starlight-constellation/v2-preview/research-team/prompts/lyra-warm-companion.v1.json",
+      "territory_id": "warm-companion",
+      "artifact_path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-warm-companion-v1.png",
+      "sha256": "226da7e761bf134ed70f91d922b7e9d01611b1d876bed8bc08acbe2833ede1cb",
+      "inspected": true,
+      "score30": 25,
+      "strongest_element": "Most approachable expression of care, attention, and tactile knowledge work",
+      "weakest_element": "Reads as an archivist rather than the conductor of a multi-lane research swarm",
+      "verdict": "iterate"
+    },
+    {
+      "job_ref": "assets/starlight-constellation/v2-preview/research-team/prompts/lyra-precision-instrument.v2.json",
+      "territory_id": "precision-instrument-refined",
+      "artifact_path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-precision-instrument-v2.png",
+      "sha256": "94ffd34896660f95a31623f44277f36a1e7802d507c74860528a6fd740d74937",
+      "inspected": true,
+      "score30": 26,
+      "strongest_element": "Governance-correct separation of cyan machine activity and the external physical amber human gate",
+      "weakest_element": "The corrected collar rods are less resolved than the v1 collar and the export is taller than the requested four-to-five format",
+      "verdict": "eligible"
+    }
+  ],
+  "recommendation": "blend",
+  "selected_job": "assets/starlight-constellation/v2-preview/research-team/prompts/lyra-precision-instrument.v2.json",
+  "rationale": "Use Precision Instrument v2 as the authority-correct base; recover the integrated visual richness of the v1 collar at a lower profile, add the humane hand posture and material warmth of Warm Companion, and produce a true four-to-five identity master before site integration.",
+  "independent_reviewer": "pending independent visual reviewer",
+  "human_decision": "pending",
+  "created_at": "2026-08-23"
+}

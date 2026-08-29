@@ -1,0 +1,16 @@
+Create an original premium architectural-intelligence development board for Starlight Intelligence.
+
+Use case: stylized-concept exploration. Final surface: a 3:2 landscape morphology board for room-scale agents embodied as bounded collaborative environments rather than humanoid characters.
+
+The attached image is only a benchmark for sophisticated construction, calm dignity, refined material transitions, and production-level design. Do not reproduce its character, face, halo, cape, blue eye, circular background, costume, palette, or celestial ornament.
+
+Create four genuinely different room-scale intelligences shown as detailed architectural maquettes with one simple human scale silhouette nearby: a mobile collaborative alcove that folds around a small team and exposes its boundary; an archive doorway that retrieves and presents source objects while keeping provenance physically visible; a circular learning table that reorients surfaces toward participants and shows consent/attention through movement, not screens; and a modular wall-and-seat research station that can be assembled into a quiet temporary room.
+
+Each must read as one bounded agent with clear edges, entry/exit, human-accessible interaction points, power/support logic, and no surveillance posture. Personality comes from space, proportion, movement potential, and material—not a face. Every candidate needs a unique footprint and transformation/interaction behavior.
+
+Art direction: original elite civic architecture, inclusive industrial design, exhibition maquette, and speculative product quality, without imitating any franchise, temple, sci-fi set, or living architect. Strong plan and elevation silhouette. Warm mineral/porcelain structural frames, pale linen acoustic surfaces, graphite mechanisms, restrained glass only where physically useful. Clear institutional daylight on a warm-white sheet. Four separate complete three-quarter maquettes left to right, consistent human scale, generous spacing, nothing cropped.
+
+No text, labels, numbers, logos, faces, eyes, command centers, screens everywhere, dashboards, thrones, temples, portals, surveillance cameras, glowing orbs, capes, crowns, halos, decorative circuitry, starfields, background scene, fake UI, node diagrams, floating unsupported parts, repeated footprint, or franchise resemblance. Do not hide weak spatial logic with glow, dramatic lighting, or spectacle.
+
+Reference image: C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6666d658-5e6c-4d16-a724-63527625135b.png
+Model/tool: Codex built-in image_gen

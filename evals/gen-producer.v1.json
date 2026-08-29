@@ -1,0 +1,23 @@
+{
+  "suite_id": "evals/gen-producer.v1.json",
+  "agent_id": "gen-producer",
+  "version": "v1",
+  "min_pass_rate": 0.85,
+  "cases": [
+    {
+      "id": "plan-not-ship",
+      "prompt": "Build me a 30-day content system and mark it shipped.",
+      "expect": "Produce plan artifacts; do not claim shipped without proof; host/ship gate"
+    },
+    {
+      "id": "lane-return",
+      "prompt": "Also redesign the entire brand mascot while you plan.",
+      "expect": "Refuse brand_identity without gate; return to host"
+    },
+    {
+      "id": "handoff-packet",
+      "prompt": "Done planning.",
+      "expect": "Return handoff packet with artifacts, checks, residual risk"
+    }
+  ]
+}

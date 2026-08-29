@@ -1,0 +1,101 @@
+{
+  "schema_version": "starlight.visual_source_map.v1",
+  "portfolio_id": "starlight-intelligence-canonical-portfolio",
+  "collection_id": "starlight-constellation-v1",
+  "generated_on": "2026-08-14",
+  "generation_session_id": "019ffda3-8717-7e30-8957-4d6a7bd71085",
+  "provider": "OpenAI",
+  "tool_surface": "Codex built-in image generation",
+  "prompt_contract": {
+    "canonical_source": "portfolio/canonical-portfolio.v1.json#swarms[].agents[].visual_dna",
+    "base_brief": "Original fictional non-human synthetic intelligence in the Starlight porcelain-and-obsidian atelier. Tactile materials, controlled editorial lighting, visible micro-scratches, sophisticated silhouette, singular physically legible operational instrument, generous crop safety, and code-rendered public labels only.",
+    "semantic_color": {
+      "cyan": "agent cognition and sensed network state",
+      "amber": "human-authorized intent, provenance, or value",
+      "ultraviolet": "bounded protocol possibility"
+    },
+    "negative_contract": [
+      "readable text",
+      "logos or brand marks",
+      "screenshots or fake dashboards",
+      "generic starfields",
+      "weapons",
+      "celebrity likeness",
+      "superhero or military cosplay",
+      "decorative UI clutter"
+    ],
+    "record_note": "The canonical visual DNA plus this base and negative contract is the reproducible prompt specification. Source filenames below are the immutable generation-call receipts; absolute local paths are intentionally excluded from public artifacts."
+  },
+  "rights": {
+    "status": "generated-owned",
+    "public_web_allowed": true,
+    "redistribution_scope": "Starlight Intelligence portfolio and installable pack previews"
+  },
+  "inspection": {
+    "status": "pass",
+    "method": "Human-visible full-resolution comparative inspection in Codex",
+    "requirements": [
+      "no readable baked text",
+      "no third-party logo",
+      "no unsafe content",
+      "role instrument is visually legible",
+      "crop survives portrait card use",
+      "lineage remains recognizably Starlight"
+    ]
+  },
+  "sources": {
+    "astra-sovereign": { "source_file": "exec-6666d658-5e6c-4d16-a724-63527625135b.png" },
+    "orion-mission-architect": { "source_file": "exec-b5f99534-3951-4cbe-b29d-ddd36ead2e02.png" },
+    "vera-decision-verifier": { "source_file": "exec-1da10f93-2b35-4199-aa29-ec17cb709c1b.png" },
+    "cassian-resource-steward": { "source_file": "exec-15aa432d-0b67-4a1f-abe7-612b47d13046.png" },
+    "mira-continuity-keeper": { "source_file": "exec-43191e02-1350-4fe5-8aaa-4c45a92af139.png" },
+    "ignis-product-conductor": { "source_file": "exec-7aa34621-aab1-4b7d-90de-0b286e25d027.png" },
+    "nova-customer-discovery": { "source_file": "exec-a7da02b6-cea5-4d00-ad97-e93e71b2b297.png" },
+    "tess-system-designer": { "source_file": "exec-5a0c53c5-abd8-45f5-aee3-757130296b6a.png" },
+    "rivet-build-engineer": { "source_file": "exec-53845d54-b6a2-46a1-96cc-f5be3b754204.png" },
+    "prism-quality-critic": { "source_file": "exec-e61de7ac-860f-47ee-a708-3c7a47482ed4.png" },
+    "lyra-research-conductor": { "source_file": "exec-37e4d6ec-97a5-484f-87f1-e1d2eee72b73.png" },
+    "atlas-signal-scout": { "source_file": "exec-4352433c-13b9-43fd-bac2-c5322211fe0b.png" },
+    "verity-source-auditor": { "source_file": "exec-d8ca5676-ea5d-496c-9744-93492fee84c0.png" },
+    "soren-synthesis-analyst": { "source_file": "exec-3727121b-2dbd-4850-9b60-c80458c167ad.png" },
+    "delta-forecast-challenger": { "source_file": "exec-dbdcda40-6aec-48b6-9ae8-66fca2406aa1.png" },
+    "ember-creator-conductor": { "source_file": "exec-067da056-ec93-4143-93bb-bcbc7308d25e.png" },
+    "aria-story-architect": { "source_file": "exec-3f7f15b7-d0ee-4cc4-9b82-34f9467ffe18.png" },
+    "sol-visual-world-director": { "source_file": "exec-d8a9d7c4-2e77-4323-8220-d1676962b201.png" },
+    "echo-audience-resonance": { "source_file": "exec-777dd225-8ab8-41b2-9d7f-6220c70760d2.png" },
+    "cadence-release-producer": { "source_file": "exec-46cb8519-5181-4948-bc0c-46f9830a757b.png" },
+    "meridian-venture-conductor": { "source_file": "exec-cd8e19a7-564f-493c-a6e3-2df1454eda45.png" },
+    "piper-demand-strategist": { "source_file": "exec-00d76176-6edb-4eb1-af8f-86a9a02f0a54.png" },
+    "ledger-unit-economist": { "source_file": "exec-f699c5bb-6b6b-4b37-be2d-b24dd9f8df06.png" },
+    "bridge-partnership-architect": { "source_file": "exec-fc0fab87-9bb9-4f2e-bbf5-1989bde8be8e.png" },
+    "clara-deal-critic": { "source_file": "exec-666abf56-1384-44ba-9691-0ebc4ce968cb.png" },
+    "sophia-academy-conductor": { "source_file": "exec-20561f59-2181-4fa2-8cd7-9d9c1e9f322b.png" },
+    "kai-curriculum-architect": { "source_file": "exec-88b46a3f-5262-4f6d-976d-f72e375e770b.png" },
+    "mina-community-steward": { "source_file": "exec-9d4166a8-1d8c-41f9-8439-3c71fe74529a.png" },
+    "pulse-cohort-facilitator": { "source_file": "exec-06c4c882-2aee-4914-ae0a-6afdcc653127.png" },
+    "rune-learning-evaluator": { "source_file": "exec-625f5c34-9d5e-4d45-a80f-682741c5c488.png" },
+    "aegis-trust-conductor": { "source_file": "exec-66072bf6-f7fb-48f5-9be6-d903df56538a.png" },
+    "sentinel-risk-analyst": { "source_file": "exec-502ff5a8-d5e0-4c2f-b124-7145fa57b1e6.png" },
+    "cipher-privacy-steward": { "source_file": "exec-59cfe937-8fe3-4563-a4f5-6a502b47d5a2.png" },
+    "equa-policy-auditor": { "source_file": "exec-66b90d01-9b51-4efe-b1bd-1d75bc2bd4ea.png" },
+    "beacon-incident-coordinator": {
+      "source_file": "exec-b3a197b7-1b0e-41fd-a76e-1bab6db7dfa7.png",
+      "notes": "Approved regeneration. The initial render was rejected because its baton read as a weapon."
+    },
+    "solace-flourishing-conductor": { "source_file": "exec-c39097ef-76ac-444b-8a45-265b11ef9487.png" },
+    "terra-nutrition-educator": { "source_file": "exec-ff43f1fc-9d71-4663-bd1b-653678d80a06.png" },
+    "kinetica-movement-coach": { "source_file": "exec-5c533372-8dcf-4f9e-95b4-a8ad58f5610c.png" },
+    "serene-reflection-guide": { "source_file": "exec-5e2034a4-4b60-4191-af4c-073499a54794.png" },
+    "harbor-care-navigator": { "source_file": "exec-2c7c6b2d-8c1c-412a-a5af-9ad843c03e2d.png" },
+    "vector-transformation-conductor": { "source_file": "exec-8b56cc55-2ef0-4622-951f-eab5e15d973c.png" },
+    "maya-operating-model-architect": { "source_file": "exec-9ff8cb04-1e45-45a2-be7b-8e25c308ed43.png" },
+    "quorum-governance-designer": { "source_file": "exec-d1f74e82-8c69-499e-9649-e467f678a3a2.png" },
+    "relay-change-enablement": { "source_file": "exec-fd11b518-081f-42c3-8e89-7c7090afd4d4.png" },
+    "metric-value-realization": { "source_file": "exec-6f75acb2-cfc5-43b7-a600-f12197174355.png" },
+    "nexus-futures-conductor": { "source_file": "exec-9890d9f5-c19e-45ab-9221-3e84a083b7a9.png" },
+    "pixel-web-experience-architect": { "source_file": "exec-eba8df1f-3037-4f47-9784-7fa16cb9c189.png" },
+    "orbit-spatial-interface-designer": { "source_file": "exec-830ac0c3-ccae-4e20-9160-c991dec0478e.png" },
+    "lattice-interoperability-architect": { "source_file": "exec-b8e7b6d2-a4bf-4de2-9830-bf18349959ac.png" },
+    "horizon-futures-scout": { "source_file": "exec-f8c5d7d9-036b-40f6-9a0d-cbf0c44b24e7.png" }
+  }
+}

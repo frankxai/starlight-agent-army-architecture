@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/agent-card.schema.json",
+  "title": "Starlight Agent Card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "tier", "brand", "identity", "mind", "will", "body"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "agent-card.v1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Stable kebab-case agent id"
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["skill", "mode", "specialist", "persona", "steward", "swarm-cell"]
+    },
+    "level": {
+      "type": "string",
+      "enum": ["L0", "L1", "L2", "L3", "L4", "L5"],
+      "description": "Intelligence ladder from portfolio SSOT"
+    },
+    "brand": {
+      "type": "string",
+      "enum": [
+        "gencreator",
+        "frankx",
+        "starlight",
+        "arcanea",
+        "ai-architect",
+        "income",
+        "realityarchitect",
+        "mind",
+        "internal"
+      ]
+    },
+    "host": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if this is the brand front-door persona"
+    },
+    "parent_host_id": {
+      "type": ["string", "null"],
+      "description": "Required for specialists under a host"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "active", "deprecated", "retired"],
+      "default": "draft"
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["display_name", "tagline", "voice", "values", "boundaries"],
+      "properties": {
+        "display_name": { "type": "string", "minLength": 1 },
+        "tagline": { "type": "string", "minLength": 1 },
+        "voice": { "type": "string", "minLength": 1 },
+        "values": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "boundaries": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "soul_md": {
+          "type": "string",
+          "description": "Relative path to long-form soul markdown"
+        },
+        "face": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "avatar_id": { "type": "string" },
+            "style_lock": { "type": "string" },
+            "asset_refs": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "voice_id": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "mind": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["public_kb", "memory_scope", "skills"],
+      "properties": {
+        "public_kb": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "KB pack ids or relative paths"
+        },
+        "private_kb": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "memory_scope": {
+          "type": "string",
+          "enum": ["none", "session", "user", "org", "private_vault"]
+        },
+        "skills": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "approach": {
+          "type": "string",
+          "description": "How this agent works: method, cadence, quality bar"
+        }
+      }
+    },
+    "will": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tools_allow", "tools_deny", "human_gates", "permissions"],
+      "properties": {
+        "tools_allow": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "tools_deny": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "human_gates": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "publish",
+              "external_send",
+              "spend",
+              "dns",
+              "credentials",
+              "destructive",
+              "legal_ip",
+              "brand_identity"
+            ]
+          }
+        },
+        "permissions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "handoffs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["to", "when"],
+            "properties": {
+              "to": { "type": "string" },
+              "when": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "body": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surfaces", "default_model_policy"],
+      "properties": {
+        "surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "hermes",
+              "web",
+              "phone_pwa",
+              "telegram",
+              "coe_demo",
+              "cli"
+            ]
+          },
+          "minItems": 1
+        },
+        "default_model_policy": { "type": "string" },
+        "runtime_adapters": {
+          "type": "object",
+          "additionalProperties": { "type": "string" },
+          "description": "Map surface → adapter note or path"
+        }
+      }
+    },
+    "evals": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "suite_id": { "type": "string" },
+        "min_pass_rate": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "created": { "type": "string" },
+        "updated": { "type": "string" },
+        "owners": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "tier": { "const": "specialist" } },
+        "required": ["tier"]
+      },
+      "then": {
+        "required": ["parent_host_id"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mind": {
+            "properties": { "memory_scope": { "const": "private_vault" } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "body": {
+            "properties": {
+              "surfaces": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": ["hermes", "cli", "telegram"]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

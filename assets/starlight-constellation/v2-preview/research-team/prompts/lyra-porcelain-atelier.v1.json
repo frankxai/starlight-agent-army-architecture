@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../../../schemas/character-studio/image-job.schema.json",
+  "schema_version": "starlight.character_image_job.v1",
+  "job_id": "2026-08-23-lyra-porcelain-atelier-v1",
+  "agent_id": "lyra-research-conductor",
+  "contract_ref": "templates/starlight-character-studio/character-visual-contract.template.json",
+  "direction": {
+    "territory_id": "porcelain-atelier",
+    "label": "Porcelain Atelier",
+    "hypothesis": "Refining the existing ceremonial portrait into a functional editorial atelier preserves recognition while making Lyra's conductor role more credible",
+    "controlled_variables": [
+      "same agent identity",
+      "same four-to-five crop",
+      "same dark neutral background",
+      "same porcelain obsidian material family",
+      "same calm neutral pose baseline"
+    ],
+    "changed_variables": [
+      "functional split mantle",
+      "open routing gesture",
+      "reduced ceremonial pedestal language"
+    ]
+  },
+  "use_case": "identity-preserve",
+  "asset": {
+    "type": "direction-preview",
+    "surface": "Starlight Research Team character direction review",
+    "aspect_ratio": "4:5",
+    "target_width": 1600,
+    "target_height": 2000,
+    "tier": "B",
+    "publication_state": "working"
+  },
+  "references": [
+    {
+      "id": "lyra-v1-owned-portrait",
+      "path": "assets/starlight-constellation/v1/agents/intelligence-research/lyra-research-conductor.webp",
+      "role": "edit-target",
+      "rights_status": "owned",
+      "lock_level": "preserve-identity"
+    }
+  ],
+  "prompt": {
+    "primary_request": "Evolve Lyra into a quieter, more functional Porcelain Atelier research conductor while preserving her existing identity",
+    "scene": "A dark editorial atelier with architectural curves, a near-solid ink backdrop, and one warm human approval light beyond the machine",
+    "subject": "Lyra, the same porcelain-and-obsidian non-human research conductor, visibly routing bounded evidence tasks",
+    "style_medium": "high-fidelity cinematic character design render with editorial restraint",
+    "composition": "full-body four-to-five portrait, eye-level, clean vertical silhouette, no plinth, both hands participating in one readable handoff",
+    "lighting_mood": "soft directional key light, quiet confidence, controlled shadow, minimal cyan activity and restrained amber authority",
+    "color_palette": "aged ivory porcelain, obsidian black, ink blue, fine brushed brass, low-intensity cyan, warm amber",
+    "materials_textures": "matte porcelain grain, visible machine seams, worn functional textile, brushed metal relay hardware",
+    "constraints": [
+      "preserve Lyra's segmented porcelain cranium and narrow black faceplate",
+      "preserve human-scale non-human machine proportions",
+      "replace ceremonial cape language with a functional split routing mantle",
+      "show several bounded inputs resolving into one physical task packet",
+      "keep amber human authority outside the robot body",
+      "no generated text or logos"
+    ],
+    "avoid": [
+      "pedestal statue composition",
+      "weapons or combat armor",
+      "crown throne halo or royal symbolism",
+      "superhero dominance pose",
+      "neon hacker atmosphere",
+      "glowing cards or fake interface panels"
+    ],
+    "final_prompt": "Use case: identity-preserve. Asset type: 4:5 Starlight character direction preview. Image 1 is the owned Lyra edit target and identity reference. Preserve Lyra's segmented ivory porcelain cranium, narrow black faceplate, calm non-human identity, human-scale proportions, obsidian mechanics, ink-blue material family, and fine warm-metal seams. Evolve the scene into Porcelain Atelier: a quiet dark editorial workshop, near-solid ink architecture, no pedestal, soft directional key light. Replace the ceremonial long coat with a functional split routing mantle that opens around the hands. Lyra uses both hands to receive several small bounded physical evidence inputs and resolve them into one clear task packet, making the research-conductor role readable without labels. Use restrained cyan only for machine activity and one separate amber human-approval light beyond the body. Matte porcelain grain, precise seams, worn textile, brushed relay hardware. No text, no logos, no fake UI, no floating cards, no weapons, no combat armor, no crown, throne, decorative halo, superhero stance, toy proportions, or neon hacker styling."
+  },
+  "output": {
+    "status": "generated",
+    "path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-porcelain-atelier-v1.png",
+    "sha256": "b76f8bf635ccb19a8312eed7378be2bbfd4e89ec17b0e84f212e69997b7e870c",
+    "dimensions": {
+      "width": 1003,
+      "height": 1568
+    },
+    "provider": "OpenAI",
+    "model_or_lane": "runtime-best-available",
+    "generation_receipt": "imagegen:019ffda3-8717-7e30-8957-4d6a7bd71085/exec-178a8121-4c80-4971-b23c-4df6ded1c63e.png; copied without transformation"
+  },
+  "qa": {
+    "inspected": true,
+    "score30": 25,
+    "decision": "iterate",
+    "strongest_element": "Recognizable Lyra identity and a tactile evidence handoff make the research work feel authored and credible",
+    "weakest_element": "The half-body atelier composition breaks full-body comparison and the amber chest core blurs the external human-authority rule",
+    "next_change": "Retain the workshop, mantle, and tactile evidence, but restore full-body framing and remove every internal amber light",
+    "human_decision": "pending"
+  },
+  "created_at": "2026-08-23"
+}

@@ -1,0 +1,16 @@
+Create an original premium character-development board for Starlight Intelligence.
+
+Use case: stylized-concept exploration. Final surface: a 3:2 landscape morphology board explaining governed multi-agent collaboration through physical swarm formations.
+
+The attached image is only a benchmark for sophisticated construction, calm dignity, disciplined materials, and production-level character design. Do not reproduce its humanoid character, face, halo, cape, blue eye, circular background, costume, palette, or celestial ornament.
+
+Create four different swarm gestalts. Each is formed from five to twelve clearly readable small functional units, with no central magical brain: docking tiles assemble a temporary helper with a shared carrying frame; relay walkers form a stable bridge for an artifact and visibly preserve individual boundaries; seed-like research units form a collective sampling and synthesis frame; and carrying units assemble a mobile archive with a clear handoff point.
+
+Every formation must show the individual units, their docking/communication or load-sharing mechanics, and a clear collective task. Each has a different unit body and collective silhouette. The whole should feel coordinated, governed, and reversible—not a hive mind.
+
+Art direction: original elite feature-animation prop design, advanced industrial design, and AAA game character-system quality, without imitating any franchise, studio character, or living artist. Strong collective silhouette at 96 px and readable individual units at close range. Two-tone grayscale maquettes: warm porcelain shells, graphite docking structures, matte charcoal contact surfaces. Clear institutional daylight on a clean warm-white sheet. Four separate complete formations left to right, consistent scale, generous spacing, nothing cropped.
+
+No text, labels, numbers, logos, human eyes, faces, mouths, anonymous dots, particle clouds, orbit diagrams, node networks, magical mist, central glowing orb, weapons, insects, capes, crowns, halos, decorative circuitry, background scene, fake UI, floating unsupported parts, repeated formation, or franchise resemblance. Do not hide weak coordination with glow, motion blur, or decorative effects.
+
+Reference image: C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-6666d658-5e6c-4d16-a724-63527625135b.png
+Model/tool: Codex built-in image_gen

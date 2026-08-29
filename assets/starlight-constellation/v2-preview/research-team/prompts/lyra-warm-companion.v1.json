@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../../../schemas/character-studio/image-job.schema.json",
+  "schema_version": "starlight.character_image_job.v1",
+  "job_id": "2026-08-23-lyra-warm-companion-v1",
+  "agent_id": "lyra-research-conductor",
+  "contract_ref": "templates/starlight-character-studio/character-visual-contract.template.json",
+  "direction": {
+    "territory_id": "warm-companion",
+    "label": "Warm Companion",
+    "hypothesis": "Softer proportions and attentive gesture increase approachability without turning Lyra into a cute or overly human robot",
+    "controlled_variables": [
+      "same agent identity",
+      "same four-to-five crop",
+      "same dark neutral background",
+      "same porcelain obsidian material family",
+      "same calm neutral pose baseline"
+    ],
+    "changed_variables": [
+      "softer shoulder arcs",
+      "lower optical intensity",
+      "more attentive hand posture"
+    ]
+  },
+  "use_case": "identity-preserve",
+  "asset": {
+    "type": "direction-preview",
+    "surface": "Starlight Research Team character direction review",
+    "aspect_ratio": "4:5",
+    "target_width": 1600,
+    "target_height": 2000,
+    "tier": "B",
+    "publication_state": "working"
+  },
+  "references": [
+    {
+      "id": "lyra-v1-owned-portrait",
+      "path": "assets/starlight-constellation/v1/agents/intelligence-research/lyra-research-conductor.webp",
+      "role": "edit-target",
+      "rights_status": "owned",
+      "lock_level": "preserve-identity"
+    }
+  ],
+  "prompt": {
+    "primary_request": "Evolve Lyra toward an attentive and approachable research companion while preserving competence, machine identity, and the current Starlight world",
+    "scene": "A quiet dark research room with tactile paper evidence and a warm human work light outside the robot's body",
+    "subject": "Lyra, the same porcelain-and-obsidian non-human research conductor, listening before routing the next task",
+    "style_medium": "high-fidelity cinematic editorial character render with humane restraint",
+    "composition": "full-body four-to-five portrait, eye-level, stable grounded stance, open hands at working height, clean readable outline",
+    "lighting_mood": "soft warm key light balanced by very restrained cyan optics, attentive and trustworthy rather than theatrical",
+    "color_palette": "warm aged porcelain, obsidian, ink blue, muted brass, soft cyan, human-owned amber light",
+    "materials_textures": "matte porcelain with subtle wear, quiet black mechanics, soft functional textile, tactile paper and metal evidence objects",
+    "constraints": [
+      "preserve Lyra's segmented porcelain cranium and narrow black faceplate",
+      "preserve clearly non-human construction and adult human scale",
+      "use softer shoulder arcs and lower optical intensity",
+      "show listening and bounded handoff through posture rather than facial mimicry",
+      "keep the warm authority light associated with the human workspace",
+      "no generated text or logos"
+    ],
+    "avoid": [
+      "cute mascot proportions",
+      "human skin or human facial mimicry",
+      "pedestal statue composition",
+      "weapons or combat armor",
+      "royal divine or superhero symbolism",
+      "sentimental glowing-heart trope"
+    ],
+    "final_prompt": "Use case: identity-preserve. Asset type: 4:5 Starlight character direction preview. Image 1 is the owned Lyra edit target and identity reference. Preserve Lyra's segmented ivory porcelain cranium, narrow black faceplate, clearly non-human construction, adult human scale, obsidian mechanics, ink-blue accents, and calm competence. Evolve the character toward Warm Companion without making it cute or human: softer shoulder arcs, slightly more grounded proportions, low-intensity cyan optical apertures, open attentive hands at working height, and a listening posture before the next bounded handoff. Place Lyra in a quiet dark research room with tactile paper evidence and one warm human-owned work light outside the robot body. Show a small physical task packet between the hands, not floating UI. Matte aged porcelain with subtle wear, quiet black mechanics, soft functional textile, muted brushed brass. No text, no logos, no human skin, no human facial mimicry, no mascot proportions, no pedestal, no weapons, no combat armor, no crown, divine core, superhero stance, or glowing-heart trope."
+  },
+  "output": {
+    "status": "generated",
+    "path": "assets/starlight-constellation/v2-preview/research-team/candidates/lyra-warm-companion-v1.png",
+    "sha256": "226da7e761bf134ed70f91d922b7e9d01611b1d876bed8bc08acbe2833ede1cb",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "provider": "OpenAI",
+    "model_or_lane": "runtime-best-available",
+    "generation_receipt": "imagegen:019ffda3-8717-7e30-8957-4d6a7bd71085/exec-a0dc0553-6d47-4823-8186-78b7b7bacd5e.png; copied without transformation"
+  },
+  "qa": {
+    "inspected": true,
+    "score30": 25,
+    "decision": "iterate",
+    "strongest_element": "The quiet optics, open hands, tactile packet, and warm external lamp create the most approachable and trustworthy Lyra",
+    "weakest_element": "The crop and archive-room cues read more as a careful librarian than a conductor coordinating several research lanes",
+    "next_change": "Carry the listening posture and material warmth into a full-body relay composition with multiple bounded inputs and one routed output",
+    "human_decision": "pending"
+  },
+  "created_at": "2026-08-23"
+}

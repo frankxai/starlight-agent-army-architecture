@@ -1,0 +1,182 @@
+{
+  "schema_version": "starlight.character_style_study.v1",
+  "study_id": "lyra-style-language-study-2026-08-24",
+  "state": "founder_rejected_preserved_as_negative_evidence",
+  "claim_boundary": "Frank rejected this set on 2026-08-24. The ten outputs varied rendering media while over-locking the same tall humanoid morphology, so they did not answer the intended character-design question. They are retained only as negative evidence and are not approved for production, identity development, or audience testing.",
+  "founder_decision": {
+    "date": "2026-08-24",
+    "verdict": "reject_and_restart_at_morphology_layer",
+    "reason": "The previous face-architecture studies were materially stronger. Phase C repainted a single adult humanoid instead of testing full robots, compact short-legged forms, chibi companions, non-humanoid instruments, biotech embodiments, and swarm forms.",
+    "asset_policy": "Preserve files for provenance and learning; exclude them from production and future finalist sets."
+  },
+  "brand_operating_unit": "starlight-substrate",
+  "brand_territory": "civic-intelligence",
+  "surface": {
+    "primary": "Starlight .ai and .org agent profile portraits",
+    "secondary": "Academy story chapters, agent cards, documentation, and marketplace previews",
+    "master_aspect_ratio": "4:5 portrait",
+    "required_checks": [
+      "full-size portrait",
+      "96-pixel agent-card crop",
+      "1:1 profile crop",
+      "4:5 profile crop"
+    ]
+  },
+  "audience": {
+    "primary": [
+      "founders",
+      "product leads",
+      "developers",
+      "researchers",
+      "operators"
+    ],
+    "desired_response": "warm competence, authored intelligence, calm trust, and immediate specialty recognition",
+    "machine_facing_definition": "stable geometry, crop resilience, deterministic style metadata, and no implied runtime authority"
+  },
+  "asset": {
+    "tier": "B",
+    "source_method": "reference-guided generated media",
+    "tool_lane": "Codex built-in image_gen; runtime-best-available",
+    "provenance": "generated from an owned Starlight character reference",
+    "publication_status": "founder rejected; negative evidence only"
+  },
+  "base_reference": {
+    "path": "phase-b-eye-systems/b03-soft-square-apertures.png",
+    "role": "owned identity and geometry reference",
+    "rights_status": "owned",
+    "lock_level": "preserve silhouette, head panel structure, soft-square optics, adult proportions, collar, and calm role identity",
+    "sha256": "80e2bf6c20e8ed0db6b614277d6c8e38f4990cd57b2c123e9fd0103a7ac8f044"
+  },
+  "direction_board": {
+    "keep": [
+      "adult clearly non-human research conductor",
+      "rounded civic shell and soft-square optical apertures",
+      "calm task-attentive posture",
+      "tactile authored surface",
+      "strong 96-pixel silhouette"
+    ],
+    "avoid": [
+      "nocturnal command-center identity",
+      "generic black-and-cyan AI luxury",
+      "color-swapped template directions",
+      "wet human eyes, lips, simulated smile, or deceptive skin",
+      "cute mascot proportions",
+      "fake interface, labels, logos, glyphs, or decorative telemetry",
+      "living-artist imitation"
+    ],
+    "signature": "One accountable machine identity translated through materially authored civic and educational media.",
+    "system": [
+      "warm white, paper, stone, linen, deep navy or near-black ink",
+      "oxidized red or safety yellow only as intervention accents",
+      "clear institutional light rather than neon spectacle",
+      "sentence-case overlays, when later added, remain deterministic and outside generated pixels"
+    ]
+  },
+  "research_bounds": [
+    {
+      "source": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1149601/full",
+      "use": "Technical robot appearance can support perceived competence; anthropomorphism introduces a likeability-versus-competence tradeoff."
+    },
+    {
+      "source": "https://doi.org/10.1016/j.chb.2023.108008",
+      "use": "In task-focused settings, anthropomorphic appearance is not automatically more trusted than technical appearance."
+    },
+    {
+      "source": "brand-image-system/foundation-reset/2026-08-17/BRAND-TERRITORIES.md",
+      "use": "Starlight civic intelligence territory: institutional publishing, documentary proof, humane typography, rigorous diagrams, and calm accountability."
+    }
+  ],
+  "common_prompt": "Use case: style-transfer. Asset type: controlled Starlight agent-profile illustration study for Starlight .ai and .org, with later Academy and marketplace use. Image 1 is the owned Lyra identity and geometry reference, not a style or backdrop reference. Preserve the exact rounded adult head silhouette, ivory panel layout and seams, two soft-square mechanical optic apertures, obsidian neck structure, collar proportions, upper-torso identity, three-quarter orientation, and calm research-conductor presence. Reinterpret only the visual medium, mark-making, palette, illumination, surface texture, and presentation according to the named direction. First read: a credible, humane, clearly non-human research conductor. Use clear institutional or studio light and a quiet uncluttered field. Keep the head and upper torso dominant, with a strong silhouette readable at 96 pixels and safe 1:1 and 4:5 crops. Starlight behavior: civic intelligence, calm evidence, visible craft, warm white or paper, deep navy or near-black ink, with oxidized red or safety yellow only when the direction needs an intervention accent. No generated text, numbers, logo, glyph, diagram labels, fake UI, telemetry, node network, orbit, space backdrop, neon cyberpunk, black-glass command center, crown, halo, weapon, human skin, wet eyeballs, eyelashes, eyebrows, lips, smile simulation, cute mascot proportions, or imitation of a living artist. Output role: final candidate for a controlled style comparison, not an approved identity.",
+  "variants": [
+    {
+      "id": "c01-civic-editorial-gouache",
+      "label": "Civic editorial gouache",
+      "hypothesis": "Opaque hand-painted color can add warmth and institutional humanity without reducing competence.",
+      "prompt_delta": "Render as sophisticated editorial gouache on warm cotton paper: opaque matte brushwork, controlled dry-brush edges, deep navy and stone neutrals, one restrained oxidized-red intervention accent, generous unpainted paper, and a contemporary public-institution annual-report sensibility. Avoid whimsical children's-book softness.",
+      "output": "phase-c-style-languages/c01-civic-editorial-gouache.png"
+    },
+    {
+      "id": "c02-precision-pen-wash",
+      "label": "Precision pen and wash",
+      "hypothesis": "Human-authored technical linework can make reasoning and constructability visible while retaining tactile warmth.",
+      "prompt_delta": "Render as an exacting technical pen-and-wash portrait on cream archival stock: varied black ink line weights, restrained cross-contour and hatching, diluted slate-blue and warm-gray watercolor washes, visible but controlled hand pressure, and ample clean paper. No labels, arrows, dimensions, or blueprint grid.",
+      "output": "phase-c-style-languages/c02-precision-pen-wash.png"
+    },
+    {
+      "id": "c03-modernist-screenprint",
+      "label": "Modernist screenprint",
+      "hypothesis": "A disciplined four-ink graphic system can maximize recognition and portfolio scalability at small sizes.",
+      "prompt_delta": "Render as a museum-quality modernist screenprint using four flat spot inks: warm paper, deep navy, slate blue, and oxidized red. Use bold geometric shadow masses, crisp negative space, selective halftone, and an adult serious expression through posture rather than facial mimicry. No typography or poster slogans.",
+      "output": "phase-c-style-languages/c03-modernist-screenprint.png"
+    },
+    {
+      "id": "c04-risograph-research-portrait",
+      "label": "Risograph research portrait",
+      "hypothesis": "Tactile ink overlap and small registration imperfections can make the system feel approachable and culturally authored.",
+      "prompt_delta": "Render as a refined three-color risograph portrait on uncoated off-white paper, using deep navy, mineral blue, and muted coral inks. Include authentic dot texture, slight controlled misregistration, ink overlap, and simplified but accurate geometry. Keep it sober and research-led, not zine-chaotic or juvenile.",
+      "output": "phase-c-style-languages/c04-risograph-research-portrait.png"
+    },
+    {
+      "id": "c05-scientific-naturalist-plate",
+      "label": "Scientific naturalist plate",
+      "hypothesis": "An archival specimen language can position agents as inspectable subjects of study and suit the Academy and .org trust surfaces.",
+      "prompt_delta": "Render as a meticulous scientific naturalist plate of a mechanical specimen: graphite underdrawing, transparent watercolor glazing, precise porcelain craquelure and metal components, soft grounded cast shadow, ivory archival paper, and disciplined observational detail. No labels, callouts, decorative border, Latin text, or antiquarian fantasy.",
+      "output": "phase-c-style-languages/c05-scientific-naturalist-plate.png"
+    },
+    {
+      "id": "c06-architectural-cutaway-drawing",
+      "label": "Architectural cutaway drawing",
+      "hypothesis": "A restrained sectional portrait can directly communicate specialty, inspectability, and how the agent works.",
+      "prompt_delta": "Render as a rigorous architectural section and axonometric cutaway drawing of the same Lyra bust. Preserve the external silhouette while opening one clean sectional plane to reveal plausible relay, memory, and sensor modules as physical components. Use graphite, ink line hierarchy, pale mineral wash, and one safety-red intervention part on warm white. No labels, arrows, fake circuit mysticism, or exploded floating clutter.",
+      "output": "phase-c-style-languages/c06-architectural-cutaway-drawing.png"
+    },
+    {
+      "id": "c07-linocut-civic-poster",
+      "label": "Linocut civic portrait",
+      "hypothesis": "Bold carved marks can create an ownable democratic-institutional icon with excellent thumbnail recognition.",
+      "prompt_delta": "Render as a hand-carved linocut portrait printed on toothy warm paper: decisive deep-black and ivory shapes, expressive but disciplined carving marks, one small oxidized-red relief-ink accent, and a monumental calm silhouette. Preserve mechanical precision; avoid propaganda gestures, aggression, folklore ornament, or text.",
+      "output": "phase-c-style-languages/c07-linocut-civic-poster.png"
+    },
+    {
+      "id": "c08-animation-keyframe",
+      "label": "Hand-drawn animation keyframe",
+      "hypothesis": "A mature animation language can make Academy narratives emotionally accessible without turning agents into mascots.",
+      "prompt_delta": "Render as a premium hand-drawn animation keyframe with clean confident contour, restrained cel shading, subtle painted-paper background, sophisticated adult proportions, and quiet documentary lighting. Keep the optics abstract and mechanical. Avoid anime facial conventions, exaggerated emotion, glossy franchise rendering, action pose, or children's television styling.",
+      "output": "phase-c-style-languages/c08-animation-keyframe.png"
+    },
+    {
+      "id": "c09-paper-relief-collage",
+      "label": "Paper relief collage",
+      "hypothesis": "Layered tactile construction can express modular agent architecture and friendliness through real material rather than facial cuteness.",
+      "prompt_delta": "Rebuild the portrait as a precisely layered hand-cut paper relief and linen collage: warm cotton paper, charcoal fiber board, muted blue paper, one oxidized-red layer, fine deckled edges, calibrated physical depth, and soft daylight shadows. Preserve the exact silhouette and optic placement; avoid scrapbook decoration, stickers, text, or toy craft.",
+      "output": "phase-c-style-languages/c09-paper-relief-collage.png"
+    },
+    {
+      "id": "c10-stop-motion-maquette",
+      "label": "Stop-motion porcelain maquette",
+      "hypothesis": "A handcrafted physical miniature can create memorable warmth and believable material presence while staying explicitly non-human.",
+      "prompt_delta": "Interpret Lyra as a handcrafted stop-motion maquette made from matte ivory porcelain, blackened metal joints, linen-wrapped cable details, and inset soft-square glass optics. Photograph the miniature in clear daylight on a restrained institutional worktable with shallow optical depth and visible hand-finished texture. Adult proportions, no toy packaging, no cute pose, no glossy CGI, no dark sci-fi lab.",
+      "output": "phase-c-style-languages/c10-stop-motion-maquette.png"
+    }
+  ],
+  "evaluation": {
+    "human_dimensions": [
+      "warmth without cuteness",
+      "competence and calibrated trust",
+      "cultural and editorial sophistication",
+      "brand ownability without a logo",
+      "role clarity",
+      "fit across .ai, .org, and Academy"
+    ],
+    "system_dimensions": [
+      "96-pixel recognition",
+      "cross-agent scalability",
+      "identity consistency across generations",
+      "motion and state-extension potential",
+      "accessible alt-text distinctiveness",
+      "production cost and maintainability"
+    ],
+    "human_approval_required": true,
+    "empirical_validation_status": "not_run"
+  }
+}

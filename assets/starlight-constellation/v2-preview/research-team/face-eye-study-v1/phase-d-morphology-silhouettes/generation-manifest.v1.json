@@ -1,0 +1,194 @@
+{
+  "schema_version": "starlight.robot_morphology_generation.v1",
+  "study_id": "starlight-morphology-silhouettes-2026-08-24",
+  "state": "all_boards_generated_awaiting_founder_selection",
+  "asset_tier": "B",
+  "tool_mode": "Codex built-in image_gen; one call per distinct board",
+  "intent": "Generate morphology-first character-development sheets before face, material, color, or cinematic rendering decisions.",
+  "scope": {
+    "boards": 14,
+    "variants_per_board_target": 4,
+    "minimum_distinct_silhouettes": 56,
+    "generated_boards": 14,
+    "remaining_boards": 0
+  },
+  "common_prompt": "Use case: stylized-concept. Asset type: Starlight Intelligence robot morphology exploration sheet, pre-production silhouette gate. Create four genuinely different original robot character silhouettes for the named form family. Each candidate must have a different body architecture and locomotion or support idea while belonging to one coherent Starlight universe. Present four separate full-body candidates on a clean warm-white industrial-design sheet, arranged left to right with generous separation, consistent scale, and no cropping. Use premium feature-animation and AAA game character-development principles without imitating any franchise: immediate thumbnail silhouette, role-led function, one dominant shape, one supporting shape, one surprising functional detail. Render flat black and charcoal cut-paper silhouettes with only subtle mid-gray overlap planes. Preserve a softened rounded-square Starlight motif somewhere in each form. No eyes, face, mouth, text, labels, numbers, logos, weapons, capes, halos, decorative circuitry, glow, background scene, copied character silhouette, generic sci-fi armor, superhero stance, or ornamental AI nodes.",
+  "quality_gates": [
+    "four complete and separated silhouettes",
+    "materially different body architectures",
+    "role readable at 96 pixels without color",
+    "no franchise resemblance",
+    "no face or eye design yet",
+    "no decorative rendering used to hide weak form",
+    "founder selection before turnaround or polish"
+  ],
+  "boards": [
+    {
+      "id": "m01-full-specialist",
+      "status": "generated_draft_restart_required",
+      "output": "m01-full-specialist-board-v1.png",
+      "prompt_delta": "Full specialist, 6.5 to 7 heads tall, adult machine proportions. Explore a civic instrument, lantern scholar, folded architectural shell, and asymmetric analytical chassis. Calm neutral stance, restrained hands, visible but understated role utility. Avoid fashion-model anatomy, military armor, and heroic power poses.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-da3d8c4c-9137-4b56-a277-ea4037baa852.png",
+      "dimensions": "1536x1024",
+      "bytes": 1701226,
+      "sha256": "dece2f72500368d3ee3812ce0d7407b6062b3726084915410c6fc07bfb28c972",
+      "inspection": "Strong structural range and construction quality. Iterate because the lantern is too literal and two bodies drift toward fashion-model proportions."
+    },
+    {
+      "id": "m02-compact-field-specialist",
+      "status": "generated_draft_iterate",
+      "output": "m02-compact-field-specialist-board-v1.png",
+      "prompt_delta": "Compact field specialist, 4 to 4.75 heads tall, short stable legs, broad expressive feet, compact torso with a functional tool bay, useful articulated hands. Explore rounded trapezoid torso, low cylindrical torso, folded ceramic shell, and modular pack-and-tool chassis. Capable adult machines, never children or toys.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-d036afd9-bed1-4a4c-99e4-0a2efdd72873.png",
+      "dimensions": "1536x1024",
+      "bytes": 1286725,
+      "sha256": "76de71f514ef634326233b93dea68b4df3ff28109c9ecf54f76ea0d6b5324a2f",
+      "inspection": "Pass for meaningful chassis diversity; iterate because internal component detail exceeds the silhouette-only constraint."
+    },
+    {
+      "id": "m03-chibi-academy-guide",
+      "status": "generated_draft_iterate",
+      "output": "m03-chibi-academy-guide-board-v1.png",
+      "prompt_delta": "Chibi Academy guide, 2.6 to 3.2 heads tall, very short legs, large rounded-square head volume, oversized functional hands, simple stable feet, and reduced seams. Explore book-carrying tutor, workshop guide, observatory guide, and values steward. Warm through proportion and gesture, not smiles. Avoid baby onesies, plush-toy anatomy, and resemblance to Astro Bot, WALL-E, or Baymax.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-1978aead-77cf-465c-bb5f-bcfaf9255460.png",
+      "dimensions": "1536x1024",
+      "bytes": 1607637,
+      "sha256": "06872d3206c805a9d6e58dfcce08d6030f43a5dfd4ad7e8e6a12da1ab15d952d",
+      "inspection": "Pass for four materially different Academy roles and a clear increase in construction quality. Iterate because the observatory guide exceeds the requested chibi ratio and circular sensor apertures dominate three candidates."
+    },
+    {
+      "id": "m04-micro-avatar",
+      "status": "generated_direction_keep_pending_founder_review",
+      "output": "m04-micro-avatar-board-v1.png",
+      "prompt_delta": "Micro-avatar family for 32 to 96 pixel UI use. Create four head, bust, or emblem architectures built from only two or three dominant shapes: soft-square aperture, lantern housing, folded plane, and screenless witness form. Treat each as a physical icon silhouette, not a logo sheet. No full bodies and no tiny interior detail.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-1190b1e1-15cd-4d9e-9a27-84a56ba5e9ae.png",
+      "dimensions": "1536x1024",
+      "bytes": 1496278,
+      "sha256": "a7b882a2b32f778b1d301826277e86e3a86277fb65490bb25f8bad049b4b264c",
+      "inspection": "Strong pass: four distinct low-detail contours with explicit thumbnail proof. Best current family for graph nodes, dense lists, and runtime UI."
+    },
+    {
+      "id": "m05-guardian-operator",
+      "status": "generated_draft_iterate",
+      "output": "m05-guardian-operator-board-v1.png",
+      "prompt_delta": "Guardian operator with broad low center of gravity, protective torso, small calm sensor head, planted stance, and visible shielding, audit, or containment function. Explore seated sentinel, arch-backed custodian, low quadruped guardian, and compact bipedal steward. Protective rather than intimidating. No weapons, riot-police language, spikes, or angry eye geometry.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-b9e7f4a7-38b3-4de8-8e41-1e0ce9151d16.png",
+      "dimensions": "1536x1024",
+      "bytes": 1520048,
+      "sha256": "dfa6006ded84891b0a768379d41ce60f9516b5208809cdb49ab790c5c25bced0",
+      "inspection": "Strong pass for calm protection, visibly different support systems, and non-militarized posture. Candidate two best expresses inspectable evidence storage."
+    },
+    {
+      "id": "m06-agile-scout",
+      "status": "generated_draft_restart_required",
+      "output": "m06-agile-scout-board-v1.png",
+      "prompt_delta": "Agile research and discovery scout. Explore light asymmetric biped, compact digitigrade courier, three-point rolling walker, and folding directional sensor chassis. Long spring geometry or visibly purposeful mobility, minimal cargo, and clear orientation toward a task. Avoid predatory insects, combat drones, random antenna forests, and speed-line clichés.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-92b91911-a354-4d07-92fc-8ff0d40270f2.png",
+      "dimensions": "1536x1024",
+      "bytes": 1571621,
+      "sha256": "856567ed136d9f9591c76cb26fcdacfcd8ba932732c631c7d9625f3fa33f19f0",
+      "inspection": "Pass for locomotion diversity and task orientation. Iterate because camera-like optics dominate the family and several forms resemble familiar inspection robots."
+    },
+    {
+      "id": "m07-biotech-symbiote",
+      "status": "generated_draft_iterate",
+      "output": "m07-biotech-symbiote-board-v1.png",
+      "prompt_delta": "Clean biotech symbiote inspired by soft robotics and plant, manta, coral, and cephalopod engineering principles. Explore flexible standing membrane, low manta-like lab companion, branching photosensitive synthesist, and modular coral-like walker. Dry engineered surfaces, graceful load paths, distributed sensing. Avoid flesh, organs, veins, human anatomy, parasites, wet horror, and medical-device mimicry.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-97920ca7-061b-4ebb-8a84-911d990f690f.png",
+      "dimensions": "1536x1024",
+      "bytes": 1686896,
+      "sha256": "f167280fa4445d11bcd39361d8538e4d87280151ec4cfbcfe53238c182950ac8",
+      "inspection": "Strong pass for genuinely non-humanoid range, credible support logic, dry biotech materials, and distinctive silhouettes. Candidate three is tree-like and should be tested against generic biomimetic sculpture risk."
+    },
+    {
+      "id": "m08-swarm-gestalt",
+      "status": "generated_draft_restart_required",
+      "output": "m08-swarm-gestalt-board-v1.png",
+      "prompt_delta": "Swarm gestalt made from five to twelve small functional units. Explore docking tiles forming a temporary helper, relay walkers forming a bridge, seed-like research units creating a collective frame, and carrying units assembling a mobile archive. Each formation must have readable individual units and a clear collective task. Avoid particle clouds, orbital-node diagrams, anonymous dots, magical mist, and a single ungoverned hive-mind impression.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-454c1c45-8699-4efb-9960-5402378c8199.png",
+      "dimensions": "1536x1024",
+      "bytes": 1487665,
+      "sha256": "7e50ce0acba05c4214464d131e8ca65d76969299d9f378d9b8efbed0188e6539",
+      "inspection": "Restart required: candidates lack sufficient unit and formation diversity, and the third composition reintroduces the prohibited central-node trope. Preserve only as negative evidence."
+    },
+    {
+      "id": "m09-nonhumanoid-instrument",
+      "status": "generated_draft_iterate",
+      "output": "m09-nonhumanoid-instrument-board-v1.png",
+      "prompt_delta": "Non-humanoid role instrument. Explore an archive lantern on a mobile base, a folding verification press, a walking map table, and a compact mobile lens-and-sample laboratory. Function should create character without a face. Avoid generic glowing orbs, random control panels, fake text, and concealed humanoid bodies.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-63213844-a9b5-4190-9f60-fc7b8ff191a7.png",
+      "dimensions": "1536x1024",
+      "bytes": 2174718,
+      "sha256": "bebc59b6553a2f592dc89e7654d5cfd24468f3fd0fca2483100965b31f2a5af1",
+      "inspection": "Strong pass for function-led non-humanoid character and useful turnaround cues. Generated paper markings are illustrative noise and cannot be used as public text."
+    },
+    {
+      "id": "m10-creature-companion",
+      "status": "generated_draft_restart_required",
+      "output": "m10-creature-companion-board-v1.png",
+      "prompt_delta": "Original creature companion robots derived from function rather than literal animals. Explore a low quadruped field helper, a book-carrying bird-like guide, a seedling-legged reminder companion, and an aquatic-inspired hovering scout. Mechanical and ownable, with clear carrying or sensing utility. Avoid recognizable pet-robot products, Star Wars droids, cartoon animal faces, or franchise silhouettes.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-340fee1a-17d7-4a78-9e99-1f1d2533bedd.png",
+      "dimensions": "1536x1024",
+      "bytes": 1561473,
+      "sha256": "d1d1b64654e9bf5a0c8dfa7ff9f8089d75acb0b4bf4f989d9909900ff25f1ea3",
+      "inspection": "Pass for four functional companion roles and silhouettes. Iterate because the reminder note contains fake generated text and the hovering scout needs clearer lift logic."
+    },
+    {
+      "id": "m11-soft-shell-care-collaborator",
+      "status": "generated_draft_restart_required",
+      "output": "m11-soft-shell-care-collaborator-board-v1.png",
+      "prompt_delta": "Soft-shell care collaborator using textile, inflated lattice, silicone bumper, and compliant robotics principles. Explore seated listening form, mobile supportive workstation, soft-armed carrying assistant, and cocoon-like recovery guide. Safe contact and calm presence without pretending to be human. Avoid Baymax resemblance, inflatable mascot shapes, hospital branding, or sentimental smiles.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-9769dfe3-6a79-4d57-958f-d6452eba25ad.png",
+      "dimensions": "1536x1024",
+      "bytes": 1752914,
+      "sha256": "76500ab32ceed03a46fa6664b32294d14e59f5fb5fd3e2e7ed72e91b47410d6f",
+      "inspection": "Good soft-material and safe-contact exploration. Iterate because three candidates read as care furniture or medical mobility products more than autonomous collaborators."
+    },
+    {
+      "id": "m12-modular-transforming-fabricator",
+      "status": "generated_draft_iterate",
+      "output": "m12-modular-transforming-fabricator-board-v1.png",
+      "prompt_delta": "Modular transforming fabricator whose body reconfigures visibly around real tasks. Explore folding bench-to-biped, tool-cart-to-helper, stacked modules forming a tall reach mode, and compact carrier unfolding into a fabrication frame. Show plausible joints and mass distribution in a single neutral configuration per candidate. Avoid magical shape-shifting, Transformers resemblance, weapons, and impossible floating parts.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-3e313a23-b595-443d-9490-62ec200c7151.png",
+      "dimensions": "1536x1024",
+      "bytes": 1782034,
+      "sha256": "602b0600b677ca7c99a4b87dde7452b0fb974cd235e497e1e8acd34269987afd",
+      "inspection": "Pass for repairable module logic and readable alternate-mode insets. The first candidate is the clearest transformation; the others need a second mechanics pass."
+    },
+    {
+      "id": "m13-aerial-knowledge-navigator",
+      "status": "generated_draft_restart_required",
+      "output": "m13-aerial-knowledge-navigator-board-v1.png",
+      "prompt_delta": "Aerial knowledge navigator for mapping, retrieval, and observatory work. Explore quiet ducted-lift ring, manta-wing glider, suspended archive spindle, and folding fan-like surveyor. Give every form credible lift or suspension logic and a calm non-military silhouette. Avoid quadcopter cliché, combat drone language, angel wings, halos, and impossible levitation without visible support logic.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-336d4d79-d4ae-42cd-9d22-9278bbd6cecb.png",
+      "dimensions": "1536x1024",
+      "bytes": 1630047,
+      "sha256": "556928ca0b6d3af76a277afabe4fc2c1ab706bcd6e1215ee57a855ad34b79fb5",
+      "inspection": "Pass for four distinct aerial architectures. Iterate because candidate three uses a familiar twin-duct drone arrangement despite the explicit anti-cliché constraint."
+    },
+    {
+      "id": "m14-architectural-room-intelligence",
+      "status": "generated_direction_keep_pending_founder_review",
+      "output": "m14-architectural-room-intelligence-board-v1.png",
+      "prompt_delta": "Room-scale or architectural intelligence embodied as an environment rather than a person. Explore a mobile collaborative alcove, an archive doorway, a circular learning table that reorients to participants, and a modular wall-and-seat research station. Each must read as one agent with boundaries and human-accessible interaction points. Avoid generic sci-fi rooms, command centers, screens everywhere, temples, thrones, and surveillance architecture.",
+      "source": "C:/Users/frank/.codex/generated_images/019ffda3-8717-7e30-8957-4d6a7bd71085/exec-0586762b-f422-4c5e-bcbf-35df96b10d89.png",
+      "dimensions": "1536x1024",
+      "bytes": 1717839,
+      "sha256": "547cb8f6a79e356ed6d5f1de5956c946638486710aa10b9d9ea71b878f6e5fe2",
+      "inspection": "Strong pass for bounded spatial agency, human scale, and transformation diagrams. Best current proof that an agent need not be a body or face."
+    }
+  ],
+  "pause_receipt": {
+    "date": "2026-08-24",
+    "browser_qa_preflight": "HOLD: 5322 MB free RAM versus 8192 MB required; 16 task runtimes versus budget 8",
+    "review_lite_preflight": "HOLD: 4307 MB free RAM versus 6144 MB required; 17 task runtimes versus budget 12",
+    "action": "Stopped after the current image generation, preserved the artifact, and queued all remaining boards."
+  },
+  "resume_receipt": {
+    "date": "2026-08-28",
+    "swarm_preflight": "ALLOW: 10823 MB free RAM, CPU 31%, 2 active task runtimes, maximum 2 parallel processes, 90 minute timeout.",
+    "founder_instruction": "Create them all and more.",
+    "method_change": "Use the founder-provided elegant humanoid only as a construction-quality benchmark; produce two-tone grayscale concept maquettes instead of repeating the rejected Phase C rendering-media experiment.",
+    "action": "Resumed single-threaded generation with the highest-contrast M03 and M07 boards; both remain unapproved exploration candidates."
+  }
+}

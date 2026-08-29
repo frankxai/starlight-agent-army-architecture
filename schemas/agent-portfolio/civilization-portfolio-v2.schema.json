@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlightintelligence.ai/schemas/civilization-portfolio.v2.json",
+  "title": "Starlight Civilization portfolio v2",
+  "type": "object",
+  "required": ["schema_version", "portfolio_id", "portfolio_version", "status", "authority_model", "promotion_policy", "source", "identity_contract", "counts", "skill_registry", "shared_workflows", "rings"],
+  "properties": {
+    "schema_version": { "const": "starlight.civilization_portfolio.v2" },
+    "portfolio_id": { "const": "starlight-intelligence-civilization" },
+    "status": { "const": "architecture_projection" },
+    "authority_model": {
+      "type": "object",
+      "required": ["grants_runtime_authority", "contains_private_memory", "live_eval_status", "promotion_status", "expansion_execution_mode", "expansion_tool_binding"],
+      "properties": {
+        "grants_runtime_authority": { "const": false },
+        "contains_private_memory": { "const": false },
+        "live_eval_status": { "const": "not_run" },
+        "promotion_status": { "type": "string", "pattern": "^blocked_" },
+        "expansion_execution_mode": { "const": "draft_recommend_only" },
+        "expansion_tool_binding": { "const": "none" }
+      }
+    },
+    "promotion_policy": { "type": "object" },
+    "source": { "type": "object" },
+    "identity_contract": {
+      "type": "object",
+      "required": ["canonical_key", "url_key", "lineage_key", "identity_lock_path", "identity_lock_digest", "presentation_only", "founding_ids_preserved", "seat_is_identity"],
+      "properties": {
+        "canonical_key": { "const": "agent_id" },
+        "url_key": { "const": "profile_slug" },
+        "lineage_key": { "const": "source_identifier" },
+        "identity_lock_digest": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+        "founding_ids_preserved": { "const": true },
+        "seat_is_identity": { "const": false }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": ["rings", "agents", "founding_profiles", "expansion_profiles", "shared_workflows"],
+      "properties": {
+        "rings": { "const": 12 },
+        "agents": { "const": 144 },
+        "founding_profiles": { "const": 50 },
+        "expansion_profiles": { "const": 94 },
+        "shared_workflows": { "const": 8 }
+      }
+    },
+    "skill_registry": { "type": "array", "minItems": 1 },
+    "shared_workflows": { "type": "array", "minItems": 8, "maxItems": 8, "items": { "$ref": "#/$defs/workflow" } },
+    "rings": { "type": "array", "minItems": 12, "maxItems": 12, "items": { "$ref": "#/$defs/ring" } }
+  },
+  "$defs": {
+    "ring": {
+      "type": "object",
+      "required": ["id", "number", "name", "grouping_status", "agents"],
+      "properties": {
+        "grouping_status": { "const": "editorial_projection" },
+        "agents": { "type": "array", "minItems": 12, "maxItems": 12, "items": { "$ref": "#/$defs/agent" } }
+      }
+    },
+    "agent": {
+      "type": "object",
+      "required": ["agent_id", "profile_slug", "display_name", "portfolio_cohort", "profile_status", "promotion_history", "purpose", "outcomes", "public_profile", "voice", "personality", "work_mode", "method", "working_behaviors", "skill_refs", "capabilities", "non_capabilities", "stop_conditions", "escalation_conditions", "execution", "lineage", "seat_projection", "visual", "eval_cases", "graph"],
+      "properties": {
+        "agent_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "profile_slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "portfolio_cohort": { "enum": ["founding-50", "expansion-94"] },
+        "profile_status": { "enum": ["blueprint_draft", "founding_rich_draft", "enriched_draft", "review_ready", "preview_approved", "production_approved"] },
+        "promotion_history": { "type": "array" },
+        "execution": {
+          "type": "object",
+          "required": ["execution_mode", "tool_binding", "required_human_gate", "grants_authority", "external_effects"],
+          "properties": { "grants_authority": { "const": false } }
+        },
+        "lineage": {
+          "type": "object",
+          "required": ["source_identifier", "source_domain", "source_responsibility", "responsibility_is_capability_claim", "mapping_status", "identity_lock_ref"],
+          "properties": { "responsibility_is_capability_claim": { "const": false } }
+        },
+        "seat_projection": {
+          "type": "object",
+          "required": ["seat", "ring_id", "ring_name", "presentation_only"],
+          "properties": { "presentation_only": { "const": true } }
+        },
+        "graph": {
+          "type": "object",
+          "required": ["relationship_status", "depends_on", "routes_to", "workflow_ids"],
+          "properties": {
+            "depends_on": { "type": "array", "items": { "type": "string" } },
+            "routes_to": { "type": "array", "items": { "type": "string" } },
+            "workflow_ids": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "portfolio_cohort": { "const": "expansion-94" } } },
+          "then": {
+            "properties": {
+              "profile_status": { "const": "blueprint_draft" },
+              "execution": {
+                "properties": {
+                  "execution_mode": { "const": "draft_recommend_only" },
+                  "tool_binding": { "const": "none" },
+                  "required_human_gate": { "const": "human-gate-expansion-draft" },
+                  "external_effects": { "const": "prohibited" }
+                }
+              },
+              "graph": {
+                "properties": {
+                  "relationship_status": { "const": "unresolved_pending_explicit_review" },
+                  "depends_on": { "maxItems": 0 },
+                  "routes_to": { "maxItems": 0 }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "workflow": {
+      "type": "object",
+      "required": ["id", "name", "pattern", "status", "entry_criteria", "steps", "topology", "brakes", "failure_path", "exit_proof", "writeback"],
+      "properties": {
+        "pattern": { "enum": ["router", "diamond", "converge", "loop", "chain"] },
+        "status": { "const": "architecture_projection" },
+        "steps": { "type": "array", "minItems": 4 },
+        "topology": { "type": "object" },
+        "brakes": {
+          "type": "object",
+          "required": ["limits", "triggers", "on_trigger"],
+          "properties": {
+            "limits": {
+              "type": "object",
+              "required": ["max_turns", "max_cost_usd", "max_empty_rounds", "max_silence_seconds"]
+            }
+          }
+        },
+        "failure_path": { "type": "object" }
+      }
+    }
+  }
+}
