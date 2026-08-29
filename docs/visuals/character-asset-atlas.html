@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starlight character asset atlas</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #0b0d10;
+      --panel: #12161a;
+      --panel-soft: #171c21;
+      --line: rgba(234, 226, 211, 0.16);
+      --line-strong: rgba(234, 226, 211, 0.3);
+      --paper: #eae2d3;
+      --muted: #a9a49b;
+      --amber: #d8b36a;
+      --cyan: #67c8d2;
+      --sage: #95aa8d;
+      --coral: #d07b69;
+      --violet: #9a86cf;
+      --danger: #c46961;
+      --radius: 5px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 15% -5%, rgba(216, 179, 106, 0.09), transparent 27rem),
+        radial-gradient(circle at 90% 8%, rgba(103, 200, 210, 0.07), transparent 24rem),
+        var(--ink);
+      color: var(--paper);
+      font-family: "Segoe UI Variable Text", "Aptos", sans-serif;
+      line-height: 1.55;
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      content: "";
+      opacity: 0.11;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.34'/%3E%3C/svg%3E");
+    }
+
+    a { color: inherit; }
+
+    button, summary { font: inherit; }
+
+    .shell {
+      width: min(1480px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .masthead {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+      gap: 48px;
+      padding: 68px 0 42px;
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .eyebrow, .edition-number, .micro-label {
+      color: var(--amber);
+      font-family: "Bahnschrift", "Segoe UI Variable Text", sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.07em;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1, h2 {
+      font-family: "Georgia Pro", Georgia, serif;
+      font-weight: 400;
+      letter-spacing: -0.035em;
+    }
+
+    h1 {
+      max-width: 940px;
+      margin-bottom: 22px;
+      font-size: clamp(3rem, 7vw, 7.4rem);
+      line-height: 0.91;
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: clamp(2.2rem, 4.5vw, 4.8rem);
+      line-height: 0.96;
+    }
+
+    .lede {
+      max-width: 820px;
+      color: #cac3b7;
+      font-size: clamp(1.05rem, 1.5vw, 1.34rem);
+    }
+
+    .status-panel {
+      align-self: end;
+      padding: 18px 0 0 24px;
+      border-left: 1px solid var(--line-strong);
+    }
+
+    .status-panel strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--paper);
+      font-size: 1.05rem;
+    }
+
+    .status-panel p { color: var(--muted); }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .stats li {
+      min-height: 120px;
+      padding: 22px 18px;
+      border-right: 1px solid var(--line);
+    }
+
+    .stats li:last-child { border-right: 0; }
+
+    .stats strong {
+      display: block;
+      margin-bottom: 3px;
+      font-family: "Georgia Pro", Georgia, serif;
+      font-size: 2.15rem;
+      font-weight: 400;
+    }
+
+    .stats span { color: var(--muted); }
+
+    .section {
+      padding: 72px 0;
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(220px, 0.45fr) minmax(0, 1fr);
+      gap: 34px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    .section-head p {
+      max-width: 760px;
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .edition-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 12px;
+    }
+
+    .edition-card {
+      grid-column: span 4;
+      overflow: hidden;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .edition-card.wide { grid-column: span 6; }
+
+    .edition-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      border-bottom: 1px solid var(--line);
+      background: #090b0d;
+    }
+
+    .edition-card.portrait img {
+      aspect-ratio: 4 / 5;
+      object-position: center top;
+    }
+
+    .edition-copy { padding: 20px; }
+
+    .edition-copy h3 {
+      margin-bottom: 7px;
+      font-family: "Bahnschrift", "Segoe UI Variable Text", sans-serif;
+      font-size: 1.16rem;
+      font-weight: 500;
+    }
+
+    .edition-copy p { color: var(--muted); }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 13px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 25px;
+      padding: 3px 8px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      color: #c9c2b7;
+      font-size: 0.77rem;
+    }
+
+    .badge.keep { border-color: rgba(149, 170, 141, 0.7); color: #bed0b7; }
+    .badge.research { border-color: rgba(154, 134, 207, 0.65); color: #c5b7e7; }
+    .badge.reject { border-color: rgba(196, 105, 97, 0.72); color: #e5a49e; }
+    .badge.evolve { border-color: rgba(216, 179, 106, 0.68); color: #e6c886; }
+
+    .text-link {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      color: var(--paper);
+      text-underline-offset: 4px;
+    }
+
+    .decision-table {
+      display: grid;
+      border-top: 1px solid var(--line-strong);
+    }
+
+    .decision-row {
+      display: grid;
+      grid-template-columns: 170px 1fr 1.2fr 1.35fr;
+      gap: 18px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .decision-row strong { font-weight: 550; }
+    .decision-row span, .decision-row p { margin: 0; color: var(--muted); }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 24px;
+    }
+
+    .filter {
+      padding: 8px 12px;
+      color: var(--muted);
+      cursor: pointer;
+      background: transparent;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+    }
+
+    .filter:hover, .filter[aria-pressed="true"] {
+      color: var(--ink);
+      background: var(--paper);
+      border-color: var(--paper);
+    }
+
+    .cast-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .agent-card {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .agent-card[hidden] { display: none; }
+
+    .agent-card figure {
+      position: relative;
+      margin: 0;
+      overflow: hidden;
+      background: #07090a;
+    }
+
+    .agent-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 420ms ease;
+    }
+
+    .agent-card:hover img { transform: scale(1.018); }
+
+    .edition-stamp {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      padding: 5px 8px;
+      color: #f2ede4;
+      font-size: 0.74rem;
+      background: rgba(7, 9, 10, 0.82);
+      border: 1px solid rgba(242, 237, 228, 0.25);
+      backdrop-filter: blur(8px);
+    }
+
+    .agent-copy { padding: 17px; }
+
+    .agent-copy h3 {
+      margin-bottom: 4px;
+      font-family: "Georgia Pro", Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+    }
+
+    .agent-copy > p { margin-bottom: 13px; color: var(--muted); font-size: 0.91rem; }
+
+    .target {
+      display: grid;
+      gap: 5px;
+      margin: 0 0 14px;
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .target span { color: var(--muted); font-size: 0.82rem; }
+
+    details {
+      padding: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    details:first-of-type { border-top: 0; }
+
+    summary {
+      padding: 11px 0;
+      color: #d2cbc0;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::after { float: right; content: "+"; color: var(--amber); }
+    details[open] summary::after { content: "−"; }
+
+    .prompt {
+      margin: 0 0 12px;
+      padding: 12px;
+      overflow-wrap: anywhere;
+      color: #bbb4a9;
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 0.77rem;
+      line-height: 1.55;
+      background: #0b0e11;
+      border-left: 2px solid var(--amber);
+    }
+
+    .prompt-note { color: var(--muted); font-size: 0.79rem; }
+
+    .prompt-index {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .prompt-source {
+      padding: 22px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .prompt-source h3 { margin-bottom: 7px; font-size: 1rem; font-weight: 550; }
+    .prompt-source p { color: var(--muted); }
+
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+      padding: 36px 0 60px;
+      color: var(--muted);
+    }
+
+    .footer strong { color: var(--paper); }
+
+    @media (max-width: 1100px) {
+      .cast-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .decision-row { grid-template-columns: 130px 1fr 1fr; }
+      .decision-row p:last-child { grid-column: 2 / -1; }
+    }
+
+    @media (max-width: 820px) {
+      .masthead, .section-head { grid-template-columns: 1fr; }
+      .status-panel { padding-left: 0; border-left: 0; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .stats li { border-bottom: 1px solid var(--line); }
+      .edition-card, .edition-card.wide { grid-column: span 6; }
+      .cast-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .prompt-index { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .shell { width: min(100% - 22px, 1480px); }
+      .masthead { padding-top: 42px; }
+      .stats { grid-template-columns: 1fr; }
+      .edition-card, .edition-card.wide { grid-column: 1 / -1; }
+      .cast-grid { grid-template-columns: 1fr; }
+      .decision-row { grid-template-columns: 1fr; gap: 6px; }
+      .decision-row p:last-child { grid-column: auto; }
+      .footer { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .agent-card img { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell masthead">
+    <div>
+      <p class="eyebrow">Starlight Intelligence · Character studio</p>
+      <h1>What exists. What evolves. What ships where.</h1>
+      <p class="lede">A visual atlas of the five character editions, the current signature cast, their prompt lineage, target embodiments, and the surfaces where each asset may—or may not—appear.</p>
+    </div>
+    <aside class="status-panel">
+      <strong>Human review state</strong>
+      <p>No v2 research image is approved as new canon. The fifty v1 portraits remain continuity assets. The v3 cast assignments are proposed art direction.</p>
+      <span class="badge evolve">Machine generation held</span>
+    </aside>
+  </header>
+
+  <main class="shell">
+    <ul class="stats" aria-label="Asset system summary">
+      <li><strong>50</strong><span>v1 continuity portraits</span></li>
+      <li><strong>14</strong><span>morphology families</span></li>
+      <li><strong>50</strong><span>Phase E–I studies</span></li>
+      <li><strong>12</strong><span>proposed signature cast</span></li>
+      <li><strong>156</strong><span>future generated masters</span></li>
+    </ul>
+
+    <section class="section" id="editions">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Edition map</p>
+          <h2>Five different things—not one mixed gallery.</h2>
+        </div>
+        <p>The editions answer different questions. E1 is our current emotional continuity. E2 studies bodies. E3 studies media, faces, stewards, and story. E4 records the failed next pass. E5 is the governed target system.</p>
+      </div>
+
+      <div class="edition-grid">
+        <article class="edition-card portrait">
+          <img src="../../assets/starlight-constellation/v1/agents/sovereign-command/astra-sovereign.webp" alt="Astra founding v1 portrait">
+          <div class="edition-copy">
+            <span class="edition-number">Edition 1 · Founding continuity</span>
+            <h3>Fifty finished v1 portraits</h3>
+            <div class="badge-row"><span class="badge keep">Keep now</span><span class="badge">Cinematic and profiles</span></div>
+            <p>Premium and emotionally coherent, but too dependent on humanoid tailoring, halos, pedestals, and repeated ceremonial grammar.</p>
+            <a class="text-link" href="../../assets/starlight-constellation/v1/visual-provenance.manifest.json">Open exact v1 prompt specifications ↗</a>
+          </div>
+        </article>
+
+        <article class="edition-card wide">
+          <img src="../../assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-d-morphology-silhouettes/m14-architectural-room-intelligence-board-v1.png" alt="Architectural intelligence morphology board">
+          <div class="edition-copy">
+            <span class="edition-number">Edition 2 · Morphology studio</span>
+            <h3>Fourteen role-shaped body families</h3>
+            <div class="badge-row"><span class="badge evolve">Evolve</span><span class="badge">Research lab only</span></div>
+            <p>M04 micro identity and M14 room intelligence are strongest. M02, M05, M07, M09, and M12 remain iterate directions. These are sketches, not character masters.</p>
+            <a class="text-link" href="../../assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-d-morphology-silhouettes/morphology-selection.v1.json">Open morphology scores and choices ↗</a>
+          </div>
+        </article>
+
+        <article class="edition-card wide">
+          <img src="../../assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-i-agent-lifecycle-v1/i04-first-supervised-mission-v1.png" alt="First supervised mission research scene">
+          <div class="edition-copy">
+            <span class="edition-number">Edition 3 · Visual and story laboratory</span>
+            <h3>Fifty Phase E–I studies</h3>
+            <div class="badge-row"><span class="badge research">Noindex research</span><span class="badge">Zero approvals</span></div>
+            <p>Useful face, media, steward, workflow, and lifecycle hypotheses. I04 is the best workflow composition seed, but its UI and labels must be rebuilt as code.</p>
+            <a class="text-link" href="../../assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-e-i-independent-critique.md">Open independent critique ↗</a>
+          </div>
+        </article>
+
+        <article class="edition-card portrait">
+          <img src="../../assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/candidates/lyra-civic-editorial-identity-v1.png" alt="Rejected Lyra civic editorial identity pilot">
+          <div class="edition-copy">
+            <span class="edition-number">Edition 4 · Failed next pass</span>
+            <h3>Lyra civic editorial pilot</h3>
+            <div class="badge-row"><span class="badge reject">21/30 · Restart</span><span class="badge">Negative evidence</span></div>
+            <p>Good tactile craft and human handoff. Weak identity lock, missing three-to-one routing function, and generic premium humanoid styling.</p>
+            <a class="text-link" href="../../assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/prompts/lyra-civic-editorial-identity-v1.json">Open exact prompt and receipt ↗</a>
+          </div>
+        </article>
+
+        <article class="edition-card wide">
+          <img src="../../assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-a-contact-sheet.png" alt="Starlight Phase A face and form comparison sheet">
+          <div class="edition-copy">
+            <span class="edition-number">Edition 5 · Governed target</span>
+            <h3>Twelve signatures, thirty-eight specialists, ninety-four vector-first drafts</h3>
+            <div class="badge-row"><span class="badge evolve">Proposed system</span><span class="badge">Human selection pending</span></div>
+            <p>Keep the v1 emotional lineage, then differentiate by role-shaped silhouette, instrument, behavior, scale, and surface. Generate only after one identity grammar passes.</p>
+            <a class="text-link" href="character-asset-atlas.html#signature-cast">Review the proposed signature cast ↓</a>
+          </div>
+        </article>
+
+        <article class="edition-card wide">
+          <img src="../../assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-c-style-languages/phase-c-contact-sheet.png" alt="Founder-rejected Phase C style contact sheet">
+          <div class="edition-copy">
+            <span class="edition-number">Blocked branch · Phase C</span>
+            <h3>Founder-rejected style exploration</h3>
+            <div class="badge-row"><span class="badge reject">Do not reuse</span><span class="badge">Textual negative evidence only</span></div>
+            <p>The study changed media while keeping the same tall humanoid body, so surface variation could not solve the deeper character-system problem.</p>
+            <a class="text-link" href="../../assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-c-style-languages/FOUNDER_REJECTION.md">Read the founder rejection ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="surfaces">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Surface policy</p>
+          <h2>Which art lives where.</h2>
+        </div>
+        <p>Character images create recognition and affection. System state, permissions, confidence, installation, and authority remain deterministic data.</p>
+      </div>
+      <div class="decision-table" role="table" aria-label="Character asset surface policy">
+        <div class="decision-row" role="row"><strong role="cell">`.ai` flagship</strong><span role="cell">Signature full form or role-shaped hero</span><p role="cell">One real act plus product proof</p><p role="cell">Use v1 selectively until a replacement master is human-approved.</p></div>
+        <div class="decision-row" role="row"><strong role="cell">`.ai` profiles</strong><span role="cell">Current v1 fallback, later compact or instrument form</span><p role="cell">Identity + System + Workflow views</p><p role="cell">Never imply the portrait is the runtime or grants tools.</p></div>
+        <div class="decision-row" role="row"><strong role="cell">`.org` explainers</strong><span role="cell">Evidence instruments, rooms, dry biotech, editorial media</span><p role="cell">Methods, sources, uncertainty, governance</p><p role="cell">No luxury science fiction or cute authority.</p></div>
+        <div class="decision-row" role="row"><strong role="cell">Academy</strong><span role="cell">Compact guides, creatures, gouache, line-and-wash</span><p role="cell">Learning, practice, values, reflection</p><p role="cell">These are low-stakes derivatives, not the primary authority form.</p></div>
+        <div class="decision-row" role="row"><strong role="cell">Marketplace</strong><span role="cell">Compact vector identity plus exact metadata</span><p role="cell">Compatibility, permissions, version, maintainer</p><p role="cell">No rarity, power levels, or false self-service claims.</p></div>
+        <div class="decision-row" role="row"><strong role="cell">Runtime graph</strong><span role="cell">M04 vector vessel at 96 pixels</span><p role="cell">Typed edges and separate state glyphs</p><p role="cell">No cinematic portraits, generated status, or color-only meaning.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="signature-cast">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Proposed signature cast</p>
+          <h2>Current image on the left. Target logic inside each card.</h2>
+        </div>
+        <p>The images below are Edition 1 continuity assets. Open each prompt drawer to compare the original v1 prompt with the proposed v3 prompt capsule. Capsules are design briefs—not generation receipts.</p>
+      </div>
+      <div class="filters" aria-label="Filter signature cast">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">All twelve</button>
+        <button class="filter" type="button" data-filter="full" aria-pressed="false">Full specialists</button>
+        <button class="filter" type="button" data-filter="instrument" aria-pressed="false">Instruments</button>
+        <button class="filter" type="button" data-filter="room" aria-pressed="false">Room intelligences</button>
+        <button class="filter" type="button" data-filter="fabricator" aria-pressed="false">Fabricators</button>
+        <button class="filter" type="button" data-filter="guardian" aria-pressed="false">Guardians</button>
+        <button class="filter" type="button" data-filter="biotech" aria-pressed="false">Biotech</button>
+      </div>
+      <div class="cast-grid" id="cast-grid"></div>
+    </section>
+
+    <section class="section" id="prompt-index">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Prompt index</p>
+          <h2>Where the exact prompt truth lives.</h2>
+        </div>
+        <p>Prompt capsules in this atlas explain direction. Exact historical prompts and receipts remain in the governed JSON and text sources below.</p>
+      </div>
+      <div class="prompt-index">
+        <article class="prompt-source">
+          <p class="micro-label">Edition 1 · Exact reproducible specification</p>
+          <h3>Founding portrait manifest</h3>
+          <p>Fifty asset paths, hashes, dimensions, source files, swarm worlds, silhouettes, signatures, portrait briefs, rights, and inspection status.</p>
+          <a class="text-link" href="../../assets/starlight-constellation/v1/visual-provenance.manifest.json">Open visual provenance manifest ↗</a>
+        </article>
+        <article class="prompt-source">
+          <p class="micro-label">Edition 2 · Exact morphology prompts</p>
+          <h3>Fourteen prompt text files</h3>
+          <p>Each M01–M14 board has its exact controlled prompt beside the rendered board and selection receipt.</p>
+          <a class="text-link" href="../../assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/phase-d-morphology-silhouettes/m14-architectural-room-intelligence-board-v1.prompt.txt">Open M14 example prompt ↗</a>
+        </article>
+        <article class="prompt-source">
+          <p class="micro-label">Edition 4 · Exact failed pilot prompt</p>
+          <h3>Lyra prompt, receipt, hash, and score</h3>
+          <p>The complete prompt and output receipt explain why polished craft did not satisfy identity and workflow requirements.</p>
+          <a class="text-link" href="../../assets/starlight-constellation/v2-preview/next-pass/foundation-application-quartet/prompts/lyra-civic-editorial-identity-v1.json">Open exact Lyra job ↗</a>
+        </article>
+        <article class="prompt-source">
+          <p class="micro-label">Edition 5 · Proposed target contracts</p>
+          <h3>Ledger, art bible, and tiered program</h3>
+          <p>Every founding agent has a target morphology, face system, specialty cue, allowed surfaces, blocked surfaces, and pending human decision.</p>
+          <a class="text-link" href="../../portfolio/character-asset-decision-ledger.v1.json">Open decision ledger ↗</a><br>
+          <a class="text-link" href="STARLIGHT_CHARACTER_ART_BIBLE_V3.md">Open art bible ↗</a><br>
+          <a class="text-link" href="../../assets/starlight-constellation/v2-preview/research-team/face-eye-study-v1/asset-program.v2.json">Open asset program ↗</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <p><strong>Decision rule:</strong> preserve evidence, label weak work, generate one controlled master, inspect it, score it, and stop before scaling.</p>
+    <p>Character atlas · 29 August 2026</p>
+  </footer>
+
+  <script>
+    const cast = [
+      {
+        id: "astra-sovereign",
+        name: "Astra",
+        role: "Sovereign Navigator",
+        swarm: "Sovereign Command",
+        image: "../../assets/starlight-constellation/v1/agents/sovereign-command/astra-sovereign.webp",
+        family: "full",
+        target: "M01 full specialist · twin micro apertures",
+        surface: "Flagship story, profile, mission framing",
+        currentPrompt: "Centered navigator in a quiet orbital command chamber, intelligent warmth, star-compass halo, premium restrained tailoring.",
+        nextPrompt: "Preserve Astra's adult porcelain-and-obsidian command identity. Replace the star-compass halo and ceremonial pose with a physical mission compass that routes bounded work toward named human decision gates. One stable vertical silhouette, open routing arc, no throne, cape, orbit, chest core, or implied executive authority."
+      },
+      {
+        id: "vera-decision-verifier",
+        name: "Vera",
+        role: "Decision Verifier",
+        swarm: "Sovereign Command",
+        image: "../../assets/starlight-constellation/v1/agents/sovereign-command/vera-decision-verifier.webp",
+        family: "instrument",
+        target: "M09 evidence instrument · directional sensor trench",
+        surface: "Verification workflows, `.org`, proof scenes",
+        currentPrompt: "Analytical portrait with a split-prism monocle reflecting two decision paths, restrained silver tailoring and cool evidence light.",
+        nextPrompt: "Transform Vera into a serviceable split-path verification instrument. Two evidence channels remain visibly separate through assumption, support, dissent, and human review. No humanoid prestige suit, monocle caricature, floating data, or moral-certainty expression. Warmth comes from transparent pacing and outward-facing evidence."
+      },
+      {
+        id: "mira-continuity-keeper",
+        name: "Mira",
+        role: "Continuity Keeper",
+        swarm: "Sovereign Command",
+        image: "../../assets/starlight-constellation/v1/agents/sovereign-command/mira-continuity-keeper.webp",
+        family: "room",
+        target: "M14 room intelligence · environmental witness lights",
+        surface: "Archive, continuity, version lineage",
+        currentPrompt: "Serene archivist holding a few luminous timeline threads, layered ivory archive cloak, deliberate negative space and privacy symbolism.",
+        nextPrompt: "Re-embody Mira as a human-scale archive threshold. Material layers reveal trusted state, version lineage, unresolved contradiction, and private memory boundaries. Preserve ivory, midnight, and warm-metal continuity. No cloak, magical threads, monumental library, face requirement, or command-center UI."
+      },
+      {
+        id: "ignis-product-conductor",
+        name: "Ignis",
+        role: "Product Conductor",
+        swarm: "Product Forge",
+        image: "../../assets/starlight-constellation/v1/agents/product-forge/ignis-product-conductor.webp",
+        family: "fabricator",
+        target: "M12 modular fabricator · primary and secondary optics",
+        surface: "Product stories, making, QA, release",
+        currentPrompt: "Confident studio conductor at a real prototype bench, copper interface gauntlets, obsidian atelier coat, premium tactile realism.",
+        nextPrompt: "Make Ignis a reversible build bench that can stand, open, and reconfigure around a real prototype. Show problem evidence entering, tested artifacts changing the body state, and release evidence leaving. Mechanically plausible joints, service access, restrained copper and obsidian. No gauntlet hero pose, weapons, mecha armor, or impossible transformation."
+      },
+      {
+        id: "lyra-research-conductor",
+        name: "Lyra",
+        role: "Research Conductor",
+        swarm: "Intelligence Research",
+        image: "../../assets/starlight-constellation/v1/agents/intelligence-research/lyra-research-conductor.webp",
+        family: "full",
+        target: "M02 compact specialist · primary and secondary optics",
+        surface: "Research profile, evidence-routing story",
+        currentPrompt: "Lucid research conductor surrounded by a few orbiting source cards, indigo mantle, cool observatory light, grounded scholarly realism.",
+        nextPrompt: "Identity-lock Lyra's exact segmented porcelain cranium, narrow obsidian faceplate, compact cyan apertures, ink-blue mechanics, and calm posture. Build three bounded evidence inputs and one sealed human-review output into a shorter serviceable routing silhouette. Neutral design stage. No long coat, pseudo-documents, floating cards, halo, chest core, pedestal, or generic archive robot."
+      },
+      {
+        id: "ember-creator-conductor",
+        name: "Ember",
+        role: "Creator Conductor",
+        swarm: "Creator Worlds",
+        image: "../../assets/starlight-constellation/v1/agents/creator-worlds/ember-creator-conductor.webp",
+        family: "full",
+        target: "M01 full specialist · twin micro apertures",
+        surface: "Creator flagship, story-world campaigns",
+        currentPrompt: "Warm creator conductor holding an ember-crown light pen, black-magenta studio jacket, tactile premium studio and disciplined cinematic light.",
+        nextPrompt: "Preserve Ember's adult creative presence and ink, magenta, cyan, and warm-metal world. Replace crown and magic pen with a tactile story forge routing narrative, image, sound, and release artifacts through one coherent world brief. Express imagination through authored tools, tempo, and collaboration—not a wand, halo, or influencer pose."
+      },
+      {
+        id: "meridian-venture-conductor",
+        name: "Meridian",
+        role: "Venture Conductor",
+        swarm: "Revenue Venture",
+        image: "../../assets/starlight-constellation/v1/agents/revenue-venture/meridian-venture-conductor.webp",
+        family: "full",
+        target: "M01 full specialist · twin micro apertures",
+        surface: "Venture story, commercial workflow",
+        currentPrompt: "Sober venture navigator with a restrained meridian-compass halo, deep emerald tailoring, modern tactile venture salon, no wealth clichés.",
+        nextPrompt: "Preserve Meridian's adult emerald and graphite restraint. Replace executive suit and compass halo with a tangible venture map connecting customer value, unit economics, demand evidence, partnerships, and human capital decisions. No luxury boardroom, wealth symbolism, trading floor, handshake, or implied investment authority."
+      },
+      {
+        id: "sophia-academy-conductor",
+        name: "Sophia",
+        role: "Academy Conductor",
+        swarm: "Community Academy",
+        image: "../../assets/starlight-constellation/v1/agents/community-academy/sophia-academy-conductor.webp",
+        family: "full",
+        target: "M01 adult primary · compact Academy derivatives",
+        surface: "Academy arrival, values, supervised missions",
+        currentPrompt: "Welcoming academy conductor with a minimal open-book halo, ivory-coral-teal mantle, inclusive modern learning commons in daylight.",
+        nextPrompt: "Keep Sophia as an adult Academy signature. Show a supervised path from arrival through values, source literacy, practice, evidence, reflection, and earned responsibility. Replace book halo and academic mantle with an authored learning instrument. Compact or creature forms are low-stakes derivatives only; no baby eyes or childlike authority."
+      },
+      {
+        id: "aegis-trust-conductor",
+        name: "Aegis",
+        role: "Trust Conductor",
+        swarm: "Trust Safety",
+        image: "../../assets/starlight-constellation/v1/agents/trust-safety/aegis-trust-conductor.webp",
+        family: "guardian",
+        target: "M05 guardian gateway · protective shutters",
+        surface: "Trust boundary, permissions, incident governance",
+        currentPrompt: "Calm guardian with a translucent shield halo, charcoal-glacier formal protective tailoring, transparent controls, explicitly non-militarized.",
+        nextPrompt: "Re-embody Aegis as a compartmented human-scale trust gateway. Policy, permission, evidence, escalation, and revocation remain physically separate and inspectable. Protective shutters communicate focus, never anger. The silhouette opens during de-escalation. No armor, shield halo, weapons, policing, surveillance, quadruped sentinel, or throne-like arch."
+      },
+      {
+        id: "solace-flourishing-conductor",
+        name: "Solace",
+        role: "Flourishing Conductor",
+        swarm: "Health Flourishing",
+        image: "../../assets/starlight-constellation/v1/agents/health-flourishing/solace-flourishing-conductor.webp",
+        family: "biotech",
+        target: "M07 dry biotech symbiote · opaline aperture",
+        surface: "Wellbeing story, `.org` living-systems explainer",
+        currentPrompt: "Warm wellbeing guide with a subtle sunleaf halo, forest-sage linen coat, biophilic daylight studio, clearly non-clinical and grounded.",
+        nextPrompt: "Create a clean dry opaline living-system collaborator with ceramic load paths, plant and manta logic, and one observable function connecting habits, energy, context, and human-owned choices. Warmth comes from orientation and generous distance. No diagnosis, wet organs, insect legs, predation, healer costume, sun halo, or mystical biomorphism."
+      },
+      {
+        id: "vector-transformation-conductor",
+        name: "Vector",
+        role: "Transformation Conductor",
+        swarm: "Enterprise Transformation",
+        image: "../../assets/starlight-constellation/v1/agents/enterprise-transformation/vector-transformation-conductor.webp",
+        family: "full",
+        target: "M01 full specialist · twin micro apertures",
+        surface: "Enterprise story, operating-model workflow",
+        currentPrompt: "Pragmatic transformation conductor with coordinate-arrow halo, cobalt-graphite tailoring, physical operating-model artifacts, no corporate stock aesthetic.",
+        nextPrompt: "Preserve Vector's cobalt, graphite, platinum, and pragmatic adult presence. Replace executive coat and coordinate halo with an operating-model instrument connecting outcomes, capabilities, roles, adoption evidence, and accountable owners. Center workers and reversible change. No corporate stock pose, superhero geometry, fake dashboard, or machine-replacement symbolism."
+      },
+      {
+        id: "nexus-futures-conductor",
+        name: "Nexus",
+        role: "Futures Conductor",
+        swarm: "Web Spatial Protocol Futures",
+        image: "../../assets/starlight-constellation/v1/agents/web-spatial-protocol-futures/nexus-futures-conductor.webp",
+        family: "room",
+        target: "M14 futures observatory · environmental witness lights",
+        surface: "Futures flagship, scenario and protocol stories",
+        currentPrompt: "Grounded futures conductor beneath a restrained protocol-lattice halo, sculptural pearl-black coat, tangible spatial-web lab, no metaverse cliché.",
+        nextPrompt: "Re-embody Nexus as a bounded futures observatory separating fact, signal, scenario, prototype, fallback, and human choice through material states. Human-scale thresholds, pearl ceramic, black optical glass, restrained ultraviolet only for possibility. No humanoid coat, lattice halo, neon grid, headset stock pose, metaverse cliché, or standard inevitability."
+      }
+    ];
+
+    const grid = document.querySelector("#cast-grid");
+
+    function renderCast() {
+      grid.innerHTML = cast.map((agent) => `
+        <article class="agent-card" data-family="${agent.family}">
+          <figure>
+            <img src="${agent.image}" alt="${agent.name} current v1 continuity portrait" loading="lazy">
+            <span class="edition-stamp">Edition 1 current image</span>
+          </figure>
+          <div class="agent-copy">
+            <p class="micro-label">${agent.swarm}</p>
+            <h3>${agent.name}</h3>
+            <p>${agent.role}</p>
+            <div class="target">
+              <strong>${agent.target}</strong>
+              <span>${agent.surface}</span>
+            </div>
+            <details>
+              <summary>Original v1 prompt brief</summary>
+              <p class="prompt">${agent.currentPrompt}</p>
+              <p class="prompt-note">Exact source: v1 visual provenance manifest.</p>
+            </details>
+            <details>
+              <summary>Proposed v3 prompt capsule</summary>
+              <p class="prompt">${agent.nextPrompt}</p>
+              <p class="prompt-note">Direction only. Not generated, inspected, or human-approved.</p>
+            </details>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    renderCast();
+
+    document.querySelectorAll(".filter").forEach((button) => {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+        document.querySelectorAll(".filter").forEach((candidate) => {
+          candidate.setAttribute("aria-pressed", String(candidate === button));
+        });
+        document.querySelectorAll(".agent-card").forEach((card) => {
+          card.hidden = filter !== "all" && card.dataset.family !== filter;
+        });
+      });
+    });
+  </script>
+</body>
+</html>

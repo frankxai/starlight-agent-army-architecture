@@ -7,6 +7,8 @@ Primary surfaces: `starlightintelligence.ai` and `starlightintelligence.org`
 Compatibility surface: `starlightintelligence.academy`, owned by its separate implementation lane
 Decision ledger: `portfolio/character-asset-decision-ledger.v1.json`
 
+Visual decision atlas: `docs/visuals/character-asset-atlas.html`
+
 ## The decision
 
 Starlight should feel like a premium world with real software underneath it. The characters open attention, memory, and affection; the system views earn trust. We therefore keep the refined porcelain-and-obsidian emotional lineage Frank preferred, but stop treating one tall humanoid body, one halo, or one cinematic portrait formula as the identity system.

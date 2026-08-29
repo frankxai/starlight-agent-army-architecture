@@ -88,6 +88,12 @@
       "kind": "schema",
       "inspected": true,
       "notes": "Makes cast, provenance, surface, morphology, face, and human-decision rules machine-checkable."
+    },
+    {
+      "path_or_url": "docs/visuals/character-asset-atlas.html",
+      "kind": "visual-decision-atlas",
+      "inspected": false,
+      "notes": "Zero-build HTML maps five editions, asset dispositions, domain surfaces, twelve signature characters, original v1 prompt briefs, and proposed v3 prompt capsules. Browser QA remains held by machine admission."
     }
   ],
   "checks": [
@@ -115,6 +121,16 @@
       "name": "production-context-qa",
       "status": "blocked",
       "evidence": "No web implementation or production mutation occurred in this design-system lane."
+    },
+    {
+      "name": "atlas-reference-integrity",
+      "status": "pass",
+      "evidence": "Every local image, prompt, manifest, review, and document reference in the zero-build HTML resolves inside the repository."
+    },
+    {
+      "name": "atlas-browser-qa",
+      "status": "blocked",
+      "evidence": "Peak Performance browser-qa admission is HOLD because free RAM is below the required reserve."
     }
   ],
   "score": {
