@@ -1,0 +1,96 @@
+{
+  "schema_version": "agent-access-bundle.v1",
+  "bundle_id": "starlight-operator-private-v1",
+  "assignment_id": "starlight-operator-private",
+  "agent_id": "starlight-operator",
+  "status": "proposed",
+  "principles": {
+    "default_deny": true,
+    "least_privilege": true,
+    "just_in_time": true,
+    "raw_secret_exposure": "prohibited",
+    "prompt_can_grant_access": false
+  },
+  "runtime_surfaces": ["hermes", "codex", "claude-code", "openhands"],
+  "knowledge_sources": [
+    {
+      "source_id": "agent-army-ssot",
+      "locator": "repo:frankxai/starlight-agent-army-architecture",
+      "classification": "public",
+      "operations": ["list", "retrieve", "search"],
+      "filters": ["current verified child repo only", "respect repo-local AGENTS.md", "no secret-bearing files"],
+      "writeback": "draft-only"
+    },
+    {
+      "source_id": "private-agent-evidence",
+      "locator": "private:SIS/agent-operations/starlight-operator/",
+      "classification": "restricted",
+      "operations": ["list", "retrieve", "search", "append"],
+      "filters": ["assignment_id exact match", "normalized receipts only", "exclude prompts, responses, secrets, and raw private payloads"],
+      "writeback": "human-approved"
+    }
+  ],
+  "connectors": [
+    {
+      "connector_id": "n8n-starlight-workflows",
+      "transport": "mcp",
+      "credential_ref": "oauth:n8n-starlight-workflows",
+      "auth_mode": "oauth",
+      "scopes": ["published-workflows:discover", "published-workflows:execute"],
+      "operations": ["search_published_workflows", "get_workflow_details", "execute_approved_workflow"],
+      "side_effect_class": "consequential",
+      "approval_gate": "workflow-specific-human-gate",
+      "lease": {
+        "mode": "per-mission",
+        "max_minutes": 120,
+        "max_calls": 25,
+        "renewal": "policy-and-human"
+      }
+    },
+    {
+      "connector_id": "github-agent-army",
+      "transport": "native",
+      "credential_ref": "managed:github-current-user",
+      "auth_mode": "managed-secret",
+      "scopes": ["repo:starlight-agent-army-architecture"],
+      "operations": ["read", "create-draft-branch", "create-draft-pr"],
+      "side_effect_class": "reversible-write",
+      "approval_gate": "repo-write-lane",
+      "lease": {
+        "mode": "per-mission",
+        "max_minutes": 240,
+        "max_calls": 100,
+        "renewal": "human"
+      }
+    }
+  ],
+  "memory": {
+    "scope": "private_vault",
+    "retention_days": 365,
+    "cross_agent_retrieval": "deny-unless-explicit",
+    "raw_content_policy": "prohibited"
+  },
+  "human_gates": [
+    "publish",
+    "external_send",
+    "spend",
+    "dns",
+    "credentials",
+    "destructive",
+    "legal_ip",
+    "brand_identity",
+    "promotion",
+    "restore_from_quarantine",
+    "retirement"
+  ],
+  "validity": {
+    "not_before": null,
+    "expires_at": null,
+    "revocation_check": "before-every-run"
+  },
+  "owner": "frank",
+  "notes": [
+    "This is an admission contract, not proof that any connector is currently authenticated.",
+    "Credential references are opaque locators. Raw tokens never belong in this file or an Agent Card."
+  ]
+}

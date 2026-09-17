@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/agent-deployment.schema.json",
+  "title": "Starlight Agent Deployment Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "deployment_id",
+    "repo",
+    "agent_id",
+    "card_ref",
+    "surface",
+    "environment",
+    "lifecycle_status",
+    "owner",
+    "measurement",
+    "economics",
+    "quality",
+    "goals",
+    "telemetry"
+  ],
+  "properties": {
+    "schema_version": { "const": "agent-deployment.v1" },
+    "deployment_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "repo": { "type": "string", "minLength": 1 },
+    "agent_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "card_ref": { "type": "string", "minLength": 1 },
+    "surface": {
+      "enum": ["web", "phone_pwa", "hermes", "telegram", "coe_demo", "cli"]
+    },
+    "environment": {
+      "enum": ["local", "test", "preview", "pilot", "production", "internal"]
+    },
+    "lifecycle_status": {
+      "enum": ["planned", "instrumenting", "baselining", "observed", "paused", "retired"]
+    },
+    "owner": { "type": "string", "minLength": 1 },
+    "measurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["timezone", "reporting_cadence_days", "decision_window_days", "baseline_window"],
+      "properties": {
+        "timezone": { "type": "string", "minLength": 1 },
+        "reporting_cadence_days": { "type": "integer", "minimum": 1 },
+        "decision_window_days": { "type": "integer", "minimum": 1 },
+        "baseline_window": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "start", "end"],
+          "properties": {
+            "status": { "enum": ["planned", "active", "complete"] },
+            "start": { "type": ["string", "null"], "format": "date" },
+            "end": { "type": ["string", "null"], "format": "date" }
+          }
+        }
+      }
+    },
+    "economics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["currency", "budget_status", "primary_value_unit", "attribution_method", "budgets"],
+      "properties": {
+        "currency": { "const": "USD" },
+        "budget_status": { "enum": ["proposed", "approved", "rejected", "not_applicable"] },
+        "primary_value_unit": { "type": "string", "minLength": 1 },
+        "attribution_method": { "type": "string", "minLength": 1 },
+        "budgets": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "max_total_economic_cost_per_run_usd",
+            "max_cost_per_success_usd",
+            "monthly_actual_cash_budget_usd"
+          ],
+          "properties": {
+            "max_total_economic_cost_per_run_usd": { "type": ["number", "null"], "minimum": 0 },
+            "max_cost_per_success_usd": { "type": ["number", "null"], "minimum": 0 },
+            "monthly_actual_cash_budget_usd": { "type": ["number", "null"], "minimum": 0 }
+          }
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "capability_profile",
+        "weights",
+        "min_capability_score",
+        "min_task_success_rate",
+        "max_critical_safety_failures",
+        "min_sample_size",
+        "max_p95_latency_ms"
+      ],
+      "properties": {
+        "capability_profile": { "type": "string", "minLength": 1 },
+        "weights": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "task_success",
+            "evidence_grounding",
+            "reliability",
+            "safety",
+            "efficiency",
+            "judgment_routing"
+          ],
+          "properties": {
+            "task_success": { "type": "number", "minimum": 0, "maximum": 1 },
+            "evidence_grounding": { "type": "number", "minimum": 0, "maximum": 1 },
+            "reliability": { "type": "number", "minimum": 0, "maximum": 1 },
+            "safety": { "type": "number", "minimum": 0, "maximum": 1 },
+            "efficiency": { "type": "number", "minimum": 0, "maximum": 1 },
+            "judgment_routing": { "type": "number", "minimum": 0, "maximum": 1 }
+          }
+        },
+        "min_capability_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "min_task_success_rate": { "type": "number", "minimum": 0, "maximum": 1 },
+        "max_critical_safety_failures": { "type": "integer", "minimum": 0 },
+        "min_sample_size": { "type": "integer", "minimum": 1 },
+        "max_p95_latency_ms": { "type": ["integer", "null"], "minimum": 0 }
+      }
+    },
+    "goals": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "goal_id",
+          "status",
+          "specific_outcome",
+          "metric_id",
+          "baseline",
+          "target",
+          "owner",
+          "evidence_source",
+          "guardrails"
+        ],
+        "properties": {
+          "goal_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "status": { "enum": ["proposed", "baselining", "active", "met", "missed", "retired"] },
+          "specific_outcome": { "type": "string", "minLength": 1 },
+          "metric_id": { "type": "string", "minLength": 1 },
+          "baseline": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["status", "value", "start", "end"],
+            "properties": {
+              "status": { "enum": ["pending", "measured"] },
+              "value": { "type": ["number", "null"] },
+              "start": { "type": ["string", "null"], "format": "date" },
+              "end": { "type": ["string", "null"], "format": "date" }
+            }
+          },
+          "target": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["operator", "value", "deadline"],
+            "properties": {
+              "operator": { "enum": [">=", "<=", "=", ">", "<"] },
+              "value": { "type": "number" },
+              "deadline": { "type": "string", "format": "date" }
+            }
+          },
+          "owner": { "type": "string", "minLength": 1 },
+          "evidence_source": { "type": "string", "minLength": 1 },
+          "guardrails": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "telemetry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["receipt_sink", "raw_content_policy", "cost_sources", "value_sources"],
+      "properties": {
+        "receipt_sink": { "type": "string", "minLength": 1 },
+        "raw_content_policy": { "enum": ["prohibited", "redacted", "explicit-consent-only"] },
+        "cost_sources": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "value_sources": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      }
+    },
+    "metadata": { "type": "object", "additionalProperties": true }
+  }
+}

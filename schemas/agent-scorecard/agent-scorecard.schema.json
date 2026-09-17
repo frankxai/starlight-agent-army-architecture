@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/agent-scorecard.schema.json",
+  "title": "Starlight Agent Period Scorecard",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "deployment_id",
+    "agent_id",
+    "period",
+    "sample",
+    "usage",
+    "costs",
+    "value",
+    "quality",
+    "goals",
+    "verdict",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": { "const": "agent-scorecard.v1" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "deployment_id": { "type": "string" },
+    "agent_id": { "type": "string" },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end", "timezone"],
+      "properties": {
+        "start": { "type": "string", "format": "date-time" },
+        "end": { "type": "string", "format": "date-time" },
+        "timezone": { "type": "string" }
+      }
+    },
+    "sample": { "type": "object", "additionalProperties": true },
+    "usage": { "type": "object", "additionalProperties": true },
+    "costs": { "type": "object", "additionalProperties": true },
+    "value": { "type": "object", "additionalProperties": true },
+    "quality": { "type": "object", "additionalProperties": true },
+    "goals": {
+      "type": "array",
+      "items": { "type": "object", "additionalProperties": true }
+    },
+    "verdict": { "enum": ["SCALE", "IMPROVE", "HOLD", "STOP", "INSUFFICIENT_DATA"] },
+    "limitations": { "type": "array", "items": { "type": "string" } }
+  }
+}

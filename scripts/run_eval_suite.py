@@ -11,7 +11,7 @@ EVALS = ROOT / "evals"
 
 
 def main() -> int:
-    files = sorted(EVALS.glob("*.json"))
+    files = sorted(EVALS.rglob("*.json"))
     if not files:
         print("ERROR: no eval suites", file=sys.stderr)
         return 2
@@ -37,12 +37,31 @@ def main() -> int:
             if not isinstance(case, dict):
                 errors.append(f"case[{i}] not object")
                 continue
-            for k in ("id", "prompt", "expect"):
+            for k in ("id", "prompt"):
                 if k not in case:
                     errors.append(f"case[{i}] missing {k}")
+            has_expect = isinstance(case.get("expect"), str) and bool(case.get("expect"))
+            expect_any = case.get("expect_contains_any")
+            has_expect_any = (
+                isinstance(expect_any, list)
+                and bool(expect_any)
+                and all(isinstance(value, str) and value for value in expect_any)
+            )
+            if not has_expect and not has_expect_any:
+                errors.append(
+                    f"case[{i}] requires non-empty expect or expect_contains_any"
+                )
+
+        if path.parent.name == "portfolio":
+            if data.get("evaluation_mode") != "structural_only":
+                errors.append("canonical portfolio eval must declare evaluation_mode=structural_only")
+            if data.get("live_eval_status") != "not_run":
+                errors.append("canonical portfolio eval must declare live_eval_status=not_run")
+            if "not a live model-graded result" not in str(data.get("evidence_claim", "")):
+                errors.append("canonical portfolio eval must disclaim live model-graded evidence")
 
         agent_id = data.get("agent_id")
-        card_hits = list(ROOT.glob(f"cards/**/{agent_id}.json")) if agent_id else []
+        card_hits = list((ROOT / "cards").rglob(f"{agent_id}.json")) if agent_id else []
         if agent_id and not card_hits:
             errors.append(f"no card file for agent_id={agent_id}")
 
@@ -55,6 +74,7 @@ def main() -> int:
             print(f"OK   {rel}  cases={len(cases)} agent={agent_id}")
 
     print(f"\n{len(files) - failed}/{len(files)} eval suites structurally valid")
+    print("LIVE EVAL: NOT RUN by this structural validator")
     return 1 if failed else 0
 
 

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/agent-workforce-review.schema.json",
+  "title": "Starlight Weekly Agent Workforce Review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "execution_status",
+    "outcome_status",
+    "authority",
+    "summary",
+    "assignments",
+    "evidence_root"
+  ],
+  "properties": {
+    "schema_version": { "const": "agent-workforce-review.v1" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "execution_status": { "enum": ["ok", "error", "skipped"] },
+    "outcome_status": { "enum": ["VERIFIED", "HOLD", "BLOCKED", "NOOP", "FAILED"] },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "human_owner", "automatic_promotion"],
+      "properties": {
+        "mode": { "const": "advisory" },
+        "human_owner": { "type": "string", "minLength": 1 },
+        "automatic_promotion": { "const": false }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["RED", "AMBER", "GREEN", "PAUSED"],
+      "properties": {
+        "RED": { "type": "integer", "minimum": 0 },
+        "AMBER": { "type": "integer", "minimum": 0 },
+        "GREEN": { "type": "integer", "minimum": 0 },
+        "PAUSED": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "assignments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["assignment_id", "agent_id", "status", "runtime", "exposure", "recommendation", "issues", "signals"],
+        "properties": {
+          "assignment_id": { "type": "string", "minLength": 1 },
+          "agent_id": { "type": "string", "minLength": 1 },
+          "status": { "type": "string", "minLength": 1 },
+          "runtime": { "type": "string", "minLength": 1 },
+          "exposure": { "enum": ["RED", "AMBER", "GREEN", "PAUSED"] },
+          "recommendation": { "type": "string", "minLength": 1 },
+          "issues": { "type": "array", "items": { "type": "string" } },
+          "signals": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "evidence_root": { "type": "string" }
+  }
+}

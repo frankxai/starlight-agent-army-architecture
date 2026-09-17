@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/agent-access-bundle.schema.json",
+  "title": "Starlight Agent Role Access Bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "bundle_id",
+    "assignment_id",
+    "agent_id",
+    "status",
+    "principles",
+    "runtime_surfaces",
+    "knowledge_sources",
+    "connectors",
+    "memory",
+    "human_gates",
+    "validity",
+    "owner"
+  ],
+  "properties": {
+    "schema_version": { "const": "agent-access-bundle.v1" },
+    "bundle_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "assignment_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "agent_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "status": { "enum": ["proposed", "approved", "leased", "restricted", "revoked", "expired"] },
+    "principles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["default_deny", "least_privilege", "just_in_time", "raw_secret_exposure", "prompt_can_grant_access"],
+      "properties": {
+        "default_deny": { "const": true },
+        "least_privilege": { "const": true },
+        "just_in_time": { "const": true },
+        "raw_secret_exposure": { "const": "prohibited" },
+        "prompt_can_grant_access": { "const": false }
+      }
+    },
+    "runtime_surfaces": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "enum": ["hermes", "codex", "claude-code", "openhands", "deepagents", "temporal-railway", "vercel-eve", "cloudflare-agents"] }
+    },
+    "knowledge_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "locator", "classification", "operations", "filters", "writeback"],
+        "properties": {
+          "source_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "locator": { "type": "string", "minLength": 1 },
+          "classification": { "enum": ["public", "internal", "confidential", "restricted"] },
+          "operations": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "enum": ["list", "retrieve", "search", "append", "update"] }
+          },
+          "filters": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "writeback": { "enum": ["none", "draft-only", "human-approved"] }
+        }
+      }
+    },
+    "connectors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "connector_id",
+          "transport",
+          "credential_ref",
+          "auth_mode",
+          "scopes",
+          "operations",
+          "side_effect_class",
+          "approval_gate",
+          "lease"
+        ],
+        "properties": {
+          "connector_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "transport": { "enum": ["mcp", "n8n", "webhook", "native", "api"] },
+          "credential_ref": {
+            "type": ["string", "null"],
+            "pattern": "^(secret|oauth|vault|managed):[A-Za-z0-9._/-]+$"
+          },
+          "auth_mode": { "enum": ["none", "oauth", "managed-secret", "workload-identity", "short-lived-token"] },
+          "scopes": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "operations": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "side_effect_class": { "enum": ["read", "draft", "reversible-write", "consequential"] },
+          "approval_gate": { "type": ["string", "null"] },
+          "lease": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["mode", "max_minutes", "max_calls", "renewal"],
+            "properties": {
+              "mode": { "enum": ["per-run", "per-mission", "scheduled-window"] },
+              "max_minutes": { "type": "integer", "minimum": 1, "maximum": 10080 },
+              "max_calls": { "type": "integer", "minimum": 1 },
+              "renewal": { "enum": ["human", "policy-and-human", "never"] }
+            }
+          }
+        }
+      }
+    },
+    "memory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scope", "retention_days", "cross_agent_retrieval", "raw_content_policy"],
+      "properties": {
+        "scope": { "enum": ["none", "session", "project", "private_vault"] },
+        "retention_days": { "type": "integer", "minimum": 0, "maximum": 3650 },
+        "cross_agent_retrieval": { "const": "deny-unless-explicit" },
+        "raw_content_policy": { "enum": ["prohibited", "redacted", "explicit-consent-only"] }
+      }
+    },
+    "human_gates": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "publish",
+          "external_send",
+          "spend",
+          "dns",
+          "credentials",
+          "destructive",
+          "legal_ip",
+          "brand_identity",
+          "promotion",
+          "restore_from_quarantine",
+          "retirement"
+        ]
+      }
+    },
+    "validity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["not_before", "expires_at", "revocation_check"],
+      "properties": {
+        "not_before": { "type": ["string", "null"], "format": "date-time" },
+        "expires_at": { "type": ["string", "null"], "format": "date-time" },
+        "revocation_check": { "const": "before-every-run" }
+      }
+    },
+    "owner": { "type": "string", "minLength": 1 },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/agent-security-assessment.schema.json",
+  "title": "Starlight Agent Security Assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "assignment_id",
+    "agent_id",
+    "assessor",
+    "profile_id",
+    "target",
+    "verdict",
+    "findings",
+    "probes",
+    "limitations",
+    "synthetic"
+  ],
+  "properties": {
+    "schema_version": { "const": "agent-security-assessment.v1" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "assignment_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "agent_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "assessor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "independent"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "independent": { "const": true }
+      }
+    },
+    "profile_id": { "type": "string", "minLength": 1 },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["runtime", "environment", "scope", "artifact_digests"],
+      "properties": {
+        "runtime": { "type": "string", "minLength": 1 },
+        "environment": { "enum": ["sandbox", "pilot", "production-authorized"] },
+        "scope": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "artifact_digests": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        }
+      }
+    },
+    "verdict": { "enum": ["PASS", "WARN", "FAIL", "HOLD"] },
+    "findings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["critical", "high", "medium", "low"],
+      "properties": {
+        "critical": { "type": "integer", "minimum": 0 },
+        "high": { "type": "integer", "minimum": 0 },
+        "medium": { "type": "integer", "minimum": 0 },
+        "low": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "probes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "category", "result", "evidence_ref"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "category": { "type": "string", "minLength": 1 },
+          "result": { "enum": ["PASS", "FAIL", "NOT_RUN"] },
+          "evidence_ref": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "limitations": { "type": "array", "items": { "type": "string" } },
+    "synthetic": { "type": "boolean" }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "agent-metric-catalog.v1",
+  "metrics": {
+    "receipt_completeness_ratio": {
+      "category": "observability",
+      "unit": "ratio",
+      "direction": "higher",
+      "formula": "valid receipts / completed agent runs"
+    },
+    "task_success_rate": {
+      "category": "outcome",
+      "unit": "ratio",
+      "direction": "higher",
+      "formula": "successful outcomes / all terminal outcomes"
+    },
+    "first_pass_acceptance_rate": {
+      "category": "outcome",
+      "unit": "ratio",
+      "direction": "higher",
+      "formula": "first-pass accepted outcomes / all terminal outcomes"
+    },
+    "durable_artifact_rate": {
+      "category": "outcome",
+      "unit": "ratio",
+      "direction": "higher",
+      "formula": "runs with one or more durable artifact references / all runs"
+    },
+    "traceable_output_rate": {
+      "category": "quality",
+      "unit": "ratio",
+      "direction": "higher",
+      "formula": "runs with traceable_output=true / all runs"
+    },
+    "capability_score": {
+      "category": "quality",
+      "unit": "score_0_100",
+      "direction": "higher",
+      "formula": "100 * weighted mean of task success, evidence grounding, reliability, safety, efficiency, and judgment/routing"
+    },
+    "critical_safety_failures": {
+      "category": "safety",
+      "unit": "count",
+      "direction": "lower",
+      "formula": "sum of critical_safety_failures across receipts"
+    },
+    "p95_latency_ms": {
+      "category": "operations",
+      "unit": "milliseconds",
+      "direction": "lower",
+      "formula": "nearest-rank 95th percentile of receipt latency_ms"
+    },
+    "total_economic_cost_usd": {
+      "category": "economics",
+      "unit": "USD",
+      "direction": "lower",
+      "formula": "provider cost (actual or estimated, never both for the same charge) + tools + allocated infrastructure + imputed human review + recovery"
+    },
+    "actual_cash_cost_usd": {
+      "category": "economics",
+      "unit": "USD",
+      "direction": "lower",
+      "formula": "sum of cost components with basis=actual_cash"
+    },
+    "cost_per_success_usd": {
+      "category": "economics",
+      "unit": "USD",
+      "direction": "lower",
+      "formula": "total economic cost / successful outcomes"
+    },
+    "confidence_adjusted_value_usd": {
+      "category": "value",
+      "unit": "USD",
+      "direction": "higher",
+      "formula": "sum(amount * attribution confidence), taking only the highest component within each overlap group"
+    },
+    "confidence_adjusted_roi_ratio": {
+      "category": "value",
+      "unit": "ratio",
+      "direction": "higher",
+      "formula": "(confidence-adjusted value - total economic cost) / total economic cost"
+    },
+    "human_review_minutes_per_success": {
+      "category": "efficiency",
+      "unit": "minutes",
+      "direction": "lower",
+      "formula": "human review minutes / successful outcomes"
+    }
+  }
+}

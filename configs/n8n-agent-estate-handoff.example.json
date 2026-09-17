@@ -1,0 +1,124 @@
+{
+  "schema_version": "n8n-agent-automation-handoff.v1",
+  "handoff_id": "agent-estate-review-automation",
+  "deployment_status": "blocked",
+  "owner": {
+    "automation_portfolio": "automation-portfolio",
+    "agent_estate": "starlight-queen",
+    "human_owner": "frank"
+  },
+  "estate_contract_refs": {
+    "queen": "configs/starlight-queen-control-plane.example.json",
+    "workforce": "configs/agent-workforce.example.json",
+    "access_bundle": "configs/agent-access-bundle.example.json",
+    "swarm_mission": "configs/swarm-mission.example.json"
+  },
+  "target": {
+    "instance_ref": "managed:n8n-primary",
+    "zone": "agent-estate-hr",
+    "workflow_id": null,
+    "activation_requested": false,
+    "authentication_status": "required"
+  },
+  "blockers": [
+    "No dedicated agent-estate HR workflow zone has been admitted.",
+    "Existing unauthenticated webhook patterns require remediation before reuse.",
+    "Claude Code n8n MCP authentication must be verified independently before it can participate.",
+    "No live workflow may be created or activated until the automation portfolio admits this contract and Frank approves activation."
+  ],
+  "execution_chain": [
+    "AuthenticatedIntake",
+    "NormalizeValidate",
+    "IdempotentLedgerUpsert",
+    "PolicyRiskGate",
+    "HumanApprovalResume",
+    "DeterministicAction",
+    "ReceiptMetrics",
+    "ErrorDLQIncident"
+  ],
+  "event_contract": {
+    "required_at_intake": [
+      "event_id",
+      "event_type",
+      "event_schema_version",
+      "correlation_id",
+      "causation_id",
+      "idempotency_key",
+      "occurred_at",
+      "received_at",
+      "source_system",
+      "source_principal",
+      "authentication_context_ref",
+      "assignment_id",
+      "agent_id",
+      "mission_id",
+      "requested_action",
+      "target_resource",
+      "risk_tier",
+      "data_classification",
+      "payload_ref",
+      "trace_id"
+    ],
+    "required_before_action": [
+      "policy_decision_id",
+      "policy_context_ref",
+      "lease_id",
+      "budget_ref",
+      "deadline_at",
+      "approval_request_id",
+      "approval_status",
+      "approver_id",
+      "approval_receipt_ref",
+      "approval_expires_at",
+      "normalized_action_hash"
+    ],
+    "receipt_fields": [
+      "receipt_id",
+      "event_id",
+      "correlation_id",
+      "trace_id",
+      "assignment_id",
+      "agent_id",
+      "mission_id",
+      "workflow_id",
+      "workflow_version",
+      "action_hash",
+      "execution_status",
+      "outcome_status",
+      "started_at",
+      "completed_at",
+      "attempt_count",
+      "model_calls",
+      "tool_calls",
+      "actual_cash_cost_usd",
+      "artifact_refs",
+      "error_class",
+      "dlq_ref",
+      "incident_ref"
+    ],
+    "forbidden_fields": [
+      "raw_access_token",
+      "raw_refresh_token",
+      "raw_secret",
+      "raw_prompt",
+      "raw_response",
+      "private_payload",
+      "approval_assertion",
+      "security_pass_assertion",
+      "promotion_assertion"
+    ],
+    "payload_policy": "opaque-reference-only"
+  },
+  "authority": {
+    "workflow_can_assert_approval": false,
+    "workflow_can_assert_security_pass": false,
+    "workflow_can_promote": false,
+    "consequential_action_gate": "verified-human-approval-receipt"
+  },
+  "receipt_contract": {
+    "execution_status_values": ["ok", "error", "skipped"],
+    "outcome_status_values": ["VERIFIED", "HOLD", "BLOCKED", "NOOP", "FAILED"],
+    "private_sink": "private:SIS/automation-ledger/agent-estate-review/",
+    "raw_content_policy": "prohibited"
+  }
+}

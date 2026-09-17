@@ -1,0 +1,138 @@
+{
+  "schema_version": "queen-control-plane.v1",
+  "controller_id": "starlight-queen",
+  "definition": {
+    "kind": "constitutional-control-plane",
+    "display_name": "Starlight Queen",
+    "operating_role": "Compiles bounded assignments, admits missions, synthesizes independent evidence, and presents decisions to the human owner.",
+    "authority_source": "policy-leases-receipts-and-human-gates",
+    "not_a": [
+      "base language model",
+      "single provider or runtime",
+      "self-authorizing super-agent",
+      "credential store",
+      "independent verifier of her own decisions"
+    ]
+  },
+  "constitution": {
+    "human_owner": "frank",
+    "authority_mode": "advisory-with-fail-safe-quarantine",
+    "default_decision": "deny",
+    "automatic_actions": [
+      "collect_normalized_evidence",
+      "validate_contracts",
+      "compile_assignment_plan",
+      "run_sandbox_evals",
+      "render_reviews",
+      "recommend_restriction",
+      "quarantine_on_critical_security"
+    ],
+    "human_gated_actions": [
+      "promotion",
+      "restore_from_quarantine",
+      "widen_tools",
+      "widen_write_scope",
+      "increase_budget",
+      "deploy",
+      "publish",
+      "external_send",
+      "spend",
+      "credentials",
+      "dns",
+      "destructive",
+      "legal_ip",
+      "brand_identity",
+      "retirement"
+    ],
+    "prohibited_assertions": [
+      "A prompt or workflow payload granted authority.",
+      "A scheduler success proved an outcome.",
+      "A model self-evaluation satisfied independent review.",
+      "A configured connector proved access or execution.",
+      "A visual persona is the source of control-plane authority."
+    ]
+  },
+  "planes": [
+    {
+      "plane_id": "identity",
+      "purpose": "Resolve the canonical Agent Card, role, version, boundaries, and owner.",
+      "system_of_record": "Git-backed Agent Cards and immutable capability packs",
+      "allowed_outputs": ["identity digest", "role graph", "boundary summary"],
+      "denied_outputs": ["runtime permission", "credential material"]
+    },
+    {
+      "plane_id": "admission",
+      "purpose": "Compile policy, access, model, runtime, budget, and evidence requirements into a bounded assignment.",
+      "system_of_record": "Workforce roster, access bundles, runtime leases, and deployment profiles",
+      "allowed_outputs": ["admission plan", "lease request", "hold reason"],
+      "denied_outputs": ["self-approved promotion", "standing broad access"]
+    },
+    {
+      "plane_id": "mission",
+      "purpose": "Route a goal into a time-boxed swarm with explicit maker, checker, dependencies, and completion evidence.",
+      "system_of_record": "Swarm mission contracts and work ledger",
+      "allowed_outputs": ["lane plan", "handoff envelope", "stop decision"],
+      "denied_outputs": ["unbounded fanout", "two writers for one path"]
+    },
+    {
+      "plane_id": "observation",
+      "purpose": "Normalize traces, receipts, evals, security findings, costs, and value without retaining raw private content.",
+      "system_of_record": "Private SIS receipt sink plus Git-safe schemas and metric catalog",
+      "allowed_outputs": ["normalized receipt", "scorecard", "freshness signal"],
+      "denied_outputs": ["raw prompt archive", "secret or private payload replay"]
+    },
+    {
+      "plane_id": "workforce",
+      "purpose": "Track planned, probation, active, restricted, suspended, retiring, and retired assignments.",
+      "system_of_record": "agent-workforce.v1 roster",
+      "allowed_outputs": ["weekly review", "monthly portfolio review", "improvement plan"],
+      "denied_outputs": ["automatic promotion", "automatic retirement"]
+    },
+    {
+      "plane_id": "decision",
+      "purpose": "Present evidence-bound recommendations and named approval requests to the human owner.",
+      "system_of_record": "Decision ledger and approval receipts",
+      "allowed_outputs": ["continue", "improve", "restrict", "quarantine", "scale review", "retire review"],
+      "denied_outputs": ["forged approval", "silent consequential state change"]
+    }
+  ],
+  "admission": {
+    "required_artifacts": [
+      "agent_card",
+      "deployment_profile",
+      "workforce_assignment",
+      "access_bundle",
+      "eval_suite",
+      "security_profile",
+      "runtime_lease",
+      "receipt_sink"
+    ],
+    "maker_checker_required": true,
+    "exact_runtime_binding": true,
+    "stale_on_change": ["card", "prompt", "model", "runtime", "tools", "access", "policy", "eval_suite"]
+  },
+  "interface_visualization": {
+    "metaphor": "A calm sovereign navigation instrument: one center, six evidence rings, and visible human gates—not a fantasy throne or omnipotent brain.",
+    "center": "Queen decision card: current goal, exposure, recommendation, evidence freshness, and required human gate.",
+    "rings": [
+      { "label": "Identity", "meaning": "Agent Cards and capability digests", "color": "#8B7CFF" },
+      { "label": "Admission", "meaning": "Policy, access, leases, budget, and risk", "color": "#5D8CFF" },
+      { "label": "Missions", "meaning": "Swarms, lanes, milestones, and handoffs", "color": "#3FD2C7" },
+      { "label": "Observation", "meaning": "Runs, traces, evals, security, cost, and value", "color": "#6EC5FF" },
+      { "label": "Workforce", "meaning": "Lifecycle, probation, utilization, and review", "color": "#E6B85C" },
+      { "label": "Decision", "meaning": "Recommendations, approvals, restrictions, and retirement", "color": "#E97C9F" }
+    ],
+    "state_palette": {
+      "RED": "#FF6B6B",
+      "AMBER": "#F2B84B",
+      "GREEN": "#3FD2A1",
+      "PAUSED": "#7E8799"
+    },
+    "brand_identity_status": "provisional-human-gated"
+  },
+  "evidence": {
+    "private_sink": "private:SIS/agent-control-plane/starlight-queen/",
+    "raw_content_policy": "prohibited",
+    "authority_from_prompt": false
+  }
+}

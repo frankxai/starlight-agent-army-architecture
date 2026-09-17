@@ -43,7 +43,10 @@ Single strategy home for faced agents across GenCreator, FrankX, Starlight ops, 
 | Artifact | Path |
 | --- | --- |
 | Brand decisions | [docs/agent-portfolio/BRAND_AGENT_PORTFOLIO.md](docs/agent-portfolio/BRAND_AGENT_PORTFOLIO.md) |
+| **Starlight Intelligence 10×5 canonical portfolio** | [docs/agent-portfolio/STARLIGHT_INTELLIGENCE_CANONICAL_PORTFOLIO.md](docs/agent-portfolio/STARLIGHT_INTELLIGENCE_CANONICAL_PORTFOLIO.md) |
 | Agent Development Life Cycle | [docs/adlc/ADLC.md](docs/adlc/ADLC.md) |
+| **Queen + Agent Estate Operating System** | [docs/operations/STARLIGHT_QUEEN_AGENT_ESTATE_OS.md](docs/operations/STARLIGHT_QUEEN_AGENT_ESTATE_OS.md) |
+| AI Agent HR lifecycle and reviews | [docs/operations/AI_AGENT_HR_OPERATING_SYSTEM.md](docs/operations/AI_AGENT_HR_OPERATING_SYSTEM.md) |
 | Economics, capability, and SMART goals | [docs/operations/AGENT_ECONOMICS_AND_CAPABILITY.md](docs/operations/AGENT_ECONOMICS_AND_CAPABILITY.md) |
 | Adoption + deployment profiles | [observability/README.md](observability/README.md) |
 | 10h Queen execution | [docs/execution/10H_QUEEN_SWARM_PLAN.md](docs/execution/10H_QUEEN_SWARM_PLAN.md) |
@@ -61,7 +64,15 @@ Single strategy home for faced agents across GenCreator, FrankX, Starlight ops, 
 ```powershell
 python scripts/validate_agent_cards.py
 python scripts/run_eval_suite.py
+python scripts/generate_canonical_portfolio.py --check
+python scripts/validate_canonical_portfolio.py
+python scripts/test_canonical_portfolio.py
 python scripts/validate_agent_observability.py
+python scripts/validate_agent_governance.py
+python scripts/validate_agent_workforce.py
+python scripts/test_agent_governance.py
+python scripts/test_agent_workforce.py
+python scripts/test_monthly_agent_portfolio_review.py
 python scripts/calculate_agent_scorecard.py --profile observability/deployments/gencreator-studio-gen-omega.json --receipts observability/examples/gencreator-pilot.sample.json --expected-runs 3
 ```
 
@@ -76,6 +87,7 @@ python scripts/calculate_agent_scorecard.py --profile observability/deployments/
 | Configure gateway policy | [OpenClaw gateway example](configs/openclaw-gateway.example.json) |
 | Configure research harness | [DeepAgents harness example](configs/deepagents-harness.example.yaml) |
 | Measure cost, capability, and ROI | [Agent economics and capability](docs/operations/AGENT_ECONOMICS_AND_CAPABILITY.md) |
+| Govern Queen, onboarding, swarms, and reviews | [Queen Agent Estate OS](docs/operations/STARLIGHT_QUEEN_AGENT_ESTATE_OS.md) |
 | Verify machine readiness | [Health checks](docs/health-checks.md) |
 
 ```powershell
@@ -143,6 +155,10 @@ Agents can draft, inspect, summarize, and propose. Repo writes, gateway privileg
 - [OpenClaw gateway roles](configs/openclaw-gateway.example.json)
 - [DeepAgents harness roles](configs/deepagents-harness.example.yaml)
 - [MCP trust tiers](configs/mcp-trust-tiers.example.json)
+- [Starlight Queen constitutional contract](configs/starlight-queen-control-plane.example.json)
+- [Agent role access bundle](configs/agent-access-bundle.example.json)
+- [Bounded swarm mission](configs/swarm-mission.example.json)
+- [Blocked-by-default n8n Agent Estate handoff](configs/n8n-agent-estate-handoff.example.json)
 - [Codex maintainer template](templates/codex-maintainer.md)
 - [AGENTS.md template](templates/AGENTS.md)
 

@@ -1,0 +1,121 @@
+{
+  "schema_version": "swarm-mission.v1",
+  "mission_id": "agent-estate-observability-foundation",
+  "title": "Agent estate observability foundation",
+  "objective": "Produce a validated, privacy-minimized monthly portfolio review from weekly workforce evidence without allowing any runtime or workflow to self-certify authority.",
+  "owner": "frank",
+  "supervisor": "starlight-queen",
+  "status": "draft",
+  "risk_tier": "medium",
+  "timebox": {
+    "start": null,
+    "deadline": "2026-09-15T18:00:00+02:00",
+    "timezone": "Europe/Amsterdam",
+    "max_elapsed_hours": 24
+  },
+  "milestones": [
+    {
+      "milestone_id": "contracts-validated",
+      "outcome": "Queen, access, swarm, and review contracts validate with adversarial tests.",
+      "owner_participant_id": "portfolio-maker",
+      "deadline": "2026-09-10T18:00:00+02:00",
+      "evidence_required": ["validator output", "focused test output", "explicit changed-file list"],
+      "status": "planned"
+    },
+    {
+      "milestone_id": "independent-review-complete",
+      "outcome": "An independent checker reviews authority, privacy, path, and self-certification boundaries.",
+      "owner_participant_id": "portfolio-checker",
+      "deadline": "2026-09-12T18:00:00+02:00",
+      "evidence_required": ["review receipt", "finding disposition"],
+      "status": "planned"
+    },
+    {
+      "milestone_id": "monthly-review-pilot",
+      "outcome": "One synthetic/private pilot renders JSON and Markdown and remains advisory.",
+      "owner_participant_id": "estate-conductor",
+      "deadline": "2026-09-15T18:00:00+02:00",
+      "evidence_required": ["review packet", "schema validation", "human decision queue"],
+      "status": "planned"
+    }
+  ],
+  "participants": [
+    {
+      "participant_id": "estate-conductor",
+      "participant_kind": "agent",
+      "role": "conductor",
+      "agent_id": "starlight-operator",
+      "card_ref": "cards/hosts/starlight-operator.json",
+      "runtime": "hermes",
+      "model_policy": "route by consequence; synthesis only after deterministic evidence collection",
+      "access_bundle_ref": "configs/agent-access-bundle.example.json",
+      "write_scopes": [],
+      "depends_on": ["portfolio-maker", "portfolio-checker"]
+    },
+    {
+      "participant_id": "portfolio-maker",
+      "participant_kind": "agent",
+      "role": "maker",
+      "agent_id": "rivet-build-engineer",
+      "card_ref": "cards/portfolio/rivet-build-engineer.json",
+      "runtime": "codex",
+      "model_policy": "implementation-grade coding model selected by the admitted Codex lane",
+      "access_bundle_ref": null,
+      "write_scopes": ["scripts/*", "schemas/*", "configs/*", "docs/operations/*", "README.md"],
+      "depends_on": []
+    },
+    {
+      "participant_id": "portfolio-checker",
+      "participant_kind": "agent",
+      "role": "checker",
+      "agent_id": "prism-quality-critic",
+      "card_ref": "cards/portfolio/prism-quality-critic.json",
+      "runtime": "claude-code",
+      "model_policy": "independent high-judgment reviewer; no reuse of maker output as hidden authority",
+      "access_bundle_ref": null,
+      "write_scopes": ["receipts/review-*"],
+      "depends_on": ["portfolio-maker"]
+    },
+    {
+      "participant_id": "review-notifier",
+      "participant_kind": "workflow",
+      "role": "automation",
+      "workflow_system": "n8n",
+      "workflow_ref": "planned:agent-estate-review-notify",
+      "allowed_operations": ["receive allowlisted review summary", "notify approved destination"],
+      "authority_assertions": "none",
+      "depends_on": ["estate-conductor"]
+    }
+  ],
+  "separation_of_duties": {
+    "maker_participant_ids": ["portfolio-maker"],
+    "checker_participant_ids": ["portfolio-checker"],
+    "checker_independent": true,
+    "self_certification_allowed": false
+  },
+  "budgets": {
+    "max_model_cost_usd": 40,
+    "max_tool_calls": 250,
+    "max_parallel_agents": 2,
+    "max_retries_per_step": 2
+  },
+  "human_gates": ["credentials", "external_send", "promotion", "production-deploy", "retirement"],
+  "completion_criteria": [
+    "All contracts validate.",
+    "The monthly packet separates execution status from outcome status.",
+    "The checker is independent of the maker.",
+    "No raw prompt, response, secret, token, or private payload is written to Git.",
+    "The final packet requests rather than fabricates consequential human decisions."
+  ],
+  "stop_conditions": [
+    "Any credential or private payload appears in a durable artifact.",
+    "A workflow or prompt attempts to assert approval or security PASS.",
+    "Two participants receive overlapping write scope without an explicit serial handoff.",
+    "Budget, deadline, or retry ceiling is exceeded."
+  ],
+  "evidence": {
+    "private_sink": "private:SIS/swarm-missions/agent-estate-observability-foundation/",
+    "required_receipts": ["admission", "run", "eval", "security", "independent-review", "closure"],
+    "raw_content_policy": "prohibited"
+  }
+}

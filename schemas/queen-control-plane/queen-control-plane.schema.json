@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/queen-control-plane.schema.json",
+  "title": "Starlight Queen Constitutional Control Plane",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "controller_id",
+    "definition",
+    "constitution",
+    "planes",
+    "admission",
+    "interface_visualization",
+    "evidence"
+  ],
+  "properties": {
+    "schema_version": { "const": "queen-control-plane.v1" },
+    "controller_id": { "const": "starlight-queen" },
+    "definition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "display_name", "operating_role", "authority_source", "not_a"],
+      "properties": {
+        "kind": { "const": "constitutional-control-plane" },
+        "display_name": { "const": "Starlight Queen" },
+        "operating_role": { "type": "string", "minLength": 1 },
+        "authority_source": { "const": "policy-leases-receipts-and-human-gates" },
+        "not_a": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "constitution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "human_owner",
+        "authority_mode",
+        "default_decision",
+        "automatic_actions",
+        "human_gated_actions",
+        "prohibited_assertions"
+      ],
+      "properties": {
+        "human_owner": { "type": "string", "minLength": 1 },
+        "authority_mode": { "const": "advisory-with-fail-safe-quarantine" },
+        "default_decision": { "const": "deny" },
+        "automatic_actions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "collect_normalized_evidence",
+              "validate_contracts",
+              "compile_assignment_plan",
+              "run_sandbox_evals",
+              "render_reviews",
+              "recommend_restriction",
+              "quarantine_on_critical_security"
+            ]
+          }
+        },
+        "human_gated_actions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "promotion",
+              "restore_from_quarantine",
+              "widen_tools",
+              "widen_write_scope",
+              "increase_budget",
+              "deploy",
+              "publish",
+              "external_send",
+              "spend",
+              "credentials",
+              "dns",
+              "destructive",
+              "legal_ip",
+              "brand_identity",
+              "retirement"
+            ]
+          }
+        },
+        "prohibited_assertions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "planes": {
+      "type": "array",
+      "minItems": 5,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["plane_id", "purpose", "system_of_record", "allowed_outputs", "denied_outputs"],
+        "properties": {
+          "plane_id": {
+            "enum": ["identity", "admission", "mission", "observation", "workforce", "decision"]
+          },
+          "purpose": { "type": "string", "minLength": 1 },
+          "system_of_record": { "type": "string", "minLength": 1 },
+          "allowed_outputs": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "denied_outputs": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "admission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required_artifacts", "maker_checker_required", "exact_runtime_binding", "stale_on_change"],
+      "properties": {
+        "required_artifacts": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "agent_card",
+              "deployment_profile",
+              "workforce_assignment",
+              "access_bundle",
+              "eval_suite",
+              "security_profile",
+              "runtime_lease",
+              "receipt_sink"
+            ]
+          }
+        },
+        "maker_checker_required": { "const": true },
+        "exact_runtime_binding": { "const": true },
+        "stale_on_change": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["card", "prompt", "model", "runtime", "tools", "access", "policy", "eval_suite"]
+          }
+        }
+      }
+    },
+    "interface_visualization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metaphor", "center", "rings", "state_palette", "brand_identity_status"],
+      "properties": {
+        "metaphor": { "type": "string", "minLength": 1 },
+        "center": { "type": "string", "minLength": 1 },
+        "rings": {
+          "type": "array",
+          "minItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "meaning", "color"],
+            "properties": {
+              "label": { "type": "string", "minLength": 1 },
+              "meaning": { "type": "string", "minLength": 1 },
+              "color": { "type": "string", "pattern": "^#[A-Fa-f0-9]{6}$" }
+            }
+          }
+        },
+        "state_palette": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["RED", "AMBER", "GREEN", "PAUSED"],
+          "properties": {
+            "RED": { "type": "string", "pattern": "^#[A-Fa-f0-9]{6}$" },
+            "AMBER": { "type": "string", "pattern": "^#[A-Fa-f0-9]{6}$" },
+            "GREEN": { "type": "string", "pattern": "^#[A-Fa-f0-9]{6}$" },
+            "PAUSED": { "type": "string", "pattern": "^#[A-Fa-f0-9]{6}$" }
+          }
+        },
+        "brand_identity_status": { "const": "provisional-human-gated" }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["private_sink", "raw_content_policy", "authority_from_prompt"],
+      "properties": {
+        "private_sink": { "type": "string", "pattern": "^private:" },
+        "raw_content_policy": { "const": "prohibited" },
+        "authority_from_prompt": { "const": false }
+      }
+    }
+  }
+}

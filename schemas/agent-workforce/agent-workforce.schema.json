@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/agent-workforce.schema.json",
+  "title": "Starlight AI Agent Workforce Roster",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "effective_date", "authority", "review_policy", "assignments"],
+  "properties": {
+    "schema_version": { "const": "agent-workforce.v1" },
+    "effective_date": { "type": "string", "format": "date" },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["controller", "control_plane_ref", "human_owner", "review_mode", "allowed_automations", "prohibited_automations"],
+      "properties": {
+        "controller": { "const": "starlight-queen" },
+        "control_plane_ref": { "$ref": "#/$defs/repoRef" },
+        "human_owner": { "type": "string", "minLength": 1 },
+        "review_mode": { "const": "advisory" },
+        "allowed_automations": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "collect_normalized_evidence",
+              "run_structural_validation",
+              "run_sandbox_evals",
+              "render_weekly_review",
+              "render_monthly_review",
+              "recommend_restriction",
+              "quarantine_on_critical_security"
+            ]
+          }
+        },
+        "prohibited_automations": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "promote",
+              "restore_from_quarantine",
+              "widen_tools",
+              "widen_write_scope",
+              "increase_budget",
+              "deploy",
+              "publish",
+              "external_send",
+              "retire_or_delete"
+            ]
+          }
+        }
+      }
+    },
+    "review_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "timezone",
+        "cadence_days",
+        "monthly_cadence_days",
+        "min_weekly_reviews_per_month",
+        "evidence_stale_after_days",
+        "probation_min_accepted_runs",
+        "promotion_min_accepted_runs",
+        "required_eval_mode",
+        "required_security_verdict"
+      ],
+      "properties": {
+        "timezone": { "type": "string", "minLength": 1 },
+        "cadence_days": { "type": "integer", "minimum": 1, "maximum": 31 },
+        "monthly_cadence_days": { "type": "integer", "minimum": 28, "maximum": 31 },
+        "min_weekly_reviews_per_month": { "type": "integer", "minimum": 2, "maximum": 5 },
+        "evidence_stale_after_days": { "type": "integer", "minimum": 1, "maximum": 31 },
+        "probation_min_accepted_runs": { "type": "integer", "minimum": 1 },
+        "promotion_min_accepted_runs": { "type": "integer", "minimum": 1 },
+        "required_eval_mode": { "const": "live" },
+        "required_security_verdict": { "const": "PASS" }
+      }
+    },
+    "assignments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assignment_id",
+          "agent_id",
+          "card_ref",
+          "access_bundle_ref",
+          "deployment_ref",
+          "eval_suite_ref",
+          "supervisor",
+          "status",
+          "risk_tier",
+          "runtime",
+          "review",
+          "security",
+          "human_gates",
+          "evidence"
+        ],
+        "properties": {
+          "assignment_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "agent_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "card_ref": { "$ref": "#/$defs/repoRef" },
+          "access_bundle_ref": { "$ref": "#/$defs/repoRef" },
+          "deployment_ref": { "$ref": "#/$defs/repoRef" },
+          "eval_suite_ref": { "$ref": "#/$defs/repoRef" },
+          "supervisor": { "const": "starlight-queen" },
+          "status": {
+            "enum": ["planned", "probation", "active", "restricted", "suspended", "retiring", "retired"]
+          },
+          "risk_tier": { "enum": ["low", "medium", "high", "critical"] },
+          "runtime": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["controller", "executor", "trigger", "gateways", "specialists", "integrations"],
+            "properties": {
+              "controller": { "const": "starlight-queen" },
+              "executor": { "enum": ["hermes", "temporal-railway", "vercel-eve", "cloudflare-agents"] },
+              "trigger": { "enum": ["manual", "hermes-cron", "n8n", "temporal", "event"] },
+              "gateways": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": { "enum": ["openclaw", "hermes-gateway", "web", "none"] }
+              },
+              "specialists": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": { "enum": ["codex", "claude-code", "openhands", "deepagents"] }
+              },
+              "integrations": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": { "enum": ["n8n", "mcp", "webhook", "none"] }
+              }
+            }
+          },
+          "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["cadence_days", "last_completed_at"],
+            "properties": {
+              "cadence_days": { "type": "integer", "minimum": 1, "maximum": 31 },
+              "last_completed_at": { "type": ["string", "null"], "format": "date-time" }
+            }
+          },
+          "security": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["profile_id", "required_before_status", "latest_assessment_ref"],
+            "properties": {
+              "profile_id": { "type": "string", "minLength": 1 },
+              "required_before_status": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": { "enum": ["probation", "active", "restricted"] }
+              },
+              "latest_assessment_ref": { "type": ["string", "null"] }
+            }
+          },
+          "human_gates": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "publish",
+                "external_send",
+                "spend",
+                "dns",
+                "credentials",
+                "destructive",
+                "legal_ip",
+                "brand_identity",
+                "promotion",
+                "restore_from_quarantine",
+                "retirement"
+              ]
+            }
+          },
+          "evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["private_sink", "raw_content_policy"],
+            "properties": {
+              "private_sink": { "type": "string", "pattern": "^private:" },
+              "raw_content_policy": { "const": "prohibited" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "repoRef": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9._/-]+$"
+    }
+  }
+}

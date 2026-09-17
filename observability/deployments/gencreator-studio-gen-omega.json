@@ -1,0 +1,90 @@
+{
+  "schema_version": "agent-deployment.v1",
+  "deployment_id": "gencreator-studio-gen-omega",
+  "repo": "frankxai/GenCreator-Studio",
+  "agent_id": "gen-omega",
+  "card_ref": "cards/hosts/gen-omega.json",
+  "surface": "web",
+  "environment": "pilot",
+  "lifecycle_status": "planned",
+  "owner": "gencreator-product",
+  "measurement": {
+    "timezone": "Europe/Amsterdam",
+    "reporting_cadence_days": 7,
+    "decision_window_days": 90,
+    "baseline_window": {
+      "status": "planned",
+      "start": "2026-08-11",
+      "end": "2026-08-24"
+    }
+  },
+  "economics": {
+    "currency": "USD",
+    "budget_status": "proposed",
+    "primary_value_unit": "verified creator task completed",
+    "attribution_method": "task acceptance plus confidence-discounted time saved; overlapping value is not summed",
+    "budgets": {
+      "max_total_economic_cost_per_run_usd": 5.0,
+      "max_cost_per_success_usd": 10.0,
+      "monthly_actual_cash_budget_usd": 300.0
+    }
+  },
+  "quality": {
+    "capability_profile": "public-creator-host-v1",
+    "weights": {
+      "task_success": 0.3,
+      "evidence_grounding": 0.15,
+      "reliability": 0.15,
+      "safety": 0.2,
+      "efficiency": 0.1,
+      "judgment_routing": 0.1
+    },
+    "min_capability_score": 80,
+    "min_task_success_rate": 0.8,
+    "max_critical_safety_failures": 0,
+    "min_sample_size": 50,
+    "max_p95_latency_ms": 20000
+  },
+  "goals": [
+    {
+      "goal_id": "instrument-gen-omega",
+      "status": "active",
+      "specific_outcome": "Every completed Gen-Ω pilot run emits a privacy-minimized, economically complete receipt.",
+      "metric_id": "receipt_completeness_ratio",
+      "baseline": { "status": "measured", "value": 0, "start": "2026-08-10", "end": "2026-08-10" },
+      "target": { "operator": ">=", "value": 0.95, "deadline": "2026-08-24" },
+      "owner": "gencreator-product",
+      "evidence_source": ".starlight/agent-observability/gen-omega/*.json",
+      "guardrails": ["zero raw prompts or responses", "cash and estimated cost bases remain separate"]
+    },
+    {
+      "goal_id": "prove-gen-omega-quality",
+      "status": "baselining",
+      "specific_outcome": "Gen-Ω completes representative creator tasks with verified outputs and no critical tenant or safety failure.",
+      "metric_id": "task_success_rate",
+      "baseline": { "status": "pending", "value": null, "start": null, "end": null },
+      "target": { "operator": ">=", "value": 0.8, "deadline": "2026-09-30" },
+      "owner": "gencreator-product",
+      "evidence_source": "50 or more live pilot receipts plus fixed eval suite",
+      "guardrails": ["critical safety failures = 0", "capability score >= 80"]
+    },
+    {
+      "goal_id": "prove-gen-omega-roi",
+      "status": "proposed",
+      "specific_outcome": "Gen-Ω creates at least two dollars of confidence-adjusted value for each dollar of total economic cost.",
+      "metric_id": "confidence_adjusted_roi_ratio",
+      "baseline": { "status": "pending", "value": null, "start": null, "end": null },
+      "target": { "operator": ">=", "value": 1.0, "deadline": "2026-11-08" },
+      "owner": "gencreator-product",
+      "evidence_source": "accepted task receipts with value source references",
+      "guardrails": ["no double counting revenue and time saved", "budget remains proposed until baseline review"]
+    }
+  ],
+  "telemetry": {
+    "receipt_sink": ".starlight/agent-observability/gen-omega/",
+    "raw_content_policy": "prohibited",
+    "cost_sources": ["provider usage or invoice", "metered tool ledger", "infra allocation", "human review record"],
+    "value_sources": ["task acceptance", "time-saved sample", "attributed conversion or retained revenue"]
+  },
+  "metadata": { "created": "2026-08-10", "budgets_are_owner_proposals": true }
+}

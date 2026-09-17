@@ -12,6 +12,7 @@ Replace with rubric LLM judge in a later ADLC IMPROVE cycle.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -62,7 +63,7 @@ def heuristic_grade(expect: str, reply: str) -> bool:
     return hits >= 1 or len(rep) > 40
 
 
-def call_anthropic(system: str, prompt: str, model: str) -> str:
+def call_anthropic(system: str, prompt: str, model: str) -> tuple[str, dict[str, int]]:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         raise RuntimeError("ANTHROPIC_API_KEY missing")
@@ -89,7 +90,14 @@ def call_anthropic(system: str, prompt: str, model: str) -> str:
     for block in data.get("content", []):
         if block.get("type") == "text":
             parts.append(block.get("text", ""))
-    return "\n".join(parts).strip()
+    raw_usage = data.get("usage") or {}
+    usage = {
+        "fresh_input_tokens": int(raw_usage.get("input_tokens", 0)),
+        "cached_read_tokens": int(raw_usage.get("cache_read_input_tokens", 0)),
+        "cache_write_tokens": int(raw_usage.get("cache_creation_input_tokens", 0)),
+        "output_tokens": int(raw_usage.get("output_tokens", 0)),
+    }
+    return "\n".join(parts).strip(), usage
 
 
 def main() -> int:
@@ -134,32 +142,67 @@ def main() -> int:
                 passed += int(ok)
                 print(f"{'OK' if ok else 'FAIL'} dry {path.name}::{cid}")
                 continue
+            error_type = None
             try:
-                reply = call_anthropic(system, prompt, args.model)
+                reply, usage = call_anthropic(system, prompt, args.model)
                 ok = heuristic_grade(expect, reply)
             except Exception as e:
-                reply = f"ERROR: {e}"
-                ok = False
-            results.append(
-                {
-                    "suite": path.name,
-                    "case": cid,
-                    "mode": "live",
-                    "ok": ok,
-                    "reply_preview": reply[:240],
+                reply = ""
+                usage = {
+                    "fresh_input_tokens": 0,
+                    "cached_read_tokens": 0,
+                    "cache_write_tokens": 0,
+                    "output_tokens": 0,
                 }
-            )
+                error_type = type(e).__name__
+                ok = False
+            result = {
+                "suite": path.name,
+                "case": cid,
+                "mode": "live",
+                "ok": ok,
+                "reply_sha256": hashlib.sha256(reply.encode("utf-8")).hexdigest() if reply else None,
+                "reply_chars": len(reply),
+                "usage": usage,
+            }
+            if not reply:
+                result["error_type"] = error_type or "EmptyReply"
+            results.append(result)
             passed += int(ok)
             print(f"{'OK' if ok else 'FAIL'} live {path.name}::{cid}")
             if not ok:
                 print(f"  expect: {expect}")
-                print(f"  reply: {reply[:300]}")
+                print(f"  reply_sha256: {result['reply_sha256']} chars={result['reply_chars']}")
 
     rate = passed / total if total else 0.0
     print(f"\n{passed}/{total} passed ({rate:.0%}) mode={'live' if args.live else 'dry'}")
     out = ROOT / "receipts" / f"eval-run-{'live' if args.live else 'dry'}.json"
+    usage_totals = {
+        key: sum(int((result.get("usage") or {}).get(key, 0)) for result in results)
+        for key in (
+            "fresh_input_tokens",
+            "cached_read_tokens",
+            "cache_write_tokens",
+            "output_tokens",
+        )
+    }
+    receipt = {
+        "mode": "live" if args.live else "dry",
+        "model": args.model if args.live else None,
+        "passed": passed,
+        "total": total,
+        "rate": rate,
+        "usage": usage_totals,
+        "actual_cash_cost_usd": None,
+        "cost_evidence": "unknown; no invoice or reconciled provider charge was read",
+        "results": results,
+        "limitations": [
+            "Dry mode proves structure only." if not args.live else "Live replies are graded by a v1 heuristic, not an independent model judge.",
+            "Reply content is not persisted; only length and SHA-256 are stored in live mode.",
+        ],
+    }
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps({"passed": passed, "total": total, "rate": rate, "results": results}, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(receipt, indent=2), encoding="utf-8")
     print(f"wrote {out.relative_to(ROOT).as_posix()}")
 
     # dry always green if structural; live uses 0.85 default bar if any suite fails hard

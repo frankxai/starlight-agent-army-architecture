@@ -2,19 +2,56 @@ name: agent-cards
 
 on:
   push:
+    branches: [main]
     paths:
       - "cards/**"
+      - "portfolio/**"
+      - "capability-packs/**"
       - "schemas/agent-card/**"
+      - "schemas/agent-portfolio/**"
+      - "schemas/agent-deployment/**"
+      - "schemas/agent-run-receipt/**"
+      - "schemas/agent-scorecard/**"
       - "scripts/validate_agent_cards.py"
+      - "scripts/generate_canonical_portfolio.py"
+      - "scripts/validate_canonical_portfolio.py"
+      - "scripts/test_canonical_portfolio.py"
+      - "scripts/run_eval_suite.py"
+      - "scripts/run_live_eval.py"
+      - "scripts/validate_agent_observability.py"
+      - "scripts/calculate_agent_scorecard.py"
+      - "scripts/test_agent_scorecard.py"
       - "kb-packs/**"
       - "evals/**"
+      - "observability/**"
+      - "docs/operations/**"
   pull_request:
     paths:
       - "cards/**"
+      - "portfolio/**"
+      - "capability-packs/**"
       - "schemas/agent-card/**"
+      - "schemas/agent-portfolio/**"
+      - "schemas/agent-deployment/**"
+      - "schemas/agent-run-receipt/**"
+      - "schemas/agent-scorecard/**"
       - "scripts/validate_agent_cards.py"
+      - "scripts/generate_canonical_portfolio.py"
+      - "scripts/validate_canonical_portfolio.py"
+      - "scripts/test_canonical_portfolio.py"
+      - "scripts/run_eval_suite.py"
+      - "scripts/run_live_eval.py"
+      - "scripts/validate_agent_observability.py"
+      - "scripts/calculate_agent_scorecard.py"
+      - "scripts/test_agent_scorecard.py"
       - "kb-packs/**"
       - "evals/**"
+      - "observability/**"
+      - "docs/operations/**"
+
+concurrency:
+  group: agent-cards-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   validate:
@@ -28,3 +65,24 @@ jobs:
         run: pip install jsonschema
       - name: Validate agent cards
         run: python scripts/validate_agent_cards.py
+      - name: Check canonical portfolio projections
+        run: python scripts/generate_canonical_portfolio.py --check
+      - name: Validate canonical 10x5 portfolio
+        run: python scripts/validate_canonical_portfolio.py
+      - name: Test canonical portfolio trust boundaries
+        run: python scripts/test_canonical_portfolio.py
+      - name: Validate eval suites
+        run: python scripts/run_eval_suite.py
+      - name: Prove dry eval receipt path
+        run: python scripts/run_live_eval.py
+      - name: Validate observability contracts
+        run: python scripts/validate_agent_observability.py
+      - name: Test scorecard math
+        run: python scripts/test_agent_scorecard.py
+      - name: Prove scorecard formulas with synthetic receipts
+        run: >-
+          python scripts/calculate_agent_scorecard.py
+          --profile observability/deployments/gencreator-studio-gen-omega.json
+          --receipts observability/examples/gencreator-pilot.sample.json
+          --expected-runs 3
+          --output /tmp/gencreator-scorecard.sample.json

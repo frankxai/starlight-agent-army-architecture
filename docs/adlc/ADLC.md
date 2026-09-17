@@ -11,14 +11,14 @@ IDEATE → SPEC → CARD → KB → TOOLS → BODY → EVAL → SHIP → OBSERVE
 | Stage | Output | Gate |
 |-------|--------|------|
 | **IDEATE** | Problem, tribe, outcome, non-goals | Business owner accept |
-| **SPEC** | Tier L0–L5, brand, host vs specialist, success metrics | Portfolio fit check |
+| **SPEC** | Operating tier L0–L5, brand, host vs specialist, deployment profile, SMART outcomes | Portfolio fit + measurable baseline plan |
 | **CARD** | Valid `agent-card` YAML/JSON | Schema validate |
 | **KB** | Versioned pack under `kb-packs/` + provenance | No private leak; citations |
 | **TOOLS** | Allowlist + human gates + deny list | Security review for L3+ |
 | **BODY** | Surface adapter (Hermes profile / Vercel shell / CoE) | Smoke path |
 | **EVAL** | Golden prompts, refusal tests, brand voice, leak tests | **Structural:** suite file exists + validates. **Live (required before customer SHIP):** model harness scores ≥ min_pass_rate. Dry-run alone is not a quality gate. |
 | **SHIP** | Draft PR + preview/proof | Independent verifier + live eval for public L1+ |
-| **OBSERVE** | Usage, cost, failure modes, CSAT proxies | Weekly digest |
+| **OBSERVE** | Privacy-minimized run receipts, exact cost basis, capability score, value attribution, failure modes | Weekly scorecard; actual cash separated from estimates |
 | **IMPROVE** | AutoResearch notes → card/KB/tool patch | Experiment receipt |
 | **RETIRE** | Deprecation notice + redirect host | No orphan public faces |
 
@@ -33,12 +33,14 @@ IDEATE → SPEC → CARD → KB → TOOLS → BODY → EVAL → SHIP → OBSERVE
 | L4 | L3-equivalent private + permission matrix + spend gates + memory isolation |
 | L5 | L4 + swarm topology + human gates + rollback + cost cap |
 
+Operating tier is not an intelligence score. Capability is evaluated for the deployed card/runtime/model/task set using the role-specific profile in `observability/deployments/` and cannot become decision-grade before its minimum live sample.
+
 ## AutoResearch loop (experiments/)
 
 1. Hypothesis (one sentence)
 2. Variant A/B on card prompt, KB chunk, or tool policy
 3. Fixed eval suite run
-4. Metric: quality score, cost/token, latency, safety fails
+4. Metric: capability dimensions, cost per successful outcome, confidence-adjusted value/ROI, latency, safety failures
 5. Receipt in `experiments/YYYY-MM-DD-<slug>.md`
 6. Promote winner into card only if eval Δ ≥ threshold and no safety regress
 
@@ -69,6 +71,9 @@ IDEATE → SPEC → CARD → KB → TOOLS → BODY → EVAL → SHIP → OBSERVE
 - [ ] Tools allow/deny listed per surface
 - [ ] At least one body adapter documented
 - [ ] Eval suite green at tier bar
+- [ ] Deployment profile has owner, baseline plan, proposed/approved budget, and SMART goals
+- [ ] Run receipt emission forbids raw prompts/responses and separates actual cash from estimates
+- [ ] Minimum live sample and scorecard gates defined before any SCALE claim
 - [ ] Design/face notes for L1+ public
 - [ ] Receipt path in `receipts/`
 - [ ] Portfolio table updated

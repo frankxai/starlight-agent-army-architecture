@@ -1,0 +1,86 @@
+{
+  "schema_version": "agent-deployment.v1",
+  "deployment_id": "frankx-concierge-web",
+  "repo": "frankxai/frankx.ai-vercel-website",
+  "agent_id": "frankx-concierge",
+  "card_ref": "cards/hosts/frankx-concierge.json",
+  "surface": "web",
+  "environment": "pilot",
+  "lifecycle_status": "planned",
+  "owner": "frankx-demand",
+  "measurement": {
+    "timezone": "Europe/Amsterdam",
+    "reporting_cadence_days": 7,
+    "decision_window_days": 90,
+    "baseline_window": { "status": "planned", "start": "2026-08-11", "end": "2026-08-24" }
+  },
+  "economics": {
+    "currency": "USD",
+    "budget_status": "proposed",
+    "primary_value_unit": "qualified route or accepted next action",
+    "attribution_method": "session acceptance plus confidence-discounted downstream conversion",
+    "budgets": {
+      "max_total_economic_cost_per_run_usd": 2.0,
+      "max_cost_per_success_usd": 6.0,
+      "monthly_actual_cash_budget_usd": 150.0
+    }
+  },
+  "quality": {
+    "capability_profile": "public-demand-router-v1",
+    "weights": {
+      "task_success": 0.25,
+      "evidence_grounding": 0.2,
+      "reliability": 0.15,
+      "safety": 0.2,
+      "efficiency": 0.1,
+      "judgment_routing": 0.1
+    },
+    "min_capability_score": 82,
+    "min_task_success_rate": 0.85,
+    "max_critical_safety_failures": 0,
+    "min_sample_size": 50,
+    "max_p95_latency_ms": 15000
+  },
+  "goals": [
+    {
+      "goal_id": "instrument-frankx-concierge",
+      "status": "active",
+      "specific_outcome": "Every completed Concierge pilot session emits a valid receipt without storing the visitor conversation.",
+      "metric_id": "receipt_completeness_ratio",
+      "baseline": { "status": "measured", "value": 0, "start": "2026-08-10", "end": "2026-08-10" },
+      "target": { "operator": ">=", "value": 0.95, "deadline": "2026-08-24" },
+      "owner": "frankx-demand",
+      "evidence_source": ".starlight/agent-observability/frankx-concierge/*.json",
+      "guardrails": ["zero raw conversations", "no fake-Frank representation"]
+    },
+    {
+      "goal_id": "prove-frankx-first-pass",
+      "status": "baselining",
+      "specific_outcome": "Visitors accept the Concierge route or next action without a correction cycle.",
+      "metric_id": "first_pass_acceptance_rate",
+      "baseline": { "status": "pending", "value": null, "start": null, "end": null },
+      "target": { "operator": ">=", "value": 0.75, "deadline": "2026-09-30" },
+      "owner": "frankx-demand",
+      "evidence_source": "50 or more consent-safe pilot receipts",
+      "guardrails": ["critical safety failures = 0", "capability score >= 82"]
+    },
+    {
+      "goal_id": "prove-frankx-roi",
+      "status": "proposed",
+      "specific_outcome": "The Concierge produces at least one dollar fifty of confidence-adjusted value per dollar of total economic cost.",
+      "metric_id": "confidence_adjusted_roi_ratio",
+      "baseline": { "status": "pending", "value": null, "start": null, "end": null },
+      "target": { "operator": ">=", "value": 0.5, "deadline": "2026-11-08" },
+      "owner": "frankx-demand",
+      "evidence_source": "qualified-route and downstream-conversion receipts",
+      "guardrails": ["conversion attribution has source and confidence", "budget remains proposed until baseline review"]
+    }
+  ],
+  "telemetry": {
+    "receipt_sink": ".starlight/agent-observability/frankx-concierge/",
+    "raw_content_policy": "prohibited",
+    "cost_sources": ["provider usage or invoice", "infra allocation", "human review record"],
+    "value_sources": ["accepted route", "qualified lead", "attributed downstream conversion"]
+  },
+  "metadata": { "created": "2026-08-10", "budgets_are_owner_proposals": true }
+}

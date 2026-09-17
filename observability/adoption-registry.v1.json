@@ -1,0 +1,70 @@
+{
+  "schema_version": "agent-adoption-registry.v1",
+  "observed_at": "2026-08-10T00:00:00+02:00",
+  "surfaces": [
+    {
+      "surface_id": "agent-card-ssot",
+      "brand": "starlight",
+      "repo": "frankxai/starlight-agent-army-architecture",
+      "state": "draft_pr",
+      "evidence": [
+        "github:frankxai/starlight-agent-army-architecture#1",
+        "checks:architecture=success,agent-cards=success"
+      ],
+      "next_gate": "observability schemas, deterministic scorecard validation, and updated CI"
+    },
+    {
+      "surface_id": "gencreator-gen-omega-web",
+      "brand": "gencreator",
+      "repo": "frankxai/GenCreator-Studio",
+      "state": "planned",
+      "evidence": [
+        "local:agent/hermes/gen-omega-shell-20260809 branch not present on 2026-08-10",
+        "github:no PR found for agent/hermes/gen-omega-shell-20260809 on 2026-08-10"
+      ],
+      "next_gate": "clean product worktree, card loader, chat route, smoke test, draft PR"
+    },
+    {
+      "surface_id": "ai-coe-card-mirror",
+      "brand": "ai-architect",
+      "repo": "frankxai/ai-coe",
+      "state": "mirrored",
+      "evidence": [
+        "branch:agent/hermes/agent-card-templates-20260809",
+        "templates/agent-cards/gen-omega.json",
+        "templates/agent-cards/frankx-concierge.json"
+      ],
+      "next_gate": "consumer validation and governed demo body"
+    },
+    {
+      "surface_id": "frankx-concierge-web",
+      "brand": "frankx",
+      "repo": "frankxai/frankx.ai-vercel-website",
+      "state": "planned",
+      "evidence": ["card:cards/hosts/frankx-concierge.json"],
+      "next_gate": "thin load contract, receipt instrumentation, preview proof"
+    },
+    {
+      "surface_id": "arcanea-lumina-web",
+      "brand": "arcanea",
+      "repo": "frankxai/arcanea-ai-app",
+      "state": "identity_ready_body_missing",
+      "evidence": [
+        "card:cards/hosts/arcanea-lumina.json",
+        "eval:evals/arcanea-lumina.v1.json"
+      ],
+      "next_gate": "canon-locked loader contract and clean product worktree"
+    },
+    {
+      "surface_id": "starlight-operator-hermes",
+      "brand": "starlight",
+      "repo": "private:hermes-runtime",
+      "state": "identity_ready_body_adapter_documented",
+      "evidence": [
+        "card:cards/hosts/starlight-operator.json",
+        "adapter:docs/execution/HERMES_ADAPTER.md"
+      ],
+      "next_gate": "privacy-minimized run receipts and exact-window scorecard"
+    }
+  ]
+}

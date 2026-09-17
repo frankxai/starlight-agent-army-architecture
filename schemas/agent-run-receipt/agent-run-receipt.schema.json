@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/agent-run-receipt.schema.json",
+  "title": "Starlight Agent Run Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "deployment_id",
+    "agent_id",
+    "repo",
+    "environment",
+    "started_at",
+    "ended_at",
+    "latency_ms",
+    "usage",
+    "costs",
+    "outcome",
+    "quality"
+  ],
+  "properties": {
+    "schema_version": { "const": "agent-run-receipt.v1" },
+    "run_id": { "type": "string", "minLength": 1 },
+    "deployment_id": { "type": "string", "minLength": 1 },
+    "agent_id": { "type": "string", "minLength": 1 },
+    "repo": { "type": "string", "minLength": 1 },
+    "environment": {
+      "enum": ["local", "test", "preview", "pilot", "production", "internal"]
+    },
+    "started_at": { "type": "string", "format": "date-time" },
+    "ended_at": { "type": "string", "format": "date-time" },
+    "latency_ms": { "type": "integer", "minimum": 0 },
+    "retries": { "type": "integer", "minimum": 0, "default": 0 },
+    "usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fresh_input_tokens", "cached_read_tokens", "cache_write_tokens", "output_tokens"],
+      "properties": {
+        "fresh_input_tokens": { "type": "integer", "minimum": 0 },
+        "cached_read_tokens": { "type": "integer", "minimum": 0 },
+        "cache_write_tokens": { "type": "integer", "minimum": 0 },
+        "output_tokens": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "costs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["category", "amount_usd", "basis", "source_ref"],
+        "properties": {
+          "category": { "enum": ["provider", "tool", "infra", "human_review", "recovery", "other"] },
+          "amount_usd": { "type": "number", "minimum": 0 },
+          "basis": {
+            "enum": ["actual_cash", "estimated_provider", "allocated_infra", "imputed_human"]
+          },
+          "source_ref": { "type": "string", "minLength": 1 },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "accepted_first_pass",
+        "traceable_output",
+        "human_review_minutes",
+        "durable_artifacts",
+        "value_components"
+      ],
+      "properties": {
+        "status": { "enum": ["success", "partial", "failed", "blocked", "noop"] },
+        "accepted_first_pass": { "type": "boolean" },
+        "traceable_output": { "type": "boolean" },
+        "human_review_minutes": { "type": "number", "minimum": 0 },
+        "durable_artifacts": { "type": "array", "items": { "type": "string" } },
+        "value_components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["category", "amount_usd", "attribution_confidence", "source_ref"],
+            "properties": {
+              "category": { "enum": ["revenue", "time_saved", "avoided_cost", "loss_avoided", "other"] },
+              "amount_usd": { "type": "number", "minimum": 0 },
+              "attribution_confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+              "source_ref": { "type": "string", "minLength": 1 },
+              "overlap_group": { "type": ["string", "null"] },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_success",
+        "evidence_grounding",
+        "reliability",
+        "safety",
+        "efficiency",
+        "judgment_routing",
+        "critical_safety_failures",
+        "evidence_refs"
+      ],
+      "properties": {
+        "task_success": { "type": "number", "minimum": 0, "maximum": 1 },
+        "evidence_grounding": { "type": "number", "minimum": 0, "maximum": 1 },
+        "reliability": { "type": "number", "minimum": 0, "maximum": 1 },
+        "safety": { "type": "number", "minimum": 0, "maximum": 1 },
+        "efficiency": { "type": "number", "minimum": 0, "maximum": 1 },
+        "judgment_routing": { "type": "number", "minimum": 0, "maximum": 1 },
+        "critical_safety_failures": { "type": "integer", "minimum": 0 },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": { "synthetic": { "type": "boolean" } }
+    }
+  }
+}

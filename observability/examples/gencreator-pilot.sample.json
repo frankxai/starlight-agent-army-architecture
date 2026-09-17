@@ -1,0 +1,197 @@
+[
+  {
+    "schema_version": "agent-run-receipt.v1",
+    "run_id": "synthetic-gen-omega-001",
+    "deployment_id": "gencreator-studio-gen-omega",
+    "agent_id": "gen-omega",
+    "repo": "frankxai/GenCreator-Studio",
+    "environment": "pilot",
+    "started_at": "2026-08-11T09:00:00+02:00",
+    "ended_at": "2026-08-11T09:00:08.400000+02:00",
+    "latency_ms": 8400,
+    "retries": 0,
+    "usage": {
+      "fresh_input_tokens": 3200,
+      "cached_read_tokens": 900,
+      "cache_write_tokens": 0,
+      "output_tokens": 850
+    },
+    "costs": [
+      {
+        "category": "provider",
+        "amount_usd": 0.08,
+        "basis": "estimated_provider",
+        "source_ref": "synthetic:pricing-snapshot-2026-08-10"
+      },
+      {
+        "category": "infra",
+        "amount_usd": 0.02,
+        "basis": "allocated_infra",
+        "source_ref": "synthetic:monthly-allocation"
+      },
+      {
+        "category": "human_review",
+        "amount_usd": 2.0,
+        "basis": "imputed_human",
+        "source_ref": "synthetic:2-minutes-at-60-usd-hour"
+      }
+    ],
+    "outcome": {
+      "status": "success",
+      "accepted_first_pass": true,
+      "traceable_output": true,
+      "human_review_minutes": 2,
+      "durable_artifacts": ["sample://artifact/gen-omega-001"],
+      "value_components": [
+        {
+          "category": "time_saved",
+          "amount_usd": 20.0,
+          "attribution_confidence": 0.6,
+          "source_ref": "synthetic:user-time-sample",
+          "overlap_group": "creator-productivity"
+        }
+      ]
+    },
+    "quality": {
+      "task_success": 0.95,
+      "evidence_grounding": 0.9,
+      "reliability": 0.9,
+      "safety": 1.0,
+      "efficiency": 0.85,
+      "judgment_routing": 0.9,
+      "critical_safety_failures": 0,
+      "evidence_refs": ["sample://eval/gen-omega-001"]
+    },
+    "metadata": { "synthetic": true }
+  },
+  {
+    "schema_version": "agent-run-receipt.v1",
+    "run_id": "synthetic-gen-omega-002",
+    "deployment_id": "gencreator-studio-gen-omega",
+    "agent_id": "gen-omega",
+    "repo": "frankxai/GenCreator-Studio",
+    "environment": "pilot",
+    "started_at": "2026-08-11T10:00:00+02:00",
+    "ended_at": "2026-08-11T10:00:12.500000+02:00",
+    "latency_ms": 12500,
+    "retries": 1,
+    "usage": {
+      "fresh_input_tokens": 5100,
+      "cached_read_tokens": 1400,
+      "cache_write_tokens": 0,
+      "output_tokens": 1300
+    },
+    "costs": [
+      {
+        "category": "provider",
+        "amount_usd": 0.12,
+        "basis": "estimated_provider",
+        "source_ref": "synthetic:pricing-snapshot-2026-08-10"
+      },
+      {
+        "category": "infra",
+        "amount_usd": 0.03,
+        "basis": "allocated_infra",
+        "source_ref": "synthetic:monthly-allocation"
+      },
+      {
+        "category": "human_review",
+        "amount_usd": 3.0,
+        "basis": "imputed_human",
+        "source_ref": "synthetic:3-minutes-at-60-usd-hour"
+      }
+    ],
+    "outcome": {
+      "status": "partial",
+      "accepted_first_pass": false,
+      "traceable_output": true,
+      "human_review_minutes": 3,
+      "durable_artifacts": ["sample://artifact/gen-omega-002"],
+      "value_components": [
+        {
+          "category": "time_saved",
+          "amount_usd": 8.0,
+          "attribution_confidence": 0.4,
+          "source_ref": "synthetic:user-time-sample",
+          "overlap_group": "creator-productivity"
+        }
+      ]
+    },
+    "quality": {
+      "task_success": 0.65,
+      "evidence_grounding": 0.75,
+      "reliability": 0.7,
+      "safety": 1.0,
+      "efficiency": 0.6,
+      "judgment_routing": 0.75,
+      "critical_safety_failures": 0,
+      "evidence_refs": ["sample://eval/gen-omega-002"]
+    },
+    "metadata": { "synthetic": true }
+  },
+  {
+    "schema_version": "agent-run-receipt.v1",
+    "run_id": "synthetic-gen-omega-003",
+    "deployment_id": "gencreator-studio-gen-omega",
+    "agent_id": "gen-omega",
+    "repo": "frankxai/GenCreator-Studio",
+    "environment": "pilot",
+    "started_at": "2026-08-11T11:00:00+02:00",
+    "ended_at": "2026-08-11T11:00:07.200000+02:00",
+    "latency_ms": 7200,
+    "retries": 0,
+    "usage": {
+      "fresh_input_tokens": 2800,
+      "cached_read_tokens": 1700,
+      "cache_write_tokens": 0,
+      "output_tokens": 700
+    },
+    "costs": [
+      {
+        "category": "provider",
+        "amount_usd": 0.07,
+        "basis": "estimated_provider",
+        "source_ref": "synthetic:pricing-snapshot-2026-08-10"
+      },
+      {
+        "category": "infra",
+        "amount_usd": 0.02,
+        "basis": "allocated_infra",
+        "source_ref": "synthetic:monthly-allocation"
+      },
+      {
+        "category": "human_review",
+        "amount_usd": 1.0,
+        "basis": "imputed_human",
+        "source_ref": "synthetic:1-minute-at-60-usd-hour"
+      }
+    ],
+    "outcome": {
+      "status": "success",
+      "accepted_first_pass": true,
+      "traceable_output": true,
+      "human_review_minutes": 1,
+      "durable_artifacts": ["sample://artifact/gen-omega-003"],
+      "value_components": [
+        {
+          "category": "time_saved",
+          "amount_usd": 18.0,
+          "attribution_confidence": 0.7,
+          "source_ref": "synthetic:user-time-sample",
+          "overlap_group": "creator-productivity"
+        }
+      ]
+    },
+    "quality": {
+      "task_success": 0.9,
+      "evidence_grounding": 0.9,
+      "reliability": 0.9,
+      "safety": 1.0,
+      "efficiency": 0.9,
+      "judgment_routing": 0.85,
+      "critical_safety_failures": 0,
+      "evidence_refs": ["sample://eval/gen-omega-003"]
+    },
+    "metadata": { "synthetic": true }
+  }
+]

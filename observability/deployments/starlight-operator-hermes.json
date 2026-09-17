@@ -1,0 +1,86 @@
+{
+  "schema_version": "agent-deployment.v1",
+  "deployment_id": "starlight-operator-hermes",
+  "repo": "private:hermes-runtime",
+  "agent_id": "starlight-operator",
+  "card_ref": "cards/hosts/starlight-operator.json",
+  "surface": "hermes",
+  "environment": "internal",
+  "lifecycle_status": "planned",
+  "owner": "starlight-operator",
+  "measurement": {
+    "timezone": "Europe/Amsterdam",
+    "reporting_cadence_days": 7,
+    "decision_window_days": 90,
+    "baseline_window": { "status": "planned", "start": "2026-08-11", "end": "2026-08-24" }
+  },
+  "economics": {
+    "currency": "USD",
+    "budget_status": "proposed",
+    "primary_value_unit": "durable verified operating outcome",
+    "attribution_method": "artifact and environment proof plus confidence-discounted time or cost avoided",
+    "budgets": {
+      "max_total_economic_cost_per_run_usd": 40.0,
+      "max_cost_per_success_usd": 75.0,
+      "monthly_actual_cash_budget_usd": 500.0
+    }
+  },
+  "quality": {
+    "capability_profile": "private-operator-v1",
+    "weights": {
+      "task_success": 0.25,
+      "evidence_grounding": 0.2,
+      "reliability": 0.15,
+      "safety": 0.25,
+      "efficiency": 0.05,
+      "judgment_routing": 0.1
+    },
+    "min_capability_score": 85,
+    "min_task_success_rate": 0.85,
+    "max_critical_safety_failures": 0,
+    "min_sample_size": 30,
+    "max_p95_latency_ms": null
+  },
+  "goals": [
+    {
+      "goal_id": "instrument-starlight-operator",
+      "status": "active",
+      "specific_outcome": "Every LLM-backed operator run emits an exact-window receipt that separates orchestrator, subagent, scheduler, CLI, and peer planes.",
+      "metric_id": "receipt_completeness_ratio",
+      "baseline": { "status": "measured", "value": 0, "start": "2026-08-10", "end": "2026-08-10" },
+      "target": { "operator": ">=", "value": 0.95, "deadline": "2026-08-24" },
+      "owner": "starlight-operator",
+      "evidence_source": "private SIS/Hermes receipt sink",
+      "guardrails": ["no prompts, secrets, or private payloads", "actual cash remains distinct from API-equivalent cost"]
+    },
+    {
+      "goal_id": "prove-starlight-residue",
+      "status": "baselining",
+      "specific_outcome": "Starlight Operator produces a durable, traceable artifact or deterministic verification in at least three quarters of admitted runs.",
+      "metric_id": "durable_artifact_rate",
+      "baseline": { "status": "pending", "value": null, "start": null, "end": null },
+      "target": { "operator": ">=", "value": 0.75, "deadline": "2026-09-30" },
+      "owner": "starlight-operator",
+      "evidence_source": "30 or more exact-window operator receipts",
+      "guardrails": ["traceable output rate >= 0.9", "critical safety failures = 0"]
+    },
+    {
+      "goal_id": "prove-starlight-roi",
+      "status": "proposed",
+      "specific_outcome": "The private operator produces at least one dollar fifty of confidence-adjusted value per dollar of total economic cost.",
+      "metric_id": "confidence_adjusted_roi_ratio",
+      "baseline": { "status": "pending", "value": null, "start": null, "end": null },
+      "target": { "operator": ">=", "value": 0.5, "deadline": "2026-11-08" },
+      "owner": "starlight-operator",
+      "evidence_source": "verified artifact receipts and approved time/cost values",
+      "guardrails": ["no retroactive receipt fabrication", "budget remains proposed until baseline review"]
+    }
+  ],
+  "telemetry": {
+    "receipt_sink": "private:SIS/agent-operations/starlight-operator/",
+    "raw_content_policy": "prohibited",
+    "cost_sources": ["Tokscale or provider telemetry", "tool ledger", "infra allocation", "human review record"],
+    "value_sources": ["artifact proof", "verified time saved", "avoided cost", "risk-adjusted loss avoided"]
+  },
+  "metadata": { "created": "2026-08-10", "budgets_are_owner_proposals": true }
+}

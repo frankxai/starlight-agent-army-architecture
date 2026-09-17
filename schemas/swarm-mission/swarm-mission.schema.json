@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starlight.local/schemas/swarm-mission.schema.json",
+  "title": "Starlight Bounded Swarm Mission",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "mission_id",
+    "title",
+    "objective",
+    "owner",
+    "supervisor",
+    "status",
+    "risk_tier",
+    "timebox",
+    "milestones",
+    "participants",
+    "separation_of_duties",
+    "budgets",
+    "human_gates",
+    "completion_criteria",
+    "stop_conditions",
+    "evidence"
+  ],
+  "properties": {
+    "schema_version": { "const": "swarm-mission.v1" },
+    "mission_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "objective": { "type": "string", "minLength": 1 },
+    "owner": { "type": "string", "minLength": 1 },
+    "supervisor": { "const": "starlight-queen" },
+    "status": { "enum": ["draft", "admission-review", "admitted", "running", "held", "completed", "cancelled"] },
+    "risk_tier": { "enum": ["low", "medium", "high", "critical"] },
+    "timebox": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "deadline", "timezone", "max_elapsed_hours"],
+      "properties": {
+        "start": { "type": ["string", "null"], "format": "date-time" },
+        "deadline": { "type": "string", "format": "date-time" },
+        "timezone": { "type": "string", "minLength": 1 },
+        "max_elapsed_hours": { "type": "number", "exclusiveMinimum": 0, "maximum": 720 }
+      }
+    },
+    "milestones": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["milestone_id", "outcome", "owner_participant_id", "deadline", "evidence_required", "status"],
+        "properties": {
+          "milestone_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "outcome": { "type": "string", "minLength": 1 },
+          "owner_participant_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "deadline": { "type": "string", "format": "date-time" },
+          "evidence_required": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "status": { "enum": ["planned", "in-progress", "verified", "held", "missed"] }
+        }
+      }
+    },
+    "participants": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "participant_id",
+              "participant_kind",
+              "role",
+              "agent_id",
+              "card_ref",
+              "runtime",
+              "model_policy",
+              "access_bundle_ref",
+              "write_scopes",
+              "depends_on"
+            ],
+            "properties": {
+              "participant_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+              "participant_kind": { "const": "agent" },
+              "role": { "enum": ["conductor", "maker", "checker", "specialist", "observer"] },
+              "agent_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+              "card_ref": { "$ref": "#/$defs/repoRef" },
+              "runtime": { "enum": ["hermes", "codex", "claude-code", "openhands", "deepagents", "temporal-railway", "vercel-eve", "cloudflare-agents"] },
+              "model_policy": { "type": "string", "minLength": 1 },
+              "access_bundle_ref": { "type": ["string", "null"] },
+              "write_scopes": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": { "$ref": "#/$defs/repoRef" }
+              },
+              "depends_on": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "participant_id",
+              "participant_kind",
+              "role",
+              "workflow_system",
+              "workflow_ref",
+              "allowed_operations",
+              "authority_assertions",
+              "depends_on"
+            ],
+            "properties": {
+              "participant_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+              "participant_kind": { "const": "workflow" },
+              "role": { "const": "automation" },
+              "workflow_system": { "enum": ["n8n", "github-actions", "hermes-cron", "temporal"] },
+              "workflow_ref": { "type": "string", "minLength": 1 },
+              "allowed_operations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+              "authority_assertions": { "const": "none" },
+              "depends_on": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "separation_of_duties": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["maker_participant_ids", "checker_participant_ids", "checker_independent", "self_certification_allowed"],
+      "properties": {
+        "maker_participant_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "checker_participant_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "checker_independent": { "const": true },
+        "self_certification_allowed": { "const": false }
+      }
+    },
+    "budgets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["max_model_cost_usd", "max_tool_calls", "max_parallel_agents", "max_retries_per_step"],
+      "properties": {
+        "max_model_cost_usd": { "type": "number", "minimum": 0 },
+        "max_tool_calls": { "type": "integer", "minimum": 1 },
+        "max_parallel_agents": { "type": "integer", "minimum": 1, "maximum": 16 },
+        "max_retries_per_step": { "type": "integer", "minimum": 0, "maximum": 5 }
+      }
+    },
+    "human_gates": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "completion_criteria": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "stop_conditions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["private_sink", "required_receipts", "raw_content_policy"],
+      "properties": {
+        "private_sink": { "type": "string", "pattern": "^private:" },
+        "required_receipts": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "raw_content_policy": { "const": "prohibited" }
+      }
+    }
+  },
+  "$defs": {
+    "repoRef": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9._/*-]+$"
+    }
+  }
+}

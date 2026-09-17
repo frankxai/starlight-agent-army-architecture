@@ -8,7 +8,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = ROOT / "schemas" / "agent-card" / "agent-card.schema.json"
-CARD_GLOBS = ["cards/hosts/*.json", "cards/specialists/*.json", "cards/stewards/*.json"]
+CARD_GLOBS = [
+    "cards/hosts/*.json",
+    "cards/specialists/*.json",
+    "cards/stewards/*.json",
+    "cards/portfolio/*.json",
+]
 
 
 def load_json(path: Path):
